@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 9/3/2012 9:12:05 PM -->
+<GameData>
+	<!-- SP1_04: CARAVANS -->
+	<!-- P: Caravans -->
+	<!-- I: Caravanserai -->
+	<Technologies>
+		<Row>
+			<Type>TECH_CARAVANS</Type>
+			<Cost>400</Cost>
+			<Description>TXT_KEY_EOMTECH_CARAVANS</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>4</GridX>
+			<GridY>-1</GridY>
+			<PortraitIndex>17</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_CARAVANS">
+			<Text>Caravans</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_CARAVANS</TechType>
+			<PrereqTech>TECH_TRADE</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_CARAVANS</TechType>
+			<PrereqTech>TECH_ANIMAL_LORE</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_CARAVANS</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- SEA_04: SEA LORE -->
+	<!-- R: Crab, Pearls -->
+	<!-- I: Fishing Village -->
+	<Technologies>
+		<Row>
+			<Type>TECH_SEA_LORE</Type>
+			<Cost>400</Cost>
+			<Description>TXT_KEY_EOMTECH_SEA_LORE</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>4</GridX>
+			<GridY>1</GridY>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_DLC_03</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_SEA_LORE">
+			<Text>Sea Lore</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_SEA_LORE</TechType>
+			<PrereqTech>TECH_SEA_TRANSPORT</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_SEA_LORE</TechType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_SEA_LORE</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_SEA_LORE</TechType>
+			<FlavorType>FLAVOR_NAVAL_GROWTH</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- GOLD_04: LOCAL MARKETS -->
+	<!-- B: Tavern, Grocer -->
+	<!-- I: Trading Post -->
+	<Technologies>
+		<Row>
+			<Type>TECH_LOCAL_MARKETS</Type>
+			<Cost>400</Cost>
+			<Description>TXT_KEY_EOMTECH_LOCAL_MARKETS</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>4</GridX>
+			<GridY>2</GridY>
+			<PortraitIndex>17</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_LOCAL_MARKETS">
+			<Text>Local Markets</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_LOCAL_MARKETS</TechType>
+			<PrereqTech>TECH_TRADE</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_LOCAL_MARKETS</TechType>
+			<PrereqTech>TECH_FARMING</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_LOCAL_MARKETS</TechType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_LOCAL_MARKETS</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- FOOD_04: CALENDAR -->
+	<!-- B: Garden -->
+	<!-- I: Plantation -->
+	<Technologies>
+		<Row>
+			<Type>TECH_CALENDAR</Type>
+			<Cost>400</Cost>
+			<Description>TXT_KEY_EOMTECH_CALENDAR</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>4</GridX>
+			<GridY>3</GridY>
+			<PortraitIndex>9</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_CALENDAR">
+			<Text>Calendar</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_CALENDAR</TechType>
+			<PrereqTech>TECH_POTTERY</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_CALENDAR</TechType>
+			<PrereqTech>TECH_MYSTICISM</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_CALENDAR</TechType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_CALENDAR</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_CALENDAR</TechType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- ANIM_04: CHARIOTRY -->
+	<!-- U: Heavy Chariot, Chariot Archer -->
+	<!-- B: Racing Arena (NW) -->
+	<Technologies>
+		<Row>
+			<Type>TECH_CHARIOTRY</Type>
+			<Cost>400</Cost>
+			<Description>TXT_KEY_EOMTECH_CHARIOTRY</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>4</GridX>
+			<GridY>4</GridY>
+			<PortraitIndex>3</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_CHARIOTRY">
+			<Text>Chariotry</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_CHARIOTRY</TechType>
+			<PrereqTech>TECH_DOMESTICATION</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_CHARIOTRY</TechType>
+			<PrereqTech>TECH_ARCHERY</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_CHARIOTRY</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_CHARIOTRY</TechType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_CHARIOTRY</TechType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_CHARIOTRY</TechType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- METAL_04: BRONZE WORKING -->
+	<!-- U: Spearman -->
+	<!-- R: Copper -->
+	<Technologies>
+		<Row>
+			<Type>TECH_BRONZE_WORKING</Type>
+			<Cost>400</Cost>
+			<Description>TXT_KEY_EOMTECH_BRONZE_WORKING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>4</GridX>
+			<GridY>6</GridY>
+			<PortraitIndex>5</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_BRONZE_WORKING">
+			<Text>Bronze Working</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_BRONZE_WORKING</TechType>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_BRONZE_WORKING</TechType>
+			<PrereqTech>TECH_TRIBALISM</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_BRONZE_WORKING</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_BRONZE_WORKING</TechType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_BRONZE_WORKING</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_BRONZE_WORKING</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- PROD_04: CARPENTRY -->
+	<!-- B: Carpenter -->
+	<!-- U: Composite Bowman -->
+	<Technologies>
+		<Row>
+			<Type>TECH_CARPENTRY</Type>
+			<Cost>400</Cost>
+			<Description>TXT_KEY_EOMTECH_CARPENTRY</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>4</GridX>
+			<GridY>7</GridY>
+			<PortraitIndex>5</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_CARPENTRY">
+			<Text>Carpentry</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_CARPENTRY</TechType>
+			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_CARPENTRY</TechType>
+			<PrereqTech>TECH_WOOD_CUTTING</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_CARPENTRY</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_CARPENTRY</TechType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- CULT_04: DRAMA -->
+	<!-- B: Amphitheater -->
+	<!-- [P: Culture] -->
+	<Technologies>
+		<Row>
+			<Type>TECH_DRAMA</Type>
+			<Cost>400</Cost>
+			<Description>TXT_KEY_EOMTECH_DRAMA</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>4</GridX>
+			<GridY>8</GridY>
+			<PortraitIndex>4</PortraitIndex>
+			<IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_DRAMA">
+			<Text>Drama</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_DRAMA</TechType>
+			<PrereqTech>TECH_MYSTICISM</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_DRAMA</TechType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- SCI_04: WRITING -->
+	<!-- B: Library -->
+	<!-- D: Embassy -->
+	<Technologies>
+		<Row>
+			<Type>TECH_WRITING</Type>
+			<Cost>400</Cost>
+			<Description>TXT_KEY_EOMTECH_WRITING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>4</GridX>
+			<GridY>9</GridY>
+			<PortraitIndex>47</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<AllowEmbassyTradingAllowed>true</AllowEmbassyTradingAllowed>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_WRITING">
+			<Text>Writing</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_WRITING</TechType>
+			<PrereqTech>TECH_MYSTICISM</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_WRITING</TechType>
+			<PrereqTech>TECH_FARMING</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_WRITING</TechType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_WRITING</TechType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_WRITING</TechType>
+			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- REL_04: TEMPLE BUILDING -->
+	<!-- B: Temple Complex -->
+	<!-- R: Divine Power -->
+	<Technologies>
+		<Row>
+			<Type>TECH_TEMPLE_BUILDING</Type>
+			<Cost>400</Cost>
+			<Description>TXT_KEY_EOMTECH_TEMPLE_BUILDING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>4</GridX>
+			<GridY>10</GridY>
+			<PortraitIndex>9</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_TEMPLE_BUILDING">
+			<Text>Temple Building</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_TEMPLE_BUILDING</TechType>
+			<PrereqTech>TECH_MYSTICISM</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_TEMPLE_BUILDING</TechType>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_TEMPLE_BUILDING</TechType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+</GameData>

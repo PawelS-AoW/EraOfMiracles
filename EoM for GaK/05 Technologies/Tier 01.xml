@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/22/2012 2:54:30 AM -->
+<GameData>
+	<!-- SEA_01: BOAT BUILDING -->
+	<!-- B: River Port -->
+	<!-- U: Canoe -->
+	<!-- U: Work Boat -->
+	<!-- I: Fishing Boats -->
+	<Technologies>
+		<Row>
+			<Type>TECH_BOAT_BUILDING</Type>
+			<Cost>100</Cost>
+			<Description>TXT_KEY_EOMTECH_BOAT_BUILDING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_ANCIENT</Era>
+			<Trade>true</Trade>
+			<GridX>1</GridX>
+			<GridY>1</GridY>
+			<PortraitIndex>4</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_DLC_03</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_BOAT_BUILDING">
+			<Text>Boat Building</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_BOAT_BUILDING</TechType>
+			<PrereqTech>TECH_FISHING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_BOAT_BUILDING</TechType>
+			<PrereqTech>TECH_WOOD_WORKING</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_BOAT_BUILDING</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_BOAT_BUILDING</TechType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_BOAT_BUILDING</TechType>
+			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_BOAT_BUILDING</TechType>
+			<FlavorType>FLAVOR_NAVAL_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_BOAT_BUILDING</TechType>
+			<FlavorType>FLAVOR_NAVAL_GROWTH</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- GOLD_01: WEAVING -->
+	<!-- R: Sheep, Cotton, Silk -->
+	<!-- B: Weaver's Hut -->
+	<Technologies>
+		<Row>
+			<Type>TECH_WEAVING</Type>
+			<Cost>100</Cost>
+			<Description>TXT_KEY_EOMTECH_WEAVING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_ANCIENT</Era>
+			<Trade>true</Trade>
+			<GridX>1</GridX>
+			<GridY>2</GridY>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_WEAVING">
+			<Text>Weaving</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_WEAVING</TechType>
+			<PrereqTech>TECH_GATHERING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_WEAVING</TechType>
+			<PrereqTech>TECH_HUNTING</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_WEAVING</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_WEAVING</TechType>
+			<FlavorType>FLAVOR_FOOD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_WEAVING</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_WEAVING</TechType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- FOOD_01: PLANT LORE -->
+	<!-- R: Wheat, Spices, Sugar, Wine -->
+	<Technologies>
+		<Row>
+			<Type>TECH_PLANT_LORE</Type>
+			<Cost>100</Cost>
+			<Description>TXT_KEY_EOMTECH_PLANT_LORE</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_ANCIENT</Era>
+			<Trade>true</Trade>
+			<GridX>1</GridX>
+			<GridY>3</GridY>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_PLANT_LORE">
+			<Text>Plant Lore</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_PLANT_LORE</TechType>
+			<PrereqTech>TECH_GATHERING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_PLANT_LORE</TechType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_PLANT_LORE</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- ANIM_01: TRAPPING -->
+	<!-- I: Camp (can be built by Scouts) -->
+	<!-- R: Fur -->
+	<Technologies>
+		<Row>
+			<Type>TECH_TRAPPING</Type>
+			<Cost>100</Cost>
+			<Description>TXT_KEY_EOMTECH_TRAPPING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_ANCIENT</Era>
+			<Trade>true</Trade>
+			<GridX>1</GridX>
+			<GridY>4</GridY>
+			<PortraitIndex>13</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_2</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_TRAPPING">
+			<Text>Trapping</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_TRAPPING</TechType>
+			<PrereqTech>TECH_HUNTING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_TRAPPING</TechType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_TRAPPING</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- MISC_01: ARCHERY -->
+	<!-- U: Archer -->
+	<!-- B: Barracks -->
+	<Technologies>
+		<Row>
+			<Type>TECH_ARCHERY</Type>
+			<Cost>100</Cost>
+			<Description>TXT_KEY_EOMTECH_ARCHERY</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_ANCIENT</Era>
+			<Trade>true</Trade>
+			<GridX>1</GridX>
+			<GridY>5</GridY>
+			<PortraitIndex>7</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_ARCHERY">
+			<Text>Archery</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_ARCHERY</TechType>
+			<PrereqTech>TECH_HUNTING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_ARCHERY</TechType>
+			<PrereqTech>TECH_WOOD_WORKING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_ARCHERY</TechType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ARCHERY</TechType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- METAL_01: TOOL MAKING -->
+	<!-- U: Worker -->
+	<!-- B: Beadmaker's Hut -->
+	<Technologies>
+		<Row>
+			<Type>TECH_TOOL_MAKING</Type>
+			<Cost>100</Cost>
+			<Description>TXT_KEY_EOMTECH_TOOL_MAKING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_ANCIENT</Era>
+			<Trade>true</Trade>
+			<GridX>1</GridX>
+			<GridY>6</GridY>
+			<PortraitIndex>1</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_TOOL_MAKING">
+			<Text>Tool Making</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_TOOL_MAKING</TechType>
+			<PrereqTech>TECH_WOOD_WORKING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_TOOL_MAKING</TechType>
+			<PrereqTech>TECH_STONE_WORKING</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_TOOL_MAKING</TechType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_TOOL_MAKING</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_TOOL_MAKING</TechType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- PROD_01: MINERAL LORE -->
+	<!-- R: Gems, Salt, Marble -->
+	<Technologies>
+		<Row>
+			<Type>TECH_MINERAL_LORE</Type>
+			<Cost>100</Cost>
+			<Description>TXT_KEY_EOMTECH_MINERAL_LORE</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_ANCIENT</Era>
+			<Trade>true</Trade>
+			<GridX>1</GridX>
+			<GridY>7</GridY>
+			<PortraitIndex>1</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_MINERAL_LORE">
+			<Text>Mineral Lore</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_MINERAL_LORE</TechType>
+			<PrereqTech>TECH_STONE_WORKING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_MINERAL_LORE</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_MINERAL_LORE</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- CULT_01: MONUMENTS -->
+	<!-- B: Standing Stones (NW) -->
+	<!-- B: Obelisk -->
+	<Technologies>
+		<Row>
+			<Type>TECH_MONUMENTS</Type>
+			<Cost>100</Cost>
+			<Description>TXT_KEY_EOMTECH_MONUMENTS</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_ANCIENT</Era>
+			<Trade>true</Trade>
+			<GridX>1</GridX>
+			<GridY>8</GridY>
+			<PortraitIndex>8</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_MONUMENTS">
+			<Text>Monuments</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_MONUMENTS</TechType>
+			<PrereqTech>TECH_STONE_WORKING</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_MONUMENTS</TechType>
+			<PrereqTech>TECH_RITUALISM</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_MONUMENTS</TechType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+</GameData>

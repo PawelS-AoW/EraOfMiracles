@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 5/31/2012 9:20:17 PM -->
+<GameData>
+	<!-- ARCHERY RANGE -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_ARCHERY_RANGE</Type>
+			<DefaultBuilding>BUILDING_ARCHERY_RANGE</DefaultBuilding>
+			<Description>TXT_KEY_EOMBLDG_ARCHERY_RANGE</Description>
+			<EoM_MaxCityPercent>50</EoM_MaxCityPercent>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_ARCHERY_RANGE</Type>
+			<BuildingClass>BUILDINGCLASS_ARCHERY_RANGE</BuildingClass>
+			<Cost>50</Cost>
+			<PrereqTech>TECH_ARCHERY</PrereqTech>
+			<Description>TXT_KEY_EOMBLDG_ARCHERY_RANGE</Description>
+			<Help>TXT_KEY_EOMBLDG_ARCHERY_RANGE_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<PortraitIndex>7</PortraitIndex>
+			<ConquestProb>50</ConquestProb>
+			<Defense>100</Defense>
+		</Row>
+	</Buildings>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMBLDG_ARCHERY_RANGE">
+			<Text>Archery Range</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBLDG_ARCHERY_RANGE_HELP">
+			<Text>[ICON_BULLET]+10 XP for Archery units.[NEWLINE][ICON_BULLET]Can't be built in more than 50% of your cities.</Text>
+		</Row>
+	</Language_en_US>
+	<Building_UnitCombatFreeExperiences>
+		<Row>
+			<BuildingType>BUILDING_ARCHERY_RANGE</BuildingType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+			<Experience>10</Experience>
+		</Row>
+	</Building_UnitCombatFreeExperiences>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_ARCHERY_RANGE</BuildingType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_ARCHERY_RANGE</BuildingType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Building_Flavors>
+	<!-- BARRACKS -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_BARRACKS</Type>
+			<DefaultBuilding>BUILDING_BARRACKS</DefaultBuilding>
+			<Description>TXT_KEY_EOMBLDG_BARRACKS</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_BARRACKS</Type>
+			<BuildingClass>BUILDINGCLASS_BARRACKS</BuildingClass>
+			<Cost>50</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Description>TXT_KEY_EOMBLDG_BARRACKS</Description>
+			<Help>TXT_KEY_EOMBLDG_BARRACKS_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>5</PortraitIndex>
+			<ConquestProb>50</ConquestProb>
+		</Row>
+	</Buildings>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMBLDG_BARRACKS">
+			<Text>Barracks</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBLDG_BARRACKS_HELP">
+			<Text>[ICON_BULLET]+10 XP for land units built in this city.</Text>
+		</Row>
+	</Language_en_US>
+	<Building_DomainFreeExperiences>
+		<Row>
+			<BuildingType>BUILDING_BARRACKS</BuildingType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Experience>10</Experience>
+		</Row>
+	</Building_DomainFreeExperiences>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_BARRACKS</BuildingType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Building_Flavors>
+	<!-- ARMORY -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_ARMORY</Type>
+			<DefaultBuilding>BUILDING_ARMORY</DefaultBuilding>
+			<Description>TXT_KEY_EOMBLDG_ARMORY</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_ARMORY</Type>
+			<BuildingClass>BUILDINGCLASS_ARMORY</BuildingClass>
+			<Cost>200</Cost>
+			<GoldMaintenance>2</GoldMaintenance>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
+			<Description>TXT_KEY_EOMBLDG_ARMORY</Description>
+			<Help>TXT_KEY_EOMBLDG_ARMORY_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>6</PortraitIndex>
+			<ConquestProb>50</ConquestProb>
+		</Row>
+	</Buildings>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMBLDG_ARMORY">
+			<Text>Armory</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBLDG_ARMORY_HELP">
+			<Text>[ICON_BULLET]+20 XP for land units built in this city.</Text>
+		</Row>
+	</Language_en_US>
+	<Building_ClassesNeededInCity>
+		<Row>
+			<BuildingType>BUILDING_ARMORY</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
+		</Row>
+	</Building_ClassesNeededInCity>
+	<Building_DomainFreeExperiences>
+		<Row>
+			<BuildingType>BUILDING_ARMORY</BuildingType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Experience>20</Experience>
+		</Row>
+	</Building_DomainFreeExperiences>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_ARMORY</BuildingType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Building_Flavors>
+	<!-- RECRUITMENT CENTER -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_RECRUITMENT_CENTER</Type>
+			<DefaultBuilding>BUILDING_RECRUITMENT_CENTER</DefaultBuilding>
+			<Description>TXT_KEY_EOMBLDG_RECRUITMENT_CENTER</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_RECRUITMENT_CENTER</Type>
+			<BuildingClass>BUILDINGCLASS_RECRUITMENT_CENTER</BuildingClass>
+			<Cost>200</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<PrereqTech>TECH_CIVIL_SERVICE</PrereqTech>
+			<Description>TXT_KEY_EOMBLDG_RECRUITMENT_CENTER</Description>
+			<Help>TXT_KEY_EOMBLDG_RECRUITMENT_CENTER_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>DENMARK_BUILDING_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<ConquestProb>50</ConquestProb>
+		</Row>
+	</Buildings>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMBLDG_RECRUITMENT_CENTER">
+			<Text>Recruitment Center</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBLDG_RECRUITMENT_CENTER_HELP">
+			<Text>[ICON_BULLET]+20% [ICON_PRODUCTION] Production for land units built in this city.</Text>
+		</Row>
+	</Language_en_US>
+	<Building_ClassesNeededInCity>
+		<Row>
+			<BuildingType>BUILDING_RECRUITMENT_CENTER</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_WARRIORS_GUILD</BuildingClassType>
+		</Row>
+	</Building_ClassesNeededInCity>
+	<Building_DomainProductionModifiers>
+		<Row>
+			<BuildingType>BUILDING_RECRUITMENT_CENTER</BuildingType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Modifier>20</Modifier>
+		</Row>
+	</Building_DomainProductionModifiers>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_RECRUITMENT_CENTER</BuildingType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Building_Flavors>
+</GameData>

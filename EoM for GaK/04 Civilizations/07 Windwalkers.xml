@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 6/13/2012 1:13:18 AM -->
+<GameData>
+	<!-- WINDWALKERS -->
+	<Civilizations>
+		<Row>
+			<Type>CIVILIZATION_WINDWALKERS</Type>
+			<Description>TXT_KEY_EOMCIV_WINDWALKERS_LONG</Description>
+			<ShortDescription>TXT_KEY_EOMCIV_WINDWALKERS_SHORT</ShortDescription>
+			<Adjective>TXT_KEY_EOMCIV_WINDWALKERS_ADJ</Adjective>
+			<CivilopediaTag>TXT_KEY_EOMCIV_WINDWALKERS_SHORT</CivilopediaTag>
+			<DefaultPlayerColor>PLAYERCOLOR_GREECE</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_GREECE</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_GRECO_ROMAN</ArtStyleType>
+			<ArtStyleSuffix>_MED</ArtStyleSuffix>
+			<ArtStylePrefix>MEDITERRANEAN </ArtStylePrefix>
+			<PortraitIndex>9</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS</IconAtlas>
+			<AlphaIconAtlas>CIV_ALPHA_ATLAS</AlphaIconAtlas>
+			<MapImage>pachacuti.dds</MapImage>
+			<DawnOfManQuote>TXT_KEY_EOM_EMPTY</DawnOfManQuote>
+			<DawnOfManImage>pachacuti.dds</DawnOfManImage>
+		</Row>
+	</Civilizations>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMCIV_WINDWALKERS_LONG">
+			<Text>Windwalker Kingdom</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_WINDWALKERS_SHORT">
+			<Text>Windwalkers</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_WINDWALKERS_ADJ">
+			<Text>Windwalker</Text>
+		</Row>
+	</Language_en_US>
+	<Civilization_Leaders>
+		<Row>
+			<CivilizationType>CIVILIZATION_WINDWALKERS</CivilizationType>
+			<LeaderheadType>LEADER_TEMPEST</LeaderheadType>
+		</Row>
+	</Civilization_Leaders>
+	<Civilization_FreeTechs>
+		<Row>
+			<CivilizationType>CIVILIZATION_WINDWALKERS</CivilizationType>
+			<TechType>TECH_HUNTING</TechType>
+		</Row>
+	</Civilization_FreeTechs>
+	<Leaders>
+		<Row>
+			<Type>LEADER_TEMPEST</Type>
+			<Description>TXT_KEY_EOMLEADER_TEMPEST</Description>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<CivilopediaTag>TXT_KEY_EOMLEADER_TEMPEST</CivilopediaTag>
+			<ArtDefineTag>Inca_Pachacuti_Scene.xml</ArtDefineTag>
+			<VictoryCompetitiveness>5</VictoryCompetitiveness>
+			<WonderCompetitiveness>5</WonderCompetitiveness>
+			<MinorCivCompetitiveness>5</MinorCivCompetitiveness>
+			<Boldness>5</Boldness>
+			<DiploBalance>5</DiploBalance>
+			<WarmongerHate>5</WarmongerHate>
+			<DenounceWillingness>5</DenounceWillingness>
+			<DoFWillingness>5</DoFWillingness>
+			<Loyalty>5</Loyalty>
+			<Neediness>5</Neediness>
+			<Forgiveness>5</Forgiveness>
+			<Chattiness>5</Chattiness>
+			<Meanness>5</Meanness>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>PACHACUTI_LEADER_ATLAS</IconAtlas>
+		</Row>
+	</Leaders>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMLEADER_TEMPEST">
+			<Text>Tempest</Text>
+		</Row>
+	</Language_en_US>
+	<Leader_Traits>
+		<Row>
+			<LeaderType>LEADER_TEMPEST</LeaderType>
+			<TraitType>TRAIT_WINDWALKERS</TraitType>
+		</Row>
+	</Leader_Traits>
+	<Traits>
+		<Row>
+			<Type>TRAIT_WINDWALKERS</Type>
+			<ShortDescription>TXT_KEY_EOMTRAIT_WINDWALKERS</ShortDescription>
+			<Description>TXT_KEY_EOMTRAIT_WINDWALKERS_DESC</Description>
+		</Row>
+	</Traits>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTRAIT_WINDWALKERS">
+			<Text>Feathered Feet</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_WINDWALKERS_DESC">
+			<Text>Description</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

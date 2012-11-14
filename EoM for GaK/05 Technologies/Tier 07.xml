@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 9/5/2012 6:56:29 PM -->
+<GameData>
+	<!-- SP1_07: IMPERIAL ROADS -->
+	<!-- Faster movement on Road -->
+	<Technologies>
+		<Row>
+			<Type>TECH_IMPERIAL_ROADS</Type>
+			<Cost>700</Cost>
+			<Description>TXT_KEY_EOMTECH_IMPERIAL_ROADS</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_MEDIEVAL</Era>
+			<Trade>true</Trade>
+			<GridX>7</GridX>
+			<GridY>-1</GridY>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_DLC_02</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_IMPERIAL_ROADS">
+			<Text>Imperial Roads</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_IMPERIAL_ROADS</TechType>
+			<PrereqTech>TECH_BRIDGE_BUILDING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_IMPERIAL_ROADS</TechType>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_IMPERIAL_ROADS</TechType>
+			<FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_IMPERIAL_ROADS</TechType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- SEA_07: COMPASS -->
+	<!-- U: Galleass -->
+	<!-- Fishing Boats +1 food -->
+	<Technologies>
+		<Row>
+			<Type>TECH_COMPASS</Type>
+			<Cost>700</Cost>
+			<Description>TXT_KEY_EOMTECH_COMPASS</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_MEDIEVAL</Era>
+			<Trade>true</Trade>
+			<GridX>7</GridX>
+			<GridY>1</GridY>
+			<PortraitIndex>23</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_COMPASS">
+			<Text>Compass</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_COMPASS</TechType>
+			<PrereqTech>TECH_SEAFARING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_COMPASS</TechType>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_COMPASS</TechType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_COMPASS</TechType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_COMPASS</TechType>
+			<FlavorType>FLAVOR_NAVAL_GROWTH</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- GOLD_07: BANKING -->
+	<!-- B: Bank -->
+	<!-- +1 Gold from Trading Post -->
+	<Technologies>
+		<Row>
+			<Type>TECH_BANKING</Type>
+			<Cost>700</Cost>
+			<Description>TXT_KEY_EOMTECH_BANKING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_MEDIEVAL</Era>
+			<Trade>true</Trade>
+			<GridX>7</GridX>
+			<GridY>2</GridY>
+			<PortraitIndex>31</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_BANKING">
+			<Text>Banking</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_BANKING</TechType>
+			<PrereqTech>TECH_TAXATION</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_BANKING</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- FOOD_07: FOOD PROCESSING -->
+	<!-- B: Food Depot, Butchery, Bakery -->
+	<!-- +1 Food from Town -->
+	<Technologies>
+		<Row>
+			<Type>TECH_FOOD_PROCESSING</Type>
+			<Cost>700</Cost>
+			<Description>TXT_KEY_EOMTECH_FOOD_PROCESSING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_MEDIEVAL</Era>
+			<Trade>true</Trade>
+			<GridX>7</GridX>
+			<GridY>3</GridY>
+			<PortraitIndex>41</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_FOOD_PROCESSING">
+			<Text>Food Processing</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_FOOD_PROCESSING</TechType>
+			<PrereqTech>TECH_NATURE_LORE</PrereqTech>
+			<!-- <EoM_ShowLine>1</EoM_ShowLine> -->
+		</Row>
+		<Row>
+			<TechType>TECH_FOOD_PROCESSING</TechType>
+			<PrereqTech>TECH_LOCAL_MARKETS</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_FOOD_PROCESSING</TechType>
+			<PrereqTech>TECH_DOMESTICATION</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_FOOD_PROCESSING</TechType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- ANIM_07: STIRRUP -->
+	<!-- U: Light Cavalry, Heavy Cavalry, Horse Archer -->
+	<!-- +1 food from Pasture (?) -->
+	<Technologies>
+		<Row>
+			<Type>TECH_STIRRUP</Type>
+			<Cost>700</Cost>
+			<Description>TXT_KEY_EOMTECH_STIRRUP</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_MEDIEVAL</Era>
+			<Trade>true</Trade>
+			<GridX>7</GridX>
+			<GridY>4</GridY>
+			<PortraitIndex>11</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_STIRRUP">
+			<Text>Stirrup</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_STIRRUP</TechType>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_STIRRUP</TechType>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_STIRRUP</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_STIRRUP</TechType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_STIRRUP</TechType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_STIRRUP</TechType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- SCI_07: ALCHEMY -->
+	<!-- B: Alchemy Lab -->
+	<Technologies>
+		<Row>
+			<Type>TECH_ALCHEMY</Type>
+			<Cost>700</Cost>
+			<Description>TXT_KEY_EOMTECH_ALCHEMY</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_MEDIEVAL</Era>
+			<Trade>true</Trade>
+			<GridX>7</GridX>
+			<GridY>5</GridY>
+			<PortraitIndex>37</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_ALCHEMY">
+			<Text>Alchemy</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_ALCHEMY</TechType>
+			<PrereqTech>TECH_NATURE_LORE</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_ALCHEMY</TechType>
+			<PrereqTech>TECH_MAGICAL_STUDIES</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_ALCHEMY</TechType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ALCHEMY</TechType>
+			<FlavorType>FLAVOR_MAGIC</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- METAL_07: METALLURGY -->
+	<!-- B: Armory -->
+	<!-- NW: Ironworks-->
+	<!-- R: Coal -->
+	<Technologies>
+		<Row>
+			<Type>TECH_METALLURGY</Type>
+			<Cost>700</Cost>
+			<Description>TXT_KEY_EOMTECH_METALLURGY</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_MEDIEVAL</Era>
+			<Trade>true</Trade>
+			<GridX>7</GridX>
+			<GridY>6</GridY>
+			<PortraitIndex>33</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_METALLURGY">
+			<Text>Metallurgy</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_METALLURGY</TechType>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_METALLURGY</TechType>
+			<PrereqTech>TECH_ENGINEERING</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_METALLURGY</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_METALLURGY</TechType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- PROD_07: MACHINERY -->
+	<!-- U: Crossbowman -->
+	<!-- B: Windmill, Watermill -->
+	<!-- +1 Production from Lumber Mill -->
+	<Technologies>
+		<Row>
+			<Type>TECH_MACHINERY</Type>
+			<Cost>700</Cost>
+			<Description>TXT_KEY_EOMTECH_MACHINERY</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_MEDIEVAL</Era>
+			<Trade>true</Trade>
+			<GridX>7</GridX>
+			<GridY>7</GridY>
+			<PortraitIndex>19</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_MACHINERY">
+			<Text>Machinery</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_MACHINERY</TechType>
+			<PrereqTech>TECH_BRIDGE_BUILDING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_MACHINERY</TechType>
+			<PrereqTech>TECH_METAL_CASTING</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_MACHINERY</TechType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_MACHINERY</TechType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_MACHINERY</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- CULT_07: PATRONAGE -->
+	<!-- B: Theatre, [Colosseum] -->
+	<!-- +1 Culture from Town -->
+	<Technologies>
+		<Row>
+			<Type>TECH_PATRONAGE</Type>
+			<Cost>700</Cost>
+			<Description>TXT_KEY_EOMTECH_PATRONAGE</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_MEDIEVAL</Era>
+			<Trade>true</Trade>
+			<GridX>7</GridX>
+			<GridY>8</GridY>
+			<PortraitIndex>4</PortraitIndex>
+			<IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_PATRONAGE">
+			<Text>Patronage</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_PATRONAGE</TechType>
+			<PrereqTech>TECH_FEUDALISM</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_PATRONAGE</TechType>
+			<PrereqTech>TECH_DRAMA</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_PATRONAGE</TechType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- SCI_07: EDUCATION -->
+	<!-- B: University -->
+	<!-- +1 Science from Town -->
+	<Technologies>
+		<Row>
+			<Type>TECH_EDUCATION</Type>
+			<Cost>700</Cost>
+			<Description>TXT_KEY_EOMTECH_EDUCATION</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_MEDIEVAL</Era>
+			<Trade>true</Trade>
+			<GridX>7</GridX>
+			<GridY>9</GridY>
+			<PortraitIndex>25</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_EDUCATION">
+			<Text>Education</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_EDUCATION</TechType>
+			<PrereqTech>TECH_SCHOLARSHIP</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_EDUCATION</TechType>
+			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_EDUCATION</TechType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- REL_07: THEOLOGY -->
+	<!-- B: Cathedral -->
+	<!-- U: High Priest -->
+	<Technologies>
+		<Row>
+			<Type>TECH_THEOLOGY</Type>
+			<Cost>700</Cost>
+			<Description>TXT_KEY_EOMTECH_THEOLOGY</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_MEDIEVAL</Era>
+			<Trade>true</Trade>
+			<GridX>7</GridX>
+			<GridY>10</GridY>
+			<PortraitIndex>14</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_2</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_THEOLOGY">
+			<Text>Theology</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_THEOLOGY</TechType>
+			<PrereqTech>TECH_MONASTICISM</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_THEOLOGY</TechType>
+			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_THEOLOGY</TechType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+</GameData>

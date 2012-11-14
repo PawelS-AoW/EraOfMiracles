@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 10/2/2012 2:03:38 AM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMSPEC_OFFICIAL">
+			<Text>Official</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMSPEC_OFFICIAL_SLOTS">
+			<Text>Official slots:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMSPEC_OFFICIAL_HELP">
+			<Text>[ICON_BULLET]+1 [ICON_PRODUCTION] Production.[NEWLINE][ICON_BULLET]+1 [ICON_GOLD] Gold.[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] Science.[NEWLINE][ICON_BULLET]+1 [ICON_CULTURE] Culture.[NEWLINE][ICON_BULLET]+2 [ICON_GREAT_PEOPLE] Pioneer points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMSPEC_NOBLE">
+			<Text>Noble</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMSPEC_NOBLE_SLOTS">
+			<Text>Noble slots:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMSPEC_NOBLE_HELP">
+			<Text>[ICON_BULLET]+2 [ICON_FOOD] Food.[NEWLINE][ICON_BULLET]+2 [ICON_CULTURE] Culture.[NEWLINE][ICON_BULLET]+2 [ICON_GREAT_PEOPLE] Pioneer points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMSPEC_COOK">
+			<Text>Cook</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMSPEC_COOK_SLOTS">
+			<Text>Cook slots:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMSPEC_COOK_HELP">
+			<Text>[ICON_BULLET]+2 [ICON_FOOD] Food.[NEWLINE][ICON_BULLET]+2 [ICON_GOLD] Gold.[NEWLINE][ICON_BULLET]+2 [ICON_GREAT_PEOPLE] Merchant points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMSPEC_FINANCIER">
+			<Text>Cook</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMSPEC_FINANCIER_SLOTS">
+			<Text>Financier slots:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMSPEC_FINANCIER_HELP">
+			<Text>[ICON_BULLET]+4 [ICON_GOLD] Gold.[NEWLINE][ICON_BULLET]+2 [ICON_GREAT_PEOPLE] Merchant points.</Text>
+		</Row>
+	</Language_en_US>
+	<Specialists>
+		<Row>
+			<ID>0</ID>
+			<Type>SPECIALIST_CITIZEN</Type>
+			<Description>TXT_KEY_SPECIALIST_CITIZEN</Description>
+			<Strategy>TXT_KEY_SPECIALIST_CITIZEN_STRATEGY</Strategy>
+			<Visible>true</Visible>
+			<IconAtlas>CITIZEN_ATLAS</IconAtlas>
+			<PortraitIndex>5</PortraitIndex>
+		</Row>
+		<Row>
+			<ID>1</ID>
+			<Type>SPECIALIST_ARTIST</Type>
+			<Description>TXT_KEY_SPECIALIST_ARTIST</Description>
+			<Strategy>TXT_KEY_SPECIALIST_ARTIST_STRATEGY</Strategy>
+			<GreatPeopleTitle>TXT_KEY_SPECIALIST_ARTIST_TITLE</GreatPeopleTitle>
+			<Visible>true</Visible>
+			<Cost>0</Cost>
+			<GreatPeopleUnitClass>UNITCLASS_ARTIST</GreatPeopleUnitClass>
+			<GreatPeopleRateChange>2</GreatPeopleRateChange>
+			<CulturePerTurn>2</CulturePerTurn>
+			<IconAtlas>CITIZEN_ATLAS</IconAtlas>
+			<PortraitIndex>4</PortraitIndex>
+		</Row>
+		<Row>
+			<ID>2</ID>
+			<Type>SPECIALIST_SCIENTIST</Type>
+			<Description>TXT_KEY_SPECIALIST_SCIENTIST</Description>
+			<Strategy>TXT_KEY_SPECIALIST_SCIENTIST_STRATEGY</Strategy>
+			<GreatPeopleTitle>TXT_KEY_SPECIALIST_SCIENTIST_TITLE</GreatPeopleTitle>
+			<Visible>true</Visible>
+			<Cost>0</Cost>
+			<GreatPeopleUnitClass>UNITCLASS_SCIENTIST</GreatPeopleUnitClass>
+			<GreatPeopleRateChange>2</GreatPeopleRateChange>
+			<IconAtlas>CITIZEN_ATLAS</IconAtlas>
+			<PortraitIndex>2</PortraitIndex>
+		</Row>
+		<Row>
+			<ID>3</ID>
+			<Type>SPECIALIST_MERCHANT</Type>
+			<Description>TXT_KEY_SPECIALIST_MERCHANT</Description>
+			<Strategy>TXT_KEY_SPECIALIST_MERCHANT_STRATEGY</Strategy>
+			<GreatPeopleTitle>TXT_KEY_SPECIALIST_MERCHANT_TITLE</GreatPeopleTitle>
+			<Visible>true</Visible>
+			<Cost>0</Cost>
+			<GreatPeopleUnitClass>UNITCLASS_MERCHANT</GreatPeopleUnitClass>
+			<GreatPeopleRateChange>2</GreatPeopleRateChange>
+			<IconAtlas>CITIZEN_ATLAS</IconAtlas>
+			<PortraitIndex>3</PortraitIndex>
+		</Row>
+		<Row>
+			<ID>4</ID>
+			<Type>SPECIALIST_ENGINEER</Type>
+			<Description>TXT_KEY_SPECIALIST_ENGINEER</Description>
+			<Strategy>TXT_KEY_SPECIALIST_ENGINEER_STRATEGY</Strategy>
+			<GreatPeopleTitle>TXT_KEY_SPECIALIST_ENGINEER_TITLE</GreatPeopleTitle>
+			<Visible>true</Visible>
+			<Cost>0</Cost>
+			<GreatPeopleUnitClass>UNITCLASS_ENGINEER</GreatPeopleUnitClass>
+			<GreatPeopleRateChange>2</GreatPeopleRateChange>
+			<IconAtlas>CITIZEN_ATLAS</IconAtlas>
+			<PortraitIndex>1</PortraitIndex>
+		</Row>
+		<Row>
+			<ID>5</ID>
+			<Type>SPECIALIST_OFFICIAL</Type>
+			<Description>TXT_KEY_EOMSPEC_OFFICIAL</Description>
+			<Help>TXT_KEY_EOMSPEC_OFFICIAL_HELP</Help>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<GreatPeopleTitle>TXT_KEY_EOMGP_PIONEER_POINTS</GreatPeopleTitle>
+			<Visible>true</Visible>
+			<Cost>0</Cost>
+			<GreatPeopleUnitClass>UNITCLASS_PIONEER</GreatPeopleUnitClass>
+			<GreatPeopleRateChange>2</GreatPeopleRateChange>
+			<IconAtlas>CITIZEN_ATLAS</IconAtlas>
+			<PortraitIndex>6</PortraitIndex>
+			<CulturePerTurn>1</CulturePerTurn>
+		</Row>
+		<Row>
+			<ID>6</ID>
+			<Type>SPECIALIST_NOBLE</Type>
+			<Description>TXT_KEY_EOMSPEC_NOBLE</Description>
+			<Help>TXT_KEY_EOMSPEC_NOBLE_HELP</Help>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<GreatPeopleTitle>TXT_KEY_EOMGP_PIONEER_POINTS</GreatPeopleTitle>
+			<Visible>true</Visible>
+			<Cost>0</Cost>
+			<GreatPeopleUnitClass>UNITCLASS_PIONEER</GreatPeopleUnitClass>
+			<GreatPeopleRateChange>2</GreatPeopleRateChange>
+			<IconAtlas>CITIZEN_ATLAS</IconAtlas>
+			<PortraitIndex>6</PortraitIndex>
+			<CulturePerTurn>2</CulturePerTurn>
+		</Row>
+		<Row>
+			<ID>7</ID>
+			<Type>SPECIALIST_COOK</Type>
+			<Description>TXT_KEY_EOMSPEC_COOK</Description>
+			<Help>TXT_KEY_EOMSPEC_COOK_HELP</Help>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<GreatPeopleTitle>TXT_KEY_EOMGP_MERCHANT_POINTS</GreatPeopleTitle>
+			<Visible>true</Visible>
+			<Cost>0</Cost>
+			<GreatPeopleUnitClass>UNITCLASS_MERCHANT</GreatPeopleUnitClass>
+			<GreatPeopleRateChange>2</GreatPeopleRateChange>
+			<IconAtlas>CITIZEN_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+		<Row>
+			<ID>8</ID>
+			<Type>SPECIALIST_FINANCIER</Type>
+			<Description>TXT_KEY_EOMSPEC_FINANCIER</Description>
+			<Help>TXT_KEY_EOMSPEC_FINANCIER_HELP</Help>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<GreatPeopleTitle>TXT_KEY_EOMGP_MERCHANT_POINTS</GreatPeopleTitle>
+			<Visible>true</Visible>
+			<Cost>0</Cost>
+			<GreatPeopleUnitClass>UNITCLASS_MERCHANT</GreatPeopleUnitClass>
+			<GreatPeopleRateChange>2</GreatPeopleRateChange>
+			<IconAtlas>CITIZEN_ATLAS</IconAtlas>
+			<PortraitIndex>3</PortraitIndex>
+		</Row>
+	</Specialists>
+	<SpecialistYields>
+		<Row>
+			<SpecialistType>SPECIALIST_CITIZEN</SpecialistType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>4</Yield>
+		</Row>
+		<Row>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>4</Yield>
+		</Row>
+		<Row>
+			<SpecialistType>SPECIALIST_OFFICIAL</SpecialistType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<SpecialistType>SPECIALIST_OFFICIAL</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<SpecialistType>SPECIALIST_OFFICIAL</SpecialistType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<SpecialistType>SPECIALIST_NOBLE</SpecialistType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<SpecialistType>SPECIALIST_COOK</SpecialistType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<SpecialistType>SPECIALIST_COOK</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<SpecialistType>SPECIALIST_FINANCIER</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>4</Yield>
+		</Row>
+	</SpecialistYields>
+</GameData>

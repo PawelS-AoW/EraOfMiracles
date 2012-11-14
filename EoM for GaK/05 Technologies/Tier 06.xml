@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 9/5/2012 2:33:19 AM -->
+<GameData>
+	<!-- SP2_06: WAR ELEPHANTS I -->
+	<!-- U: Elephant Rider -->
+	<!-- B: ??? -->
+	<Technologies>
+		<Row>
+			<Type>TECH_WAR_ELEPHANTS_1</Type>
+			<Cost>600</Cost>
+			<Description>TXT_KEY_EOMTECH_WAR_ELEPHANTS_1</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>6</GridX>
+			<GridY>0</GridY>
+			<PortraitIndex>11</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_WAR_ELEPHANTS_1">
+			<Text>War Elephants I</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_WAR_ELEPHANTS_1</TechType>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_WAR_ELEPHANTS_1</TechType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_WAR_ELEPHANTS_1</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- SEA_06: SEAFARING -->
+	<!-- B: Lighthouse -->
+	<!-- Embarked +1 -->
+	<Technologies>
+		<Row>
+			<Type>TECH_SEAFARING</Type>
+			<Cost>600</Cost>
+			<Description>TXT_KEY_EOMTECH_SEAFARING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>6</GridX>
+			<GridY>1</GridY>
+			<PortraitIndex>3</PortraitIndex>
+			<IconAtlas>EXPANSION_SCEN_TECH_ATLAS</IconAtlas>
+			<EmbarkedMoveChange>1</EmbarkedMoveChange>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_SEAFARING">
+			<Text>Seafaring</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_SEAFARING</TechType>
+			<PrereqTech>TECH_SHIP_BUILDING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_SEAFARING</TechType>
+			<PrereqTech>TECH_CALENDAR</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_SEAFARING</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_SEAFARING</TechType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- GOLD_06: TAXATION -->
+	<!-- B: Tax Collector -->
+	<!-- +2 Gold from Village -->
+	<Technologies>
+		<Row>
+			<Type>TECH_TAXATION</Type>
+			<Cost>600</Cost>
+			<Description>TXT_KEY_EOMTECH_TAXATION</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>6</GridX>
+			<GridY>2</GridY>
+			<PortraitIndex>31</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_TAXATION">
+			<Text>Taxation</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_TAXATION</TechType>
+			<PrereqTech>TECH_COINAGE</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_TAXATION</TechType>
+			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_TAXATION</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- FOOD_06: NATURE LORE -->
+	<!-- B: Herbalist -->
+	<!-- Reveals Reagents -->
+	<!-- +1 Food from Plantation -->
+	<Technologies>
+		<Row>
+			<Type>TECH_NATURE_LORE</Type>
+			<Cost>600</Cost>
+			<Description>TXT_KEY_EOMTECH_NATURE_LORE</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>6</GridX>
+			<GridY>5</GridY>
+			<PortraitIndex>38</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_NATURE_LORE">
+			<Text>Nature Lore</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_NATURE_LORE</TechType>
+			<PrereqTech>TECH_IRRIGATION</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_NATURE_LORE</TechType>
+			<PrereqTech>TECH_FORESTRY</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_NATURE_LORE</TechType>
+			<FlavorType>FLAVOR_NATURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- METAL_06: IRON WORKING -->
+	<!-- U: Swordsman -->
+	<!-- R: Iron -->
+	<!-- Remove Jungle -->
+	<Technologies>
+		<Row>
+			<Type>TECH_IRON_WORKING</Type>
+			<Cost>600</Cost>
+			<Description>TXT_KEY_EOMTECH_IRON_WORKING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>6</GridX>
+			<GridY>6</GridY>
+			<PortraitIndex>10</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_IRON_WORKING">
+			<Text>Iron Working</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_IRON_WORKING</TechType>
+			<PrereqTech>TECH_METAL_CASTING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_IRON_WORKING</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_IRON_WORKING</TechType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_IRON_WORKING</TechType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- PROD_06: BRIDGE BUILDING -->
+	<!-- B: Aqueduct, Moat -->
+	<!-- Allows Bridges -->
+	<Technologies>
+		<Row>
+			<Type>TECH_BRIDGE_BUILDING</Type>
+			<Cost>600</Cost>
+			<Description>TXT_KEY_EOMTECH_BRIDGE_BUILDING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>6</GridX>
+			<GridY>7</GridY>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>SHARED_TECH_ATLAS</IconAtlas>
+			<BridgeBuilding>true</BridgeBuilding>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_BRIDGE_BUILDING">
+			<Text>Bridge Building</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_BRIDGE_BUILDING</TechType>
+			<PrereqTech>TECH_ENGINEERING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_BRIDGE_BUILDING</TechType>
+			<PrereqTech>TECH_IRRIGATION</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_BRIDGE_BUILDING</TechType>
+			<FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_BRIDGE_BUILDING</TechType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_BRIDGE_BUILDING</TechType>
+			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- CULT_06: FEUDALISM -->
+	<!-- U: Militia -->
+	<!-- B: Mansion -->
+	<Technologies>
+		<Row>
+			<Type>TECH_FEUDALISM</Type>
+			<Cost>600</Cost>
+			<Description>TXT_KEY_EOMTECH_FEUDALISM</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>6</GridX>
+			<GridY>8</GridY>
+			<PortraitIndex>27</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_FEUDALISM">
+			<Text>Feudalism</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_FEUDALISM</TechType>
+			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_FEUDALISM</TechType>
+			<PrereqTech>TECH_TEMPLE_BUILDING</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_FEUDALISM</TechType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_FEUDALISM</TechType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_FEUDALISM</TechType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- SCI_06: SCHOLARSHIP -->
+	<!-- B: Academy -->
+	<!-- P: Research-->
+	<Technologies>
+		<Row>
+			<Type>TECH_SCHOLARSHIP</Type>
+			<Cost>600</Cost>
+			<Description>TXT_KEY_EOMTECH_SCHOLARSHIP</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>6</GridX>
+			<GridY>9</GridY>
+			<PortraitIndex>12</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_SCHOLARSHIP">
+			<Text>Scholarship</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_SCHOLARSHIP</TechType>
+			<PrereqTech>TECH_MAGICAL_STUDIES</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_SCHOLARSHIP</TechType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- REL_06: MONASTICISM -->
+	<!-- B: Monastery -->
+	<!-- ??? -->
+	<Technologies>
+		<Row>
+			<Type>TECH_MONASTICISM</Type>
+			<Cost>600</Cost>
+			<Description>TXT_KEY_EOMTECH_MONASTICISM</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>6</GridX>
+			<GridY>10</GridY>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_MONASTICISM">
+			<Text>Monasticism</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_MONASTICISM</TechType>
+			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_MONASTICISM</TechType>
+			<PrereqTech>TECH_WRITING</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_MONASTICISM</TechType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+</GameData>

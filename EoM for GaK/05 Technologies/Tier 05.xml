@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 9/4/2012 3:37:14 PM -->
+<GameData>
+	<!-- SEA_05: SHIP BUILDING -->
+	<!-- B: Shipyard -->
+	<!-- U: Trireme -->
+	<Technologies>
+		<Row>
+			<Type>TECH_SHIP_BUILDING</Type>
+			<Cost>500</Cost>
+			<Description>TXT_KEY_EOMTECH_SHIP_BUILDING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>5</GridX>
+			<GridY>1</GridY>
+			<PortraitIndex>13</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_SHIP_BUILDING">
+			<Text>Ship Building</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_SHIP_BUILDING</TechType>
+			<PrereqTech>TECH_SEA_LORE</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_SHIP_BUILDING</TechType>
+			<PrereqTech>TECH_CARPENTRY</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_SHIP_BUILDING</TechType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- GOLD_05: COINAGE -->
+	<!-- B: Mint, Tavern -->
+	<Technologies>
+		<Row>
+			<Type>TECH_COINAGE</Type>
+			<Cost>500</Cost>
+			<Description>TXT_KEY_EOMTECH_COINAGE</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>5</GridX>
+			<GridY>2</GridY>
+			<PortraitIndex>17</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_COINAGE">
+			<Text>Coinage</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_COINAGE</TechType>
+			<PrereqTech>TECH_LOCAL_MARKETS</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_COINAGE</TechType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_COINAGE</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_COINAGE</TechType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_COINAGE</TechType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- FOOD_05: IRRIGATION -->
+	<!-- +1 Food from fresh water Farm -->
+	<!-- Clear a Marsh -->
+	<Technologies>
+		<Row>
+			<Type>TECH_IRRIGATION</Type>
+			<Cost>500</Cost>
+			<Description>TXT_KEY_EOMTECH_IRRIGATION</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>5</GridX>
+			<GridY>3</GridY>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_IRRIGATION">
+			<Text>Irrigation</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_IRRIGATION</TechType>
+			<PrereqTech>TECH_CALENDAR</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_IRRIGATION</TechType>
+			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_IRRIGATION</TechType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- ANIM_05: HORSEBACK RIDING -->
+	<!-- U: Horseman -->
+	<!-- B: Stable -->
+	<Technologies>
+		<Row>
+			<Type>TECH_HORSEBACK_RIDING</Type>
+			<Cost>500</Cost>
+			<Description>TXT_KEY_EOMTECH_HORSEBACK_RIDING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>5</GridX>
+			<GridY>4</GridY>
+			<PortraitIndex>11</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_HORSEBACK_RIDING">
+			<Text>Horseback Riding</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_HORSEBACK_RIDING</TechType>
+			<PrereqTech>TECH_CHARIOTRY</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_HORSEBACK_RIDING</TechType>
+			<PrereqTech>TECH_TRADE</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_HORSEBACK_RIDING</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_HORSEBACK_RIDING</TechType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_HORSEBACK_RIDING</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_HORSEBACK_RIDING</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- MISC_05: FORESTRY -->
+	<!-- U: Ranger -->
+	<!-- B: Forester's Lodge -->
+	<!-- +1 Production from Camp -->
+	<Technologies>
+		<Row>
+			<Type>TECH_FORESTRY</Type>
+			<Cost>500</Cost>
+			<Description>TXT_KEY_EOMTECH_FORESTRY</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>5</GridX>
+			<GridY>5</GridY>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_FORESTRY">
+			<Text>Forestry</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_FORESTRY</TechType>
+			<PrereqTech>TECH_CALENDAR</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_FORESTRY</TechType>
+			<PrereqTech>TECH_CARPENTRY</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_FORESTRY</TechType>
+			<FlavorType>FLAVOR_NATURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- METAL_05: METAL CASTING -->
+	<!-- U: Axeman -->
+	<!-- B: Forge, Jeweler -->
+	<Technologies>
+		<Row>
+			<Type>TECH_METAL_CASTING</Type>
+			<Cost>500</Cost>
+			<Description>TXT_KEY_EOMTECH_METAL_CASTING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>5</GridX>
+			<GridY>6</GridY>
+			<PortraitIndex>14</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_METAL_CASTING">
+			<Text>Metal Casting</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_METAL_CASTING</TechType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_METAL_CASTING</TechType>
+			<PrereqTech>TECH_POTTERY</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_METAL_CASTING</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_METAL_CASTING</TechType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_METAL_CASTING</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_METAL_CASTING</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_METAL_CASTING</TechType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- PROD_05: ENGINEERING -->
+	<!-- B: Castle, Siege Workshop -->
+	<!-- U: Ballista, Catapult -->
+	<Technologies>
+		<Row>
+			<Type>TECH_ENGINEERING</Type>
+			<Cost>500</Cost>
+			<Description>TXT_KEY_EOMTECH_ENGINEERING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>5</GridX>
+			<GridY>7</GridY>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_ENGINEERING">
+			<Text>Engineering</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_ENGINEERING</TechType>
+			<PrereqTech>TECH_CARPENTRY</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_ENGINEERING</TechType>
+			<PrereqTech>TECH_WRITING</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_ENGINEERING</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ENGINEERING</TechType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ENGINEERING</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ENGINEERING</TechType>
+			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- CULT_05: CODE OF LAWS -->
+	<!-- B: Courthouse -->
+	<!-- D: Open Borders -->
+	<Technologies>
+		<Row>
+			<Type>TECH_CODE_OF_LAWS</Type>
+			<Cost>500</Cost>
+			<Description>TXT_KEY_EOMTECH_CODE_OF_LAWS</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>5</GridX>
+			<GridY>8</GridY>
+			<PortraitIndex>35</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<OpenBordersTradingAllowed>true</OpenBordersTradingAllowed>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_CODE_OF_LAWS">
+			<Text>Code of Laws</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_CODE_OF_LAWS</TechType>
+			<PrereqTech>TECH_WRITING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_CODE_OF_LAWS</TechType>
+			<PrereqTech>TECH_TRADE</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_CODE_OF_LAWS</TechType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_CODE_OF_LAWS</TechType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_CODE_OF_LAWS</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_CODE_OF_LAWS</TechType>
+			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- MAG_05: MAGICAL STUDIES -->
+	<!-- U: Mage -->
+	<!-- B: Magic School (?) -->
+	<!-- R: Magical Power -->
+	<Technologies>
+		<Row>
+			<Type>TECH_MAGICAL_STUDIES</Type>
+			<Cost>500</Cost>
+			<Description>TXT_KEY_EOMTECH_MAGICAL_STUDIES</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>5</GridX>
+			<GridY>9</GridY>
+			<PortraitIndex>9</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_2</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_MAGICAL_STUDIES">
+			<Text>Magical Studies</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_MAGICAL_STUDIES</TechType>
+			<PrereqTech>TECH_WRITING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_MAGICAL_STUDIES</TechType>
+			<PrereqTech>TECH_CALENDAR</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_MAGICAL_STUDIES</TechType>
+			<FlavorType>FLAVOR_MAGIC</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- REL_05: PRIESTHOOD -->
+	<!-- U: Priest -->
+	<!-- ... -->
+	<Technologies>
+		<Row>
+			<Type>TECH_PRIESTHOOD</Type>
+			<Cost>500</Cost>
+			<Description>TXT_KEY_EOMTECH_PRIESTHOOD</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_CLASSICAL</Era>
+			<Trade>true</Trade>
+			<GridX>5</GridX>
+			<GridY>10</GridY>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_PRIESTHOOD">
+			<Text>Priesthood</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_PRIESTHOOD</TechType>
+			<PrereqTech>TECH_TEMPLE_BUILDING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_PRIESTHOOD</TechType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+</GameData>

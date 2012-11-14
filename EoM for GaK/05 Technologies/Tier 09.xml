@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 9/14/2012 8:49:29 PM -->
+<GameData>
+	<!-- SP1_09: SKY SAILING -->
+	<!-- U: Air Galley -->
+	<Technologies>
+		<Row>
+			<Type>TECH_SKY_SAILING</Type>
+			<Cost>900</Cost>
+			<Description>TXT_KEY_EOMTECH_SKY_SAILING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_MEDIEVAL</Era>
+			<Trade>true</Trade>
+			<GridX>9</GridX>
+			<GridY>-1</GridY>
+			<PortraitIndex>13</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_SKY_SAILING">
+			<Text>Sky Sailing</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_SKY_SAILING</TechType>
+			<PrereqTech>TECH_OPTICS</PrereqTech>
+			<EoM_ShowLine>true</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_SKY_SAILING</TechType>
+			<PrereqTech>TECH_ADVANCED_MACHINES</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_SKY_SAILING</TechType>
+			<FlavorType>FLAVOR_AIR</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- SEA_09: ASTRONOMY -->
+	<!-- B: Observatory -->
+	<!-- U: Galleon -->
+	<!-- all water embarkation -->
+	<Technologies>
+		<Row>
+			<Type>TECH_ASTRONOMY</Type>
+			<Cost>900</Cost>
+			<Description>TXT_KEY_EOMTECH_ASTRONOMY</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_MEDIEVAL</Era>
+			<Trade>true</Trade>
+			<GridX>9</GridX>
+			<GridY>1</GridY>
+			<PortraitIndex>34</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<EmbarkedAllWaterPassage>true</EmbarkedAllWaterPassage>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_ASTRONOMY">
+			<Text>Astronomy</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_ASTRONOMY</TechType>
+			<PrereqTech>TECH_OPTICS</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_ASTRONOMY</TechType>
+			<PrereqTech>TECH_EDUCATION</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_ASTRONOMY</TechType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ASTRONOMY</TechType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ASTRONOMY</TechType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- GOLD?_09: CHIVALRY -->
+	<!-- U: Knight, (Paladin) -->
+	<!-- ??? -->
+	<Technologies>
+		<Row>
+			<Type>TECH_CHIVALRY</Type>
+			<Cost>900</Cost>
+			<Description>TXT_KEY_EOMTECH_CHIVALRY</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_MEDIEVAL</Era>
+			<Trade>true</Trade>
+			<GridX>9</GridX>
+			<GridY>2</GridY>
+			<PortraitIndex>27</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_CHIVALRY">
+			<Text>Chivalry</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_CHIVALRY</TechType>
+			<PrereqTech>TECH_UPPER_CLASS</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_CHIVALRY</TechType>
+			<PrereqTech>TECH_STIRRUP</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_CHIVALRY</TechType>
+			<PrereqTech>TECH_STEEL</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_CHIVALRY</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_CHIVALRY</TechType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- FOOD?_09: INDUSTRIALISM -->
+	<!-- B: Factory, Refinery -->
+	<!-- I: Well (move to Manufacturing?), Offshore Platform -->
+	<Technologies>
+		<Row>
+			<Type>TECH_INDUSTRIALISM</Type>
+			<Cost>900</Cost>
+			<Description>TXT_KEY_EOMTECH_INDUSTRIALISM</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_MEDIEVAL</Era>
+			<Trade>true</Trade>
+			<GridX>9</GridX>
+			<GridY>3</GridY>
+			<PortraitIndex>5</PortraitIndex>
+			<IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_INDUSTRIALISM">
+			<Text>Industrialism</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_INDUSTRIALISM</TechType>
+			<PrereqTech>TECH_MANUFACTURING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_INDUSTRIALISM</TechType>
+			<PrereqTech>TECH_ADVANCED_MACHINES</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_INDUSTRIALISM</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- ANIM_09: WAR HORSES -->
+	<!-- U: Lancer, Heavy Horse Archer -->
+	<Technologies>
+		<Row>
+			<Type>TECH_WAR_HORSES</Type>
+			<Cost>900</Cost>
+			<Description>TXT_KEY_EOMTECH_WAR_HORSES</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_MEDIEVAL</Era>
+			<Trade>true</Trade>
+			<GridX>9</GridX>
+			<GridY>4</GridY>
+			<PortraitIndex>11</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_WAR_HORSES">
+			<Text>War Horses</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_WAR_HORSES</TechType>
+			<PrereqTech>TECH_MILITARY_SCIENCE</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_WAR_HORSES</TechType>
+			<PrereqTech>TECH_STIRRUP</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_WAR_HORSES</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_WAR_HORSES</TechType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_WAR_HORSES</TechType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- METAL_09: DEEP MINING -->
+	<!-- R: Mithril -->
+	<!-- +1 Production from Mine -->
+	<Technologies>
+		<Row>
+			<Type>TECH_DEEP_MINING</Type>
+			<Cost>900</Cost>
+			<Description>TXT_KEY_EOMTECH_DEEP_MINING</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_MEDIEVAL</Era>
+			<Trade>true</Trade>
+			<GridX>9</GridX>
+			<GridY>6</GridY>
+			<PortraitIndex>1</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_DEEP_MINING">
+			<Text>Deep Mining</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_DEEP_MINING</TechType>
+			<PrereqTech>TECH_STEEL</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_DEEP_MINING</TechType>
+			<PrereqTech>TECH_ADVANCED_MACHINES</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_DEEP_MINING</TechType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+</GameData>

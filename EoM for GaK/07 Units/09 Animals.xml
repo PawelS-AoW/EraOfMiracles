@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 11/13/2012 11:48:19 PM -->
+<GameData>
+	<!-- WOLF -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_WOLF</Type>
+			<Description>TXT_KEY_EOMUNIT_WOLF</Description>
+			<DefaultUnit>UNIT_WOLF</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_WOLF</Class>
+			<Type>UNIT_WOLF</Type>
+			<!-- <PrereqTech>...</PrereqTech> -->
+			<!-- <ObsoleteTech>...</ObsoleteTech> -->
+			<Combat>4</Combat>
+			<Cost>50</Cost>
+			<ExtraMaintenanceCost>2</ExtraMaintenanceCost>
+			<Moves>3</Moves>
+			<CombatClass>UNITCOMBAT_ARMOR</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_FAST_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_WOLF</Description>
+			<Help>TXT_KEY_EOMUNIT_WOLF_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<UnitArtInfo>ART_DEF_UNIT_EOM_WOLF</UnitArtInfo>
+			<UnitFlagAtlas>AGE_OF_EVOLUTION_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>0</UnitFlagIconOffset>
+			<IconAtlas>AGE_OF_EVOLUTION_UNIT_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_WOLF">
+			<Text>Wolf</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_WOLF_HELP">
+			<Text>[ICON_BULLET]Animal Unit.[NEWLINE][ICON_BULLET]-50% [ICON_STRENGTH] Strength when attacking cities.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- <Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_WOLF</UnitType>
+			<UnitClassType>...</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades> -->
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_WOLF</UnitType>
+			<PromotionType>PROMOTION_CITY_MINUS_50</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_WOLF</UnitType>
+			<UnitAIType>UNITAI_EXPLORE</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WOLF</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WOLF</UnitType>
+			<UnitAIType>UNITAI_FAST_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WOLF</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_WOLF</UnitType>
+			<FlavorType>FLAVOR_RECON</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WOLF</UnitType>
+			<FlavorType>FLAVOR_ATTACK</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WOLF</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx - new definition -->
+</GameData>

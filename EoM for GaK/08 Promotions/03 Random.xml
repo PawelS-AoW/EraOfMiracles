@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 9/23/2012 4:47:54 PM -->
+<GameData>
+	<!-- SKILLED -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_SKILLED</Type>
+			<Description>TXT_KEY_EOMPROM_SKILLED</Description>
+			<Help>TXT_KEY_EOMPROM_SKILLED_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>16</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_SKILLED</PediaEntry>
+			<CombatPercent>5</CombatPercent>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_SKILLED">
+			<Text>Skilled</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_SKILLED_HELP">
+			<Text>[ICON_BULLET]+5% [ICON_STRENGTH] Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- STRONG -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_STRONG</Type>
+			<Description>TXT_KEY_EOMPROM_STRONG</Description>
+			<Help>TXT_KEY_EOMPROM_STRONG_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>16</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_STRONG</PediaEntry>
+			<AttackMod>10</AttackMod>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_STRONG">
+			<Text>Strong</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_STRONG_HELP">
+			<Text>[ICON_BULLET]+10% Attack Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- RESILIENT -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_RESILIENT</Type>
+			<Description>TXT_KEY_EOMPROM_RESILIENT</Description>
+			<Help>TXT_KEY_EOMPROM_RESILIENT_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>16</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_RESILIENT</PediaEntry>
+			<DefenseMod>10</DefenseMod>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_RESILIENT">
+			<Text>Resilient</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_RESILIENT_HELP">
+			<Text>[ICON_BULLET]+10% Defense Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- HEALTHY -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_HEALTHY</Type>
+			<Description>TXT_KEY_EOMPROM_HEALTHY</Description>
+			<Help>TXT_KEY_EOMPROM_HEALTHY_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>16</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_HEALTHY</PediaEntry>
+			<EnemyHealChange>2</EnemyHealChange>
+			<NeutralHealChange>2</NeutralHealChange>
+			<FriendlyHealChange>2</FriendlyHealChange>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_HEALTHY">
+			<Text>Healthy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_HEALTHY_HELP">
+			<Text>[ICON_BULLET]Heals +2 HP per turn.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- COOPERATIVE -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_COOPERATIVE</Type>
+			<Description>TXT_KEY_EOMPROM_COOPERATIVE</Description>
+			<Help>TXT_KEY_EOMPROM_COOPERATIVE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>16</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_COOPERATIVE</PediaEntry>
+			<AdjacentMod>10</AdjacentMod>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_COOPERATIVE">
+			<Text>Cooperative</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_COOPERATIVE_HELP">
+			<Text>[ICON_BULLET]+10% [ICON_STRENGTH] Strength when adjacent to a friendly unit.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- HEALER SKILLS -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_HEALER_SKILLS</Type>
+			<Description>TXT_KEY_EOMPROM_HEALER_SKILLS</Description>
+			<Help>TXT_KEY_EOMPROM_HEALER_SKILLS_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>16</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_HEALER_SKILLS</PediaEntry>
+			<AdjacentTileHealChange>2</AdjacentTileHealChange>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_HEALER_SKILLS">
+			<Text>Healer Skills</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_HEALER_SKILLS_HELP">
+			<Text>[ICON_BULLET]Adjacent units heal +2 HP per turn.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- ROBBER SKILLS -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ROBBER_SKILLS</Type>
+			<Description>TXT_KEY_EOMPROM_ROBBER_SKILLS</Description>
+			<Help>TXT_KEY_EOMPROM_ROBBER_SKILLS_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>16</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_ROBBER_SKILLS</PediaEntry>
+			<HPHealedIfDestroyEnemy>10</HPHealedIfDestroyEnemy>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_ROBBER_SKILLS">
+			<Text>Robber Skills</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_ROBBER_SKILLS_HELP">
+			<Text>[ICON_BULLET]Heals +10 HP after killing an enemy unit.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- HIGHLANDER -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_HIGHLANDER</Type>
+			<Description>TXT_KEY_EOMPROM_HIGHLANDER</Description>
+			<Help>TXT_KEY_EOMPROM_HIGHLANDER_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>16</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_HIGHLANDER</PediaEntry>
+			<HillsAttack>15</HillsAttack>
+			<HillsDefense>15</HillsDefense>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_HIGHLANDER">
+			<Text>Highlander</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_HIGHLANDER_HELP">
+			<Text>[ICON_BULLET]+15% [ICON_STRENGTH] Strength in Hills.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- LOWLANDER -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_LOWLANDER</Type>
+			<Description>TXT_KEY_EOMPROM_LOWLANDER</Description>
+			<Help>TXT_KEY_EOMPROM_LOWLANDER_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>16</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_LOWLANDER</PediaEntry>
+			<OpenAttack>10</OpenAttack>
+			<OpenDefense>10</OpenDefense>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_LOWLANDER">
+			<Text>Lowlander</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_LOWLANDER_HELP">
+			<Text>[ICON_BULLET]+10% [ICON_STRENGTH] Strength in open terrain.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- WOODLANDER -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_WOODLANDER</Type>
+			<Description>TXT_KEY_EOMPROM_WOODLANDER</Description>
+			<Help>TXT_KEY_EOMPROM_WOODLANDER_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>16</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_WOODLANDER</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Features>
+		<Row>
+			<PromotionType>PROMOTION_WOODLANDER</PromotionType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<Attack>15</Attack>
+			<Defense>15</Defense>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_WOODLANDER</PromotionType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<Attack>15</Attack>
+			<Defense>15</Defense>
+		</Row>
+	</UnitPromotions_Features>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_WOODLANDER">
+			<Text>Woodlander</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_WOODLANDER_HELP">
+			<Text>[ICON_BULLET]+15% [ICON_STRENGTH] Strength in Forest and Jungle.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

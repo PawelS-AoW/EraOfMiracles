@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 6/14/2012 12:09:53 AM -->
+<GameData>
+	<!-- NO MELEE ATTACK -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_NO_MELEE</Type>
+			<Description>TXT_KEY_EOMPROM_NO_MELEE</Description>
+			<Help>TXT_KEY_EOMPROM_NO_MELEE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>57</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_NO_MELEE</PediaEntry>
+			<OnlyDefensive>true</OnlyDefensive>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_NO_MELEE">
+			<Text>No Melee Attack</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_NO_MELEE_HELP">
+			<Text>[ICON_BULLET]The unit can't perform melee attacks.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- SLOW SETUP -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_SLOW_SETUP</Type>
+			<Description>TXT_KEY_EOMPROM_SLOW_SETUP</Description>
+			<Help>TXT_KEY_EOMPROM_SLOW_SETUP_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>57</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_SLOW_SETUP</PediaEntry>
+			<MustSetUpToRangedAttack>true</MustSetUpToRangedAttack>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_SLOW_SETUP">
+			<Text>Slow Setup</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_SLOW_SETUP_HELP">
+			<Text>[ICON_BULLET]The unit must set up (which costs one movement point) before performing ranged attacks.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- NO DEFENSIVE TERRAIN BONUSES -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_NO_DTB</Type>
+			<Description>TXT_KEY_EOMPROM_NO_DTB</Description>
+			<Help>TXT_KEY_EOMPROM_NO_DTB_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>57</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_NO_DTB</PediaEntry>
+			<NoDefensiveBonus>true</NoDefensiveBonus>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_NO_DTB">
+			<Text>No Defensive Terrain Bonuses</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_NO_DTB_HELP">
+			<Text>[ICON_BULLET]The unit doesn't get defensive bonuses from terrain and cannot fortify.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- HIT AND RUN -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_HIT_AND_RUN</Type>
+			<Description>TXT_KEY_EOMPROM_HIT_AND_RUN</Description>
+			<Help>TXT_KEY_EOMPROM_HIT_AND_RUN_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_HIT_AND_RUN</PediaEntry>
+			<CanMoveAfterAttacking>true</CanMoveAfterAttacking>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_HIT_AND_RUN">
+			<Text>Hit and Run</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_HIT_AND_RUN_HELP">
+			<Text>[ICON_BULLET]The unit can move after attacking.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- CHARIOT -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_CHARIOT</Type>
+			<Description>TXT_KEY_EOMPROM_CHARIOT</Description>
+			<Help>TXT_KEY_EOMPROM_CHARIOT_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>57</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_CHARIOT</PediaEntry>
+			<RoughTerrainEndsTurn>true</RoughTerrainEndsTurn>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_CHARIOT">
+			<Text>Chariot</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_CHARIOT_HELP">
+			<Text>[ICON_BULLET]Entering rough terrain consumes all movement.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- COASTAL SHIP -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_COASTAL_SHIP</Type>
+			<Description>TXT_KEY_EOMPROM_COASTAL_SHIP</Description>
+			<Help>TXT_KEY_EOMPROM_COASTAL_SHIP_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>57</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_COASTAL_SHIP</PediaEntry>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Terrains>
+		<Row>
+			<PromotionType>PROMOTION_COASTAL_SHIP</PromotionType>
+			<TerrainType>TERRAIN_OCEAN</TerrainType>
+			<Impassable>true</Impassable>
+		</Row>
+	</UnitPromotions_Terrains>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_COASTAL_SHIP">
+			<Text>Coastal Ship</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_COASTAL_SHIP_HELP">
+			<Text>[ICON_BULLET]The unit can't enter Ocean, except inside your cultural borders.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- REDUCED VISION -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_REDUCED_VISION</Type>
+			<Description>TXT_KEY_EOMPROM_REDUCED_VISION</Description>
+			<Help>TXT_KEY_EOMPROM_REDUCED_VISION_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>57</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_REDUCED_VISION</PediaEntry>
+			<VisibilityChange>-1</VisibilityChange>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_REDUCED_VISION">
+			<Text>Reduced Vision</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_REDUCED_VISION_HELP">
+			<Text>[ICON_BULLET]-1 Sight Range.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- VISION I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_VISION_I</Type>
+			<Description>TXT_KEY_EOMPROM_VISION_I</Description>
+			<Help>TXT_KEY_EOMPROM_VISION_I_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_VISION_I</PediaEntry>
+			<VisibilityChange>1</VisibilityChange>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_VISION_I">
+			<Text>Vision I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_VISION_I_HELP">
+			<Text>[ICON_BULLET]+1 Sight Range.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- EMBARKED VISION -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_EMBARKED_VISION</Type>
+			<Description>TXT_KEY_EOMPROM_EMBARKED_VISION</Description>
+			<Help>TXT_KEY_EOMPROM_EMBARKED_VISION_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_EMBARKED_VISION</PediaEntry>
+			<EmbarkExtraVisibility>2</EmbarkExtraVisibility>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_EMBARKED_VISION">
+			<Text>Embarked Vision</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_EMBARKED_VISION_HELP">
+			<Text>[ICON_BULLET]+2 Sight Range while embarked.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- -50% CITY ATTACK-->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_CITY_MINUS_50</Type>
+			<Description>TXT_KEY_EOMPROM_CITY_MINUS_50</Description>
+			<Help>TXT_KEY_EOMPROM_CITY_MINUS_50_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>57</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_CITY_MINUS_50</PediaEntry>
+			<CityAttack>-50</CityAttack>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_CITY_MINUS_50">
+			<Text>-50% City Attack</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_CITY_MINUS_50_HELP">
+			<Text>[ICON_BULLET]-50% [ICON_STRENGTH] Strength when attacking cities.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- -25% CITY ATTACK-->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_CITY_MINUS_25</Type>
+			<Description>TXT_KEY_EOMPROM_CITY_MINUS_25</Description>
+			<Help>TXT_KEY_EOMPROM_CITY_MINUS_25_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>57</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_CITY_MINUS_25</PediaEntry>
+			<CityAttack>-25</CityAttack>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_CITY_MINUS_25">
+			<Text>-25% City Attack</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_CITY_MINUS_25_HELP">
+			<Text>[ICON_BULLET]-25% [ICON_STRENGTH] Strength when attacking cities.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- +50% CITY ATTACK-->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_CITY_PLUS_50</Type>
+			<Description>TXT_KEY_EOMPROM_CITY_PLUS_50</Description>
+			<Help>TXT_KEY_EOMPROM_CITY_PLUS_50_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_CITY_PLUS_50</PediaEntry>
+			<CityAttack>50</CityAttack>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_CITY_PLUS_50">
+			<Text>+50% City Attack</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_CITY_PLUS_50_HELP">
+			<Text>[ICON_BULLET]+50% [ICON_STRENGTH] Strength when attacking cities.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- +100% CITY ATTACK-->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_CITY_PLUS_100</Type>
+			<Description>TXT_KEY_EOMPROM_CITY_PLUS_100</Description>
+			<Help>TXT_KEY_EOMPROM_CITY_PLUS_100_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_CITY_PLUS_100</PediaEntry>
+			<CityAttack>100</CityAttack>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_CITY_PLUS_100">
+			<Text>+100% City Attack</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_CITY_PLUS_100_HELP">
+			<Text>[ICON_BULLET]+100% [ICON_STRENGTH] Strength when attacking cities.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- AXES I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_AXES_I</Type>
+			<Description>TXT_KEY_EOMPROM_AXES_I</Description>
+			<Help>TXT_KEY_EOMPROM_AXES_I_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_AXES_I</PediaEntry>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_AXES_I</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+			<Modifier>25</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_AXES_I">
+			<Text>Axes I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_AXES_I_HELP">
+			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Strength vs Melee Units.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- AXES II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_AXES_II</Type>
+			<Description>TXT_KEY_EOMPROM_AXES_II</Description>
+			<Help>TXT_KEY_EOMPROM_AXES_II_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_AXES_II</PediaEntry>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_AXES_II</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+			<Modifier>50</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_AXES_II">
+			<Text>Axes II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_AXES_II_HELP">
+			<Text>[ICON_BULLET]+50% [ICON_STRENGTH] Strength vs Melee Units.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- POLE ARM I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_POLE_ARM_I</Type>
+			<Description>TXT_KEY_EOMPROM_POLE_ARM_I</Description>
+			<Help>TXT_KEY_EOMPROM_POLE_ARM_I_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_POLE_ARM_I</PediaEntry>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_POLE_ARM_I</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+			<Modifier>25</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+	<UnitPromotions_UnitClasses>
+		<Row>
+			<PromotionType>PROMOTION_POLE_ARM_I</PromotionType>
+			<UnitClassType>UNITCLASS_CHARIOT_ARCHER</UnitClassType>
+			<Attack>25</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_POLE_ARM_I</PromotionType>
+			<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
+			<Attack>25</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_POLE_ARM_I</PromotionType>
+			<UnitClassType>UNITCLASS_HEAVY_HORSE_ARCHER</UnitClassType>
+			<Attack>25</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_POLE_ARM_I</PromotionType>
+			<UnitClassType>UNITCLASS_ELEPHANT_ARCHER</UnitClassType>
+			<Attack>25</Attack>
+		</Row>
+	</UnitPromotions_UnitClasses>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_POLE_ARM_I">
+			<Text>Pole Arm I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_POLE_ARM_I_HELP">
+			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Strength vs Mounted Units.[NEWLINE][ICON_BULLET]+25% Attack Strength vs mounted Archery Units.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- POLE ARM II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_POLE_ARM_II</Type>
+			<Description>TXT_KEY_EOMPROM_POLE_ARM_II</Description>
+			<Help>TXT_KEY_EOMPROM_POLE_ARM_II_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_POLE_ARM_II</PediaEntry>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_POLE_ARM_II</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+			<Modifier>50</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+	<UnitPromotions_UnitClasses>
+		<Row>
+			<PromotionType>PROMOTION_POLE_ARM_II</PromotionType>
+			<UnitClassType>UNITCLASS_CHARIOT_ARCHER</UnitClassType>
+			<Attack>50</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_POLE_ARM_II</PromotionType>
+			<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
+			<Attack>50</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_POLE_ARM_II</PromotionType>
+			<UnitClassType>UNITCLASS_HEAVY_HORSE_ARCHER</UnitClassType>
+			<Attack>50</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_POLE_ARM_II</PromotionType>
+			<UnitClassType>UNITCLASS_ELEPHANT_ARCHER</UnitClassType>
+			<Attack>50</Attack>
+		</Row>
+	</UnitPromotions_UnitClasses>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_POLE_ARM_II">
+			<Text>Pole Arm II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_POLE_ARM_II_HELP">
+			<Text>[ICON_BULLET]+50% [ICON_STRENGTH] Strength vs Mounted Units.[NEWLINE][ICON_BULLET]+50% Attack Strength vs mounted Archery Units.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- ATTACK BONUS (25%) -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ATTACK_BONUS</Type>
+			<Description>TXT_KEY_EOMPROM_ATTACK_BONUS</Description>
+			<Help>TXT_KEY_EOMPROM_ATTACK_BONUS_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_ATTACK_BONUS</PediaEntry>
+			<AttackMod>25</AttackMod>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_ATTACK_BONUS">
+			<Text>Attack Bonus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_ATTACK_BONUS_HELP">
+			<Text>[ICON_BULLET]+25% Attack Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- DEFENSE BONUS (25%) -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_DEFENSE_BONUS</Type>
+			<Description>TXT_KEY_EOMPROM_DEFENSE_BONUS</Description>
+			<Help>TXT_KEY_EOMPROM_DEFENSE_BONUS_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_DEFENSE_BONUS</PediaEntry>
+			<DefenseMod>25</DefenseMod>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_BONUS">
+			<Text>Defense Bonus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_BONUS_HELP">
+			<Text>[ICON_BULLET]+25% Defense Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- OPEN TERRAIN BONUS -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_OPEN_BONUS</Type>
+			<Description>TXT_KEY_EOMPROM_OPEN_BONUS</Description>
+			<Help>TXT_KEY_EOMPROM_OPEN_BONUS_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_OPEN_BONUS</PediaEntry>
+			<OpenAttack>25</OpenAttack>
+			<OpenDefense>25</OpenDefense>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_OPEN_BONUS">
+			<Text>Open Terrain Bonus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_OPEN_BONUS_HELP">
+			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Strength in open terrain.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- CHARGE BONUS -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_CHARGE_BONUS</Type>
+			<Description>TXT_KEY_EOMPROM_CHARGE_BONUS</Description>
+			<Help>TXT_KEY_EOMPROM_CHARGE_BONUS_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_CHARGE_BONUS</PediaEntry>
+			<OpenAttack>50</OpenAttack>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_CHARGE_BONUS">
+			<Text>Charge Bonus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_CHARGE_BONUS_HELP">
+			<Text>[ICON_BULLET]+50% Attack Strength in open terrain.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- ROUGH DEFENSE -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ROUGH_DEFENSE</Type>
+			<Description>TXT_KEY_EOMPROM_ROUGH_DEFENSE</Description>
+			<Help>TXT_KEY_EOMPROM_ROUGH_DEFENSE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_ROUGH_DEFENSE</PediaEntry>
+			<RoughDefense>50</RoughDefense>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_ROUGH_DEFENSE">
+			<Text>Rough Defense</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_ROUGH_DEFENSE_HELP">
+			<Text>[ICON_BULLET]+50% Defense Strength in rough terrain.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- FIELD ARTILLERY -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_FIELD_ARTILLERY</Type>
+			<Description>TXT_KEY_EOMPROM_FIELD_ARTILLERY</Description>
+			<Help>TXT_KEY_EOMPROM_FIELD_ARTILLERY_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_FIELD_ARTILLERY</PediaEntry>
+			<OpenRangedAttackMod>50</OpenRangedAttackMod>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_FIELD_ARTILLERY">
+			<Text>Field Artillery</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_FIELD_ARTILLERY_HELP">
+			<Text>[ICON_BULLET]+50% [ICON_RANGE_STRENGTH] Ranged Strength against targets in open terrain.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- HIGH ANGLE FIRE -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_HIGH_ANGLE_FIRE</Type>
+			<Description>TXT_KEY_EOMPROM_HIGH_ANGLE_FIRE</Description>
+			<Help>TXT_KEY_EOMPROM_HIGH_ANGLE_FIRE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_HIGH_ANGLE_FIRE</PediaEntry>
+			<RoughRangedAttackMod>50</RoughRangedAttackMod>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_HIGH_ANGLE_FIRE">
+			<Text>High Angle Fire</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_HIGH_ANGLE_FIRE_HELP">
+			<Text>[ICON_BULLET]+50% [ICON_RANGE_STRENGTH] Ranged Strength against targets in rough terrain.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- DOUBLE SHOT -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_DOUBLE_SHOT</Type>
+			<Description>TXT_KEY_EOMPROM_DOUBLE_SHOT</Description>
+			<Help>TXT_KEY_EOMPROM_DOUBLE_SHOT_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_DOUBLE_SHOT</PediaEntry>
+			<CanMoveAfterAttacking>true</CanMoveAfterAttacking>
+			<ExtraAttacks>1</ExtraAttacks>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_DOUBLE_SHOT">
+			<Text>Double Shot</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_DOUBLE_SHOT_HELP">
+			<Text>The unit can shoot twice per turn.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- SHIELDING -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_SHIELDING</Type>
+			<Description>TXT_KEY_EOMPROM_SHIELDING</Description>
+			<Help>TXT_KEY_EOMPROM_SHIELDING_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_SHIELDING</PediaEntry>
+			<RangedDefenseMod>100</RangedDefenseMod>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_SHIELDING">
+			<Text>Shielding</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_SHIELDING_HELP">
+			<Text>[ICON_BULLET]+100% Defense against ranged attacks.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- FRIENDLY LANDS -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_FRIENDLY_LANDS</Type>
+			<Description>TXT_KEY_EOMPROM_FRIENDLY_LANDS</Description>
+			<Help>TXT_KEY_EOMPROM_FRIENDLY_LANDS_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_FRIENDLY_LANDS</PediaEntry>
+			<FriendlyLandsModifier>25</FriendlyLandsModifier>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_FRIENDLY_LANDS">
+			<Text>Friendly Lands Bonus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_FRIENDLY_LANDS_HELP">
+			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Strength in friendly territory.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- PALACE GUARD -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_PALACE_GUARD</Type>
+			<Description>TXT_KEY_EOMPROM_PALACE_GUARD</Description>
+			<Help>TXT_KEY_EOMPROM_PALACE_GUARD_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_PALACE_GUARD</PediaEntry>
+			<CapitalDefenseModifier>40</CapitalDefenseModifier>
+			<CapitalDefenseFalloff>-2</CapitalDefenseFalloff>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_PALACE_GUARD">
+			<Text>Palace Guard</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_PALACE_GUARD_HELP">
+			<Text>[ICON_BULLET][ICON_STRENGTH] Strength bonus: +40% - 2% per tile of distance to the [ICON_CAPITAL] capital.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- ELITE -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ELITE</Type>
+			<Description>TXT_KEY_EOMPROM_ELITE</Description>
+			<Help>TXT_KEY_EOMPROM_ELITE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_ELITE</PediaEntry>
+			<ExperiencePercent>50</ExperiencePercent>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_ELITE">
+			<Text>Elite</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_ELITE_HELP">
+			<Text>[ICON_BULLET]Gains +50% XP from combat.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- CAUSE FEAR -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_CAUSE_FEAR</Type>
+			<Description>TXT_KEY_EOMPROM_CAUSE_FEAR</Description>
+			<Help>TXT_KEY_EOMPROM_CAUSE_FEAR_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_CAUSE_FEAR</PediaEntry>
+			<NearbyEnemyCombatMod>-10</NearbyEnemyCombatMod>
+			<NearbyEnemyCombatRange>1</NearbyEnemyCombatRange>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_CAUSE_FEAR">
+			<Text>Cause Fear</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_CAUSE_FEAR_HELP">
+			<Text>[ICON_BULLET]Adjacent enemy units get -10% [ICON_STRENGTH] Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- WALL CRUSHING -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_WALL_CRUSHING</Type>
+			<Description>TXT_KEY_EOMPROM_WALL_CRUSHING</Description>
+			<Help>TXT_KEY_EOMPROM_WALL_CRUSHING_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_WALL_CRUSHING</PediaEntry>
+			<CityAttackOnly>true</CityAttackOnly>
+			<CityAttack>300</CityAttack>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_WALL_CRUSHING">
+			<Text>Wall Crushing</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_WALL_CRUSHING_HELP">
+			<Text>[ICON_BULLET]The unit can only attack cities, and gets +300% [ICON_STRENGTH] Strength when doing so.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- FIRE BOMBS -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_FIRE_BOMBS</Type>
+			<Description>TXT_KEY_EOMPROM_FIRE_BOMBS</Description>
+			<Help>TXT_KEY_EOMPROM_FIRE_BOMBS_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_FIRE_BOMBS</PediaEntry>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitClasses>
+		<Row>
+			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
+			<UnitClassType>UNITCLASS_GALLEY</UnitClassType>
+			<Attack>50</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
+			<UnitClassType>UNITCLASS_GALLEASS</UnitClassType>
+			<Attack>50</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
+			<UnitClassType>UNITCLASS_FRIGATE</UnitClassType>
+			<Attack>50</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
+			<UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+			<Attack>50</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
+			<UnitClassType>UNITCLASS_CANOE</UnitClassType>
+			<Attack>50</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
+			<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
+			<Attack>50</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
+			<UnitClassType>UNITCLASS_GALLEON</UnitClassType>
+			<Attack>50</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
+			<UnitClassType>UNITCLASS_CARAVEL</UnitClassType>
+			<Attack>50</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
+			<UnitClassType>UNITCLASS_PRIVATEER</UnitClassType>
+			<Attack>50</Attack>
+		</Row>
+	</UnitPromotions_UnitClasses>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_FIRE_BOMBS">
+			<Text>Fire Bombs</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_FIRE_BOMBS_HELP">
+			<Text>+50% [ICON_RANGE_STRENGTH] Ranged Strength against Naval units.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- BOARDING -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_BOARDING</Type>
+			<Description>TXT_KEY_EOMPROM_BOARDING</Description>
+			<Help>TXT_KEY_EOMPROM_BOARDING_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_BOARDING</PediaEntry>
+			<CaptureDefeatedEnemy>true</CaptureDefeatedEnemy>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_BOARDING">
+			<Text>Boarding</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_BOARDING_HELP">
+			<Text>[ICON_BULLET]The unit has a chance (depenging on [ICON_STRENGTH] Strength ratio) to capture defeated enemy ships.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

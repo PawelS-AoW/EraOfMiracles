@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 10/2/2012 12:42:18 AM -->
+<GameData>
+	<!-- PIONEER -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_PIONEER</Type>
+			<Description>TXT_KEY_EOMUNIT_PIONEER</Description>
+			<DefaultUnit>UNIT_PIONEER</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_PIONEER</Class>
+			<Type>UNIT_PIONEER</Type>
+			<Cost>-1</Cost>
+			<Moves>2</Moves>
+			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH</CivilianAttackPriority>
+			<Special>SPECIALUNIT_PEOPLE</Special>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_PIONEER</Description>
+			<Help>TXT_KEY_EOMUNIT_PIONEER_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<AdvancedStartCost>-1</AdvancedStartCost>
+			<WorkRate>1</WorkRate>
+			<CombatLimit>0</CombatLimit>
+			<UnitArtInfo>ART_DEF_UNIT_ENGINEER</UnitArtInfo>
+			<UnitArtInfoEraVariation>true</UnitArtInfoEraVariation>
+			<UnitFlagIconOffset>89</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_2</IconAtlas>
+			<PortraitIndex>47</PortraitIndex>
+			<MoveRate>GREAT_PERSON</MoveRate>
+			<CultureBombRadius>1</CultureBombRadius>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_PIONEER">
+			<Text>Pioneer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_PIONEER_HELP">
+			<Text>[ICON_BULLET]Great Person.[NEWLINE][ICON_BULLET]Can found a Town.[NEWLINE][ICON_BULLET]Can Claim Territory.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMGP_PIONEER_POINTS">
+			<Text>Pioneer points:</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_Builds>
+		<Row>
+			<UnitType>UNIT_PIONEER</UnitType>
+			<BuildType>BUILD_TOWN</BuildType>
+		</Row>
+	</Unit_Builds>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_PIONEER</UnitType>
+			<UnitAIType>UNITAI_WORKER</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_PIONEER</UnitType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- MERCHANT -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_MERCHANT</Type>
+			<Description>TXT_KEY_EOMUNIT_MERCHANT</Description>
+			<DefaultUnit>UNIT_MERCHANT</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_MERCHANT</Class>
+			<Type>UNIT_MERCHANT</Type>
+			<Cost>-1</Cost>
+			<Moves>2</Moves>
+			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH</CivilianAttackPriority>
+			<Special>SPECIALUNIT_PEOPLE</Special>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ARTIST</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_MERCHANT</Description>
+			<Help>TXT_KEY_EOMUNIT_MERCHANT_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<AdvancedStartCost>-1</AdvancedStartCost>
+			<WorkRate>1</WorkRate>
+			<CombatLimit>0</CombatLimit>
+			<UnitArtInfo>ART_DEF_UNIT_MERCHANT</UnitArtInfo>
+			<UnitArtInfoEraVariation>true</UnitArtInfoEraVariation>
+			<UnitFlagIconOffset>92</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_2</IconAtlas>
+			<PortraitIndex>46</PortraitIndex>
+			<MoveRate>GREAT_PERSON</MoveRate>
+			<BaseGold>250</BaseGold>
+			<NumGoldPerEra>50</NumGoldPerEra>
+			<GoldenAgeTurns>10</GoldenAgeTurns>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_MERCHANT">
+			<Text>Merchant</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_MERCHANT_HELP">
+			<Text>[ICON_BULLET]Great Person.[NEWLINE][ICON_BULLET]Can conduct a Trade Mission.[NEWLINE][ICON_BULLET]Can start a Golden Age.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMGP_MERCHANT_POINTS">
+			<Text>Merchant points:</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_MERCHANT</UnitType>
+			<UnitAIType>UNITAI_ARTIST</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_MERCHANT</UnitType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+	</Unit_Flavors>
+</GameData>

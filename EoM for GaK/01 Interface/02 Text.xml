@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/17/2012 2:56:15 AM -->
+<GameData>
+	<Language_en_US>
+		<!-- New EoM text strings -->
+		<Row Tag="TXT_KEY_EOM_EMPTY">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOM_WORK_WATER">
+			<Text>Allows cities to work water tiles.</Text>
+		</Row>
+		<!-- Civilopedia Promotions Sections-->
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTIONS_SECTION_5"/> <!-- Scouting -->
+			<Set Text="Terrain Promotions"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTIONS_SECTION_6"/> <!-- Air -->
+			<Set Text="Random Promotions"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTIONS_SECTION_7"/> <!-- Shared -->
+			<Set Text="Effects"/>
+		</Update>
+		<!-- Game Speeds -->
+		<Update>
+			<Where Tag="TXT_KEY_GAMESPEED_MARATHON"/>
+			<Set Text="Slow"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GAMESPEED_EPIC"/>
+			<Set Text="Normal"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GAMESPEED_STANDARD"/>
+			<Set Text="Fast"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GAMESPEED_QUICK"/>
+			<Set Text="Crazy"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GAMESPEED_MARATHON_HELP"/>
+			<Set Text="2x slower than Normal. 2000 turns."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GAMESPEED_EPIC_HELP"/>
+			<Set Text="Recommended game pace. 1000 turns."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GAMESPEED_STANDARD_HELP"/>
+			<Set Text="2x faster than Normal. 500 turns."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GAMESPEED_QUICK_HELP"/>
+			<Set Text="If you like getting a new technology every other turn, this game pace is for you. 250 turns."/>
+		</Update>
+	</Language_en_US>
+</GameData>

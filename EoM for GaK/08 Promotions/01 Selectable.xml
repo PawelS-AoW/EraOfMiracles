@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 6/14/2012 12:09:21 AM -->
+<GameData>
+	<!-- ROUGH TERRAIN LINE -->
+	<!-- DRILL I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_DRILL_1</Type>
+			<Description>TXT_KEY_EOMPROM_DRILL_1</Description>
+			<Help>TXT_KEY_EOMPROM_DRILL_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>19</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_DRILL_1</PediaEntry>
+			<RoughAttack>10</RoughAttack>
+			<RoughDefense>10</RoughDefense>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_DRILL_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DRILL_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_DRILL_1">
+			<Text>Drill I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_DRILL_1_HELP">
+			<Text>[ICON_BULLET]+10% [ICON_STRENGTH] Strength in rough terrain.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- DRILL II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_DRILL_2</Type>
+			<Description>TXT_KEY_EOMPROM_DRILL_2</Description>
+			<Help>TXT_KEY_EOMPROM_DRILL_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>20</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_DRILL_2</PediaEntry>
+			<RoughAttack>15</RoughAttack>
+			<RoughDefense>15</RoughDefense>
+			<PromotionPrereqOr1>PROMOTION_DRILL_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_DRILL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DRILL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_DRILL_2">
+			<Text>Drill II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_DRILL_2_HELP">
+			<Text>[ICON_BULLET]+15% [ICON_STRENGTH] Strength in rough terrain.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- WOODSMAN -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_WOODSMAN</Type>
+			<Description>TXT_KEY_EOMPROM_WOODSMAN</Description>
+			<Help>TXT_KEY_EOMPROM_WOODSMAN_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>35</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_WOODSMAN</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_DRILL_2</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Features>
+		<Row>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<Attack>25</Attack>
+			<Defense>25</Defense>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<Attack>25</Attack>
+			<Defense>25</Defense>
+		</Row>
+	</UnitPromotions_Features>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_WOODSMAN">
+			<Text>Woodsman</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_WOODSMAN_HELP">
+			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Strength in Forest and Jungle.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- FORESTRY -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_FORESTRY</Type>
+			<Description>TXT_KEY_EOMPROM_FORESTRY</Description>
+			<Help>TXT_KEY_EOMPROM_FORESTRY_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>3</OrderPriority>
+			<PortraitIndex>35</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_FORESTRY</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_WOODSMAN</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Features>
+		<Row>
+			<PromotionType>PROMOTION_FORESTRY</PromotionType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<DoubleMove>true</DoubleMove>
+		</Row>
+	</UnitPromotions_Features>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_FORESTRY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FORESTRY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FORESTRY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_FORESTRY">
+			<Text>Forestry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_FORESTRY_HELP">
+			<Text>[ICON_BULLET]Halved movement cost in Forest.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- FOREST SURVIVAL -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_FOREST_SURVIVAL</Type>
+			<Description>TXT_KEY_EOMPROM_FOREST_SURVIVAL</Description>
+			<Help>TXT_KEY_EOMPROM_FOREST_SURVIVAL_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>4</OrderPriority>
+			<PortraitIndex>35</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_FOREST_SURVIVAL</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_FORESTRY</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Features>
+		<Row>
+			<PromotionType>PROMOTION_FOREST_SURVIVAL</PromotionType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<Defense>50</Defense>
+			<Attack>50</Attack>
+		</Row>
+	</UnitPromotions_Features>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_FOREST_SURVIVAL</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_FOREST_SURVIVAL">
+			<Text>Forest Survival</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_FOREST_SURVIVAL_HELP">
+			<Text>[ICON_BULLET]+50% [ICON_STRENGTH] Strength in Forest.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- JUNGLE PATHFINDING -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_JUNGLE_PATHFINDING</Type>
+			<Description>TXT_KEY_EOMPROM_JUNGLE_PATHFINDING</Description>
+			<Help>TXT_KEY_EOMPROM_JUNGLE_PATHFINDING_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>3</OrderPriority>
+			<PortraitIndex>35</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_JUNGLE_PATHFINDING</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_WOODSMAN</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Features>
+		<Row>
+			<PromotionType>PROMOTION_JUNGLE_PATHFINDING</PromotionType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<DoubleMove>true</DoubleMove>
+		</Row>
+	</UnitPromotions_Features>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_JUNGLE_PATHFINDING</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_JUNGLE_PATHFINDING</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_JUNGLE_PATHFINDING</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_JUNGLE_PATHFINDING">
+			<Text>Jungle Pathfinding</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_JUNGLE_PATHFINDING_HELP">
+			<Text>[ICON_BULLET]Halved movement cost in Jungle.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- JUNGLE SURVIVAL -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_JUNGLE_SURVIVAL</Type>
+			<Description>TXT_KEY_EOMPROM_JUNGLE_SURVIVAL</Description>
+			<Help>TXT_KEY_EOMPROM_JUNGLE_SURVIVAL_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>4</OrderPriority>
+			<PortraitIndex>35</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_JUNGLE_SURVIVAL</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_JUNGLE_PATHFINDING</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Features>
+		<Row>
+			<PromotionType>PROMOTION_JUNGLE_SURVIVAL</PromotionType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<Defense>50</Defense>
+			<Attack>50</Attack>
+		</Row>
+	</UnitPromotions_Features>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_JUNGLE_SURVIVAL</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_JUNGLE_SURVIVAL">
+			<Text>Jungle Survival</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_JUNGLE_SURVIVAL_HELP">
+			<Text>[ICON_BULLET]+50% [ICON_STRENGTH] Strength in Jungle.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- HILL COMBAT -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_HILL_COMBAT</Type>
+			<Description>TXT_KEY_EOMPROM_HILL_COMBAT</Description>
+			<Help>TXT_KEY_EOMPROM_HILL_COMBAT_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_HILL_COMBAT</PediaEntry>
+			<HillsAttack>25</HillsAttack>
+			<HillsDefense>25</HillsDefense>
+			<PromotionPrereqOr1>PROMOTION_DRILL_2</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_HILL_COMBAT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_HILL_COMBAT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_HILL_COMBAT">
+			<Text>Hill Combat</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_HILL_COMBAT_HELP">
+			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Strength in Hills.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- HILL CLIMBING -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_HILL_CLIMBING</Type>
+			<Description>TXT_KEY_EOMPROM_HILL_CLIMBING</Description>
+			<Help>TXT_KEY_EOMPROM_HILL_CLIMBING_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>3</OrderPriority>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_HILL_CLIMBING</PediaEntry>
+			<HillsDoubleMove>true</HillsDoubleMove>
+			<PromotionPrereqOr1>PROMOTION_HILL_COMBAT</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_HILL_CLIMBING</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_HILL_CLIMBING</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_HILL_CLIMBING</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_HILL_CLIMBING">
+			<Text>Hill Climbing</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_HILL_CLIMBING_HELP">
+			<Text>[ICON_BULLET]Halved movement cost in Hills.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- TODO (DLL): Mountaineering (Recon only) -->
+	<!-- OPEN TERRAIN LINE -->
+	<!-- SHOCK I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_SHOCK_1</Type>
+			<Description>TXT_KEY_EOMPROM_SHOCK_1</Description>
+			<Help>TXT_KEY_EOMPROM_SHOCK_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>44</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_SHOCK_1</PediaEntry>
+			<OpenAttack>10</OpenAttack>
+			<OpenDefense>10</OpenDefense>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_SHOCK_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SHOCK_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SHOCK_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_SHOCK_1">
+			<Text>Shock I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_SHOCK_1_HELP">
+			<Text>[ICON_BULLET]+10% [ICON_STRENGTH] Strength in open terrain.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- SHOCK II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_SHOCK_2</Type>
+			<Description>TXT_KEY_EOMPROM_SHOCK_2</Description>
+			<Help>TXT_KEY_EOMPROM_SHOCK_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>45</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_SHOCK_2</PediaEntry>
+			<OpenAttack>15</OpenAttack>
+			<OpenDefense>15</OpenDefense>
+			<PromotionPrereqOr1>PROMOTION_SHOCK_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_SHOCK_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SHOCK_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SHOCK_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_SHOCK_2">
+			<Text>Shock II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_SHOCK_2_HELP">
+			<Text>[ICON_BULLET]+15% [ICON_STRENGTH] Strength in open terrain.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- CHARGE I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_CHARGE_1</Type>
+			<Description>TXT_KEY_EOMPROM_CHARGE_1</Description>
+			<Help>TXT_KEY_EOMPROM_CHARGE_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>46</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_CHARGE_1</PediaEntry>
+			<OpenAttack>20</OpenAttack>
+			<PromotionPrereqOr1>PROMOTION_SHOCK_2</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_ATTACK_2</PromotionPrereqOr2>
+			<PromotionPrereqOr3>PROMOTION_MOBILITY_2</PromotionPrereqOr3>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_CHARGE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_CHARGE_1">
+			<Text>Charge I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_CHARGE_1_HELP">
+			<Text>[ICON_BULLET]+20% Attack Strength in open terrain.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- CHARGE II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_CHARGE_2</Type>
+			<Description>TXT_KEY_EOMPROM_CHARGE_2</Description>
+			<Help>TXT_KEY_EOMPROM_CHARGE_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>46</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_CHARGE_2</PediaEntry>
+			<OpenAttack>30</OpenAttack>
+			<PromotionPrereqOr1>PROMOTION_CHARGE_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_CHARGE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_CHARGE_2">
+			<Text>Charge II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_CHARGE_2_HELP">
+			<Text>[ICON_BULLET]+30% Attack Strength in open terrain.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- DESERT COMBAT -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_DESERT_COMBAT</Type>
+			<Description>TXT_KEY_EOMPROM_DESERT_COMBAT</Description>
+			<Help>TXT_KEY_EOMPROM_DESERT_COMBAT_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_DESERT_COMBAT</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_SHOCK_2</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Terrains>
+		<Row>
+			<PromotionType>PROMOTION_DESERT_COMBAT</PromotionType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+			<Attack>25</Attack>
+			<Defense>25</Defense>
+		</Row>
+	</UnitPromotions_Terrains>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_DESERT_COMBAT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DESERT_COMBAT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DESERT_COMBAT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_DESERT_COMBAT">
+			<Text>Desert Combat</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_DESERT_COMBAT_HELP">
+			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Strength in Desert.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- DESERT MOBILITY -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_DESERT_MOBILITY</Type>
+			<Description>TXT_KEY_EOMPROM_DESERT_MOBILITY</Description>
+			<Help>TXT_KEY_EOMPROM_DESERT_MOBILITY_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>3</OrderPriority>
+			<PortraitIndex>1</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_DESERT_MOBILITY</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_DESERT_COMBAT</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Terrains>
+		<Row>
+			<PromotionType>PROMOTION_DESERT_MOBILITY</PromotionType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+			<DoubleMove>true</DoubleMove>
+		</Row>
+	</UnitPromotions_Terrains>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_DESERT_MOBILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DESERT_MOBILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DESERT_MOBILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DESERT_MOBILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_DESERT_MOBILITY">
+			<Text>Desert Mobility</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_DESERT_MOBILITY_HELP">
+			<Text>[ICON_BULLET]Halved movement cost in Desert.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- ARCTIC COMBAT -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ARCTIC_COMBAT</Type>
+			<Description>TXT_KEY_EOMPROM_ARCTIC_COMBAT</Description>
+			<Help>TXT_KEY_EOMPROM_ARCTIC_COMBAT_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_ARCTIC_COMBAT</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_SHOCK_2</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Terrains>
+		<Row>
+			<PromotionType>PROMOTION_ARCTIC_COMBAT</PromotionType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+			<Attack>25</Attack>
+			<Defense>25</Defense>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ARCTIC_COMBAT</PromotionType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+			<Attack>25</Attack>
+			<Defense>25</Defense>
+		</Row>
+	</UnitPromotions_Terrains>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_ARCTIC_COMBAT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ARCTIC_COMBAT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ARCTIC_COMBAT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_ARCTIC_COMBAT">
+			<Text>Arctic Combat</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_ARCTIC_COMBAT_HELP">
+			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Strength in Tundra and Snow.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- ARCTIC MOBILITY -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ARCTIC_MOBILITY</Type>
+			<Description>TXT_KEY_EOMPROM_ARCTIC_MOBILITY</Description>
+			<Help>TXT_KEY_EOMPROM_ARCTIC_MOBILITY_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>3</OrderPriority>
+			<PortraitIndex>1</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_ARCTIC_MOBILITY</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_ARCTIC_COMBAT</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Terrains>
+		<Row>
+			<PromotionType>PROMOTION_ARCTIC_MOBILITY</PromotionType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+			<DoubleMove>true</DoubleMove>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ARCTIC_MOBILITY</PromotionType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+			<DoubleMove>true</DoubleMove>
+		</Row>
+	</UnitPromotions_Terrains>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_ARCTIC_MOBILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ARCTIC_MOBILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ARCTIC_MOBILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ARCTIC_MOBILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_ARCTIC_MOBILITY">
+			<Text>Arctic Mobility</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_ARCTIC_MOBILITY_HELP">
+			<Text>[ICON_BULLET]Halved movement cost in Tundra and Snow.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- AMPHIBIOUS I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_AMPHIBIOUS_1</Type>
+			<Description>TXT_KEY_EOMPROM_AMPHIBIOUS_1</Description>
+			<Help>TXT_KEY_EOMPROM_AMPHIBIOUS_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>5</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_AMPHIBIOUS_1</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_SHOCK_2</PromotionPrereqOr1>
+			<River>true</River>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Features>
+		<Row>
+			<PromotionType>PROMOTION_AMPHIBIOUS_1</PromotionType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<Attack>25</Attack>
+			<Defense>25</Defense>
+		</Row>
+	</UnitPromotions_Features>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_AMPHIBIOUS_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AMPHIBIOUS_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AMPHIBIOUS_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_AMPHIBIOUS_1">
+			<Text>Amphibious I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_AMPHIBIOUS_1_HELP">
+			<Text>[ICON_BULLET]No combat penalty for attacking across a river.[NEWLINE][ICON_BULLET]+25% [ICON_STRENGTH] Strength in Marsh.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- AMPHIBIOUS II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_AMPHIBIOUS_2</Type>
+			<Description>TXT_KEY_EOMPROM_AMPHIBIOUS_2</Description>
+			<Help>TXT_KEY_EOMPROM_AMPHIBIOUS_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>3</OrderPriority>
+			<PortraitIndex>48</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_AMPHIBIOUS_2</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_AMPHIBIOUS_1</PromotionPrereqOr1>
+			<Amphib>true</Amphib>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Features>
+		<Row>
+			<PromotionType>PROMOTION_AMPHIBIOUS_2</PromotionType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<DoubleMove>true</DoubleMove>
+		</Row>
+	</UnitPromotions_Features>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_AMPHIBIOUS_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AMPHIBIOUS_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AMPHIBIOUS_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_AMPHIBIOUS_2">
+			<Text>Amphibious II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_AMPHIBIOUS_2_HELP">
+			<Text>[ICON_BULLET]No combat penalty for attacking from water.[NEWLINE][ICON_BULLET]Halved movement cost in Marsh.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- ATTACK/DEFENSE LINE-->
+	<!-- ATTACK I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ATTACK_1</Type>
+			<Description>TXT_KEY_EOMPROM_ATTACK_1</Description>
+			<Help>TXT_KEY_EOMPROM_ATTACK_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>13</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_ATTACK_1</PediaEntry>
+			<AttackMod>10</AttackMod>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_ATTACK_1">
+			<Text>Attack I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_ATTACK_1_HELP">
+			<Text>[ICON_BULLET]+10% Attack Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- ATTACK II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ATTACK_2</Type>
+			<Description>TXT_KEY_EOMPROM_ATTACK_2</Description>
+			<Help>TXT_KEY_EOMPROM_ATTACK_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>13</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_ATTACK_2</PediaEntry>
+			<AttackMod>10</AttackMod>
+			<PromotionPrereqOr1>PROMOTION_ATTACK_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_ATTACK_2">
+			<Text>Attack II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_ATTACK_2_HELP">
+			<Text>[ICON_BULLET]+10% Attack Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- ATTACK III -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ATTACK_3</Type>
+			<Description>TXT_KEY_EOMPROM_ATTACK_3</Description>
+			<Help>TXT_KEY_EOMPROM_ATTACK_3_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>13</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_ATTACK_3</PediaEntry>
+			<AttackMod>15</AttackMod>
+			<PromotionPrereqOr1>PROMOTION_ATTACK_2</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_ATTACK_3">
+			<Text>Attack III</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_ATTACK_3_HELP">
+			<Text>[ICON_BULLET]+15% Attack Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- ATTACK IV -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ATTACK_4</Type>
+			<Description>TXT_KEY_EOMPROM_ATTACK_4</Description>
+			<Help>TXT_KEY_EOMPROM_ATTACK_4_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>13</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_ATTACK_4</PediaEntry>
+			<AttackMod>15</AttackMod>
+			<PromotionPrereqOr1>PROMOTION_ATTACK_3</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_ATTACK_4">
+			<Text>Attack IV</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_ATTACK_4_HELP">
+			<Text>[ICON_BULLET]+15% Attack Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- OFFENSIVE TACTICS -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_OFFENSIVE_TACTICS</Type>
+			<Description>TXT_KEY_EOMPROM_OFFENSIVE_TACTICS</Description>
+			<Help>TXT_KEY_EOMPROM_OFFENSIVE_TACTICS_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>13</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_OFFENSIVE_TACTICS</PediaEntry>
+			<AttackMod>25</AttackMod>
+			<DefenseMod>-10</DefenseMod>
+			<PromotionPrereqOr1>PROMOTION_ATTACK_4</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_OFFENSIVE_TACTICS</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_OFFENSIVE_TACTICS</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_OFFENSIVE_TACTICS">
+			<Text>Offensive Tactics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_OFFENSIVE_TACTICS_HELP">
+			<Text>[ICON_BULLET]+25% Attack Strength.[NEWLINE][ICON_BULLET]-10% Defense Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- SIEGE I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_SIEGE_1</Type>
+			<Description>TXT_KEY_EOMPROM_SIEGE_1</Description>
+			<Help>TXT_KEY_EOMPROM_SIEGE_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>40</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_SIEGE_1</PediaEntry>
+			<CityAttack>20</CityAttack>
+			<PromotionPrereqOr1>PROMOTION_ATTACK_2</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_MARKSMANSHIP_2</PromotionPrereqOr2>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_SIEGE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SIEGE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SIEGE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_SIEGE_1">
+			<Text>Siege I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_SIEGE_1_HELP">
+			<Text>[ICON_BULLET]+20% [ICON_STRENGTH] Strength vs cities.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- SIEGE II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_SIEGE_2</Type>
+			<Description>TXT_KEY_EOMPROM_SIEGE_2</Description>
+			<Help>TXT_KEY_EOMPROM_SIEGE_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>41</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_SIEGE_2</PediaEntry>
+			<CityAttack>30</CityAttack>
+			<PromotionPrereqOr1>PROMOTION_SIEGE_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_SIEGE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SIEGE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SIEGE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_SIEGE_2">
+			<Text>Siege II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_SIEGE_2_HELP">
+			<Text>[ICON_BULLET]+30% [ICON_STRENGTH] Strength vs cities.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- CONQUEROR I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_CONQUEROR_1</Type>
+			<Description>TXT_KEY_EOMPROM_CONQUEROR_1</Description>
+			<Help>TXT_KEY_EOMPROM_CONQUEROR_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>9</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_CONQUEROR_1</PediaEntry>
+			<OutsideFriendlyLandsModifier>10</OutsideFriendlyLandsModifier>
+			<PromotionPrereqOr1>PROMOTION_ATTACK_2</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_CONQUEROR_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CONQUEROR_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_CONQUEROR_1">
+			<Text>Conqueror I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_CONQUEROR_1_HELP">
+			<Text>[ICON_BULLET]+10% [ICON_STRENGTH] Strength outside friendly territory.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- CONQUEROR II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_CONQUEROR_2</Type>
+			<Description>TXT_KEY_EOMPROM_CONQUEROR_2</Description>
+			<Help>TXT_KEY_EOMPROM_CONQUEROR_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>26</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_CONQUEROR_2</PediaEntry>
+			<OutsideFriendlyLandsModifier>15</OutsideFriendlyLandsModifier>
+			<PromotionPrereqOr1>PROMOTION_CONQUEROR_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_CONQUEROR_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CONQUEROR_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_CONQUEROR_2">
+			<Text>Conqueror II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_CONQUEROR_2_HELP">
+			<Text>[ICON_BULLET]+15% [ICON_STRENGTH] Strength outside friendly territory.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

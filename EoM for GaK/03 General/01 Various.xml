@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 6/5/2012 8:07:21 PM -->
+<GameData>
+	<!-- Text for new help items -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOM_BUILDING_FOOD_MOD">
+			<Text>[ICON_FOOD] Food: +{1_Num}%</Text>
+		</Row>
+	</Language_en_US>
+
+	<!-- New flavors -->
+	<Flavors>
+		<Row>
+			<Type>FLAVOR_MAGIC</Type>
+		</Row>
+		<Row>
+			<Type>FLAVOR_NATURE</Type>
+		</Row>
+	</Flavors>
+
+	<!-- New Unit Combat Types - Priests, Mages and Animals-->
+	<UnitCombatInfos>
+		<Row>
+			<Type>UNITCOMBAT_PRIEST</Type>
+			<Description>TXT_KEY_EOM_UC_PRIEST</Description>
+		</Row>
+		<Row>
+			<Type>UNITCOMBAT_MAGE</Type>
+			<Description>TXT_KEY_EOM_UC_MAGE</Description>
+		</Row>
+	</UnitCombatInfos>
+	<!-- Combat type names -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOM_UC_PRIEST">
+			<Text>Priest Units</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOM_UC_MAGE">
+			<Text>Mage Units</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_UNITCOMBAT_HELICOPTER"/>
+			<Set Text="Flying Units"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNITCOMBAT_ARMOR"/>
+			<Set Text="Animals"/>
+		</Update>
+	</Language_en_US>
+
+	<!-- TEMP Promotions -> move to Unit Attributes file (and gather all properties for flying units, including no penalty for coast/river) -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_MOVE_ALL_TERRAIN</Type>
+			<Description>TXT_KEY_PROMOTION_MOVE_ALL_TERRAIN</Description>
+			<Help>TXT_KEY_PROMOTION_MOVE_ALL_TERRAIN_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PortraitIndex>58</PortraitIndex>
+			<PediaEntry>TXT_KEY_PROMOTION_MOVE_ALL_TERRAIN</PediaEntry>
+			<CanMoveAllTerrain>true</CanMoveAllTerrain>
+			<LostWithUpgrade>1</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+</GameData>

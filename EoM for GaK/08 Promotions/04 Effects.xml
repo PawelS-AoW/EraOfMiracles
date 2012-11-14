@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 6/14/2012 12:10:05 AM -->
+<GameData>
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_EMBARKATION</Type>
+			<Description>TXT_KEY_PROMOTION_EMBARKATION</Description>
+			<Help>TXT_KEY_EOMPROM_EMBARKATION_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<TechPrereq>TECH_SEA_TRANSPORT</TechPrereq>
+			<AllowsEmbarkation>true</AllowsEmbarkation>
+			<PortraitIndex>22</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_EMBARKATION</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_ALLWATER_EMBARKATION</Type>
+			<Description>TXT_KEY_PROMOTION_ALLWATER_EMBARKATION</Description>
+			<Help>TXT_KEY_EOMPROM_ALLWATER_EMBARKATION_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<AllowsEmbarkation>true</AllowsEmbarkation>
+			<EmbarkedAllWater>true</EmbarkedAllWater>
+			<PortraitIndex>22</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_ALLWATER_EMBARKATION</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_EMBARKATION_HELP">
+			<Text>[ICON_BULLET]Can embark onto Water tiles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_ALLWATER_EMBARKATION_HELP">
+			<Text>[ICON_BULLET]Can enter Ocean while embarked.</Text>
+		</Row>
+	</Language_en_US>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_PRIEST</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MAGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ALLWATER_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ALLWATER_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ALLWATER_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ALLWATER_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ALLWATER_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ALLWATER_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ALLWATER_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ALLWATER_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_PRIEST</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ALLWATER_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MAGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<!-- AI BONUS 1 -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_AI_BONUS_1</Type>
+			<Description>TXT_KEY_EOMPROM_AI_BONUS_1</Description>
+			<Help>TXT_KEY_EOMPROM_AI_BONUS_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_AI_BONUS_1</PediaEntry>
+			<CombatPercent>5</CombatPercent>
+			<VisibilityChange>1</VisibilityChange>
+			<EmbarkExtraVisibility>1</EmbarkExtraVisibility>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_AI_BONUS_1">
+			<Text>AI Bonus I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_AI_BONUS_1_HELP">
+			<Text>[ICON_BULLET]+5% [ICON_STRENGTH] Strength.[NEWLINE][ICON_BULLET]+1 Sight (also when embarked).[NEWLINE][ICON_BULLET]Given to AI units when you play on King level.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- AI BONUS 2 -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_AI_BONUS_2</Type>
+			<Description>TXT_KEY_EOMPROM_AI_BONUS_2</Description>
+			<Help>TXT_KEY_EOMPROM_AI_BONUS_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_AI_BONUS_2</PediaEntry>
+			<CombatPercent>10</CombatPercent>
+			<VisibilityChange>1</VisibilityChange>
+			<EmbarkExtraVisibility>1</EmbarkExtraVisibility>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_AI_BONUS_2">
+			<Text>AI Bonus II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_AI_BONUS_2_HELP">
+			<Text>[ICON_BULLET]+10% [ICON_STRENGTH] Strength.[NEWLINE][ICON_BULLET]+1 Sight (also when embarked).[NEWLINE][ICON_BULLET]Given to AI units when you play on Emperor level.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- AI BONUS 3 -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_AI_BONUS_3</Type>
+			<Description>TXT_KEY_EOMPROM_AI_BONUS_3</Description>
+			<Help>TXT_KEY_EOMPROM_AI_BONUS_3_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_AI_BONUS_3</PediaEntry>
+			<CombatPercent>15</CombatPercent>
+			<VisibilityChange>1</VisibilityChange>
+			<EmbarkExtraVisibility>1</EmbarkExtraVisibility>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_AI_BONUS_3">
+			<Text>AI Bonus III</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_AI_BONUS_3_HELP">
+			<Text>[ICON_BULLET]+15% [ICON_STRENGTH] Strength.[NEWLINE][ICON_BULLET]+1 Sight (also when embarked).[NEWLINE][ICON_BULLET]Given to AI units when you play on Immortal level.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- AI BONUS 4 -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_AI_BONUS_4</Type>
+			<Description>TXT_KEY_EOMPROM_AI_BONUS_4</Description>
+			<Help>TXT_KEY_EOMPROM_AI_BONUS_4_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_AI_BONUS_4</PediaEntry>
+			<CombatPercent>20</CombatPercent>
+			<VisibilityChange>1</VisibilityChange>
+			<EmbarkExtraVisibility>1</EmbarkExtraVisibility>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_AI_BONUS_4">
+			<Text>AI Bonus IV</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_AI_BONUS_4_HELP">
+			<Text>[ICON_BULLET]+20% [ICON_STRENGTH] Strength.[NEWLINE][ICON_BULLET]+1 Sight (also when embarked).[NEWLINE][ICON_BULLET]Given to AI units when you play on Deity level.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

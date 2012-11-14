@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 9/15/2012 1:28:43 PM -->
+<GameData>
+	<!-- SP1_11: PIRACY -->
+	<!-- U: Pirate -->
+	<!-- ??? -->
+	<Technologies>
+		<Row>
+			<Type>TECH_PIRACY</Type>
+			<Cost>1100</Cost>
+			<Description>TXT_KEY_EOMTECH_PIRACY</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_RENAISSANCE</Era>
+			<Trade>true</Trade>
+			<GridX>11</GridX>
+			<GridY>-1</GridY>
+			<PortraitIndex>2</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_DLC_02</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_PIRACY">
+			<Text>Piracy</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_PIRACY</TechType>
+			<PrereqTech>TECH_NAVIGATION</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_PIRACY</TechType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- SP2_11: NAVAL DREAMS -->
+	<!-- U: Ship of the Line -->
+	<!-- ??? -->
+	<Technologies>
+		<Row>
+			<Type>TECH_NAVAL_DREAMS</Type>
+			<Cost>1100</Cost>
+			<Description>TXT_KEY_EOMTECH_NAVAL_DREAMS</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_RENAISSANCE</Era>
+			<Trade>true</Trade>
+			<GridX>11</GridX>
+			<GridY>0</GridY>
+			<PortraitIndex>6</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_DLC_02</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_NAVAL_DREAMS">
+			<Text>Naval Dreams</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_NAVAL_DREAMS</TechType>
+			<PrereqTech>TECH_NAVIGATION</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_NAVAL_DREAMS</TechType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+</GameData>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 6/11/2012 4:39:29 PM -->
+<GameData>
+	<Civilizations>
+		<Row>
+			<Type>CIVILIZATION_MINOR</Type>
+			<Description>TXT_KEY_CIV_MINOR_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_MINOR_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_MINOR_ADJECTIVE</Adjective>
+			<DefaultPlayerColor>PLAYERCOLOR_MINOR_WHITE</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_MINOR</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
+			<Playable>false</Playable>
+			<AIPlayable>false</AIPlayable>
+			<PortraitIndex>22</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS</IconAtlas>
+			<AlphaIconAtlas>CIV_ALPHA_ATLAS</AlphaIconAtlas>
+		</Row>
+		<Row>
+			<Type>CIVILIZATION_BARBARIAN</Type>
+			<Description>TXT_KEY_CIV_BARBARIAN_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_BARBARIAN_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_BARBARIAN_ADJECTIVE</Adjective>
+			<DefaultPlayerColor>PLAYERCOLOR_BARBARIAN</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_BARBARIAN</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
+			<Playable>false</Playable>
+			<AIPlayable>false</AIPlayable>
+		</Row>
+	</Civilizations>
+	<Civilization_Leaders>
+		<Row>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<LeaderheadType>LEADER_BARBARIAN</LeaderheadType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<LeaderheadType>LEADER_BARBARIAN</LeaderheadType>
+		</Row>
+	</Civilization_Leaders>
+	<Leaders>
+		<Row>
+			<Type>LEADER_BARBARIAN</Type>
+			<Description>TXT_KEY_LEADER_BARBARIAN</Description>
+			<Civilopedia>TXT_KEY_LEADER_BARBARIAN_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_LEADER_BARBARIAN</ArtDefineTag>
+		</Row>
+	</Leaders>
+	<!-- MERCENARIES -->
+	<MinorCivilizations>
+		<Row>
+			<Type>MINOR_CIV_MERCENARIES</Type>
+			<Description>TXT_KEY_EOMMINOR_MERCENARIES</Description>
+			<ShortDescription>TXT_KEY_EOMMINOR_MERCENARIES</ShortDescription>
+			<Adjective>TXT_KEY_EOMMINOR_MERCENARIES_ADJ</Adjective>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_MINOR_WHITE</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_MINOR</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStylePrefix>EUROPEAN </ArtStylePrefix>
+			<ArtStyleSuffix>_EURO</ArtStyleSuffix>
+			<MinorCivTrait>MINOR_TRAIT_MILITARISTIC</MinorCivTrait>
+		</Row>
+	</MinorCivilizations>
+	<MinorCivilization_Flavors>
+		<Row>
+			<MinorCivType>MINOR_CIV_MERCENARIES</MinorCivType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_MERCENARIES</MinorCivType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_MERCENARIES</MinorCivType>
+			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_MERCENARIES</MinorCivType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_MERCENARIES</MinorCivType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_MERCENARIES</MinorCivType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_MERCENARIES</MinorCivType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_MERCENARIES</MinorCivType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_MERCENARIES</MinorCivType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+	</MinorCivilization_Flavors>	
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMMINOR_MERCENARIES">
+			<Text>Mercenaries</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMMINOR_MERCENARIES_ADJ">
+			<Text>Mercenary</Text>
+		</Row>
+	</Language_en_US>
+	<!-- SMALLSHIRE -->
+	<MinorCivilizations>
+		<Row>
+			<Type>MINOR_CIV_SMALLSHIRE</Type>
+			<Description>TXT_KEY_EOMMINOR_SMALLSHIRE</Description>
+			<ShortDescription>TXT_KEY_EOMMINOR_SMALLSHIRE</ShortDescription>
+			<Adjective>TXT_KEY_EOMMINOR_SMALLSHIRE_ADJ</Adjective>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_MINOR_YELLOW</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_MINOR</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStylePrefix>EUROPEAN </ArtStylePrefix>
+			<ArtStyleSuffix>_EURO</ArtStyleSuffix>
+			<MinorCivTrait>MINOR_TRAIT_MARITIME</MinorCivTrait>
+		</Row>
+	</MinorCivilizations>
+	<MinorCivilization_Flavors>
+		<Row>
+			<MinorCivType>MINOR_CIV_SMALLSHIRE</MinorCivType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_SMALLSHIRE</MinorCivType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+	</MinorCivilization_Flavors>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMMINOR_SMALLSHIRE">
+			<Text>Smallshire</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMMINOR_SMALLSHIRE_ADJ">
+			<Text>Smallshire</Text>
+		</Row>
+	</Language_en_US>
+	<!-- GREEN COMPANY -->
+	<MinorCivilizations>
+		<Row>
+			<Type>MINOR_CIV_GREEN_COMPANY</Type>
+			<Description>TXT_KEY_EOMMINOR_GREEN_COMPANY</Description>
+			<ShortDescription>TXT_KEY_EOMMINOR_GREEN_COMPANY</ShortDescription>
+			<Adjective>TXT_KEY_EOMMINOR_GREEN_COMPANY_ADJ</Adjective>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_MINOR_GREEN</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_MINOR</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStylePrefix>EUROPEAN </ArtStylePrefix>
+			<ArtStyleSuffix>_EURO</ArtStyleSuffix>
+			<MinorCivTrait>MINOR_TRAIT_CULTURED</MinorCivTrait>
+		</Row>
+	</MinorCivilizations>
+	<MinorCivilization_Flavors>
+		<Row>
+			<MinorCivType>MINOR_CIV_GREEN_COMPANY</MinorCivType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_GREEN_COMPANY</MinorCivType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_GREEN_COMPANY</MinorCivType>
+			<FlavorType>FLAVOR_MAGIC</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_GREEN_COMPANY</MinorCivType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_GREEN_COMPANY</MinorCivType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</MinorCivilization_Flavors>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMMINOR_GREEN_COMPANY">
+			<Text>Green Company</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMMINOR_GREEN_COMPANY_ADJ">
+			<Text>Green Company</Text>
+		</Row>
+	</Language_en_US>
+	<!-- ENCHANTED VALLEY -->
+	<MinorCivilizations>
+		<Row>
+			<Type>MINOR_CIV_ENCHANTED_VALLEY</Type>
+			<Description>TXT_KEY_EOMMINOR_ENCHANTED_VALLEY</Description>
+			<ShortDescription>TXT_KEY_EOMMINOR_ENCHANTED_VALLEY</ShortDescription>
+			<Adjective>TXT_KEY_EOMMINOR_ENCHANTED_VALLEY_ADJ</Adjective>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_MINOR_PURPLE</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_MINOR</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStylePrefix>EUROPEAN </ArtStylePrefix>
+			<ArtStyleSuffix>_EURO</ArtStyleSuffix>
+			<MinorCivTrait>MINOR_TRAIT_RELIGIOUS</MinorCivTrait>
+		</Row>
+	</MinorCivilizations>
+	<MinorCivilization_Flavors>
+		<Row>
+			<MinorCivType>MINOR_CIV_ENCHANTED_VALLEY</MinorCivType>
+			<FlavorType>FLAVOR_MAGIC</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_ENCHANTED_VALLEY</MinorCivType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+	</MinorCivilization_Flavors>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMMINOR_ENCHANTED_VALLEY">
+			<Text>Enchanted Valley</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMMINOR_ENCHANTED_VALLEY_ADJ">
+			<Text>Enchanted Valley</Text>
+		</Row>
+	</Language_en_US>
+	<!-- THE TROUPE -->
+	<MinorCivilizations>
+		<Row>
+			<Type>MINOR_CIV_THE_TROUPE</Type>
+			<Description>TXT_KEY_EOMMINOR_THE_TROUPE</Description>
+			<ShortDescription>TXT_KEY_EOMMINOR_THE_TROUPE</ShortDescription>
+			<Adjective>TXT_KEY_EOMMINOR_THE_TROUPE_ADJ</Adjective>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_MINOR_PEACH</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_MINOR</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStylePrefix>EUROPEAN </ArtStylePrefix>
+			<ArtStyleSuffix>_EURO</ArtStyleSuffix>
+			<MinorCivTrait>MINOR_TRAIT_MERCANTILE</MinorCivTrait>
+		</Row>
+	</MinorCivilizations>
+	<MinorCivilization_Flavors>
+		<Row>
+			<MinorCivType>MINOR_CIV_THE_TROUPE</MinorCivType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_THE_TROUPE</MinorCivType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+	</MinorCivilization_Flavors>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMMINOR_THE_TROUPE">
+			<Text>The Troupe</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMMINOR_THE_TROUPE_ADJ">
+			<Text>Troupe</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

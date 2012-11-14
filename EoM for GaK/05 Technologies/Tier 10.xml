@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 9/15/2012 12:54:37 AM -->
+<GameData>
+	<!-- SP2_10: WAR ELEPHANTS III -->
+	<!-- U: Battle Elephant -->
+	<Technologies>
+		<Row>
+			<Type>TECH_WAR_ELEPHANTS_3</Type>
+			<Cost>1000</Cost>
+			<Description>TXT_KEY_EOMTECH_WAR_ELEPHANTS_3</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_RENAISSANCE</Era>
+			<Trade>true</Trade>
+			<GridX>10</GridX>
+			<GridY>0</GridY>
+			<PortraitIndex>11</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_WAR_ELEPHANTS_3">
+			<Text>War Elephants III</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_WAR_ELEPHANTS_3</TechType>
+			<PrereqTech>TECH_WAR_ELEPHANTS_2</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_WAR_ELEPHANTS_3</TechType>
+			<PrereqTech>TECH_WAR_HORSES</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_WAR_ELEPHANTS_3</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- SEA_10: NAVIGATION -->
+	<!-- U: Frigate, Privateer -->
+	<!-- Embarked +1 -->
+	<Technologies>
+		<Row>
+			<Type>TECH_NAVIGATION</Type>
+			<Cost>1000</Cost>
+			<Description>TXT_KEY_EOMTECH_NAVIGATION</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_RENAISSANCE</Era>
+			<Trade>true</Trade>
+			<GridX>10</GridX>
+			<GridY>1</GridY>
+			<PortraitIndex>29</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<EmbarkedMoveChange>1</EmbarkedMoveChange>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_NAVIGATION">
+			<Text>Navigation</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_NAVIGATION</TechType>
+			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_NAVIGATION</TechType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- FOOD?_10: GUNPOWDER -->
+	<!-- U: Musketeer, Dragoon, Cannon -->
+	<Technologies>
+		<Row>
+			<Type>TECH_GUNPOWDER</Type>
+			<Cost>1000</Cost>
+			<Description>TXT_KEY_EOMTECH_GUNPOWDER</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_RENAISSANCE</Era>
+			<Trade>true</Trade>
+			<GridX>10</GridX>
+			<GridY>3</GridY>
+			<PortraitIndex>32</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_GUNPOWDER">
+			<Text>Gunpowder</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_GUNPOWDER</TechType>
+			<PrereqTech>TECH_INDUSTRIALISM</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_GUNPOWDER</TechType>
+			<PrereqTech>TECH_MILITARY_SCIENCE</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_GUNPOWDER</TechType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_INDUSTRIALISM</TechType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</Technology_Flavors>
+	<!-- METAL_10: ELITE TROOPS -->
+	<!-- U: Elite Guard, Elite Cavalry -->
+	<Technologies>
+		<Row>
+			<Type>TECH_ELITE_TROOPS</Type>
+			<Cost>1000</Cost>
+			<Description>TXT_KEY_EOMTECH_ELITE_TROOPS</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_RENAISSANCE</Era>
+			<Trade>true</Trade>
+			<GridX>10</GridX>
+			<GridY>6</GridY>
+			<PortraitIndex>27</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_ELITE_TROOPS">
+			<Text>Elite Troops</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_ELITE_TROOPS</TechType>
+			<PrereqTech>TECH_WAR_HORSES</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_ELITE_TROOPS</TechType>
+			<PrereqTech>TECH_DEEP_MINING</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_ELITE_TROOPS</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ELITE_TROOPS</TechType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_ELITE_TROOPS</TechType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+	</Technology_Flavors>
+</GameData>

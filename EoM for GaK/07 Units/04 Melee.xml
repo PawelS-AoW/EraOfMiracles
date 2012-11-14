@@ -1,0 +1,1548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 6/6/2012 1:30:07 PM -->
+<GameData>
+	<!-- RESOURCELESS -->
+	<!-- WARRIOR -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_WARRIOR</Type>
+			<Description>TXT_KEY_EOMUNIT_WARRIOR</Description>
+			<DefaultUnit>UNIT_WARRIOR</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_WARRIOR</Class>
+			<Type>UNIT_WARRIOR</Type>
+			<ObsoleteTech>TECH_FEUDALISM</ObsoleteTech>
+			<Cost>50</Cost>
+			<ExtraMaintenanceCost>2</ExtraMaintenanceCost>
+			<Combat>4</Combat>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_DEFENSE</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_WARRIOR</Description>
+			<Help>TXT_KEY_EOMUNIT_WARRIOR_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<UnitArtInfo>ART_DEF_UNIT__WARRIOR</UnitArtInfo>
+			<UnitFlagIconOffset>3</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>3</PortraitIndex>
+			<MoveRate>HEAVY_BIPED</MoveRate>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_WARRIOR">
+			<Text>Warrior</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_WARRIOR_HELP">
+			<Text>[ICON_BULLET]Melee Unit.[NEWLINE][ICON_BULLET]-25% [ICON_STRENGTH] Strength when attacking cities.</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_WARRIOR</UnitType>
+			<UnitClassType>UNITCLASS_MILITIA</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_WARRIOR</UnitType>
+			<PromotionType>PROMOTION_CITY_MINUS_25</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_WARRIOR</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WARRIOR</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_WARRIOR</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WARRIOR</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_WARRIOR"/>
+		</Update>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_WARRIOR_V2"/>
+		</Update>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_WARRIOR_V4"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Set NumMembers="2"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_WARRIOR"/>
+		</Update>
+		<Update>
+			<Set NumMembers="1"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_WARRIOR_V2"/>
+		</Update>
+		<Update>
+			<Set NumMembers="1"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_WARRIOR_V4"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitInfos>
+		<Update>
+			<Set Formation="EoM_2x2"/>
+			<Where Type="ART_DEF_UNIT__WARRIOR"/>
+		</Update>
+	</ArtDefine_UnitInfos>
+	<!-- MILITIA -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_MILITIA</Type>
+			<Description>TXT_KEY_EOMUNIT_MILITIA</Description>
+			<DefaultUnit>UNIT_MILITIA</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_MILITIA</Class>
+			<Type>UNIT_MILITIA</Type>
+			<PrereqTech>TECH_FEUDALISM</PrereqTech>
+			<ObsoleteTech>TECH_CIVIL_SERVICE</ObsoleteTech>
+			<Cost>100</Cost>
+			<ExtraMaintenanceCost>3</ExtraMaintenanceCost>
+			<Combat>6</Combat>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_DEFENSE</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_MILITIA</Description>
+			<Help>TXT_KEY_EOMUNIT_MILITIA_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<UnitArtInfo>ART_DEF_UNIT_U_CELT_PICTISH_WARRIOR</UnitArtInfo>
+			<UnitFlagIconOffset>34</UnitFlagIconOffset>
+			<IconAtlas>EXPANSION_UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>10</PortraitIndex>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_MILITIA">
+			<Text>Militia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_MILITIA_HELP">
+			<Text>[ICON_BULLET]Melee Unit.[NEWLINE][ICON_BULLET]+25% [ICON_STRENGTH] Strength in friendly territory.</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_MILITIA</UnitType>
+			<UnitClassType>UNITCLASS_HOME_GUARD</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_MILITIA</UnitType>
+			<PromotionType>PROMOTION_FRIENDLY_LANDS</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_MILITIA</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_MILITIA</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_MILITIA</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_MILITIA</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.19"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_U_CELT_PICTISH_WARRIOR"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Set NumMembers="4"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_U_CELT_PICTISH_WARRIOR"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitInfos>
+		<Update>
+			<Set Formation="EoM_2x2"/>
+			<Where Type="ART_DEF_UNIT_U_CELT_PICTISH_WARRIOR"/>
+		</Update>
+	</ArtDefine_UnitInfos>
+	<!-- HOME GUARD -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_HOME_GUARD</Type>
+			<Description>TXT_KEY_EOMUNIT_HOME_GUARD</Description>
+			<DefaultUnit>UNIT_HOME_GUARD</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_HOME_GUARD</Class>
+			<Type>UNIT_HOME_GUARD</Type>
+			<PrereqTech>TECH_CIVIL_SERVICE</PrereqTech>
+			<Cost>200</Cost>
+			<ExtraMaintenanceCost>4</ExtraMaintenanceCost>
+			<Combat>8</Combat>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_DEFENSE</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_HOME_GUARD</Description>
+			<Help>TXT_KEY_EOMUNIT_HOME_GUARD_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<UnitArtInfo>ART_DEF_UNIT_GADRAUHTS_SWORDSMAN</UnitArtInfo>
+			<UnitFlagAtlas>EXPANSION_SCEN_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>2</UnitFlagIconOffset>
+			<IconAtlas>EXPANSION_SCEN_UNIT_ATLAS</IconAtlas>
+			<PortraitIndex>2</PortraitIndex>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_HOME_GUARD">
+			<Text>Home Guard</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_HOME_GUARD_HELP">
+			<Text>[ICON_BULLET]Melee Unit.[NEWLINE][ICON_BULLET]+25% [ICON_STRENGTH] Strength in friendly territory.</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_HOME_GUARD</UnitType>
+			<UnitClassType>UNITCLASS_ELITE_GUARD</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_HOME_GUARD</UnitType>
+			<PromotionType>PROMOTION_FRIENDLY_LANDS</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_HOME_GUARD</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HOME_GUARD</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_HOME_GUARD</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HOME_GUARD</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_GADRAUHTS_SWORDSMAN"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Set NumMembers="4"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_GADRAUHTS_SWORDSMAN"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitInfos>
+		<Update>
+			<Set Formation="EoM_2x2"/>
+			<Where Type="ART_DEF_UNIT_GADRAUHTS_SWORDSMAN"/>
+		</Update>
+	</ArtDefine_UnitInfos>
+	<!-- BERSERKER (Snobar) -->
+	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_SNOBAR</CivilizationType>
+			<UnitClassType>UNITCLASS_HOME_GUARD</UnitClassType>
+			<UnitType>UNIT_BERSERKER</UnitType>
+		</Row>
+	</Civilization_UnitClassOverrides>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_HOME_GUARD</Class>
+			<Type>UNIT_BERSERKER</Type>
+			<PrereqTech>TECH_CIVIL_SERVICE</PrereqTech>
+			<Cost>200</Cost>
+			<ExtraMaintenanceCost>4</ExtraMaintenanceCost>
+			<Combat>8</Combat>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_BERSERKER</Description>
+			<Help>TXT_KEY_EOMUNIT_BERSERKER_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<UnitArtInfo>ART_DEF_UNIT_U_DANISH_BERSERKER</UnitArtInfo>
+			<IconAtlas>HARALD_UNIT_ATLAS</IconAtlas>
+			<UnitFlagAtlas>HARALD_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>0</UnitFlagIconOffset>
+			<PortraitIndex>0</PortraitIndex>
+			<MoveRate>HEAVY_BIPED</MoveRate>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_BERSERKER">
+			<Text>Berserker</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_BERSERKER_HELP">
+			<Text>[ICON_BULLET]Melee Unit.[NEWLINE][ICON_BULLET]+25% Attack Strength.</Text>
+		</Row>
+		<!-- Snobar unique unit, replaces Home Guard. Gets an attack bonus instead of friendly lands bonus. -->
+	</Language_en_US>
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_BERSERKER</UnitType>
+			<UnitClassType>UNITCLASS_ELITE_GUARD</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_BERSERKER</UnitType>
+			<PromotionType>PROMOTION_ATTACK_BONUS</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_BERSERKER</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_BERSERKER</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>9</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.21"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_U_DANISH_BERSERKER"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Set NumMembers="4"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_U_DANISH_BERSERKER"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitInfos>
+		<Update>
+			<Set Formation="EoM_2x2"/>
+			<Where Type="ART_DEF_UNIT_U_DANISH_BERSERKER"/>
+		</Update>
+	</ArtDefine_UnitInfos>
+	<!-- ANTI-MOUNTED -->
+	<!-- SPEARMAN -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_SPEARMAN</Type>
+			<Description>TXT_KEY_EOMUNIT_SPEARMAN</Description>
+			<DefaultUnit>UNIT_SPEARMAN</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_SPEARMAN</Class>
+			<Type>UNIT_SPEARMAN</Type>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<ObsoleteTech>TECH_METALLURGY</ObsoleteTech>
+			<Cost>100</Cost>
+			<ExtraMaintenanceCost>3</ExtraMaintenanceCost>
+			<Combat>6</Combat>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_SPEARMAN</Description>
+			<Help>TXT_KEY_EOMUNIT_SPEARMAN_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<UnitArtInfo>ART_DEF_UNIT_SPEARMAN</UnitArtInfo>
+			<UnitFlagIconOffset>9</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>9</PortraitIndex>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_SPEARMAN">
+			<Text>Spearman</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_SPEARMAN_HELP">
+			<Text>[ICON_BULLET]Melee Unit.[NEWLINE][ICON_BULLET]+25% [ICON_STRENGTH] Strength vs Mounted Units.</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_SPEARMAN</UnitType>
+			<UnitClassType>UNITCLASS_PIKEMAN</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_SPEARMAN</UnitType>
+			<PromotionType>PROMOTION_POLE_ARM_I</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_SPEARMAN</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SPEARMAN</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SPEARMAN</UnitType>
+			<UnitAIType>UNITAI_COUNTER</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_SPEARMAN</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SPEARMAN</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_SPEARMAN"/>
+		</Update>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_SPEARMAN_V2"/>
+		</Update>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_SPEARMAN_V3"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Set NumMembers="2"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_SPEARMAN"/>
+		</Update>
+		<Update>
+			<Set NumMembers="1"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_SPEARMAN_V2"/>
+		</Update>
+		<Update>
+			<Set NumMembers="1"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_SPEARMAN_V3"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitInfos>
+		<Update>
+			<Set Formation="EoM_2x2"/>
+			<Where Type="ART_DEF_UNIT_SPEARMAN"/>
+		</Update>
+	</ArtDefine_UnitInfos>
+	<!-- HOPLITE (Archons) -->
+	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_ARCHONS</CivilizationType>
+			<UnitClassType>UNITCLASS_SPEARMAN</UnitClassType>
+			<UnitType>UNIT_HOPLITE</UnitType>
+		</Row>
+	</Civilization_UnitClassOverrides>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_SPEARMAN</Class>
+			<Type>UNIT_HOPLITE</Type>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<ObsoleteTech>TECH_METALLURGY</ObsoleteTech>
+			<Cost>100</Cost>
+			<ExtraMaintenanceCost>3</ExtraMaintenanceCost>
+			<Combat>6</Combat>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_HOPLITE</Description>
+			<Help>TXT_KEY_EOMUNIT_HOPLITE_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<UnitArtInfo>ART_DEF_UNIT_U_GREEK_HOPLITE</UnitArtInfo>
+			<UnitFlagIconOffset>10</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>10</PortraitIndex>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_HOPLITE">
+			<Text>Hoplite</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_HOPLITE_HELP">
+			<Text>[ICON_BULLET]Melee Unit.[NEWLINE][ICON_BULLET]+25% Defense Strength.</Text>
+			<!-- Archon unique unit, stronger at defense than Spearman it replaces, but doesn't get the bonus against Mounted Units. -->
+		</Row>
+	</Language_en_US>
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_HOPLITE</UnitType>
+			<UnitClassType>UNITCLASS_PIKEMAN</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_HOPLITE</UnitType>
+			<PromotionType>PROMOTION_DEFENSE_BONUS</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_HOPLITE</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HOPLITE</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HOPLITE</UnitType>
+			<UnitAIType>UNITAI_COUNTER</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_HOPLITE</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HOPLITE</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_U_GREEK_HOPLITE"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Set NumMembers="4"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_U_GREEK_HOPLITE"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitInfos>
+		<Update>
+			<Set Formation="EoM_2x2"/>
+			<Where Type="ART_DEF_UNIT_U_GREEK_HOPLITE"/>
+		</Update>
+	</ArtDefine_UnitInfos>
+	<!-- PIKEMAN -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_PIKEMAN</Type>
+			<Description>TXT_KEY_EOMUNIT_PIKEMAN</Description>
+			<DefaultUnit>UNIT_PIKEMAN</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_PIKEMAN</Class>
+			<Type>UNIT_PIKEMAN</Type>
+			<PrereqTech>TECH_METALLURGY</PrereqTech>
+			<Cost>200</Cost>
+			<ExtraMaintenanceCost>4</ExtraMaintenanceCost>
+			<Combat>9</Combat>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_PIKEMAN</Description>
+			<Help>TXT_KEY_EOMUNIT_PIKEMAN_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<UnitArtInfo>ART_DEF_UNIT_PIKEMAN</UnitArtInfo>
+			<UnitFlagIconOffset>32</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>33</PortraitIndex>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_PIKEMAN">
+			<Text>Pikeman</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_PIKEMAN_HELP">
+			<Text>[ICON_BULLET]Melee Unit.[NEWLINE][ICON_BULLET]+50% [ICON_STRENGTH] Strength vs Mounted Units.</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_PIKEMAN</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_PIKEMAN</UnitType>
+			<UnitClassType>UNITCLASS_ELITE_GUARD</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_PIKEMAN</UnitType>
+			<PromotionType>PROMOTION_POLE_ARM_II</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_PIKEMAN</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_PIKEMAN</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_PIKEMAN</UnitType>
+			<UnitAIType>UNITAI_COUNTER</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_PIKEMAN</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_PIKEMAN</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_PIKEMAN"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Set NumMembers="4"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_PIKEMAN"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitInfos>
+		<Update>
+			<Set Formation="EoM_2x2"/>
+			<Where Type="ART_DEF_UNIT_PIKEMAN"/>
+		</Update>
+	</ArtDefine_UnitInfos>
+	<!-- HALBERDIER (Dreamers) -->
+	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_DREAMERS</CivilizationType>
+			<UnitClassType>UNITCLASS_PIKEMAN</UnitClassType>
+			<UnitType>UNIT_HALBERDIER</UnitType>
+		</Row>
+	</Civilization_UnitClassOverrides>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_PIKEMAN</Class>
+			<Type>UNIT_HALBERDIER</Type>
+			<PrereqTech>TECH_METALLURGY</PrereqTech>
+			<Cost>200</Cost>
+			<ExtraMaintenanceCost>4</ExtraMaintenanceCost>
+			<Combat>8</Combat>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_HALBERDIER</Description>
+			<Help>TXT_KEY_EOMUNIT_HALBERDIER_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<UnitArtInfo>ART_DEF_UNIT_U_GERMAN_LANDSKNECHT</UnitArtInfo>
+			<UnitFlagIconOffset>33</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>34</PortraitIndex>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_HALBERDIER">
+			<Text>Halberdier</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_HALBERDIER_HELP">
+			<Text>[ICON_BULLET]Melee Unit.[NEWLINE][ICON_BULLET]+50% [ICON_STRENGTH] Strength vs Mounted Units.[NEWLINE][ICON_BULLET]+25% [ICON_STRENGTH] Strength vs Melee Units.</Text>
+		</Row>
+		<!-- Dreamers unique unit, weaker than Pikeman it replaces, but has a bonus against Melee units. -->
+	</Language_en_US>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_HALBERDIER</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_HALBERDIER</UnitType>
+			<UnitClassType>UNITCLASS_ELITE_GUARD</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_HALBERDIER</UnitType>
+			<PromotionType>PROMOTION_POLE_ARM_II</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HALBERDIER</UnitType>
+			<PromotionType>PROMOTION_AXES_I</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_HALBERDIER</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HALBERDIER</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HALBERDIER</UnitType>
+			<UnitAIType>UNITAI_COUNTER</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_HALBERDIER</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HALBERDIER</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_U_GERMAN_LANDSKNECHT_A"/>
+		</Update>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_U_GERMAN_LANDSKNECHT_B"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Set NumMembers="2"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_U_GERMAN_LANDSKNECHT_A"/>
+		</Update>
+		<Update>
+			<Set NumMembers="2"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_U_GERMAN_LANDSKNECHT_B"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitInfos>
+		<Update>
+			<Set Formation="EoM_2x2"/>
+			<Where Type="ART_DEF_UNIT_U_GERMAN_LANDSKNECHT"/>
+		</Update>
+	</ArtDefine_UnitInfos>
+	<!-- AXEMAN -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_AXEMAN</Type>
+			<Description>TXT_KEY_EOMUNIT_AXEMAN</Description>
+			<DefaultUnit>UNIT_AXEMAN</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_AXEMAN</Class>
+			<Type>UNIT_AXEMAN</Type>
+			<PrereqTech>TECH_METAL_CASTING</PrereqTech>
+			<ObsoleteTech>TECH_STEEL</ObsoleteTech>
+			<Cost>100</Cost>
+			<ExtraMaintenanceCost>3</ExtraMaintenanceCost>
+			<Combat>5</Combat>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_AXEMAN</Description>
+			<Help>TXT_KEY_EOMUNIT_AXEMAN_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<UnitArtInfo>ART_DEF_UNIT_EOM_AXEMAN</UnitArtInfo>
+			<UnitFlagIconOffset>26</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>3</PortraitIndex>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_AXEMAN">
+			<Text>Axeman</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_AXEMAN_HELP">
+			<Text>[ICON_BULLET]Melee Unit.[NEWLINE][ICON_BULLET]+50% [ICON_STRENGTH] Strength vs Melee Units.</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_AXEMAN</UnitType>
+			<UnitClassType>UNITCLASS_HEAVY_AXEMAN</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_AXEMAN</UnitType>
+			<PromotionType>PROMOTION_AXES_II</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_AXEMAN</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_AXEMAN</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_AXEMAN</UnitType>
+			<UnitAIType>UNITAI_COUNTER</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_AXEMAN</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_AXEMAN</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx - new definition -->
+	
+	<!-- HEAVY AXEMAN -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_HEAVY_AXEMAN</Type>
+			<Description>TXT_KEY_EOMUNIT_HEAVY_AXEMAN</Description>
+			<DefaultUnit>UNIT_HEAVY_AXEMAN</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_HEAVY_AXEMAN</Class>
+			<Type>UNIT_HEAVY_AXEMAN</Type>
+			<PrereqTech>TECH_STEEL</PrereqTech>
+			<Cost>200</Cost>
+			<ExtraMaintenanceCost>4</ExtraMaintenanceCost>
+			<Combat>8</Combat>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_HEAVY_AXEMAN</Description>
+			<Help>TXT_KEY_EOMUNIT_HEAVY_AXEMAN_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<UnitArtInfo>ART_DEF_UNIT_U_SAXON_HUSCARL</UnitArtInfo>
+			<UnitFlagAtlas>EXPANSION_SCEN_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>1</UnitFlagIconOffset>
+			<IconAtlas>EXPANSION_SCEN_UNIT_ATLAS</IconAtlas>
+			<PortraitIndex>1</PortraitIndex>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_HEAVY_AXEMAN">
+			<Text>Heavy Axeman</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_HEAVY_AXEMAN_HELP">
+			<Text>[ICON_BULLET]Melee Unit.[NEWLINE][ICON_BULLET]+50% [ICON_STRENGTH] Strength vs Melee Units.</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_HEAVY_AXEMAN</UnitType>
+			<UnitClassType>UNITCLASS_ELITE_GUARD</UnitClassType>
+		</Row> 
+	</Unit_ClassUpgrades>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_HEAVY_AXEMAN</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_HEAVY_AXEMAN</UnitType>
+			<PromotionType>PROMOTION_AXES_II</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_HEAVY_AXEMAN</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HEAVY_AXEMAN</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HEAVY_AXEMAN</UnitType>
+			<UnitAIType>UNITAI_COUNTER</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_HEAVY_AXEMAN</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HEAVY_AXEMAN</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_U_SAXON_HUSCARL"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Set NumMembers="4"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_U_SAXON_HUSCARL"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitInfos>
+		<Update>
+			<Set Formation="EoM_2x2"/>
+			<Where Type="ART_DEF_UNIT_U_SAXON_HUSCARL"/>
+		</Update>
+	</ArtDefine_UnitInfos>
+	<!-- SWORDSMAN -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_SWORDSMAN</Type>
+			<Description>TXT_KEY_EOMUNIT_SWORDSMAN</Description>
+			<DefaultUnit>UNIT_SWORDSMAN</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_SWORDSMAN</Class>
+			<Type>UNIT_SWORDSMAN</Type>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
+			<ObsoleteTech>TECH_STEEL</ObsoleteTech>
+			<Cost>100</Cost>
+			<ExtraMaintenanceCost>3</ExtraMaintenanceCost>
+			<Combat>8</Combat>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_SWORDSMAN</Description>
+			<Help>TXT_KEY_EOMUNIT_SWORDSMAN_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<UnitArtInfo>ART_DEF_UNIT_SWORDSMAN</UnitArtInfo>
+			<UnitFlagIconOffset>14</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>14</PortraitIndex>
+			<MoveRate>HEAVY_BIPED</MoveRate>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_SWORDSMAN">
+			<Text>Swordsman</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_SWORDSMAN_HELP">
+			<Text>[ICON_BULLET]Melee Unit.[NEWLINE][ICON_BULLET]+50% [ICON_STRENGTH] Strength when attacking cities.</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_SWORDSMAN</UnitType>
+			<UnitClassType>UNITCLASS_LONGSWORDSMAN</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_SWORDSMAN</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_SWORDSMAN</UnitType>
+			<PromotionType>PROMOTION_CITY_PLUS_50</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_SWORDSMAN</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SWORDSMAN</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SWORDSMAN</UnitType>
+			<UnitAIType>UNITAI_CITY_BOMBARD</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_SWORDSMAN</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SWORDSMAN</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_SWORDSMAN"/>
+		</Update>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_SWORDSMAN_V2"/>
+		</Update>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_SWORDSMAN_V3"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Set NumMembers="2"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_SWORDSMAN"/>
+		</Update>
+		<Update>
+			<Set NumMembers="1"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_SWORDSMAN_V2"/>
+		</Update>
+		<Update>
+			<Set NumMembers="1"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_SWORDSMAN_V3"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitInfos>
+		<Update>
+			<Set Formation="EoM_2x2"/>
+			<Where Type="ART_DEF_UNIT_SWORDSMAN"/>
+		</Update>
+	</ArtDefine_UnitInfos>
+	<!-- LONGSWORDSMAN -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_LONGSWORDSMAN</Type>
+			<Description>TXT_KEY_EOMUNIT_LONGSWORDSMAN</Description>
+			<DefaultUnit>UNIT_LONGSWORDSMAN</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_LONGSWORDSMAN</Class>
+			<Type>UNIT_LONGSWORDSMAN</Type>
+			<PrereqTech>TECH_STEEL</PrereqTech>
+			<Cost>200</Cost>
+			<ExtraMaintenanceCost>4</ExtraMaintenanceCost>
+			<Combat>10</Combat>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_LONGSWORDSMAN</Description>
+			<Help>TXT_KEY_EOMUNIT_LONGSWORDSMAN_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<UnitArtInfo>ART_DEF_UNIT_LONGSWORDSMAN</UnitArtInfo>
+			<UnitFlagIconOffset>35</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>36</PortraitIndex>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_LONGSWORDSMAN">
+			<Text>Longswordsman</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_LONGSWORDSMAN_HELP">
+			<Text>[ICON_BULLET]Melee Unit.[NEWLINE][ICON_BULLET]+50% [ICON_STRENGTH] Strength when attacking cities.</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_LONGSWORDSMAN</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_LONGSWORDSMAN</UnitType>
+			<UnitClassType>UNITCLASS_ELITE_GUARD</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_LONGSWORDSMAN</UnitType>
+			<PromotionType>PROMOTION_CITY_PLUS_50</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_LONGSWORDSMAN</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LONGSWORDSMAN</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LONGSWORDSMAN</UnitType>
+			<UnitAIType>UNITAI_CITY_BOMBARD</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_LONGSWORDSMAN</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LONGSWORDSMAN</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_LONGSWORDSMAN"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Set NumMembers="4"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_LONGSWORDSMAN"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitInfos>
+		<Update>
+			<Set Formation="EoM_2x2"/>
+			<Where Type="ART_DEF_UNIT_LONGSWORDSMAN"/>
+		</Update>
+	</ArtDefine_UnitInfos>
+	<!-- LEGION (ARCHONS) -->
+	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_ARCHONS</CivilizationType>
+			<UnitClassType>UNITCLASS_LONGSWORDSMAN</UnitClassType>
+			<UnitType>UNIT_LEGION</UnitType>
+		</Row>
+	</Civilization_UnitClassOverrides>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_LONGSWORDSMAN</Class>
+			<Type>UNIT_LEGION</Type>
+			<PrereqTech>TECH_STEEL</PrereqTech>
+			<Cost>200</Cost>
+			<ExtraMaintenanceCost>4</ExtraMaintenanceCost>
+			<Combat>11</Combat>
+			<Moves>2</Moves>
+			<WorkRate>50</WorkRate>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_LEGION</Description>
+			<Help>TXT_KEY_EOMUNIT_LEGION_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<UnitArtInfo>ART_DEF_UNIT_U_ROMAN_LEGION</UnitArtInfo>
+			<UnitFlagIconOffset>15</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>15</PortraitIndex>
+			<MoveRate>HEAVY_BIPED</MoveRate>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_LEGION">
+			<Text>Legion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_LEGION_HELP">
+			<Text>[ICON_BULLET]Melee Unit.[NEWLINE][ICON_BULLET]Can build Roads and Forts at half the speed of Workers.</Text>
+		</Row>
+		<!-- [NEWLINE][ICON_BULLET]Archon unique unit, stronger than Longswordsman it replaces and can build Roads and Forts, but doesn't get the bonus vs cities. -->
+	</Language_en_US>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_LEGION</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_LEGION</UnitType>
+			<UnitClassType>UNITCLASS_ELITE_GUARD</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+	<Unit_Builds>
+		<Row>
+			<UnitType>UNIT_LEGION</UnitType>
+			<BuildType>BUILD_ROAD</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LEGION</UnitType>
+			<BuildType>BUILD_FORT</BuildType>
+		</Row>
+	</Unit_Builds>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_LEGION</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LEGION</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LEGION</UnitType>
+			<UnitAIType>UNITAI_CITY_BOMBARD</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LEGION</UnitType>
+			<UnitAIType>UNITAI_WORKER</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_LEGION</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LEGION</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LEGION</UnitType>
+			<FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_U_ROMAN_LEGION"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Set NumMembers="4"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_U_ROMAN_LEGION"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitInfos>
+		<Update>
+			<Set Formation="EoM_2x2"/>
+			<Where Type="ART_DEF_UNIT_U_ROMAN_LEGION"/>
+		</Update>
+	</ArtDefine_UnitInfos>
+	<!-- SAMURAI (NIKKEI) -->
+	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_NIKKEI</CivilizationType>
+			<UnitClassType>UNITCLASS_LONGSWORDSMAN</UnitClassType>
+			<UnitType>UNIT_SAMURAI</UnitType>
+		</Row>
+	</Civilization_UnitClassOverrides>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_LONGSWORDSMAN</Class>
+			<Type>UNIT_SAMURAI</Type>
+			<PrereqTech>TECH_STEEL</PrereqTech>
+			<Cost>200</Cost>
+			<ExtraMaintenanceCost>4</ExtraMaintenanceCost>
+			<Combat>10</Combat>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_SAMURAI</Description>
+			<Help>TXT_KEY_EOMUNIT_SAMURAI_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<UnitArtInfo>ART_DEF_UNIT_U_JAPANESE_SAMURAI</UnitArtInfo>
+			<UnitFlagIconOffset>36</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>37</PortraitIndex>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_SAMURAI">
+			<Text>Samurai</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_SAMURAI_HELP">
+			<Text>[ICON_BULLET]Melee Unit.[NEWLINE][ICON_BULLET]+25% [ICON_STRENGTH] Strength in open terrain.</Text>
+		</Row>
+		<!-- Nikkei unique unit, replaces Longswordsman. Gets an open terrain bonus instead of bonus vs cities. -->
+	</Language_en_US>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_SAMURAI</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_SAMURAI</UnitType>
+			<UnitClassType>UNITCLASS_ELITE_GUARD</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_SAMURAI</UnitType>
+			<PromotionType>PROMOTION_OPEN_BONUS</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_SAMURAI</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SAMURAI</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SAMURAI</UnitType>
+			<UnitAIType>UNITAI_CITY_BOMBARD</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_SAMURAI</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SAMURAI</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_U_JAPANESE_SAMURAI"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Set NumMembers="4"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_U_JAPANESE_SAMURAI"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitInfos>
+		<Update>
+			<Set Formation="EoM_2x2"/>
+			<Where Type="ART_DEF_UNIT_U_JAPANESE_SAMURAI"/>
+		</Update>
+	</ArtDefine_UnitInfos>
+	<!-- ELITE GUARD -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_ELITE_GUARD</Type>
+			<Description>TXT_KEY_EOMUNIT_ELITE_GUARD</Description>
+			<DefaultUnit>UNIT_ELITE_GUARD</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_ELITE_GUARD</Class>
+			<Type>UNIT_ELITE_GUARD</Type>
+			<PrereqTech>TECH_ELITE_TROOPS</PrereqTech>
+			<Cost>400</Cost>
+			<ExtraMaintenanceCost>6</ExtraMaintenanceCost>
+			<Combat>12</Combat>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_DEFENSE</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_ELITE_GUARD</Description>
+			<Help>TXT_KEY_EOMUNIT_ELITE_GUARD_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<UnitArtInfo>ART_DEF_UNIT_LONGSWORDSMAN</UnitArtInfo>
+			<UnitFlagIconOffset>49</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>36</PortraitIndex>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_ELITE_GUARD">
+			<Text>Elite Guard</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_ELITE_GUARD_HELP">
+			<Text>[ICON_BULLET]Melee Unit.[NEWLINE][ICON_BULLET][ICON_STRENGTH] Strength bonus: +40% - 2% per tile of distance to the [ICON_CAPITAL] capital.[NEWLINE][ICON_BULLET]Gains 50% more XP from combat.</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_ELITE_GUARD</UnitType>
+			<ResourceType>RESOURCE_MITHRIL</ResourceType>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_ELITE_GUARD</UnitType>
+			<PromotionType>PROMOTION_PALACE_GUARD</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_ELITE_GUARD</UnitType>
+			<PromotionType>PROMOTION_ELITE</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_ELITE_GUARD</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_ELITE_GUARD</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_ELITE_GUARD</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_ELITE_GUARD</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+	</Unit_Flavors>
+</GameData>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 6/13/2012 2:57:04 PM -->
+<GameData>
+	<!-- NIKKEI -->
+	<Civilizations>
+		<Row>
+			<Type>CIVILIZATION_NIKKEI</Type>
+			<Description>TXT_KEY_EOMCIV_NIKKEI_LONG</Description>
+			<ShortDescription>TXT_KEY_EOMCIV_NIKKEI_SHORT</ShortDescription>
+			<Adjective>TXT_KEY_EOMCIV_NIKKEI_ADJ</Adjective>
+			<CivilopediaTag>TXT_KEY_EOMCIV_NIKKEI_SHORT</CivilopediaTag>
+			<DefaultPlayerColor>PLAYERCOLOR_DENMARK</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_JAPAN</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleSuffix>_ASIA</ArtStyleSuffix>
+			<ArtStylePrefix>ASIAN </ArtStylePrefix>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>HARALD_CIV_COLOR_ATLAS</IconAtlas>
+			<AlphaIconAtlas>HARALD_CIV_ALPHA_ATLAS</AlphaIconAtlas>
+			<MapImage>sejong.dds</MapImage>
+			<DawnOfManQuote>TXT_KEY_EOM_EMPTY</DawnOfManQuote>
+			<DawnOfManImage>sejong.dds</DawnOfManImage>
+		</Row>
+	</Civilizations>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMCIV_NIKKEI_LONG">
+			<Text>Empire of Nikkei</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_NIKKEI_SHORT">
+			<Text>Nikkei</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_NIKKEI_ADJ">
+			<Text>Nikkei</Text>
+		</Row>
+	</Language_en_US>
+	<Civilization_Leaders>
+		<Row>
+			<CivilizationType>CIVILIZATION_NIKKEI</CivilizationType>
+			<LeaderheadType>LEADER_KENAN</LeaderheadType>
+		</Row>
+	</Civilization_Leaders>
+	<Civilization_FreeTechs>
+		<Row>
+			<CivilizationType>CIVILIZATION_NIKKEI</CivilizationType>
+			<TechType>TECH_WOOD_WORKING</TechType>
+		</Row>
+	</Civilization_FreeTechs>
+	<Civilization_Start_Region_Avoid>
+		<Row>
+			<CivilizationType>CIVILIZATION_NIKKEI</CivilizationType>
+			<RegionType>REGION_TUNDRA</RegionType>
+		</Row>
+	</Civilization_Start_Region_Avoid>
+	<Leaders>
+		<Row>
+			<Type>LEADER_KENAN</Type>
+			<Description>TXT_KEY_EOMLEADER_KENAN</Description>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<CivilopediaTag>TXT_KEY_EOMLEADER_KENAN</CivilopediaTag>
+			<ArtDefineTag>Korea_Sejong_Scene.xml</ArtDefineTag>
+			<VictoryCompetitiveness>5</VictoryCompetitiveness>
+			<WonderCompetitiveness>5</WonderCompetitiveness>
+			<MinorCivCompetitiveness>5</MinorCivCompetitiveness>
+			<Boldness>5</Boldness>
+			<DiploBalance>5</DiploBalance>
+			<WarmongerHate>5</WarmongerHate>
+			<DenounceWillingness>5</DenounceWillingness>
+			<DoFWillingness>5</DoFWillingness>
+			<Loyalty>5</Loyalty>
+			<Neediness>5</Neediness>
+			<Forgiveness>5</Forgiveness>
+			<Chattiness>5</Chattiness>
+			<Meanness>5</Meanness>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>SEJONG_LEADER_ATLAS</IconAtlas>
+		</Row>
+	</Leaders>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMLEADER_KENAN">
+			<Text>Ke-Nan</Text>
+		</Row>
+	</Language_en_US>
+	<Leader_Traits>
+		<Row>
+			<LeaderType>LEADER_KENAN</LeaderType>
+			<TraitType>TRAIT_NIKKEI</TraitType>
+		</Row>
+	</Leader_Traits>
+	<Traits>
+		<Row>
+			<Type>TRAIT_NIKKEI</Type>
+			<ShortDescription>TXT_KEY_EOMTRAIT_NIKKEI</ShortDescription>
+			<Description>TXT_KEY_EOMTRAIT_NIKKEI_DESC</Description>
+		</Row>
+	</Traits>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTRAIT_NIKKEI">
+			<Text>Discipline of Mind</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_NIKKEI_DESC">
+			<Text>Description</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

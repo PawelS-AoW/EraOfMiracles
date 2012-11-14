@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 6/12/2012 1:41:21 AM -->
+<GameData>
+	<!-- CLERIC -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_CLERIC</Type>
+			<Description>TXT_KEY_EOMUNIT_CLERIC</Description>
+			<DefaultUnit>UNIT_CLERIC</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_CLERIC</Class>
+			<Type>UNIT_CLERIC</Type>
+			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
+			<ObsoleteTech>TECH_RELIGIOUS_LAW</ObsoleteTech>
+			<Cost>100</Cost>
+			<ExtraMaintenanceCost>3</ExtraMaintenanceCost>
+			<Combat>3</Combat>
+			<RangedCombat>2</RangedCombat>
+			<Range>2</Range>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_PRIEST</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_CLERIC</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<UnitArtInfo>ART_DEF_UNIT_MISSIONARY</UnitArtInfo>
+			<UnitFlagAtlas>EXPANSION_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>20</UnitFlagIconOffset>
+			<IconAtlas>EXPANSION_UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>20</PortraitIndex>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_CLERIC">
+			<Text>Cleric</Text>
+		</Row>
+	</Language_en_US>
+	<!-- <Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_CLERIC</UnitType>
+			<UnitClassType>UNITCLASS_HIGH_PRIEST</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades> -->
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_CLERIC</UnitType>
+			<ResourceType>RESOURCE_DIVINE_POWER</ResourceType>
+			<Cost>2</Cost>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+	<Unit_FreePromotions>
+		<!-- Healing, indirect, no melee (?) -->
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_PRIEST</UnitType>
+			<UnitAIType>UNITAI_RANGED</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_PRIEST</UnitType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_PRIEST</UnitType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- MAGE -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_MAGE</Type>
+			<Description>TXT_KEY_EOMUNIT_MAGE</Description>
+			<DefaultUnit>UNIT_MAGE</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_MAGE</Class>
+			<Type>UNIT_MAGE</Type>
+			<PrereqTech>TECH_MAGICAL_STUDIES</PrereqTech>
+			<ObsoleteTech>TECH_ARCANE_LORE</ObsoleteTech>
+			<Cost>100</Cost>
+			<ExtraMaintenanceCost>3</ExtraMaintenanceCost>
+			<Combat>3</Combat>
+			<RangedCombat>4</RangedCombat>
+			<Range>2</Range>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_MAGE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_MAGE</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<UnitArtInfo>ART_DEF_UNIT_INQUISITOR</UnitArtInfo>
+			<UnitFlagAtlas>EXPANSION_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>17</UnitFlagIconOffset>
+			<IconAtlas>EXPANSION_UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>17</PortraitIndex>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_MAGE">
+			<Text>Mage</Text>
+		</Row>
+	</Language_en_US>
+	<!-- <Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_MAGE</UnitType>
+			<UnitClassType>UNITCLASS_ARCHMAGE</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades> -->
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_MAGE</UnitType>
+			<ResourceType>RESOURCE_MAGIC_POWER</ResourceType>
+			<Cost>2</Cost>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+	<Unit_FreePromotions>
+		<!-- indirect, no melee (?) -->
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_MAGE</UnitType>
+			<UnitAIType>UNITAI_RANGED</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_MAGE</UnitType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_MAGE</UnitType>
+			<FlavorType>FLAVOR_MAGIC</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Unit_Flavors>
+</GameData>

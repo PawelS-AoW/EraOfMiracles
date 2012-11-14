@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 6/11/2012 1:06:57 AM -->
+<GameData>
+	<!-- ARCHONS -->
+	<Civilizations>
+		<Row>
+			<Type>CIVILIZATION_ARCHONS</Type>
+			<Description>TXT_KEY_EOMCIV_ARCHONS_LONG</Description>
+			<ShortDescription>TXT_KEY_EOMCIV_ARCHONS_SHORT</ShortDescription>
+			<Adjective>TXT_KEY_EOMCIV_ARCHONS_ADJ</Adjective>
+			<CivilopediaTag>TXT_KEY_EOMCIV_ARCHONS_SHORT</CivilopediaTag>
+			<DefaultPlayerColor>PLAYERCOLOR_SPAIN</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_ROME</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_GRECO_ROMAN</ArtStyleType>
+			<ArtStyleSuffix>_MED</ArtStyleSuffix>
+			<ArtStylePrefix>MEDITERRANEAN </ArtStylePrefix>
+			<PortraitIndex>1</PortraitIndex>
+			<IconAtlas>ISABELLA_CIV_COLOR_ATLAS</IconAtlas>
+			<AlphaIconAtlas>ISABELLA_CIV_ALPHA_ATLAS</AlphaIconAtlas>
+			<MapImage>augustus.dds</MapImage>
+			<DawnOfManQuote>TXT_KEY_EOM_EMPTY</DawnOfManQuote>
+			<DawnOfManImage>augustus.dds</DawnOfManImage>
+		</Row>
+	</Civilizations>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMCIV_ARCHONS_LONG">
+			<Text>Holy Archon Empire</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_ARCHONS_SHORT">
+			<Text>Archons</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_ARCHONS_ADJ">
+			<Text>Archon</Text>
+		</Row>
+	</Language_en_US>
+	<Civilization_Start_Region_Avoid>
+		<Row>
+			<CivilizationType>CIVILIZATION_ARCHONS</CivilizationType>
+			<RegionType>REGION_TUNDRA</RegionType>
+		</Row>
+	</Civilization_Start_Region_Avoid>
+	<Civilization_Leaders>
+		<Row>
+			<CivilizationType>CIVILIZATION_ARCHONS</CivilizationType>
+			<LeaderheadType>LEADER_GABRIEL</LeaderheadType>
+		</Row>
+	</Civilization_Leaders>
+	<Civilization_FreeTechs>
+		<Row>
+			<CivilizationType>CIVILIZATION_ARCHONS</CivilizationType>
+			<TechType>TECH_RITUALISM</TechType>
+		</Row>
+	</Civilization_FreeTechs>
+	<Leaders>
+		<Row>
+			<Type>LEADER_GABRIEL</Type>
+			<Description>TXT_KEY_EOMLEADER_GABRIEL</Description>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<CivilopediaTag>TXT_KEY_EOMLEADER_GABRIEL</CivilopediaTag>
+			<ArtDefineTag>Augustus_Scene.xml</ArtDefineTag>
+			<VictoryCompetitiveness>5</VictoryCompetitiveness>
+			<WonderCompetitiveness>5</WonderCompetitiveness>
+			<MinorCivCompetitiveness>5</MinorCivCompetitiveness>
+			<Boldness>5</Boldness>
+			<DiploBalance>5</DiploBalance>
+			<WarmongerHate>5</WarmongerHate>
+			<DenounceWillingness>5</DenounceWillingness>
+			<DoFWillingness>5</DoFWillingness>
+			<Loyalty>5</Loyalty>
+			<Neediness>5</Neediness>
+			<Forgiveness>5</Forgiveness>
+			<Chattiness>5</Chattiness>
+			<Meanness>5</Meanness>
+			<PortraitIndex>17</PortraitIndex>
+			<IconAtlas>LEADER_ATLAS</IconAtlas>
+		</Row>
+	</Leaders>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMLEADER_GABRIEL">
+			<Text>Gabriel</Text>
+		</Row>
+	</Language_en_US>
+	<Leader_Traits>
+		<Row>
+			<LeaderType>LEADER_GABRIEL</LeaderType>
+			<TraitType>TRAIT_ARCHONS</TraitType>
+		</Row>
+	</Leader_Traits>
+	<Traits>
+		<Row>
+			<Type>TRAIT_ARCHONS</Type>
+			<ShortDescription>TXT_KEY_EOMTRAIT_ARCHONS</ShortDescription>
+			<Description>TXT_KEY_EOMTRAIT_ARCHONS_DESC</Description>
+			<BonusReligiousBelief>true</BonusReligiousBelief>
+		</Row>
+	</Traits>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTRAIT_ARCHONS">
+			<Text>Mandate of Heaven</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_ARCHONS_DESC">
+			<Text>[ICON_BULLET]Choose one extra belief when founding a religion.[NEWLINE][ICON_BULLET]+2 [ICON_RESEARCH] Science, +2 [ICON_CULTURE] Culture, and +2 [ICON_PEACE] Mana from Ancient Temples.[NEWLINE][ICON_BULLET]Priest units get extra healing power.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
