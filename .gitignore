@@ -38,6 +38,7 @@ local.properties
 
 # User-specific files
 *.suo
+*.civ5suo
 *.user
 *.sln.docstates
 
