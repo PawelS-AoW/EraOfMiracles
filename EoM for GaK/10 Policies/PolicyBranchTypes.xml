@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 11/9/2012 7:48:37 PM -->
+<GameData>
+	<!-- Table definition -->
+	<Table name="PolicyBranchTypes">
+		<!-- Basic info -->
+		<Column name="ID" type="integer" primarykey="true" autoincrement="true"/>
+		<Column name="Type" type="text" unique="true" notnull="true"/>
+		<Column name="Description" type="text" reference="Language_en_US(Tag)"/>
+		<Column name="Civilopedia" type="text" reference="Language_en_US(Tag)"/>
+		<Column name="Strategy" type="text" reference="Language_en_US(Tag)"/>
+		<Column name="Help" type="text" reference="Language_en_US(Tag)"/>
+		<Column name="Title" type="text" reference="Language_en_US(Tag)"/>
+		<Column name="EraPrereq" type="text" reference="Eras(Type)" default="NULL"/>
+		<Column name="FreePolicy" type="text" reference="Policies(Type)" default="NULL"/>
+		<Column name="FreeFinishingPolicy" type="text" reference="Policies(Type)" default="NULL"/>
+		<Column name="AIMutuallyExclusive" type="boolean" default="false"/>
+	</Table>
+	<Table name="PolicyBranch_Disables">
+		<Column name="PolicyBranchType" type="text" reference="PolicyBranchTypes(Type)"/>
+		<Column name="PolicyBranchDisable" type="text" reference="PolicyBranchTypes(Type)"/>
+	</Table>
+	<!-- Table data -->
+	<PolicyBranchTypes>
+		<Row> <!-- 1. Civilization -->
+			<ID>0</ID>
+			<Type>POLICY_BRANCH_CIVILIZATION</Type>
+			<Description>TXT_KEY_POLICY_BRANCH_CIVILIZATION</Description>
+			<Help>TXT_KEY_POLICY_BRANCH_CIVILIZATION_HELP</Help>
+			<Title>TXT_KEY_CIVILIZATION_TITLE</Title>
+			<FreePolicy>POLICY_CIVILIZATION</FreePolicy>
+			<EraPrereq>Ancient</EraPrereq>
+			<FreeFinishingPolicy>POLICY_CIVILIZATION_FINISHER</FreeFinishingPolicy>
+		</Row>
+		<Row> <!-- 2. Nature -->
+			<Type>POLICY_BRANCH_NATURE</Type>
+			<Description>TXT_KEY_POLICY_BRANCH_NATURE</Description>
+			<Help>TXT_KEY_POLICY_BRANCH_NATURE_HELP</Help>
+			<Title>TXT_KEY_NATURE_TITLE</Title>
+			<FreePolicy>POLICY_NATURE</FreePolicy>
+			<EraPrereq>Ancient</EraPrereq>
+			<FreeFinishingPolicy>POLICY_NATURE_FINISHER</FreeFinishingPolicy>
+		</Row>
+		<Row> <!-- 3. Craftmanship -->
+			<Type>POLICY_BRANCH_CRAFTMANSHIP</Type>
+			<Description>TXT_KEY_POLICY_BRANCH_CRAFTMANSHIP</Description>
+			<Help>TXT_KEY_POLICY_BRANCH_CRAFTMANSHIP_HELP</Help>
+			<Title>TXT_KEY_CRAFTMANSHIP_TITLE</Title>
+			<FreePolicy>POLICY_CRAFTMANSHIP</FreePolicy>
+			<EraPrereq>Classical</EraPrereq>
+			<FreeFinishingPolicy>POLICY_CRAFTMANSHIP_FINISHER</FreeFinishingPolicy>
+		</Row>
+		<Row> <!-- 4. Seamanship -->
+			<Type>POLICY_BRANCH_SEAMANSHIP</Type>
+			<Description>TXT_KEY_POLICY_BRANCH_SEAMANSHIP</Description>
+			<Help>TXT_KEY_POLICY_BRANCH_SEAMANSHIP_HELP</Help>
+			<Title>TXT_KEY_SEAMANSHIP_TITLE</Title>
+			<FreePolicy>POLICY_SEAMANSHIP</FreePolicy>
+			<EraPrereq>Classical</EraPrereq>
+			<FreeFinishingPolicy>POLICY_SEAMANSHIP_FINISHER</FreeFinishingPolicy>
+		</Row>
+		<Row> <!-- 5. Wealth -->
+			<Type>POLICY_BRANCH_WEALTH</Type>
+			<Description>TXT_KEY_POLICY_BRANCH_WEALTH</Description>
+			<Help>TXT_KEY_POLICY_BRANCH_WEALTH_HELP</Help>
+			<Title>TXT_KEY_WEALTH_TITLE</Title>
+			<FreePolicy>POLICY_WEALTH</FreePolicy>
+			<EraPrereq>Classical</EraPrereq>
+			<FreeFinishingPolicy>POLICY_WEALTH_FINISHER</FreeFinishingPolicy>
+		</Row>
+		<Row> <!-- 6. Wisdom -->
+			<Type>POLICY_BRANCH_WISDOM</Type>
+			<Description>TXT_KEY_POLICY_BRANCH_WISDOM</Description>
+			<Help>TXT_KEY_POLICY_BRANCH_WISDOM_HELP</Help>
+			<Title>TXT_KEY_WISDOM_TITLE</Title>
+			<FreePolicy>POLICY_WISDOM</FreePolicy>
+			<EraPrereq>Classical</EraPrereq>
+			<FreeFinishingPolicy>POLICY_WISDOM_FINISHER</FreeFinishingPolicy>
+		</Row>
+		<Row> <!-- 7. Freedom -->
+			<Type>POLICY_BRANCH_FREEDOM</Type>
+			<Description>TXT_KEY_POLICY_BRANCH_FREEDOM</Description>
+			<Help>TXT_KEY_POLICY_BRANCH_FREEDOM_HELP</Help>
+			<Title>TXT_KEY_FREEDOM_TITLE</Title>
+			<FreePolicy>POLICY_FREEDOM</FreePolicy>
+			<EraPrereq>Medieval</EraPrereq>
+			<FreeFinishingPolicy>POLICY_FREEDOM_FINISHER</FreeFinishingPolicy>
+		</Row>
+		<Row> <!-- 8. Domination -->
+			<Type>POLICY_BRANCH_DOMINATION</Type>
+			<Description>TXT_KEY_POLICY_BRANCH_DOMINATION</Description>
+			<Help>TXT_KEY_POLICY_BRANCH_DOMINATION_HELP</Help>
+			<Title>TXT_KEY_DOMINATION_TITLE</Title>
+			<FreePolicy>POLICY_DOMINATION</FreePolicy>
+			<EraPrereq>Medieval</EraPrereq>
+			<FreeFinishingPolicy>POLICY_DOMINATION_FINISHER</FreeFinishingPolicy>
+		</Row>
+		<Row> <!-- 9. Domination -->
+			<Type>POLICY_BRANCH_ORDER</Type>
+			<Description>TXT_KEY_POLICY_BRANCH_ORDER</Description>
+			<Help>TXT_KEY_POLICY_BRANCH_ORDER_HELP</Help>
+			<Title>TXT_KEY_ORDER_TITLE</Title>
+			<FreePolicy>POLICY_ORDER</FreePolicy>
+			<EraPrereq>Medieval</EraPrereq>
+			<FreeFinishingPolicy>POLICY_ORDER_FINISHER</FreeFinishingPolicy>
+		</Row>
+		<Row> <!-- 10. Domination -->
+			<Type>POLICY_BRANCH_CHAOS</Type>
+			<Description>TXT_KEY_POLICY_BRANCH_CHAOS</Description>
+			<Help>TXT_KEY_POLICY_BRANCH_CHAOS_HELP</Help>
+			<Title>TXT_KEY_CHAOS_TITLE</Title>
+			<FreePolicy>POLICY_CHAOS</FreePolicy>
+			<EraPrereq>Medieval</EraPrereq>
+			<FreeFinishingPolicy>POLICY_CHAOS_FINISHER</FreeFinishingPolicy>
+		</Row>
+	</PolicyBranchTypes>
+	<!-- [ Important warning! From the base Civ5 G&K file! ] 
+	MODDERS:The default game rules are designed to support simple, mirrored 
+	relationships (e.g. Piety blocks Rationalism, and Rationalism blocks Piety). The Further from this you 
+	stray the less likely it is to work. You have been warned! -->
+	<PolicyBranch_Disables>
+		<Row> <!-- Civilization excludes Nature -->
+			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<PolicyBranchDisable>POLICY_BRANCH_NATURE</PolicyBranchDisable>
+		</Row>
+		<Row>
+			<!-- Nature excludes Civilization -->
+			<PolicyBranchType>POLICY_BRANCH_NATURE</PolicyBranchType>
+			<PolicyBranchDisable>POLICY_BRANCH_CIVILIZATION</PolicyBranchDisable>
+		</Row>
+		<Row> <!-- Freedom excludes Domination -->
+			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
+			<PolicyBranchDisable>POLICY_BRANCH_DOMINATION</PolicyBranchDisable>
+		</Row>
+		<Row> <!-- Domination excludes Freedom -->
+			<PolicyBranchType>POLICY_BRANCH_DOMINATION</PolicyBranchType>
+			<PolicyBranchDisable>POLICY_BRANCH_FREEDOM</PolicyBranchDisable>
+		</Row>
+		<Row> <!-- Order excludes Chaos -->
+			<PolicyBranchType>POLICY_BRANCH_ORDER</PolicyBranchType>
+			<PolicyBranchDisable>POLICY_BRANCH_CHAOS</PolicyBranchDisable>
+		</Row>
+		<Row> <!-- Chaos excludes Order -->
+			<PolicyBranchType>POLICY_BRANCH_CHAOS</PolicyBranchType>
+			<PolicyBranchDisable>POLICY_BRANCH_ORDER</PolicyBranchDisable>
+		</Row>
+	</PolicyBranch_Disables>  
+</GameData>
