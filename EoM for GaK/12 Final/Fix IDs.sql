@@ -34,6 +34,11 @@ UPDATE Buildings SET ID = ( SELECT IDRemapper.id-1 FROM IDRemapper WHERE Buildin
 DROP TABLE IDRemapper;
 
 CREATE TABLE IDRemapper ( id INTEGER PRIMARY KEY AUTOINCREMENT, Type TEXT );
+INSERT INTO IDRemapper (Type) SELECT Type FROM Projects;
+UPDATE Projects SET ID = ( SELECT IDRemapper.id-1 FROM IDRemapper WHERE Projects.Type = IDRemapper.Type);
+DROP TABLE IDRemapper;
+
+CREATE TABLE IDRemapper ( id INTEGER PRIMARY KEY AUTOINCREMENT, Type TEXT );
 INSERT INTO IDRemapper (Type) SELECT Type FROM UnitClasses;
 UPDATE UnitClasses SET ID = ( SELECT IDRemapper.id-1 FROM IDRemapper WHERE UnitClasses.Type = IDRemapper.Type);
 DROP TABLE IDRemapper;
@@ -66,4 +71,14 @@ DROP TABLE IDRemapper;
 CREATE TABLE IDRemapper ( id INTEGER PRIMARY KEY AUTOINCREMENT, Type TEXT );
 INSERT INTO IDRemapper (Type) SELECT Type FROM Builds;
 UPDATE Builds SET ID = ( SELECT IDRemapper.id-1 FROM IDRemapper WHERE Builds.Type = IDRemapper.Type);
+DROP TABLE IDRemapper;
+
+CREATE TABLE IDRemapper ( id INTEGER PRIMARY KEY AUTOINCREMENT, Type TEXT );
+INSERT INTO IDRemapper (Type) SELECT Type FROM Policies;
+UPDATE Policies SET ID = ( SELECT IDRemapper.id-1 FROM IDRemapper WHERE Policies.Type = IDRemapper.Type);
+DROP TABLE IDRemapper;
+
+CREATE TABLE IDRemapper ( id INTEGER PRIMARY KEY AUTOINCREMENT, Type TEXT );
+INSERT INTO IDRemapper (Type) SELECT Type FROM PolicyBranchTypes;
+UPDATE PolicyBranchTypes SET ID = ( SELECT IDRemapper.id-1 FROM IDRemapper WHERE PolicyBranchTypes.Type = IDRemapper.Type);
 DROP TABLE IDRemapper;
