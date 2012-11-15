@@ -16,7 +16,7 @@
 			<!-- <PrereqTech>...</PrereqTech> -->
 			<!-- <ObsoleteTech>...</ObsoleteTech> -->
 			<Combat>4</Combat>
-			<Cost>50</Cost>
+			<Cost>-1</Cost>
 			<ExtraMaintenanceCost>2</ExtraMaintenanceCost>
 			<Moves>3</Moves>
 			<CombatClass>UNITCOMBAT_ARMOR</CombatClass>

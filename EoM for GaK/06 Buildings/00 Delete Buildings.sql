@@ -40,6 +40,14 @@ DELETE FROM Building_YieldChanges;
 DELETE FROM Building_YieldChangesPerPop;
 DELETE FROM Building_YieldModifiers;
 
+-- Projects (delete everything except the Utopia Project)
+
+DELETE FROM Projects WHERE Type <> "PROJECT_UTOPIA_PROJECT";
+DELETE FROM Project_Flavors WHERE ProjectType <> "PROJECT_UTOPIA_PROJECT";
+DELETE FROM Project_Prereqs;
+DELETE FROM Project_ResourceQuantityRequirements;
+DELETE FROM Project_VictoryThresholds WHERE ProjectType <> "PROJECT_UTOPIA_PROJECT";
+
 -- Table changes
 
 ALTER TABLE BuildingClasses ADD COLUMN EoM_MaxCityPercent integer DEFAULT 100; -- max percentage of cities that this building can be built in
