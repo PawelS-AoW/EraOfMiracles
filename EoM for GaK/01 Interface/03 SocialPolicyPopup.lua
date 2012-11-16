@@ -13,28 +13,27 @@ include( "InstanceManager" );
 
 local m_PopupInfo = nil;
 
--- Will uncomment more policy lines, as more policy trees are completed.
 local g_CivilizationPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.CivilizationPanel );
--- local g_NaturePipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.NaturePanel );
--- local g_CraftmanshipPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.CraftmanshipPanel );
--- local g_SeamanshipPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.SeamanshipPanel );
--- local g_WealthPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.WealthPanel );
--- local g_WisdomPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.WisdomPanel );
+local g_NaturePipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.NaturePanel );
+local g_CraftmanshipPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.CraftmanshipPanel );
+local g_SeamanshipPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.SeamanshipPanel );
+local g_WealthPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.WealthPanel );
+local g_WisdomPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.WisdomPanel );
 local g_FreedomPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.FreedomPanel );
 local g_DominationPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.DominationPanel );
--- local g_OrderPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.OrderPanel );
--- local g_ChaosPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.ChaosPanel );
+local g_OrderPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.OrderPanel );
+local g_ChaosPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.ChaosPanel );
 
 local g_CivilizationInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.CivilizationPanel );
--- local g_NatureInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.NaturePanel );
--- local g_CraftmanshipInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.CraftmanshipPanel );
--- local g_SeamanshipInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.SeamanshipPanel );
--- local g_WealthInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.WealthPanel );
--- local g_WisdomInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.WisdomPanel );
+local g_NatureInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.NaturePanel );
+local g_CraftmanshipInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.CraftmanshipPanel );
+local g_SeamanshipInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.SeamanshipPanel );
+local g_WealthInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.WealthPanel );
+local g_WisdomInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.WisdomPanel );
 local g_FreedomInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.FreedomPanel );
 local g_DominationInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.DominationPanel );
--- local g_OrderInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.OrderPanel );
--- local g_ChaosInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.ChaosPanel );
+local g_OrderInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.OrderPanel );
+local g_ChaosInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.ChaosPanel );
 
 
 include( "FLuaVector" );
