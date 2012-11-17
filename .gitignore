@@ -45,6 +45,8 @@ local.properties
 # Build results
 [Dd]ebug/
 [Rr]elease/
+[Pp]ackages/
+[Bb]uild/
 *_i.c
 *_p.c
 *.ilk
@@ -134,7 +136,7 @@ Desktop.ini
 
 *.py[co]
 
-packages
+# Packages
 *.egg
 *.egg-info
 dist
