@@ -11,88 +11,97 @@
 			<Help>TXT_KEY_POLICY_BRANCH_CIVILIZATION_HELP</Help>
 			<Title>TXT_KEY_CIVILIZATION_TITLE</Title>
 			<FreePolicy>POLICY_CIVILIZATION</FreePolicy>
-			<EraPrereq>Ancient</EraPrereq>
+			<EraPrereq>ERA_ANCIENT</EraPrereq>
 			<FreeFinishingPolicy>POLICY_CIVILIZATION_FINISHER</FreeFinishingPolicy>
 		</Row>
 		<Row> <!-- 2. Nature -->
+			<ID>8</ID>
 			<Type>POLICY_BRANCH_NATURE</Type>
 			<Description>TXT_KEY_POLICY_BRANCH_NATURE</Description>
 			<Help>TXT_KEY_POLICY_BRANCH_NATURE_HELP</Help>
 			<Title>TXT_KEY_NATURE_TITLE</Title>
 			<FreePolicy>POLICY_NATURE</FreePolicy>
-			<EraPrereq>Ancient</EraPrereq>
+			<EraPrereq>ERA_ANCIENT</EraPrereq>
 			<FreeFinishingPolicy>POLICY_NATURE_FINISHER</FreeFinishingPolicy>
 		</Row>
 		<Row> <!-- 3. Craftmanship -->
+			<ID>1</ID>
 			<Type>POLICY_BRANCH_CRAFTMANSHIP</Type>
 			<Description>TXT_KEY_POLICY_BRANCH_CRAFTMANSHIP</Description>
 			<Help>TXT_KEY_POLICY_BRANCH_CRAFTMANSHIP_HELP</Help>
 			<Title>TXT_KEY_CRAFTMANSHIP_TITLE</Title>
 			<FreePolicy>POLICY_CRAFTMANSHIP</FreePolicy>
-			<EraPrereq>Classical</EraPrereq>
+			<EraPrereq>ERA_CLASSICAL</EraPrereq>
 			<FreeFinishingPolicy>POLICY_CRAFTMANSHIP_FINISHER</FreeFinishingPolicy>
 		</Row>
 		<Row> <!-- 4. Seamanship -->
+			<ID>9</ID>
 			<Type>POLICY_BRANCH_SEAMANSHIP</Type>
 			<Description>TXT_KEY_POLICY_BRANCH_SEAMANSHIP</Description>
 			<Help>TXT_KEY_POLICY_BRANCH_SEAMANSHIP_HELP</Help>
 			<Title>TXT_KEY_SEAMANSHIP_TITLE</Title>
 			<FreePolicy>POLICY_SEAMANSHIP</FreePolicy>
-			<EraPrereq>Classical</EraPrereq>
+			<EraPrereq>ERA_CLASSICAL</EraPrereq>
 			<FreeFinishingPolicy>POLICY_SEAMANSHIP_FINISHER</FreeFinishingPolicy>
 		</Row>
 		<Row> <!-- 5. Wealth -->
+			<ID>2</ID>
 			<Type>POLICY_BRANCH_WEALTH</Type>
 			<Description>TXT_KEY_POLICY_BRANCH_WEALTH</Description>
 			<Help>TXT_KEY_POLICY_BRANCH_WEALTH_HELP</Help>
 			<Title>TXT_KEY_WEALTH_TITLE</Title>
 			<FreePolicy>POLICY_WEALTH</FreePolicy>
-			<EraPrereq>Classical</EraPrereq>
+			<EraPrereq>ERA_CLASSICAL</EraPrereq>
 			<FreeFinishingPolicy>POLICY_WEALTH_FINISHER</FreeFinishingPolicy>
 		</Row>
 		<Row> <!-- 6. Wisdom -->
+			<ID>7</ID>
 			<Type>POLICY_BRANCH_WISDOM</Type>
 			<Description>TXT_KEY_POLICY_BRANCH_WISDOM</Description>
 			<Help>TXT_KEY_POLICY_BRANCH_WISDOM_HELP</Help>
 			<Title>TXT_KEY_WISDOM_TITLE</Title>
 			<FreePolicy>POLICY_WISDOM</FreePolicy>
-			<EraPrereq>Classical</EraPrereq>
+			<EraPrereq>ERA_CLASSICAL</EraPrereq>
 			<FreeFinishingPolicy>POLICY_WISDOM_FINISHER</FreeFinishingPolicy>
 		</Row>
 		<Row> <!-- 7. Freedom -->
+			<ID>3</ID>
 			<Type>POLICY_BRANCH_FREEDOM</Type>
 			<Description>TXT_KEY_POLICY_BRANCH_FREEDOM</Description>
 			<Help>TXT_KEY_POLICY_BRANCH_FREEDOM_HELP</Help>
 			<Title>TXT_KEY_FREEDOM_TITLE</Title>
 			<FreePolicy>POLICY_FREEDOM</FreePolicy>
-			<EraPrereq>Medieval</EraPrereq>
+			<EraPrereq>ERA_MEDIEVAL</EraPrereq>
 			<FreeFinishingPolicy>POLICY_FREEDOM_FINISHER</FreeFinishingPolicy>
 		</Row>
 		<Row> <!-- 8. Domination -->
+			<ID>6</ID>
 			<Type>POLICY_BRANCH_DOMINATION</Type>
 			<Description>TXT_KEY_POLICY_BRANCH_DOMINATION</Description>
 			<Help>TXT_KEY_POLICY_BRANCH_DOMINATION_HELP</Help>
 			<Title>TXT_KEY_DOMINATION_TITLE</Title>
 			<FreePolicy>POLICY_DOMINATION</FreePolicy>
-			<EraPrereq>Medieval</EraPrereq>
+			<EraPrereq>ERA_MEDIEVAL</EraPrereq>
 			<FreeFinishingPolicy>POLICY_DOMINATION_FINISHER</FreeFinishingPolicy>
 		</Row>
-		<Row> <!-- 9. Domination -->
+		<Row> <!-- 9. Order -->
+			<ID>4</ID>
 			<Type>POLICY_BRANCH_ORDER</Type>
 			<Description>TXT_KEY_POLICY_BRANCH_ORDER</Description>
 			<Help>TXT_KEY_POLICY_BRANCH_ORDER_HELP</Help>
 			<Title>TXT_KEY_ORDER_TITLE</Title>
 			<FreePolicy>POLICY_ORDER</FreePolicy>
-			<EraPrereq>Medieval</EraPrereq>
+			<EraPrereq>ERA_MEDIEVAL</EraPrereq>
 			<FreeFinishingPolicy>POLICY_ORDER_FINISHER</FreeFinishingPolicy>
 		</Row>
-		<Row> <!-- 10. Domination -->
+		<Row> <!-- 10. Chaos -->
+			<ID>5</ID>
 			<Type>POLICY_BRANCH_CHAOS</Type>
 			<Description>TXT_KEY_POLICY_BRANCH_CHAOS</Description>
 			<Help>TXT_KEY_POLICY_BRANCH_CHAOS_HELP</Help>
 			<Title>TXT_KEY_CHAOS_TITLE</Title>
 			<FreePolicy>POLICY_CHAOS</FreePolicy>
-			<EraPrereq>Medieval</EraPrereq>
+			<EraPrereq>ERA_MEDIEVAL</EraPrereq>
 			<FreeFinishingPolicy>POLICY_CHAOS_FINISHER</FreeFinishingPolicy>
 		</Row>
 	</PolicyBranchTypes>
@@ -105,8 +114,7 @@
 			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
 			<PolicyBranchDisable>POLICY_BRANCH_NATURE</PolicyBranchDisable>
 		</Row>
-		<Row>
-			<!-- Nature excludes Civilization -->
+		<Row> <!-- Nature excludes Civilization -->
 			<PolicyBranchType>POLICY_BRANCH_NATURE</PolicyBranchType>
 			<PolicyBranchDisable>POLICY_BRANCH_CIVILIZATION</PolicyBranchDisable>
 		</Row>

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # ModBuddy Solution File, Format Version 11.00
-Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "EoM for GaK", "..\..\EoM Files\EraOfMiracles\EoM for GaK\EoM for GaK.civ5proj", "{CB1EB62A-8257-44CD-820D-278A521FCF8A}"
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "EoM for GaK", "EoM for GaK\EoM for GaK.civ5proj", "{CB1EB62A-8257-44CD-820D-278A521FCF8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -184,11 +184,11 @@
 			<Description>TXT_KEY_POLICY_CREATIVITY</Description>
 			<Civilopedia>TXT_KEY_CIV5_POLICY_CREATIVITY_TEXT</Civilopedia>
 			<Help>TXT_KEY_POLICY_CREATIVITY_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<HappinessToCulture>10</HappinessToCulture>
-			<GridX></GridX>
-			<GridY></GridY>
+			<GridX>1</GridX>
+			<GridY>1</GridY>
 			<PortraitIndex>22</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
@@ -198,10 +198,10 @@
 			<Description>TXT_KEY_POLICY_CULTURAL_DEVELOPMENT</Description>
 			<Civilopedia>TXT_KEY_CIV5_POLICY_CULTURAL_DEVELOPMENT_TEXT</Civilopedia>
 			<Help>TXT_KEY_POLICY_CULTURAL_DEVELOPMENT_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
-			<GridX></GridX>
-			<GridY></GridY>
+			<GridX>1</GridX>
+			<GridY>2</GridY>
 			<PortraitIndex>23</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
@@ -211,10 +211,10 @@
 			<Description>TXT_KEY_POLICY_TOLERANCE</Description>
 			<Civilopedia>TXT_KEY_CIV5_POLICY_TOLERANCE_TEXT</Civilopedia>
 			<Help>TXT_KEY_POLICY_TOLERANCE_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
-			<GridX></GridX>
-			<GridY></GridY>
+			<GridX>1</GridX>
+			<GridY>3</GridY>
 			<PortraitIndex>24</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
@@ -224,11 +224,11 @@
 			<Description>TXT_KEY_POLICY_JOY_OF_LIFE</Description>
 			<Civilopedia>TXT_KEY_CIV5_POLICY_JOY_OF_LIFE_TEXT</Civilopedia>
 			<Help>TXT_KEY_POLICY_JOY_OF_LIFE_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
-			<HappinessPer10Population>1</HappinessPer10Population>
-			<GridX></GridX>
-			<GridY></GridY>
+			<HappinessPerXPopulation>10</HappinessPerXPopulation>
+			<GridX>3</GridX>
+			<GridY>1</GridY>
 			<PortraitIndex>25</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
@@ -238,10 +238,10 @@
 			<Description>TXT_KEY_POLICY_FREE_ARTS</Description>
 			<Civilopedia>TXT_KEY_CIV5_POLICY_FREE_ARTS_TEXT</Civilopedia>
 			<Help>TXT_KEY_POLICY_FREE_ARTS_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
-			<GridX></GridX>
-			<GridY></GridY>
+			<GridX>3</GridX>
+			<GridY>2</GridY>
 			<PortraitIndex>26</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
@@ -251,11 +251,11 @@
 			<Description>TXT_KEY_POLICY_MIDDLE_CLASS</Description>
 			<Civilopedia>TXT_KEY_CIV5_POLICY_MIDDLE_CLASS_TEXT</Civilopedia>
 			<Help>TXT_KEY_POLICY_MIDDLE_CLASS_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<HalfSpecialistUnhappiness>true</HalfSpecialistUnhappiness>
-			<GridX></GridX>
-			<GridY></GridY>
+			<GridX>3</GridX>
+			<GridY>3</GridY>
 			<PortraitIndex>27</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
@@ -265,11 +265,11 @@
 			<Description>TXT_KEY_POLICY_QUESTING</Description>
 			<Civilopedia>TXT_KEY_CIV5_POLICY_QUESTING_TEXT</Civilopedia>
 			<Help>TXT_KEY_POLICY_QUESTING_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<MinorQuestFriendshipMod>10</MinorQuestFriendshipMod>
-			<GridX></GridX>
-			<GridY></GridY>
+			<GridX>5</GridX>
+			<GridY>1</GridY>
 			<PortraitIndex>28</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
@@ -279,11 +279,11 @@
 			<Description>TXT_KEY_POLICY_HEROISM</Description>
 			<Civilopedia>TXT_KEY_CIV5_POLICY_HEROISM_TEXT</Civilopedia>
 			<Help>TXT_KEY_POLICY_HEROISM_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<IncludesOneShotFreeUnits>true</IncludesOneShotFreeUnits>
-			<GridX></GridX>
-			<GridY></GridY>
+			<GridX>5</GridX>
+			<GridY>2</GridY>
 			<PortraitIndex>29</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
@@ -293,11 +293,11 @@
 			<Description>TXT_KEY_POLICY_AMBITION</Description>
 			<Civilopedia>TXT_KEY_CIV5_POLICY_AMBITION_TEXT</Civilopedia>
 			<Help>TXT_KEY_POLICY_AMBITION_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<GreatPeopleRateModifier>25</GreatPeopleRateModifier>
-			<GridX></GridX>
-			<GridY></GridY>
+			<GridX>5</GridX>
+			<GridY>3</GridY>
 			<PortraitIndex>30</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
@@ -354,7 +354,7 @@
 			<PolicyBranchType>POLICY_BRANCH_DOMINATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<ExtraHappiness>2</ExtraHappiness>
-			<NumFreePolicy>1</NumFreePolicy>
+			<NumFreePolicies>1</NumFreePolicies>
 			<GridX>1</GridX>
 			<GridY>3</GridY>
 			<PortraitIndex>04</PortraitIndex>
@@ -538,19 +538,19 @@
 			<PolicyType>POLICY_FOOD_DISTRIBUTION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<YieldMod>1</YieldMod>
+			<YieldChange>1</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_FOOD_DISTRIBUTION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_SMOKEHOUSE</BuildingClassType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<YieldMod>1</YieldMod>
+			<YieldChange>1</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_FOOD_DISTRIBUTION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_GROCER</BuildingClassType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<YieldMod>1</YieldMod>
+			<YieldChange>1</YieldChange>
 		</Row>
 	</Policy_BuildingClassYieldChanges>
 	<Policy_BuildingClassCultureChanges>
@@ -850,11 +850,7 @@
 		
 	</Policy_Flavors>
 	<Policy_PrereqPolicies>
-		<Row>
-			<!-- Civilization A Line -->
-			<PolicyType>POLICY_PUBLIC_WORKS_I</PolicyType>
-			<PrereqPolicy>POLICY_CIVILIZATION</PrereqPolicy>
-		</Row>
+		<!-- Civilization A Line -->
 		<Row>
 			<PolicyType>POLICY_PUBLIC_WORKS_II</PolicyType>
 			<PrereqPolicy>POLICY_PUBLIC_WORKS_I</PrereqPolicy>
@@ -863,11 +859,7 @@
 			<PolicyType>POLICY_PUBLIC_ROADS</PolicyType>
 			<PrereqPolicy>POLICY_PUBLIC_WORKS_II</PrereqPolicy>
 		</Row>
-		<Row>
-			<!-- Civilization B Line -->
-			<PolicyType>POLICY_CITY_MILITIAS</PolicyType>
-			<PrereqPolicy>POLICY_CIVILIZATION</PrereqPolicy>
-		</Row>
+		<!-- Civilization B Line -->
 		<Row>
 			<PolicyType>POLICY_LEVIES</PolicyType>
 			<PrereqPolicy>POLICY_CITY_MILITIAS</PrereqPolicy>
@@ -876,11 +868,7 @@
 			<PolicyType>POLICY_TERRITORIAL_DEFENSE</PolicyType>
 			<PrereqPolicy>POLICY_LEVIES</PrereqPolicy>
 		</Row>
-		<Row>
-			<!-- Civilization C Line -->
-			<PolicyType>POLICY_FOOD_DISTRIBUTION</PolicyType>
-			<PrereqPolicy>POLICY_CIVILIZATION</PrereqPolicy>
-		</Row>
+		<!-- Civilization C Line -->
 		<Row>
 			<PolicyType>POLICY_TOWN_DEVELOPMENT</PolicyType>
 			<PrereqPolicy>POLICY_FOOD_DISTRIBUTION</PrereqPolicy>
@@ -889,11 +877,7 @@
 			<PolicyType>POLICY_CROP_ROTATION</PolicyType>
 			<PrereqPolicy>POLICY_TOWN_DEVELOPMENT</PrereqPolicy>
 		</Row>
-		
-		<Row> <!-- Freedom A Line -->
-			<PolicyType>POLICY_CREATIVITY</PolicyType>
-			<PrereqPolicy>POLICY_FREEDOM</PrereqPolicy>
-		</Row>
+		<!-- Freedom A Line -->
 		<Row>
 			<PolicyType>POLICY_CULTURAL_DEVELOPMENT</PolicyType>
 			<PrereqPolicy>POLICY_CREATIVITY</PrereqPolicy>
@@ -902,10 +886,7 @@
 			<PolicyType>POLICY_TOLERANCE</PolicyType>
 			<PrereqPolicy>POLICY_CULTURAL_DEVELOPMENT</PrereqPolicy>
 		</Row>
-		<Row> <!-- Freedom B Line -->
-			<PolicyType>POLICY_JOY_OF_LIFE</PolicyType>
-			<PrereqPolicy>POLICY_FREEDOM</PrereqPolicy>
-		</Row>
+		<!-- Freedom B Line -->
 		<Row>
 			<PolicyType>POLICY_FREE_ARTS</PolicyType>
 			<PrereqPolicy>POLICY_JOY_OF_LIFE</PrereqPolicy>
@@ -914,10 +895,7 @@
 			<PolicyType>POLICY_MIDDLE_CLASS</PolicyType>
 			<PrereqPolicy>POLICY_FREE_ARTS</PrereqPolicy>
 		</Row>
-		<Row> <!-- Freedom C Line -->
-			<PolicyType>POLICY_QUESTING</PolicyType>
-			<PrereqPolicy>POLICY_FREEDOM</PrereqPolicy>
-		</Row>
+		<!-- Freedom C Line -->
 		<Row>
 			<PolicyType>POLICY_HEROISM</PolicyType>
 			<PrereqPolicy>POLICY_QUESTING</PrereqPolicy>
@@ -926,10 +904,7 @@
 			<PolicyType>POLICY_AMBITION</PolicyType>
 			<PrereqPolicy>POLICY_HEROISM</PrereqPolicy>
 		</Row>
-		<Row> <!-- Domination A Line -->
-			<PolicyType>POLICY_SOCIAL_MOOD_CONTROL</PolicyType>
-			<PrereqPolicy>POLICY_DOMINATION</PrereqPolicy>
-		</Row>
+		<!-- Domination A Line -->
 		<Row>
 			<PolicyType>POLICY_ENTERTAINMENT_FOR_THE_MASSES</PolicyType>
 			<PrereqPolicy>POLICY_SOCIAL_MOOD_CONTROL</PrereqPolicy>
@@ -938,22 +913,16 @@
 			<PolicyType>POLICY_SOCIAL_ENGINEERING</PolicyType>
 			<PrereqPolicy>POLICY_ENTERTAINMENT_FOR_THE_MASSES</PrereqPolicy>
 		</Row>
-		<Row> <!-- Domination B Line -->
-			<PolicyType>POLICY_SACRFICIAL_CAPTIVES</PolicyType>
-			<PrereqPolicy>POLICY_DOMINATION</PrereqPolicy>
-		</Row>
+		<!-- Domination B Line -->
 		<Row>
 			<PolicyType>POLICY_SLAVERY</PolicyType>
-			<PrereqPolicy>POLICY_SACRFICIAL_CAPTIVES</PrereqPolicy>
+			<PrereqPolicy>POLICY_SACRIFICIAL_CAPTIVES</PrereqPolicy>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_IMPERIALSIM</PolicyType>
+			<PolicyType>POLICY_IMPERIALISM</PolicyType>
 			<PrereqPolicy>POLICY_SLAVERY</PrereqPolicy>
 		</Row>
-		<Row> <!-- Domination C Line -->
-			<PolicyType>POLICY_CENTRALIZATION</PolicyType>
-			<PrereqPolicy>POLICY_DOMINATION</PrereqPolicy>
-		</Row>
+		<!-- Domination C Line -->
 		<Row>
 			<PolicyType>POLICY_WORKFORCE_CONTROL</PolicyType>
 			<PrereqPolicy>POLICY_CENTRALIZATION</PrereqPolicy>
@@ -962,8 +931,6 @@
 			<PolicyType>POLICY_ABSOLUTE_POWER</PolicyType>
 			<PrereqPolicy>POLICY_WORKFORCE_CONTROL</PrereqPolicy>
 		</Row>
-		
-		
 	</Policy_PrereqPolicies>
 	<Policy_FreePromotions>
 		<Row> <!-- Civilization -->

@@ -13,29 +13,27 @@ include( "InstanceManager" );
 
 local m_PopupInfo = nil;
 
--- Will uncomment more policy lines, as more policy trees are completed.
 local g_CivilizationPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.CivilizationPanel );
--- local g_NaturePipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.NaturePanel );
--- local g_CraftmanshipPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.CraftmanshipPanel );
--- local g_SeamanshipPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.SeamanshipPanel );
--- local g_WealthPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.WealthPanel );
--- local g_WisdomPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.WisdomPanel );
+local g_CraftmanshipPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.CraftmanshipPanel );
+local g_WealthPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.WealthPanel );
 local g_FreedomPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.FreedomPanel );
+local g_OrderPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.OrderPanel );
+local g_ChaosPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.ChaosPanel );
 local g_DominationPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.DominationPanel );
--- local g_OrderPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.OrderPanel );
--- local g_ChaosPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.ChaosPanel );
+local g_WisdomPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.WisdomPanel );
+local g_SeamanshipPipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.SeamanshipPanel );
+local g_NaturePipeManager = InstanceManager:new( "ConnectorPipe", "ConnectorImage", Controls.NaturePanel );
 
 local g_CivilizationInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.CivilizationPanel );
--- local g_NatureInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.NaturePanel );
--- local g_CraftmanshipInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.CraftmanshipPanel );
--- local g_SeamanshipInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.SeamanshipPanel );
--- local g_WealthInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.WealthPanel );
--- local g_WisdomInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.WisdomPanel );
+local g_CraftmanshipInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.CraftmanshipPanel );
+local g_WealthInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.WealthPanel );
 local g_FreedomInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.FreedomPanel );
+local g_OrderInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.OrderPanel );
+local g_ChaosInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.ChaosPanel );
 local g_DominationInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.DominationPanel );
--- local g_OrderInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.OrderPanel );
--- local g_ChaosInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.ChaosPanel );
-
+local g_WisdomInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.WisdomPanel );
+local g_SeamanshipInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.SeamanshipPanel );
+local g_NatureInstanceManager = InstanceManager:new( "PolicyButton", "PolicyIcon", Controls.NaturePanel );
 
 include( "FLuaVector" );
 
@@ -188,3 +186,766 @@ function PolicyBranchSelected( policyBranchIndex )
 		---- Can adopt this Policy Branch right now
 		--else
 			--Network.SendUpdatePolicies(policyBranchIndex, false, true);
+		--end
+	--end
+end
+
+-------------------------------------------------
+-------------------------------------------------
+function OnPopupMessage(popupInfo)
+	
+	local popupType = popupInfo.Type;
+	if popupType ~= ButtonPopupTypes.BUTTONPOPUP_CHOOSEPOLICY then
+		return;
+	end
+	
+	m_PopupInfo = popupInfo;
+
+	UpdateDisplay();
+	
+	if( m_PopupInfo.Data1 == 1 ) then
+    	if( ContextPtr:IsHidden() == false ) then
+    	    OnClose();
+    	else
+        	UIManager:QueuePopup( ContextPtr, PopupPriority.eUtmost );
+    	end
+	else
+    	UIManager:QueuePopup( ContextPtr, PopupPriority.SocialPolicy );
+	end
+end
+Events.SerialEventGameMessagePopup.Add( OnPopupMessage );
+
+-------------------------------------------------
+-------------------------------------------------
+function UpdateDisplay()
+
+    local player = Players[Game.GetActivePlayer()];
+    local pTeam = Teams[player:GetTeam()];
+    
+    if player == nil then
+		return;
+    end
+    
+    local playerHas1City = player:GetNumCities() > 0;
+    
+    Controls.AnarchyBlock:SetHide( not player:IsAnarchy() );
+
+    local bShowAll = OptionsManager.GetPolicyInfo();
+    
+    local szText = Locale.ConvertTextKey("TXT_KEY_NEXT_POLICY_COST_LABEL", player:GetNextPolicyCost());
+    Controls.NextCost:SetText(szText);
+    
+    szText = Locale.ConvertTextKey("TXT_KEY_CURRENT_CULTURE_LABEL", player:GetJONSCulture());
+    Controls.CurrentCultureLabel:SetText(szText);
+    
+    szText = Locale.ConvertTextKey("TXT_KEY_CULTURE_PER_TURN_LABEL", player:GetTotalJONSCulturePerTurn());
+    Controls.CulturePerTurnLabel:SetText(szText);
+    
+    local iTurns;
+    local iCultureNeeded = player:GetNextPolicyCost() - player:GetJONSCulture();
+    if (iCultureNeeded <= 0) then
+		iTurns = 0;
+    else
+		if (player:GetTotalJONSCulturePerTurn() == 0) then
+			iTurns = "?";
+		else
+			iTurns = iCultureNeeded / player:GetTotalJONSCulturePerTurn();
+			iTurns = iTurns + 1;
+			iTurns = math.floor(iTurns);
+		end
+    end
+    szText = Locale.ConvertTextKey("TXT_KEY_NEXT_POLICY_TURN_LABEL", iTurns);
+    Controls.NextPolicyTurnLabel:SetText(szText);
+    
+    -- Player Title
+    local iDominantBranch = player:GetDominantPolicyBranchForTitle();
+    if (iDominantBranch ~= -1) then
+		
+		local strTextKey = GameInfo.PolicyBranchTypes[iDominantBranch].Title;
+		
+		local strText = Locale.ConvertTextKey(strTextKey, player:GetNameKey(), player:GetCivilizationShortDescriptionKey());
+		
+	    Controls.PlayerTitleLabel:SetHide(false);
+	    Controls.PlayerTitleLabel:SetText(strText);
+	else
+	    Controls.PlayerTitleLabel:SetHide(true);
+    end
+    
+    -- Free Policies
+    local iNumFreePolicies = player:GetNumFreePolicies();
+    if (iNumFreePolicies > 0) then
+	    szText = Locale.ConvertTextKey("TXT_KEY_FREE_POLICIES_LABEL", iNumFreePolicies);
+	    Controls.FreePoliciesLabel:SetText( szText );
+	    Controls.FreePoliciesLabel:SetHide( false );
+	else
+	    Controls.FreePoliciesLabel:SetHide( true );
+    end
+    
+	Controls.InfoStack:ReprocessAnchoring();
+    
+	--szText = Locale.ConvertTextKey( "TXT_KEY_SOCIAL_POLICY_DIRECTIONS" );
+    --Controls.ReminderText:SetText( szText );
+
+	local justLooking = true;
+	if player:GetJONSCulture() >= player:GetNextPolicyCost() then
+		justLooking = false;
+	end
+	
+	-- Adjust Policy Branches
+	local i = 0;
+	local numUnlockedBranches = player:GetNumPolicyBranchesUnlocked();
+--	if numUnlockedBranches > 0 then
+		local policyBranchInfo = GameInfo.PolicyBranchTypes[i];
+		while policyBranchInfo ~= nil do
+			local numString = tostring( i );
+			
+			local buttonName = "BranchButton"..numString;
+			local backName = "BranchBack"..numString;
+			local DisabledBoxName = "DisabledBox"..numString;
+			local LockedBoxName = "LockedBox"..numString;
+			local ImageMaskName = "ImageMask"..numString;
+			local DisabledMaskName = "DisabledMask"..numString;
+			--local EraLabelName = "EraLabel"..numString;
+			
+			
+			local thisButton = Controls[buttonName];
+			local thisBack = Controls[backName];
+			local thisDisabledBox = Controls[DisabledBoxName];
+			local thisLockedBox = Controls[LockedBoxName];
+			
+			local thisImageMask = Controls[ImageMaskName];
+			local thisDisabledMask = Controls[DisabledMaskName];
+			
+			
+			if(thisImageMask == nil) then
+				print(ImageMaskName);
+			end
+			--local thisEraLabel = Controls[EraLabelName];
+			
+			local strToolTip = Locale.ConvertTextKey(policyBranchInfo.Help);
+			
+			-- Era Prereq
+			local iEraPrereq = GameInfoTypes[policyBranchInfo.EraPrereq]
+			local bEraLock = false;
+			if (iEraPrereq ~= nil and pTeam:GetCurrentEra() < iEraPrereq) then
+				bEraLock = true;
+			else
+				--thisEraLabel:SetHide(true);
+			end
+			
+			local lockName = "Lock"..numString;
+			local thisLock = Controls[lockName];
+			
+			-- Branch is not yet unlocked
+			if not player:IsPolicyBranchUnlocked( i ) then
+				
+				-- Cannot adopt this branch right now
+				if (not player:CanUnlockPolicyBranch(i)) then
+					
+					strToolTip = strToolTip .. "[NEWLINE][NEWLINE]" .. Locale.ConvertTextKey("TXT_KEY_POLICY_BRANCH_CANNOT_UNLOCK");
+					
+					-- Not in prereq Era
+					if (bEraLock) then
+						local strEra = GameInfo.Eras[iEraPrereq].Description;
+						strToolTip = strToolTip .. " " .. Locale.ConvertTextKey("TXT_KEY_POLICY_BRANCH_CANNOT_UNLOCK_ERA", strEra);
+						
+						-- Era Label
+						--local strEraTitle = "[COLOR_WARNING_TEXT]" .. Locale.ConvertTextKey(strEra) .. "[ENDCOLOR]";
+						local strEraTitle = Locale.ConvertTextKey(strEra);
+						thisButton:SetText( strEraTitle );
+						--thisEraLabel:SetText(strEraTitle);
+						--thisEraLabel:SetHide( true );
+						
+						--thisButton:SetHide( true );
+						
+					-- Don't have enough Culture Yet
+					else
+						strToolTip = strToolTip .. " " .. Locale.ConvertTextKey("TXT_KEY_POLICY_BRANCH_CANNOT_UNLOCK_CULTURE", player:GetNextPolicyCost());
+						thisButton:SetHide( false );
+						thisButton:SetText( Locale.ConvertTextKey( "TXT_KEY_POP_ADOPT_BUTTON" ) );
+						--thisEraLabel:SetHide( true );
+					end
+					
+					thisLock:SetHide( false );
+					thisButton:SetDisabled( true );
+				-- Can adopt this branch right now
+				else
+					strToolTip = strToolTip .. "[NEWLINE][NEWLINE]" .. Locale.ConvertTextKey("TXT_KEY_POLICY_BRANCH_UNLOCK_SPEND", player:GetNextPolicyCost());
+					thisLock:SetHide( true );
+					--thisEraLabel:SetHide( true );
+					thisButton:SetDisabled( false );
+					thisButton:SetHide( false );
+					thisButton:SetText( Locale.ConvertTextKey( "TXT_KEY_POP_ADOPT_BUTTON" ) );
+				end
+				
+				if(not playerHas1City) then
+					thisButton:SetDisabled(true);
+				end
+				
+				thisBack:SetColor( fadeColor );
+				thisLockedBox:SetHide(false);
+				
+				thisImageMask:SetHide(true);
+				thisDisabledMask:SetHide(false);
+				
+			-- Branch is unlocked, but blocked by another branch
+			elseif (player:IsPolicyBranchBlocked(i)) then
+				thisButton:SetHide( false );
+				thisBack:SetColor( fadeColor );
+				thisLock:SetHide( false );
+				thisLockedBox:SetHide(true);
+				
+				strToolTip = strToolTip .. "[NEWLINE][NEWLINE]" .. Locale.ConvertTextKey("TXT_KEY_POLICY_BRANCH_BLOCKED");
+				
+			-- Branch is unlocked already
+			else
+				thisButton:SetHide( true );
+				thisBack:SetColor( fullColor );
+				thisLockedBox:SetHide(true);
+				
+				thisImageMask:SetHide(false);
+				thisDisabledMask:SetHide(true);
+			end
+			
+			-- Update tooltips
+			thisButton:SetToolTipString(strToolTip);
+			
+			-- If the player doesn't have the era prereq, then dim out the branch
+			if (bEraLock) then
+				thisDisabledBox:SetHide(false);
+				thisLockedBox:SetHide(true);
+			else
+				thisDisabledBox:SetHide(true);
+			end
+			
+			if (bShowAll) then
+				thisDisabledBox:SetHide(true);
+				thisLockedBox:SetHide(true);
+			end
+			
+			i = i + 1;
+			policyBranchInfo = GameInfo.PolicyBranchTypes[i];
+		end
+	--else
+		--local policyBranchInfo = GameInfo.PolicyBranchTypes[i];
+		--while policyBranchInfo ~= nil do
+			--local numString = tostring(i);
+			--local buttonName = "BranchButton"..numString;
+			--local backName = "BranchBack"..numString;
+			--local thisButton = Controls[buttonName];
+			--local thisBack = Controls[backName];
+			--thisBack:SetColor( fullColor );
+			--thisButton:SetHide( true );
+			--i = i + 1;
+			--policyBranchInfo = GameInfo.PolicyBranchTypes[i];
+		--end
+	--end
+	
+	-- Adjust Policy buttons
+	
+	
+	i = 0;
+	local policyInfo = GameInfo.Policies[i];
+	while policyInfo ~= nil do
+		
+		local iBranch = policyInfo.PolicyBranchType;
+		
+		-- If this is nil it means the Policy is a freebie handed out with the Branch, so don't display it
+		if (iBranch ~= nil) then
+			
+			local thisPolicyIcon = policyIcons[i];
+			
+			-- Tooltip
+			local strTooltip = Locale.ConvertTextKey( policyInfo.Help );
+			
+			-- Player already has Policy
+			if player:HasPolicy( i ) then
+				--thisPolicyIcon.Lock:SetTexture( checkTexture ); 
+				--thisPolicyIcon.Lock:SetHide( true ); 
+				thisPolicyIcon.MouseOverContainer:SetHide( true );
+				thisPolicyIcon.PolicyIcon:SetDisabled( true );
+				--thisPolicyIcon.PolicyIcon:SetVoid1( -1 );
+				thisPolicyIcon.PolicyImage:SetColor( fullColor );
+				IconHookup( policyInfo.PortraitIndex, 64, policyInfo.IconAtlasAchieved, thisPolicyIcon.PolicyImage );
+			elseif(not playerHas1City) then
+				--thisPolicyIcon.Lock:SetTexture( lockTexture ); 
+				thisPolicyIcon.MouseOverContainer:SetHide( true );
+				--thisPolicyIcon.Lock:SetHide( true ); 
+				thisPolicyIcon.PolicyIcon:SetDisabled( true );
+				--thisPolicyIcon.Lock:SetHide( false ); 
+				--thisPolicyIcon.PolicyIcon:SetVoid1( -1 );
+				thisPolicyIcon.PolicyImage:SetColor( fadeColorRV );
+				IconHookup( policyInfo.PortraitIndex, 64, policyInfo.IconAtlas, thisPolicyIcon.PolicyImage );
+				-- Tooltip
+				strTooltip = strTooltip .. "[NEWLINE][NEWLINE]"
+			
+			-- Can adopt the Policy right now
+			elseif player:CanAdoptPolicy( i ) then
+				--thisPolicyIcon.Lock:SetHide( true ); 
+				thisPolicyIcon.MouseOverContainer:SetHide( false );
+				thisPolicyIcon.PolicyIcon:SetDisabled( false );
+				if justLooking then
+					--thisPolicyIcon.PolicyIcon:SetVoid1( -1 );
+					thisPolicyIcon.PolicyImage:SetColor( fullColor );
+				else
+					thisPolicyIcon.PolicyIcon:SetVoid1( i ); -- indicates policy to be chosen
+					thisPolicyIcon.PolicyImage:SetColor( fullColor );
+				end
+				IconHookup( policyInfo.PortraitIndex, 64, policyInfo.IconAtlas, thisPolicyIcon.PolicyImage );
+				
+			-- Policy is locked
+			else
+				--thisPolicyIcon.Lock:SetTexture( lockTexture ); 
+				thisPolicyIcon.MouseOverContainer:SetHide( true );
+				--thisPolicyIcon.Lock:SetHide( true ); 
+				thisPolicyIcon.PolicyIcon:SetDisabled( true );
+				--thisPolicyIcon.Lock:SetHide( false ); 
+				--thisPolicyIcon.PolicyIcon:SetVoid1( -1 );
+				thisPolicyIcon.PolicyImage:SetColor( fadeColorRV );
+				IconHookup( policyInfo.PortraitIndex, 64, policyInfo.IconAtlas, thisPolicyIcon.PolicyImage );
+				-- Tooltip
+				strTooltip = strTooltip .. "[NEWLINE][NEWLINE]" .. Locale.ConvertTextKey("TXT_KEY_POLICY_CANNOT_UNLOCK");
+			end
+			
+			-- Policy is Blocked
+			if player:IsPolicyBlocked(i) then
+				thisPolicyIcon.PolicyImage:SetColor( fadeColorRV );
+				IconHookup( policyInfo.PortraitIndex, 64, policyInfo.IconAtlas, thisPolicyIcon.PolicyImage );
+				
+				-- Update tooltip if we have this Policy
+				if player:HasPolicy( i ) then
+					strTooltip = strTooltip .. "[NEWLINE][NEWLINE]" .. Locale.ConvertTextKey("TXT_KEY_POLICY_BRANCH_BLOCKED");
+				end
+			end
+				
+			thisPolicyIcon.PolicyIcon:SetToolTipString( strTooltip );
+		end
+		
+		i = i + 1;
+		policyInfo = GameInfo.Policies[i];
+	end
+	
+	-- update the Utopia bar
+	local numDone = player:GetNumPolicyBranchesFinished();
+	local percentDone = numDone / numBranchesRequiredForUtopia;
+	if percentDone > 1 then
+		percentDone = 1;
+	end
+	Controls.UtopiaBar:SetPercent( percentDone );
+end
+Events.EventPoliciesDirty.Add( UpdateDisplay );
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+function OnClose()
+    UIManager:DequeuePopup( ContextPtr );
+end
+Controls.CloseButton:RegisterCallback( Mouse.eLClick, OnClose );
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+function OnPolicyInfo( bIsChecked )
+	local bUpdateScreen = false;
+	
+	if (bIsChecked ~= OptionsManager.GetPolicyInfo()) then
+		bUpdateScreen = true;
+	end
+	
+    OptionsManager.SetPolicyInfo_Cached( bIsChecked );
+    OptionsManager.CommitGameOptions();
+    
+    if (bUpdateScreen) then
+		Events.EventPoliciesDirty();
+	end
+end
+Controls.PolicyInfo:RegisterCheckHandler( OnPolicyInfo );
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+function InputHandler( uiMsg, wParam, lParam )
+    ----------------------------------------------------------------        
+    -- Key Down Processing
+    ----------------------------------------------------------------        
+    if uiMsg == KeyEvents.KeyDown then
+        if (wParam == Keys.VK_RETURN or wParam == Keys.VK_ESCAPE) then
+			if(Controls.PolicyConfirm:IsHidden())then
+	            OnClose();
+	        else
+				Controls.PolicyConfirm:SetHide(true);
+            	Controls.BGBlock:SetHide(false);
+			end
+			return true;
+        end
+    end
+end
+ContextPtr:SetInputHandler( InputHandler );
+
+function GetPipe(branchType)
+	local controlTable = nil;
+	-- decide which panel it goes on
+	if branchType == "POLICY_BRANCH_CIVILIZATION" then
+		controlTable = g_CivilizationPipeManager:GetInstance();
+	elseif branchType == "POLICY_BRANCH_NATURE" then
+		controlTable = g_NaturePipeManager:GetInstance();
+	elseif branchType == "POLICY_BRANCH_CRAFTSMANSHIP" then
+		controlTable = g_CraftsmanshipPipeManager:GetInstance();
+	elseif branchType == "POLICY_BRANCH_SEAMANSHIP" then
+		controlTable = g_SeamanshipPipeManager:GetInstance();
+	elseif branchType == "POLICY_BRANCH_WEALTH" then
+		controlTable = g_WealthPipeManager:GetInstance();
+	elseif branchType == "POLICY_BRANCH_WISDOM" then
+		controlTable = g_WisdomPipeManager:GetInstance();
+	elseif branchType == "POLICY_BRANCH_FREEDOM" then
+		controlTable = g_FreedomPipeManager:GetInstance();
+	elseif branchType == "POLICY_BRANCH_DOMINATION" then
+		controlTable = g_DominationPipeManager:GetInstance();
+	elseif branchType == "POLICY_BRANCH_ORDER" then
+		controlTable = g_OrderPipeManager:GetInstance();
+	elseif branchType == "POLICY_BRANCH_CHAOS" then
+		controlTable = g_ChaosPipeManager:GetInstance();
+	end
+	return controlTable;
+end
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+function Init()
+
+	local bDisablePolicies = Game.IsOption(GameOptionTypes.GAMEOPTION_NO_POLICIES);
+	
+	Controls.LabelPoliciesDisabled:SetHide(not bDisablePolicies);
+	Controls.InfoStack:SetHide(bDisablePolicies);
+	Controls.InfoStack2:SetHide(bDisablePolicies);
+	
+	-- Activate the Branch buttons
+	local i = 0;
+	local policyBranchInfo = GameInfo.PolicyBranchTypes[i];
+	while policyBranchInfo ~= nil do
+		local buttonName = "BranchButton"..tostring( i );
+		local thisButton = Controls[buttonName];
+		thisButton:SetVoid1( i ); -- indicates type
+		thisButton:RegisterCallback( Mouse.eLClick, PolicyBranchSelected );
+		i = i + 1;
+		policyBranchInfo = GameInfo.PolicyBranchTypes[i];
+	end
+
+	-- add the pipes
+	local policyPipes = {};
+	for row in GameInfo.Policies() do
+		policyPipes[row.Type] = 
+		{
+			upConnectionLeft = false;
+			upConnectionRight = false;
+			upConnectionCenter = false;
+			upConnectionType = 0;
+			downConnectionLeft = false;
+			downConnectionRight = false;
+			downConnectionCenter = false;
+			downConnectionType = 0;
+			yOffset = 0;
+			policyType = row.Type;
+		};
+	end
+	
+	local cnxCenter = 1
+	local cnxLeft = 2
+	local cnxRight = 4
+
+	-- Figure out which top and bottom adapters we need
+	for row in GameInfo.Policy_PrereqPolicies() do
+		local prereq = GameInfo.Policies[row.PrereqPolicy];
+		local policy = GameInfo.Policies[row.PolicyType];
+		if policy and prereq then
+			if policy.GridX < prereq.GridX then
+				policyPipes[policy.Type].upConnectionRight = true;
+				policyPipes[prereq.Type].downConnectionLeft = true;
+			elseif policy.GridX > prereq.GridX then
+				policyPipes[policy.Type].upConnectionLeft = true;
+				policyPipes[prereq.Type].downConnectionRight = true;
+			else -- policy.GridX == prereq.GridX
+				policyPipes[policy.Type].upConnectionCenter = true;
+				policyPipes[prereq.Type].downConnectionCenter = true;
+			end
+			local yOffset = (policy.GridY - prereq.GridY) - 1;
+			if yOffset > policyPipes[prereq.Type].yOffset then
+				policyPipes[prereq.Type].yOffset = yOffset;
+			end
+		end
+	end
+
+	for pipeIndex, thisPipe in pairs(policyPipes) do
+		if thisPipe.upConnectionLeft then
+			thisPipe.upConnectionType = thisPipe.upConnectionType + cnxLeft;
+		end 
+		if thisPipe.upConnectionRight then
+			thisPipe.upConnectionType = thisPipe.upConnectionType + cnxRight;
+		end 
+		if thisPipe.upConnectionCenter then
+			thisPipe.upConnectionType = thisPipe.upConnectionType + cnxCenter;
+		end 
+		if thisPipe.downConnectionLeft then
+			thisPipe.downConnectionType = thisPipe.downConnectionType + cnxLeft;
+		end 
+		if thisPipe.downConnectionRight then
+			thisPipe.downConnectionType = thisPipe.downConnectionType + cnxRight;
+		end 
+		if thisPipe.downConnectionCenter then
+			thisPipe.downConnectionType = thisPipe.downConnectionType + cnxCenter;
+		end 
+	end
+
+	-- three passes down, up, connection
+	-- connection
+	for row in GameInfo.Policy_PrereqPolicies() do
+		local prereq = GameInfo.Policies[row.PrereqPolicy];
+		local policy = GameInfo.Policies[row.PolicyType];
+		if policy and prereq then
+		
+			local thisPipe = policyPipes[row.PrereqPolicy];
+		
+			if policy.GridY - prereq.GridY > 1 or policy.GridY - prereq.GridY < -1 then
+				local xOffset = (prereq.GridX-1)*g_PolicyPipeXOffset + 30;
+				local pipe = GetPipe(policy.PolicyBranchType);
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (prereq.GridY-1)*g_PolicyPipeYOffset + 58 );
+				pipe.ConnectorImage:SetTexture(vTexture);
+				local size = { x = 19; y = g_PolicyPipeYOffset*(policy.GridY - prereq.GridY - 1); };
+				pipe.ConnectorImage:SetSize(size);
+			end
+			
+			if policy.GridX - prereq.GridX == 1 then
+				local xOffset = (prereq.GridX-1)*g_PolicyPipeXOffset + 30;
+				local pipe = GetPipe(policy.PolicyBranchType);
+				pipe.ConnectorImage:SetOffsetVal( xOffset + 16, (prereq.GridY-1 + thisPipe.yOffset)*g_PolicyPipeYOffset + 58 );
+				pipe.ConnectorImage:SetTexture(hTexture);
+				local size = { x = 19; y = 19; };
+				pipe.ConnectorImage:SetSize(size);
+			end
+			if policy.GridX - prereq.GridX == 2 then
+				local xOffset = (prereq.GridX-1)*g_PolicyPipeXOffset + 30;
+				local pipe = GetPipe(policy.PolicyBranchType);
+				pipe.ConnectorImage:SetOffsetVal( xOffset + 16, (prereq.GridY-1 + thisPipe.yOffset)*g_PolicyPipeYOffset + 58 );
+				pipe.ConnectorImage:SetTexture(hTexture);
+				local size = { x = 40; y = 19; };
+				pipe.ConnectorImage:SetSize(size);
+			end
+			if policy.GridX - prereq.GridX == -2 then
+				local xOffset = (policy.GridX-1)*g_PolicyPipeXOffset + 30;
+				local pipe = GetPipe(policy.PolicyBranchType);
+				pipe.ConnectorImage:SetOffsetVal( xOffset + 16, (prereq.GridY-1 + thisPipe.yOffset)*g_PolicyPipeYOffset + 58 );
+				pipe.ConnectorImage:SetTexture(hTexture);
+				local size = { x = 40; y = 19; };
+				pipe.ConnectorImage:SetSize(size);
+			end
+			if policy.GridX - prereq.GridX == -1 then
+				local xOffset = (policy.GridX-1)*g_PolicyPipeXOffset + 30;
+				local pipe = GetPipe(policy.PolicyBranchType);
+				pipe.ConnectorImage:SetOffsetVal( xOffset + 16, (prereq.GridY-1 + thisPipe.yOffset)*g_PolicyPipeYOffset + 58 );
+				pipe.ConnectorImage:SetTexture(hTexture);
+				local size = { x = 20; y = 19; };
+				pipe.ConnectorImage:SetSize(size);
+			end
+			
+		end
+	end
+	
+	-- Down	
+	for pipeIndex, thisPipe in pairs(policyPipes) do
+		local policy = GameInfo.Policies[thisPipe.policyType];
+		local xOffset = (policy.GridX-1)*g_PolicyPipeXOffset + 30;
+		if thisPipe.downConnectionType >= 1 then
+			
+			local startPipe = GetPipe(policy.PolicyBranchType);
+			startPipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset + 48 );
+			startPipe.ConnectorImage:SetTexture(vTexture);
+			
+			local pipe = GetPipe(policy.PolicyBranchType);			
+			if thisPipe.downConnectionType == 1 then
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset + 58 );
+				pipe.ConnectorImage:SetTexture(vTexture);
+			elseif thisPipe.downConnectionType == 2 then
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1 + thisPipe.yOffset)*g_PolicyPipeYOffset + 58 );
+				pipe.ConnectorImage:SetTexture(bottomRightTexture);
+			elseif thisPipe.downConnectionType == 3 then
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset + 58 );
+				pipe.ConnectorImage:SetTexture(vTexture);
+				pipe = GetPipe(policy.PolicyBranchType);			
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1 + thisPipe.yOffset)*g_PolicyPipeYOffset + 58 );
+				pipe.ConnectorImage:SetTexture(bottomRightTexture);
+			elseif thisPipe.downConnectionType == 4 then
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset + 58 );
+				pipe.ConnectorImage:SetTexture(bottomLeftTexture);
+			elseif thisPipe.downConnectionType == 5 then
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset + 58 );
+				pipe.ConnectorImage:SetTexture(vTexture);
+				pipe = GetPipe(policy.PolicyBranchType);			
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1 + thisPipe.yOffset)*g_PolicyPipeYOffset + 58 );
+				pipe.ConnectorImage:SetTexture(bottomLeftTexture);
+			elseif thisPipe.downConnectionType == 6 then
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1 + thisPipe.yOffset)*g_PolicyPipeYOffset + 58 );
+				pipe.ConnectorImage:SetTexture(bottomRightTexture);
+				pipe = GetPipe(policy.PolicyBranchType);		
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1 + thisPipe.yOffset)*g_PolicyPipeYOffset + 58 );
+				pipe.ConnectorImage:SetTexture(bottomLeftTexture);
+			else
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset + 58 );
+				pipe.ConnectorImage:SetTexture(vTexture);
+				pipe = GetPipe(policy.PolicyBranchType);		
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1 + thisPipe.yOffset)*g_PolicyPipeYOffset + 58 );
+				pipe.ConnectorImage:SetTexture(bottomRightTexture);
+				pipe = GetPipe(policy.PolicyBranchType);
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1 + thisPipe.yOffset)*g_PolicyPipeYOffset + 58 );
+				pipe.ConnectorImage:SetTexture(bottomLeftTexture);
+			end
+		end
+	end
+
+	-- Up
+	for pipeIndex, thisPipe in pairs(policyPipes) do
+		local policy = GameInfo.Policies[thisPipe.policyType];
+		local xOffset = (policy.GridX-1)*g_PolicyPipeXOffset + 30;
+		
+		if thisPipe.upConnectionType >= 1 then
+			
+			local startPipe = GetPipe(policy.PolicyBranchType);
+			startPipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset + 0 );
+			startPipe.ConnectorImage:SetTexture(vTexture);
+			
+			local pipe = GetPipe(policy.PolicyBranchType);			
+			if thisPipe.upConnectionType == 1 then
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset - 10 );
+				pipe.ConnectorImage:SetTexture(vTexture);
+			elseif thisPipe.upConnectionType == 2 then
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset - 10 );
+				pipe.ConnectorImage:SetTexture(topRightTexture);
+			elseif thisPipe.upConnectionType == 3 then
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset - 10 );
+				pipe.ConnectorImage:SetTexture(vTexture);
+				pipe = GetPipe(policy.PolicyBranchType);			
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset - 10 );
+				pipe.ConnectorImage:SetTexture(topRightTexture);
+			elseif thisPipe.upConnectionType == 4 then
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset - 10 );
+				pipe.ConnectorImage:SetTexture(topLeftTexture);
+			elseif thisPipe.upConnectionType == 5 then
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset - 10 );
+				pipe.ConnectorImage:SetTexture(vTexture);
+				pipe = GetPipe(policy.PolicyBranchType);			
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset - 10 );
+				pipe.ConnectorImage:SetTexture(topLeftTexture);
+			elseif thisPipe.upConnectionType == 6 then
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset - 10 );
+				pipe.ConnectorImage:SetTexture(topRightTexture);
+				pipe = GetPipe(policy.PolicyBranchType);		
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset - 10 );
+				pipe.ConnectorImage:SetTexture(topLeftTexture);
+			else
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset - 10 );
+				pipe.ConnectorImage:SetTexture(vTexture);
+				pipe = GetPipe(policy.PolicyBranchType);		
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset - 10 );
+				pipe.ConnectorImage:SetTexture(topRightTexture);
+				pipe = GetPipe(policy.PolicyBranchType);
+				pipe.ConnectorImage:SetOffsetVal( xOffset, (policy.GridY-1)*g_PolicyPipeYOffset - 10 );
+				pipe.ConnectorImage:SetTexture(topLeftTexture);
+			end
+		end
+	end
+
+	-- Add Policy buttons
+	i = 0;
+	policyInfo = GameInfo.Policies[i];
+	while policyInfo ~= nil do
+		
+		local iBranch = policyInfo.PolicyBranchType;
+		
+		-- If this is nil it means the Policy is a freebie handed out with the Branch, so don't display it
+		if (iBranch ~= nil) then
+			
+			local controlTable = nil;
+			
+			-- decide which panel it goes on
+			if iBranch == "POLICY_BRANCH_CIVILIZATION" then
+				controlTable = g_CivilizationInstanceManager:GetInstance();
+			elseif iBranch == "POLICY_BRANCH_NATURE" then
+				controlTable = g_NatureInstanceManager:GetInstance();
+			elseif iBranch == "POLICY_BRANCH_CRAFTSMANSHIP" then
+				controlTable = g_CraftsmanshipInstanceManager:GetInstance();
+			elseif iBranch == "POLICY_BRANCH_SEAMANSHIP" then
+				controlTable = g_SeamanshipInstanceManager:GetInstance();
+			elseif iBranch == "POLICY_BRANCH_WEALTH" then
+				controlTable = g_WealthInstanceManager:GetInstance();
+			elseif iBranch == "POLICY_BRANCH_WISDOM" then
+				controlTable = g_WisdomInstanceManager:GetInstance();
+			elseif iBranch == "POLICY_BRANCH_FREEDOM" then
+				controlTable = g_FreedomInstanceManager:GetInstance();
+			elseif iBranch == "POLICY_BRANCH_DOMINATION" then
+				controlTable = g_DominationInstanceManager:GetInstance();
+			elseif iBranch == "POLICY_BRANCH_ORDER" then
+				controlTable = g_OrderInstanceManager:GetInstance();
+			elseif iBranch == "POLICY_BRANCH_CHAOS" then
+				controlTable = g_ChaosInstanceManager:GetInstance();
+			end
+			
+			IconHookup( policyInfo.PortraitIndex, 64, policyInfo.IconAtlas, controlTable.PolicyImage );
+
+			-- this math should match Russ's mocked up layout
+			controlTable.PolicyIcon:SetOffsetVal((policyInfo.GridX-1)*g_PolicyXOffset+16,(policyInfo.GridY-1)*g_PolicyYOffset+12);
+			controlTable.PolicyIcon:SetVoid1( i ); -- indicates which policy
+			controlTable.PolicyIcon:RegisterCallback( Mouse.eLClick, PolicySelected );
+			
+			-- store this away for later
+			policyIcons[i] = controlTable;
+		end
+		
+		i = i + 1;
+		policyInfo = GameInfo.Policies[i];
+	end
+	
+end
+
+function OnYes( )
+	Controls.PolicyConfirm:SetHide(true);
+	Controls.BGBlock:SetHide(false);
+	
+	Network.SendUpdatePolicies(m_gPolicyID, m_gAdoptingPolicy, true);
+	Events.AudioPlay2DSound("AS2D_INTERFACE_POLICY");		
+	--Game.DoFromUIDiploEvent( FromUIDiploEventTypes.FROM_UI_DIPLO_EVENT_HUMAN_DECLARES_WAR, g_iAIPlayer, 0, 0 );
+end
+Controls.Yes:RegisterCallback( Mouse.eLClick, OnYes );
+
+function OnNo( )
+	Controls.PolicyConfirm:SetHide(true);
+	Controls.BGBlock:SetHide(false);
+end
+Controls.No:RegisterCallback( Mouse.eLClick, OnNo );
+
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+function ShowHideHandler( bIsHide, bInitState )
+    if( not bInitState ) then
+        Controls.PolicyInfo:SetCheck( OptionsManager.GetPolicyInfo() );
+        if( not bIsHide ) then
+        	UI.incTurnTimerSemaphore();
+        	Events.SerialEventGameMessagePopupShown(m_PopupInfo);
+        else
+            UI.decTurnTimerSemaphore();
+            Events.SerialEventGameMessagePopupProcessed.CallImmediate(ButtonPopupTypes.BUTTONPOPUP_CHOOSEPOLICY, 0);
+        end
+    end
+end
+ContextPtr:SetShowHideHandler( ShowHideHandler );
+
+----------------------------------------------------------------
+-- 'Active' (local human) player has changed
+----------------------------------------------------------------
+function OnActivePlayerChanged()
+	if (not Controls.PolicyConfirm:IsHidden()) then
+		Controls.PolicyConfirm:SetHide(true);
+    	Controls.BGBlock:SetHide(false);
+	end
+	OnClose();
+end
+Events.GameplaySetActivePlayer.Add(OnActivePlayerChanged);
+
+Init();

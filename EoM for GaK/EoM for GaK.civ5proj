@@ -443,6 +443,26 @@ Version: 0.0.2</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>10 Policies/00 DeletePolicies.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>10 Policies/01 Policy.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>10 Policies/02 PolicyBranchTypes.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>10 Policies/03 Policies.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>12 Final/Fix IDs.sql</FileName>
       </Action>
     </ModActions>
@@ -464,6 +484,12 @@ Version: 0.0.2</Description>
         <Name>Produced Units</Name>
         <Description />
         <FileName>02 Rules/05 Produced Units.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Buildings - Prereq Policies</Name>
+        <Description />
+        <FileName>10 Policies/04 ConstructBuilding-PrereqPolicy.lua</FileName>
       </Content>
     </ModContent>
     <ModReferences />
@@ -1067,6 +1093,14 @@ Version: 0.0.2</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="01 Interface\SocialPolicyPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="01 Interface\SocialPolicyPopup.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="01 Interface\CityBannerManager.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -1467,19 +1501,23 @@ Version: 0.0.2</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="10 Policies\ConstructBuilding-PrereqPolicy.lua">
+    <Content Include="10 Policies\00 DeletePolicies.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="10 Policies\Policies.xml">
+    <Content Include="10 Policies\01 Policy.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="10 Policies\Policy.sql">
+    <Content Include="10 Policies\02 PolicyBranchTypes.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="10 Policies\PolicyBranchTypes.xml">
+    <Content Include="10 Policies\03 Policies.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="10 Policies\04 ConstructBuilding-PrereqPolicy.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
