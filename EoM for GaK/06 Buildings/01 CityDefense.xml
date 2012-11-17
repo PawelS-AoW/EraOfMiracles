@@ -88,54 +88,6 @@
 			<Flavor>10</Flavor>
 		</Row>
 	</Building_Flavors>
-	<!-- WALLS OF GRANITE (Calx) -->
-	<Civilization_BuildingClassOverrides>
-		<Row>
-			<CivilizationType>CIVILIZATION_CALX</CivilizationType>
-			<BuildingClassType>BUILDINGCLASS_WALLS</BuildingClassType>
-			<BuildingType>BUILDING_WALLS_OF_GRANITE</BuildingType>
-		</Row>
-	</Civilization_BuildingClassOverrides>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_WALLS_OF_GRANITE</Type>
-			<BuildingClass>BUILDINGCLASS_WALLS</BuildingClass>
-			<Cost>60</Cost>
-			<PrereqTech>TECH_MASONRY</PrereqTech>
-			<Description>TXT_KEY_EOMBLDG_WALLS_OF_GRANITE</Description>
-			<Help>TXT_KEY_EOM_EMPTY</Help>
-			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
-			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
-			<ArtDefineTag>ART_DEF_BUILDING_WALLS</ArtDefineTag>
-			<MinAreaSize>-1</MinAreaSize>
-			<HurryCostModifier>0</HurryCostModifier>
-			<IconAtlas>NEB_BW_ATLAS</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<ConquestProb>50</ConquestProb>
-			<Defense>200</Defense>
-			<ExtraCityHitPoints>50</ExtraCityHitPoints>
-			<CityWall>true</CityWall>
-		</Row>
-	</Buildings>
-	<Language_en_US>
-		<Row Tag="TXT_KEY_EOMBLDG_WALLS_OF_GRANITE">
-			<Text>Walls of Granite</Text>
-		</Row>
-		<!-- Calx unique building, gives more HP than Walls it replaces, but has increased production cost -->
-	</Language_en_US>
-	<Building_ClassesNeededInCity>
-		<Row>
-			<BuildingType>BUILDING_WALLS_OF_GRANITE</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALISADE</BuildingClassType>
-		</Row>
-	</Building_ClassesNeededInCity>
-	<Building_Flavors>
-		<Row>
-			<BuildingType>BUILDING_WALLS_OF_GRANITE</BuildingType>
-			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
-			<Flavor>12</Flavor>
-		</Row>
-	</Building_Flavors>
 	<!-- STRENGTHENED WALLS -->
 	<BuildingClasses>
 		<Row>

@@ -108,62 +108,37 @@ Version: 0.0.2</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/05 Calx.xml</FileName>
+        <FileName>04 Civilizations/04 Vodniks.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/06 Vodniks.xml</FileName>
+        <FileName>04 Civilizations/05 Snobar.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/07 Windwalkers.xml</FileName>
+        <FileName>04 Civilizations/06 Azracs.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/08 Snobar.xml</FileName>
+        <FileName>04 Civilizations/07 Lemuria.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/09 Nikkei.xml</FileName>
+        <FileName>04 Civilizations/08 Elves.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/10 Azracs.xml</FileName>
+        <FileName>04 Civilizations/09 Dwarves.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/11 Lemuria.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/12 Elves.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/13 Halflings.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/14 Gnomes.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/15 Dwarves.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/16 Orcs.xml</FileName>
+        <FileName>04 Civilizations/10 Orcs.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -1225,51 +1200,31 @@ Version: 0.0.2</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="04 Civilizations\05 Calx.xml">
+    <Content Include="04 Civilizations\04 Vodniks.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="04 Civilizations\06 Vodniks.xml">
+    <Content Include="04 Civilizations\05 Snobar.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="04 Civilizations\07 Windwalkers.xml">
+    <Content Include="04 Civilizations\06 Azracs.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="04 Civilizations\08 Snobar.xml">
+    <Content Include="04 Civilizations\07 Lemuria.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="04 Civilizations\09 Nikkei.xml">
+    <Content Include="04 Civilizations\08 Elves.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="04 Civilizations\10 Azracs.xml">
+    <Content Include="04 Civilizations\09 Dwarves.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="04 Civilizations\11 Lemuria.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="04 Civilizations\12 Elves.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="04 Civilizations\13 Halflings.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="04 Civilizations\14 Gnomes.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="04 Civilizations\15 Dwarves.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="04 Civilizations\16 Orcs.xml">
+    <Content Include="04 Civilizations\10 Orcs.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
