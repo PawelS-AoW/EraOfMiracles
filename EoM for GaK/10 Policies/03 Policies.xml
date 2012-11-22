@@ -1,452 +1,451 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by ModBuddy on 11/9/2012 7:28:52 PM -->
 <GameData>
-	
 	<!-- Table data -->
 	<Policies>
 		<Row> <!-- 1. Civilization (Opener) -->
 			<ID>0</ID>
-			<Type>POLICY_CIVILIZATION</Type>
-			<Description>TXT_KEY_POLICY_BRANCH_CIVILIZATION</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_CIVILIZATION_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_CIVILIZATION_HELP</Help>
+			<Type>EOMPOLICY_CIVILIZATION</Type>
+			<Description>TXT_KEY_EOMPOLICY_BRANCH_CIVILIZATION</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICY_CIVILIZATION_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_CIVILIZATION_HELP</Help>
 			<CulturePerCity>10</CulturePerCity>
 			<PortraitIndex>11</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Public Works I (Civilization A1) -->
-			<Type>POLICY_PUBLIC_WORKS_I</Type>
-			<Description>TXT_KEY_POLICY_PUBLIC_WORKS_I</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_PUBLIC_WORKS_I_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_PUBLIC_WORKS_I_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<Type>EOMPOLICY_PUBLIC_WORKS_I</Type>
+			<Description>TXT_KEY_EOMPOLICY_PUBLIC_WORKS_I</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYPUBLIC_WORKS_I_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_PUBLIC_WORKS_I_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_CIVILIZATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<IncludesOneShotFreeUnits>true</IncludesOneShotFreeUnits>
 			<GridX>1</GridX>
 			<GridY>1</GridY>
 			<PortraitIndex>12</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Public Works II (Civilization A2) -->
-			<Type>POLICY_PUBLIC_WORKS_II</Type>
-			<Description>TXT_KEY_POLICY_PUBLIC_WORKS_II</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_PUBLIC_WORKS_II_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_PUBLIC_WORKS_II_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<Type>EOMPOLICY_PUBLIC_WORKS_II</Type>
+			<Description>TXT_KEY_EOMPOLICY_PUBLIC_WORKS_II</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYPUBLIC_WORKS_II_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_PUBLIC_WORKS_II_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_CIVILIZATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<WorkerSpeedModifier>25</WorkerSpeedModifier>
 			<GridX>1</GridX>
 			<GridY>2</GridY>
 			<PortraitIndex>13</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Public Roads (Civilization A3) -->
-			<Type>POLICY_PUBLIC_ROADS</Type>
-			<Description>TXT_KEY_POLICY_PUBLIC_ROADS</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_PUBLIC_ROADS_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_PUBLIC_ROADS_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<Type>EOMPOLICY_PUBLIC_ROADS</Type>
+			<Description>TXT_KEY_EOMPOLICY_PUBLIC_ROADS</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYPUBLIC_ROADS_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_PUBLIC_ROADS_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_CIVILIZATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<HappinessPerTradeRoute>1</HappinessPerTradeRoute>
 			<GridX>1</GridX>
 			<GridY>3</GridY>
 			<PortraitIndex>14</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- City Militias (Civilization B1) -->
-			<Type>POLICY_CITY_MILITIAS</Type>
-			<Description>TXT_KEY_POLICY_CITY_MILITIAS</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_CITY_MILITIAS_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_CITY_MILITIAS_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<Type>EOMPOLICY_CITY_MILITIAS</Type>
+			<Description>TXT_KEY_EOMPOLICY_CITY_MILITIAS</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICY_CITY_MILITIAS_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_CITY_MILITIAS_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_CIVILIZATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<GarrisonFreeMaintenance>true</GarrisonFreeMaintenance>
 			<CulturePerGarrisonedUnit>1</CulturePerGarrisonedUnit>
 			<GridX>3</GridX>
 			<GridY>1</GridY>
 			<PortraitIndex>15</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Levies (Civilization B2) -->
-			<Type>POLICY_LEVIES</Type>
-			<Description>TXT_KEY_POLICY_LEVIES</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_LEVIES_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_LEVIES_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<Type>EOMPOLICY_LEVIES</Type>
+			<Description>TXT_KEY_EOMPOLICY_LEVIES</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYLEVIES_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_LEVIES_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_CIVILIZATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<MilitaryProductionModifier>25</MilitaryProductionModifier>
 			<GridX>3</GridX>
 			<GridY>2</GridY>
 			<PortraitIndex>16</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Territorial Defense (Civilization B3) -->
-			<Type>POLICY_TERRITORIAL_DEFENSE</Type>
-			<Description>TXT_KEY_POLICY_TERRITORIAL_DEFENSE</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_TERRITORIAL_DEFENSE_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_TERRITORIAL_DEFENSE_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<Type>EOMPOLICY_TERRITORIAL_DEFENSE</Type>
+			<Description>TXT_KEY_EOMPOLICY_TERRITORIAL_DEFENSE</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYTERRITORIAL_DEFENSE_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_TERRITORIAL_DEFENSE_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_CIVILIZATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<!-- units get +10% combat bonus in friendly territory -->
 			<GridX>3</GridX>
 			<GridY>3</GridY>
 			<PortraitIndex>17</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Food Distribution (Civilization C1) -->
-			<Type>POLICY_FOOD_DISTRIBUTION</Type>
-			<Description>TXT_KEY_POLICY_FOOD_DISTRIBUTION</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_FOOD_DISTRIBUTION_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_FOOD_DISTRIBUTION_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<Type>EOMPOLICY_FOOD_DISTRIBUTION</Type>
+			<Description>TXT_KEY_EOMPOLICY_FOOD_DISTRIBUTION</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYFOOD_DISTRIBUTION_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_FOOD_DISTRIBUTION_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_CIVILIZATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<GridX>5</GridX>
 			<GridY>1</GridY>
 			<PortraitIndex>18</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Town Development (Civilization C2) -->
-			<Type>POLICY_TOWN_DEVELOPMENT</Type>
-			<Description>TXT_KEY_POLICY_TOWN_DEVELOPMENT</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_TOWN_DEVELOPMENT_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_TOWN_DEVELOPMENT_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<Type>EOMPOLICY_TOWN_DEVELOPMENT</Type>
+			<Description>TXT_KEY_EOMPOLICY_TOWN_DEVELOPMENT</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYTOWN_DEVELOPMENT_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_TOWN_DEVELOPMENT_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_CIVILIZATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<GridX>5</GridX>
 			<GridY>2</GridY>
 			<PortraitIndex>19</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Crop Rotation (Civilization C3) -->
-			<Type>POLICY_CROP_ROTATION</Type>
-			<Description>TXT_KEY_POLICY_CROP_ROTATION</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_CROP_ROTATION_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_CROP_ROTATION_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<Type>EOMPOLICY_CROP_ROTATION</Type>
+			<Description>TXT_KEY_EOMPOLICY_CROP_ROTATION</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYCROP_ROTATION_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_CROP_ROTATION_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_CIVILIZATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<GridX>5</GridX>
 			<GridY>3</GridY>
 			<PortraitIndex>20</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Civilization (Finisher) -->
-			<Type>POLICY_CIVILIZATION_FINISHER</Type>
-			<Description>TXT_KEY_POLICY_BRANCH_CIVILIZATION</Description>
+			<Type>EOMPOLICY_CIVILIZATION_FINISHER</Type>
+			<Description>TXT_KEY_EOMPOLICY_BRANCH_CIVILIZATION</Description>
 			<IncludesOneShotFreeUnits>true</IncludesOneShotFreeUnits>
 			<CulturePerCity>1</CulturePerCity>
 		</Row>
 		<!-- <Row> 2. Nature (Opener) 
-			<Type>POLICY_NATURE</Type>
-			<Description>TXT_KEY_POLICY_BRANCH_NATURE</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_NATURE_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_NATURE_HELP</Help>
+			<Type>EOMPOLICY_NATURE</Type>
+			<Description>TXT_KEY_EOMPOLICY_BRANCH_NATURE</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYNATURE_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_NATURE_HELP</Help>
 			<IncludesOneShotFreeUnits>true</IncludesOneShotFreeUnits>
 			<PortraitIndex>31</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> Hunting Tradition (Nature A1)
-			<Type>POLICY_CROP_ROTATION</Type>
-			<Description>TXT_KEY_POLICY_CROP_ROTATION</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_CROP_ROTATION_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_CROP_ROTATION_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
+			<Type>EOMPOLICY_CROP_ROTATION</Type>
+			<Description>TXT_KEY_EOMPOLICY_CROP_ROTATION</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYCROP_ROTATION_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_CROP_ROTATION_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_CIVILIZATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<GridX></GridX>
 			<GridY></GridY>
 			<PortraitIndex>32</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row> -->
 		
 		<Row> <!-- 7. Freedom (Opener) -->
-			<Type>POLICY_FREEDOM</Type>
-			<Description>TXT_KEY_POLICY_BRANCH_FREEDOM</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_FREEDOM_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_FREEDOM_HELP</Help>
+			<Type>EOMPOLICY_FREEDOM</Type>
+			<Description>TXT_KEY_EOMPOLICY_BRANCH_FREEDOM</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYFREEDOM_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_FREEDOM_HELP</Help>
 			<ExtraHappinessPerCity>1</ExtraHappinessPerCity>
 			<PortraitIndex>21</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Creativity (Freedom A1) -->
-			<Type>POLICY_CREATIVITY</Type>
-			<Description>TXT_KEY_POLICY_CREATIVITY</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_CREATIVITY_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_CREATIVITY_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
+			<Type>EOMPOLICY_CREATIVITY</Type>
+			<Description>TXT_KEY_EOMPOLICY_CREATIVITY</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYCREATIVITY_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_CREATIVITY_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<HappinessToCulture>10</HappinessToCulture>
 			<GridX>1</GridX>
 			<GridY>1</GridY>
 			<PortraitIndex>22</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Cultural Development (Freedom A2) -->
-			<Type>POLICY_CULTURAL_DEVELOPMENT</Type>
-			<Description>TXT_KEY_POLICY_CULTURAL_DEVELOPMENT</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_CULTURAL_DEVELOPMENT_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_CULTURAL_DEVELOPMENT_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
+			<Type>EOMPOLICY_CULTURAL_DEVELOPMENT</Type>
+			<Description>TXT_KEY_EOMPOLICY_CULTURAL_DEVELOPMENT</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYCULTURAL_DEVELOPMENT_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_CULTURAL_DEVELOPMENT_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<GridX>1</GridX>
 			<GridY>2</GridY>
 			<PortraitIndex>23</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Tolerance (Freedom A3) -->
-			<Type>POLICY_TOLERANCE</Type>
-			<Description>TXT_KEY_POLICY_TOLERANCE</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_TOLERANCE_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_TOLERANCE_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
+			<Type>EOMPOLICY_TOLERANCE</Type>
+			<Description>TXT_KEY_EOMPOLICY_TOLERANCE</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYTOLERANCE_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_TOLERANCE_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<GridX>1</GridX>
 			<GridY>3</GridY>
 			<PortraitIndex>24</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Joy of Life (Freedom B1) -->
-			<Type>POLICY_JOY_OF_LIFE</Type>
-			<Description>TXT_KEY_POLICY_JOY_OF_LIFE</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_JOY_OF_LIFE_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_JOY_OF_LIFE_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
+			<Type>EOMPOLICY_JOY_OF_LIFE</Type>
+			<Description>TXT_KEY_EOMPOLICY_JOY_OF_LIFE</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYJOY_OF_LIFE_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_JOY_OF_LIFE_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<HappinessPerXPopulation>10</HappinessPerXPopulation>
 			<GridX>3</GridX>
 			<GridY>1</GridY>
 			<PortraitIndex>25</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Free Arts (Freedom B2) -->
-			<Type>POLICY_FREE_ARTS</Type>
-			<Description>TXT_KEY_POLICY_FREE_ARTS</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_FREE_ARTS_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_FREE_ARTS_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
+			<Type>EOMPOLICY_FREE_ARTS</Type>
+			<Description>TXT_KEY_EOMPOLICY_FREE_ARTS</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYFREE_ARTS_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_FREE_ARTS_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<GridX>3</GridX>
 			<GridY>2</GridY>
 			<PortraitIndex>26</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Middle Class (Freedom B3) -->
-			<Type>POLICY_MIDDLE_CLASS</Type>
-			<Description>TXT_KEY_POLICY_MIDDLE_CLASS</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_MIDDLE_CLASS_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_MIDDLE_CLASS_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
+			<Type>EOMPOLICY_MIDDLE_CLASS</Type>
+			<Description>TXT_KEY_EOMPOLICY_MIDDLE_CLASS</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYMIDDLE_CLASS_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_MIDDLE_CLASS_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<HalfSpecialistUnhappiness>true</HalfSpecialistUnhappiness>
 			<GridX>3</GridX>
 			<GridY>3</GridY>
 			<PortraitIndex>27</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Questing (Freedom C1) -->
-			<Type>POLICY_QUESTING</Type>
-			<Description>TXT_KEY_POLICY_QUESTING</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_QUESTING_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_QUESTING_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
+			<Type>EOMPOLICY_QUESTING</Type>
+			<Description>TXT_KEY_EOMPOLICY_QUESTING</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYQUESTING_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_QUESTING_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<MinorQuestFriendshipMod>10</MinorQuestFriendshipMod>
 			<GridX>5</GridX>
 			<GridY>1</GridY>
 			<PortraitIndex>28</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Heroism (Freedom C2) -->
-			<Type>POLICY_HEROISM</Type>
-			<Description>TXT_KEY_POLICY_HEROISM</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_HEROISM_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_HEROISM_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
+			<Type>EOMPOLICY_HEROISM</Type>
+			<Description>TXT_KEY_EOMPOLICY_HEROISM</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYHEROISM_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_HEROISM_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<IncludesOneShotFreeUnits>true</IncludesOneShotFreeUnits>
 			<GridX>5</GridX>
 			<GridY>2</GridY>
 			<PortraitIndex>29</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Ambition (Freedom C3) -->
-			<Type>POLICY_AMBITION</Type>
-			<Description>TXT_KEY_POLICY_AMBITION</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_AMBITION_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_AMBITION_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_FREEDOM</PolicyBranchType>
+			<Type>EOMPOLICY_AMBITION</Type>
+			<Description>TXT_KEY_EOMPOLICY_AMBITION</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYAMBITION_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_AMBITION_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_FREEDOM</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<GreatPeopleRateModifier>25</GreatPeopleRateModifier>
 			<GridX>5</GridX>
 			<GridY>3</GridY>
 			<PortraitIndex>30</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Freedom (Finisher) -->
-			<Type>POLICY_FREEDOM_FINISHER</Type>
-			<Description>TXT_KEY_POLICY_BRANCH_FREEDOM</Description>
+			<Type>EOMPOLICY_FREEDOM_FINISHER</Type>
+			<Description>TXT_KEY_EOMPOLICY_BRANCH_FREEDOM</Description>
 			<ExtraHappinessPerCity>1</ExtraHappinessPerCity>
 		</Row>
 		<Row> <!-- 8. Domination (Opener) -->
-			<Type>POLICY_DOMINATION</Type>
-			<Description>TXT_KEY_POLICY_BRANCH_DOMINATION</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_DOMINATION_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_DOMINATION_HELP</Help>
-			<NumCitiesPolicyCostDiscount>-33</NumCitiesPolicyCostDiscount>
+			<Type>EOMPOLICY_DOMINATION</Type>
+			<Description>TXT_KEY_EOMPOLICY_BRANCH_DOMINATION</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYDOMINATION_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_DOMINATION_HELP</Help>
+			<NumCitiesEOMPOLICYCostDiscount>-33</NumCitiesEOMPOLICYCostDiscount>
 			<PortraitIndex>01</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Social Mood Control (Domination A1) -->
-			<Type>POLICY_SOCIAL_MOOD_CONTROL</Type>
-			<Description>TXT_KEY_POLICY_SOCIAL_MOOD_CONTROL</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_SOCIAL_MOOD_CONTROL_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_SOCIAL_MOOD_CONTROL_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_DOMINATION</PolicyBranchType>
+			<Type>EOMPOLICY_SOCIAL_MOOD_CONTROL</Type>
+			<Description>TXT_KEY_EOMPOLICY_SOCIAL_MOOD_CONTROL</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYSOCIAL_MOOD_CONTROL_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_SOCIAL_MOOD_CONTROL_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_DOMINATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<IncludesOneShotFreeUnits>true</IncludesOneShotFreeUnits>
 			<GridX>1</GridX> 
 			<GridY>1</GridY>
 			<UnhappinessMod>-10</UnhappinessMod>
 			<PortraitIndex>02</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Entertainment for the Masses (Domination A2) -->
-			<Type>POLICY_ENTERTAINMENT_FOR_THE_MASSES</Type>
-			<Description>TXT_KEY_POLICY_ENTERTAINMENT_FOR_THE_MASSES</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_ENTERTAINMENT_FOR_THE_MASSES_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_ENTERTAINMENT_FOR_THE_MASSES_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_DOMINATION</PolicyBranchType>
+			<Type>EOMPOLICY_ENTERTAINMENT_FOR_THE_MASSES</Type>
+			<Description>TXT_KEY_EOMPOLICY_ENTERTAINMENT_FOR_THE_MASSES</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYENTERTAINMENT_FOR_THE_MASSES_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_ENTERTAINMENT_FOR_THE_MASSES_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_DOMINATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<GridX>1</GridX>
 			<GridY>2</GridY>			
 			<PortraitIndex>03</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row>
 			<!-- Social Engineering (Domination A3) -->
-			<Type>POLICY_SOCIAL_ENGINEERING</Type>
-			<Description>TXT_KEY_POLICY_SOCIAL_ENGINEERING</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_SOCIAL_ENGINEERING_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_SOCIAL_ENGINEERING_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_DOMINATION</PolicyBranchType>
+			<Type>EOMPOLICY_SOCIAL_ENGINEERING</Type>
+			<Description>TXT_KEY_EOMPOLICY_SOCIAL_ENGINEERING</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYSOCIAL_ENGINEERING_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_SOCIAL_ENGINEERING_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_DOMINATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<ExtraHappiness>2</ExtraHappiness>
 			<NumFreePolicies>1</NumFreePolicies>
 			<GridX>1</GridX>
 			<GridY>3</GridY>
 			<PortraitIndex>04</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Sacrificial Captives (Domination B1) -->
-			<Type>POLICY_SACRIFICIAL_CAPTIVES</Type>
-			<Description>TXT_KEY_POLICY_SACRIFICIAL_CAPTIVES</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_SACRIFICIAL_CAPTIVES_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_SACRIFICIAL_CAPTIVES_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_DOMINATION</PolicyBranchType>
+			<Type>EOMPOLICY_SACRIFICIAL_CAPTIVES</Type>
+			<Description>TXT_KEY_EOMPOLICY_SACRIFICIAL_CAPTIVES</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYSACRIFICIAL_CAPTIVES_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_SACRIFICIAL_CAPTIVES_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_DOMINATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<GridX>3</GridX>
 			<GridY>1</GridY>
 			<CultureFromKills>100</CultureFromKills>
 			<PortraitIndex>05</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Slavery (Domination B2) -->
-			<Type>POLICY_SLAVERY</Type>
-			<Description>TXT_KEY_POLICY_SLAVERY</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_SLAVERY_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_SLAVERY_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_DOMINATION</PolicyBranchType>
+			<Type>EOMPOLICY_SLAVERY</Type>
+			<Description>TXT_KEY_EOMPOLICY_SLAVERY</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYSLAVERY_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_SLAVERY_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_DOMINATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<GridX>3</GridX>
 			<GridY>2</GridY>
 			<PortraitIndex>06</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Imperialism (Domination B3) -->
-			<Type>POLICY_IMPERIALISM</Type>
-			<Description>TXT_KEY_POLICY_IMPERIALISM</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_IMPERIALISM_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_IMPERIALISM_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_DOMINATION</PolicyBranchType>
+			<Type>EOMPOLICY_IMPERIALISM</Type>
+			<Description>TXT_KEY_EOMPOLICY_IMPERIALISM</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYIMPERIALISM_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_IMPERIALISM_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_DOMINATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<ExtraHappiness>5</ExtraHappiness>
 			<GridX>3</GridX>
 			<GridY>3</GridY>
 			<PortraitIndex>07</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Workforce Control (Domination C1) -->
-			<Type>POLICY_CENTRALIZATION</Type>
-			<Description>TXT_KEY_POLICY_CENTRALIZATION</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_CENTRALIZATION_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_CENTRALIZATION_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_DOMINATION</PolicyBranchType>
+			<Type>EOMPOLICY_CENTRALIZATION</Type>
+			<Description>TXT_KEY_EOMPOLICY_CENTRALIZATION</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYCENTRALIZATION_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_CENTRALIZATION_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_DOMINATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<GridX>5</GridX>
 			<GridY>1</GridY>
 			<BuildingProductionModifier>10</BuildingProductionModifier>
 			<WorkerSpeedModifier>10</WorkerSpeedModifier>
 			<PortraitIndex>08</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Workforce Focus (Domination C2) -->
-			<Type>POLICY_WORKFORCE_CONTROL</Type>
-			<Description>TXT_KEY_POLICY_WORKFORCE_CONTROL</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_WORKFORCE_CONTROL_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_WORKFORCE_CONTROL_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_DOMINATION</PolicyBranchType>
+			<Type>EOMPOLICY_WORKFORCE_CONTROL</Type>
+			<Description>TXT_KEY_EOMPOLICY_WORKFORCE_CONTROL</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYWORKFORCE_CONTROL_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_WORKFORCE_CONTROL_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_DOMINATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<GridX>5</GridX>
 			<GridY>2</GridY>
 			<WonderProductionModifier>25</WonderProductionModifier>
 			<PortraitIndex>09</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Absolute Power (Domination C3) -->
-			<Type>POLICY_ABSOLUTE_POWER</Type>
-			<Description>TXT_KEY_POLICY_ABSOLUTE_POWER</Description>
-			<Civilopedia>TXT_KEY_CIV5_POLICY_ABSOLUTE_POWER_TEXT</Civilopedia>
-			<Help>TXT_KEY_POLICY_ABSOLUTE_POWER_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_DOMINATION</PolicyBranchType>
+			<Type>EOMPOLICY_ABSOLUTE_POWER</Type>
+			<Description>TXT_KEY_EOMPOLICY_ABSOLUTE_POWER</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYABSOLUTE_POWER_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_ABSOLUTE_POWER_HELP</Help>
+			<PolicyBranchType>EOMPOLICY_BRANCH_DOMINATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<GridX>5</GridX>
 			<GridY>3</GridY>
 			<PortraitIndex>10</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+			<IconAtlas>EOMPOLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>EOMPOLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
 		<Row> <!-- Domination (Finisher) -->
-			<Type>POLICY_DOMINATION_FINISHER</Type>
-			<Description>TXT_KEY_POLICY_BRANCH_DOMINATION</Description>
+			<Type>EOMPOLICY_DOMINATION_FINISHER</Type>
+			<Description>TXT_KEY_EOMPOLICY_BRANCH_DOMINATION</Description>
 			<PolicyCostModifier>-10</PolicyCostModifier>
 		</Row>
 		
@@ -455,79 +454,79 @@
 	</Policies>
 	<!-- <Policy_CityYieldChanges>
 		<Row>
-			<PolicyType>POLICY_REPUBLIC</PolicyType>
+			<PolicyType>EOMPOLICY_REPUBLIC</PolicyType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>		
 	</Policy_CityYieldChanges> -->
 	<!-- <Policy_CoastalCityYieldChanges>
 		<Row>
-			<PolicyType>POLICY_MERCHANT_NAVY</PolicyType>
+			<PolicyType>EOMPOLICY_MERCHANT_NAVY</PolicyType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>3</Yield>
 		</Row>
 	</Policy_CoastalCityYieldChanges> -->
 	<!-- <Policy_CapitalYieldChanges>
 		<Row>
-			<PolicyType>POLICY_LANDED_ELITE</PolicyType>
+			<PolicyType>EOMPOLICY_LANDED_ELITE</PolicyType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>2</Yield>
 		</Row>	
 	</Policy_CapitalYieldChanges> -->
 	<!-- <Policy_CapitalYieldPerPopChanges>
 		<Row>
-			<PolicyType>POLICY_MONARCHY</PolicyType>
+			<PolicyType>EOMPOLICY_MONARCHY</PolicyType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>50</Yield>
 		</Row>
 	</Policy_CapitalYieldPerPopChanges> -->
 	<!-- <Policy_CapitalYieldModifiers>
 		<Row>
-			<PolicyType>POLICY_COMMERCE</PolicyType>
+			<PolicyType>EOMPOLICY_COMMERCE</PolicyType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>25</Yield>
 		</Row>
 	</Policy_CapitalYieldModifiers> -->
 	<Policy_SpecialistExtraYields>
 		<Row>
-			<PolicyType>POLICY_FREE_ARTS</PolicyType>
+			<PolicyType>EOMPOLICY_FREE_ARTS</PolicyType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>1</Yield>
 		</Row>
 	</Policy_SpecialistExtraYields>
 	<Policy_BuildingClassYieldModifiers>
 		<Row>
-			<PolicyType>POLICY_IMPERIALSM</PolicyType>
+			<PolicyType>EOMPOLICY_IMPERIALSM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_HALL_OF_JOINING</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<YieldMod>10</YieldMod>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_IMPERIALSM</PolicyType>
+			<PolicyType>EOMPOLICY_IMPERIALSM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_HALL_OF_JOINING</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<YieldMod>-20</YieldMod>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_IMPERIALSM</PolicyType>
+			<PolicyType>EOMPOLICY_IMPERIALSM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_HALL_OF_JOINING</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<YieldMod>-20</YieldMod>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_ABSOLUTE_POWER</PolicyType>
+			<PolicyType>EOMPOLICY_ABSOLUTE_POWER</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SQUARE</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<YieldMod>10</YieldMod>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_ABSOLUTE_POWER</PolicyType>
+			<PolicyType>EOMPOLICY_ABSOLUTE_POWER</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SQUARE</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<YieldMod>10</YieldMod>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_ABSOLUTE_POWER</PolicyType>
+			<PolicyType>EOMPOLICY_ABSOLUTE_POWER</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SQUARE</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<YieldMod>-10</YieldMod>
@@ -535,19 +534,19 @@
 	</Policy_BuildingClassYieldModifiers>
 	<Policy_BuildingClassYieldChanges>
 		<Row>
-			<PolicyType>POLICY_FOOD_DISTRIBUTION</PolicyType>
+			<PolicyType>EOMPOLICY_FOOD_DISTRIBUTION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<YieldChange>1</YieldChange>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_FOOD_DISTRIBUTION</PolicyType>
+			<PolicyType>EOMPOLICY_FOOD_DISTRIBUTION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_SMOKEHOUSE</BuildingClassType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<YieldChange>1</YieldChange>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_FOOD_DISTRIBUTION</PolicyType>
+			<PolicyType>EOMPOLICY_FOOD_DISTRIBUTION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_GROCER</BuildingClassType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<YieldChange>1</YieldChange>
@@ -555,66 +554,66 @@
 	</Policy_BuildingClassYieldChanges>
 	<Policy_BuildingClassCultureChanges>
 		<Row>
-			<PolicyType>POLICY_CULTURAL_DEVELOPMENT</PolicyType>
+			<PolicyType>EOMPOLICY_CULTURAL_DEVELOPMENT</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_ELDER_COUNCIL</BuildingClassType>
 			<CultureChange>1</CultureChange>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_CULTURAL_DEVELOPMENT</PolicyType>
+			<PolicyType>EOMPOLICY_CULTURAL_DEVELOPMENT</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
 			<CultureChange>2</CultureChange>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_CULTURAL_DEVELOPMENT</PolicyType>
+			<PolicyType>EOMPOLICY_CULTURAL_DEVELOPMENT</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_INN</BuildingClassType>
 			<CultureChange>2</CultureChange>
 		</Row>
 	</Policy_BuildingClassCultureChanges>
 	<Policy_BuildingClassHappiness>
 		<Row>
-			<PolicyType>POLICY_ENTERTAINMENT_FOR_THE_MASSES</PolicyType>
+			<PolicyType>EOMPOLICY_ENTERTAINMENT_FOR_THE_MASSES</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CIRCUS</BuildingClassType>
 			<Happiness>1</Happiness>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_ENTERTAINMENT_FOR_THE_MASSES</PolicyType>
+			<PolicyType>EOMPOLICY_ENTERTAINMENT_FOR_THE_MASSES</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_COLOSSEUM</BuildingClassType>
 			<Happiness>1</Happiness>
 		</Row>
 	</Policy_BuildingClassHappiness>
 	<Policy_ImprovementYieldChanges>
 		<Row>
-			<PolicyType>POLICY_SLAVERY</PolicyType>
+			<PolicyType>EOMPOLICY_SLAVERY</PolicyType>
 			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_SLAVERY</PolicyType>
+			<PolicyType>EOMPOLICY_SLAVERY</PolicyType>
 			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>1</Yield>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_TOWN_DEVELOPMENT</PolicyType>
+			<PolicyType>EOMPOLICY_TOWN_DEVELOPMENT</PolicyType>
 			<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_TOWN_DEVELOPMENT</PolicyType>
+			<PolicyType>EOMPOLICY_TOWN_DEVELOPMENT</PolicyType>
 			<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>1</Yield>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_TOWN_DEVELOPMENT</PolicyType>
+			<PolicyType>EOMPOLICY_TOWN_DEVELOPMENT</PolicyType>
 			<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_CROP_ROTATION</PolicyType>
+			<PolicyType>EOMPOLICY_CROP_ROTATION</PolicyType>
 			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
@@ -622,19 +621,19 @@
 	</Policy_ImprovementYieldChanges>
 	<Policy_ImprovementCultureChanges>
 		<Row>
-			<PolicyType>POLICY_TOWN_DEVELOPMENT</PolicyType>
+			<PolicyType>EOMPOLICY_TOWN_DEVELOPMENT</PolicyType>
 			<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
 			<CultureChange>1</CultureChange>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_CULTURAL_DEVELOPMENT</PolicyType>
+			<PolicyType>EOMPOLICY_CULTURAL_DEVELOPMENT</PolicyType>
 			<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
 			<CultureChange>2</CultureChange>
 		</Row>
 	</Policy_ImprovementCultureChanges>
 	<!-- <Policy_HurryModifiers>
 		<Row>
-			<PolicyType>POLICY_MERCANTILISM</PolicyType>
+			<PolicyType>EOMPOLICY_MERCANTILISM</PolicyType>
 			<HurryType>HURRY_GOLD</HurryType>
 			<HurryCostModifier>-25</HurryCostModifier>
 		</Row>
@@ -642,208 +641,208 @@
 	<Policy_Flavors>
 		<Row>
 			<!-- Civilization Flavors -->
-			<PolicyType>POLICY_CIVILIZATION</PolicyType>
+			<PolicyType>EOMPOLICY_CIVILIZATION</PolicyType>
 			<FlavorType>FLAVOR_EXPANSION</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_PUBLIC_WORKS_I</PolicyType>
+			<PolicyType>EOMPOLICY_PUBLIC_WORKS_I</PolicyType>
 			<FlavorType>FLAVOR_EXPANSION</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_PUBLIC_WORKS_II</PolicyType>
+			<PolicyType>EOMPOLICY_PUBLIC_WORKS_II</PolicyType>
 			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_PUBLIC_ROADS</PolicyType>
+			<PolicyType>EOMPOLICY_PUBLIC_ROADS</PolicyType>
 			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_CITY_MILITIAS</PolicyType>
+			<PolicyType>EOMPOLICY_CITY_MILITIAS</PolicyType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_CITY_MILITIAS</PolicyType>
+			<PolicyType>EOMPOLICY_CITY_MILITIAS</PolicyType>
 			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_LEVIES</PolicyType>
+			<PolicyType>EOMPOLICY_LEVIES</PolicyType>
 			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_TERRITORIAL_DEFENSE</PolicyType>
+			<PolicyType>EOMPOLICY_TERRITORIAL_DEFENSE</PolicyType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_TERRITORIAL_DEFENSE</PolicyType>
+			<PolicyType>EOMPOLICY_TERRITORIAL_DEFENSE</PolicyType>
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_FOOD_DISTRIBUTION</PolicyType>
+			<PolicyType>EOMPOLICY_FOOD_DISTRIBUTION</PolicyType>
 			<FlavorType>FLAVOR_FOOD</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_TOWN_DEVELOPMENT</PolicyType>
+			<PolicyType>EOMPOLICY_TOWN_DEVELOPMENT</PolicyType>
 			<FlavorType>FLAVOR_FOOD</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_TOWN_DEVELOPMENT</PolicyType>
+			<PolicyType>EOMPOLICY_TOWN_DEVELOPMENT</PolicyType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_TOWN_DEVELOPMENT</PolicyType>
+			<PolicyType>EOMPOLICY_TOWN_DEVELOPMENT</PolicyType>
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_TOWN_DEVELOPMENT</PolicyType>
+			<PolicyType>EOMPOLICY_TOWN_DEVELOPMENT</PolicyType>
 			<FlavorType>FLAVOR_CULTURE</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_CROP_ROTATION</PolicyType>
+			<PolicyType>EOMPOLICY_CROP_ROTATION</PolicyType>
 			<FlavorType>FLAVOR_FOOD</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_CIVILIZATION_FINISHER</PolicyType>
+			<PolicyType>EOMPOLICY_CIVILIZATION_FINISHER</PolicyType>
 			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
 		<Row> <!--Freedom Flavors -->
-			<PolicyType>POLICY_FREEDOM</PolicyType>
+			<PolicyType>EOMPOLICY_FREEDOM</PolicyType>
 			<FlavorType>FLAVOR_CULTURE</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_CREATIVITY</PolicyType>
+			<PolicyType>EOMPOLICY_CREATIVITY</PolicyType>
 			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_CULTURAL_DEVELOPMENT</PolicyType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>15</Flavor>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_TOLERANCE</PolicyType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_JOY_OF_LIFE</PolicyType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_FREE_ARTS</PolicyType>
+			<PolicyType>EOMPOLICY_CULTURAL_DEVELOPMENT</PolicyType>
 			<FlavorType>FLAVOR_CULTURE</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_MIDDLE_CLASS</PolicyType>
+			<PolicyType>EOMPOLICY_TOLERANCE</PolicyType>
 			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_QUESTING</PolicyType>
+			<PolicyType>EOMPOLICY_JOY_OF_LIFE</PolicyType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>EOMPOLICY_FREE_ARTS</PolicyType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>EOMPOLICY_MIDDLE_CLASS</PolicyType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>EOMPOLICY_QUESTING</PolicyType>
 			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_HEROISM</PolicyType>
+			<PolicyType>EOMPOLICY_HEROISM</PolicyType>
 			<FlavorType>FLAVOR_CULTURE</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_HEROISM</PolicyType>
+			<PolicyType>EOMPOLICY_HEROISM</PolicyType>
 			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_AMBITION</PolicyType>
+			<PolicyType>EOMPOLICY_AMBITION</PolicyType>
 			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
 		<Row> <!--Domination Flavors -->
-			<PolicyType>POLICY_DOMINATION</PolicyType>
+			<PolicyType>EOMPOLICY_DOMINATION</PolicyType>
 			<FlavorType>FLAVOR_EXPANSION</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_SOCIAL_MOOD_CONTROL</PolicyType>
+			<PolicyType>EOMPOLICY_SOCIAL_MOOD_CONTROL</PolicyType>
 			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_ENTERTAINMENT_FOR_THE_MASSES</PolicyType>
+			<PolicyType>EOMPOLICY_ENTERTAINMENT_FOR_THE_MASSES</PolicyType>
 			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_SOCIAL_ENGINEERING</PolicyType>
+			<PolicyType>EOMPOLICY_SOCIAL_ENGINEERING</PolicyType>
 			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_SACRIFICIAL_CAPTIVES</PolicyType>
+			<PolicyType>EOMPOLICY_SACRIFICIAL_CAPTIVES</PolicyType>
 			<FlavorType>FLAVOR_CULTURE</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_SLAVERY</PolicyType>
+			<PolicyType>EOMPOLICY_SLAVERY</PolicyType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_SLAVERY</PolicyType>
+			<PolicyType>EOMPOLICY_SLAVERY</PolicyType>
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_IMPERIALISM</PolicyType>
+			<PolicyType>EOMPOLICY_IMPERIALISM</PolicyType>
 			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_CENTRALIZATION</PolicyType>
+			<PolicyType>EOMPOLICY_CENTRALIZATION</PolicyType>
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_CENTRALIZATION</PolicyType>
+			<PolicyType>EOMPOLICY_CENTRALIZATION</PolicyType>
 			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_WORKFORCE_CONTROL</PolicyType>
+			<PolicyType>EOMPOLICY_WORKFORCE_CONTROL</PolicyType>
 			<FlavorType>FLAVOR_WONDER</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_ABSOLUTE_POWER</PolicyType>
+			<PolicyType>EOMPOLICY_ABSOLUTE_POWER</PolicyType>
 			<FlavorType>FLAVOR_</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_WORKFORCE_CONTROL</PolicyType>
+			<PolicyType>EOMPOLICY_WORKFORCE_CONTROL</PolicyType>
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
 		<!-- Flavors for Absolute Power (Domination C3) will go here! -->
 		<Row>
-			<PolicyType>POLICY_DOMINATION_FINISHER</PolicyType>
+			<PolicyType>EOMPOLICY_DOMINATION_FINISHER</PolicyType>
 			<FlavorType>FLAVOR_CULTURE</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
@@ -852,100 +851,100 @@
 	<Policy_PrereqPolicies>
 		<!-- Civilization A Line -->
 		<Row>
-			<PolicyType>POLICY_PUBLIC_WORKS_II</PolicyType>
-			<PrereqPolicy>POLICY_PUBLIC_WORKS_I</PrereqPolicy>
+			<PolicyType>EOMPOLICY_PUBLIC_WORKS_II</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_PUBLIC_WORKS_I</PrereqEOMPOLICY>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_PUBLIC_ROADS</PolicyType>
-			<PrereqPolicy>POLICY_PUBLIC_WORKS_II</PrereqPolicy>
+			<PolicyType>EOMPOLICY_PUBLIC_ROADS</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_PUBLIC_WORKS_II</PrereqEOMPOLICY>
 		</Row>
 		<!-- Civilization B Line -->
 		<Row>
-			<PolicyType>POLICY_LEVIES</PolicyType>
-			<PrereqPolicy>POLICY_CITY_MILITIAS</PrereqPolicy>
+			<PolicyType>EOMPOLICY_LEVIES</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_CITY_MILITIAS</PrereqEOMPOLICY>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_TERRITORIAL_DEFENSE</PolicyType>
-			<PrereqPolicy>POLICY_LEVIES</PrereqPolicy>
+			<PolicyType>EOMPOLICY_TERRITORIAL_DEFENSE</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_LEVIES</PrereqEOMPOLICY>
 		</Row>
 		<!-- Civilization C Line -->
 		<Row>
-			<PolicyType>POLICY_TOWN_DEVELOPMENT</PolicyType>
-			<PrereqPolicy>POLICY_FOOD_DISTRIBUTION</PrereqPolicy>
+			<PolicyType>EOMPOLICY_TOWN_DEVELOPMENT</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_FOOD_DISTRIBUTION</PrereqEOMPOLICY>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_CROP_ROTATION</PolicyType>
-			<PrereqPolicy>POLICY_TOWN_DEVELOPMENT</PrereqPolicy>
+			<PolicyType>EOMPOLICY_CROP_ROTATION</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_TOWN_DEVELOPMENT</PrereqEOMPOLICY>
 		</Row>
 		<!-- Freedom A Line -->
 		<Row>
-			<PolicyType>POLICY_CULTURAL_DEVELOPMENT</PolicyType>
-			<PrereqPolicy>POLICY_CREATIVITY</PrereqPolicy>
+			<PolicyType>EOMPOLICY_CULTURAL_DEVELOPMENT</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_CREATIVITY</PrereqEOMPOLICY>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_TOLERANCE</PolicyType>
-			<PrereqPolicy>POLICY_CULTURAL_DEVELOPMENT</PrereqPolicy>
+			<PolicyType>EOMPOLICY_TOLERANCE</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_CULTURAL_DEVELOPMENT</PrereqEOMPOLICY>
 		</Row>
 		<!-- Freedom B Line -->
 		<Row>
-			<PolicyType>POLICY_FREE_ARTS</PolicyType>
-			<PrereqPolicy>POLICY_JOY_OF_LIFE</PrereqPolicy>
+			<PolicyType>EOMPOLICY_FREE_ARTS</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_JOY_OF_LIFE</PrereqEOMPOLICY>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_MIDDLE_CLASS</PolicyType>
-			<PrereqPolicy>POLICY_FREE_ARTS</PrereqPolicy>
+			<PolicyType>EOMPOLICY_MIDDLE_CLASS</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_FREE_ARTS</PrereqEOMPOLICY>
 		</Row>
 		<!-- Freedom C Line -->
 		<Row>
-			<PolicyType>POLICY_HEROISM</PolicyType>
-			<PrereqPolicy>POLICY_QUESTING</PrereqPolicy>
+			<PolicyType>EOMPOLICY_HEROISM</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_QUESTING</PrereqEOMPOLICY>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_AMBITION</PolicyType>
-			<PrereqPolicy>POLICY_HEROISM</PrereqPolicy>
+			<PolicyType>EOMPOLICY_AMBITION</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_HEROISM</PrereqEOMPOLICY>
 		</Row>
 		<!-- Domination A Line -->
 		<Row>
-			<PolicyType>POLICY_ENTERTAINMENT_FOR_THE_MASSES</PolicyType>
-			<PrereqPolicy>POLICY_SOCIAL_MOOD_CONTROL</PrereqPolicy>
+			<PolicyType>EOMPOLICY_ENTERTAINMENT_FOR_THE_MASSES</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_SOCIAL_MOOD_CONTROL</PrereqEOMPOLICY>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_SOCIAL_ENGINEERING</PolicyType>
-			<PrereqPolicy>POLICY_ENTERTAINMENT_FOR_THE_MASSES</PrereqPolicy>
+			<PolicyType>EOMPOLICY_SOCIAL_ENGINEERING</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_ENTERTAINMENT_FOR_THE_MASSES</PrereqEOMPOLICY>
 		</Row>
 		<!-- Domination B Line -->
 		<Row>
-			<PolicyType>POLICY_SLAVERY</PolicyType>
-			<PrereqPolicy>POLICY_SACRIFICIAL_CAPTIVES</PrereqPolicy>
+			<PolicyType>EOMPOLICY_SLAVERY</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_SACRIFICIAL_CAPTIVES</PrereqEOMPOLICY>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_IMPERIALISM</PolicyType>
-			<PrereqPolicy>POLICY_SLAVERY</PrereqPolicy>
+			<PolicyType>EOMPOLICY_IMPERIALISM</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_SLAVERY</PrereqEOMPOLICY>
 		</Row>
 		<!-- Domination C Line -->
 		<Row>
-			<PolicyType>POLICY_WORKFORCE_CONTROL</PolicyType>
-			<PrereqPolicy>POLICY_CENTRALIZATION</PrereqPolicy>
+			<PolicyType>EOMPOLICY_WORKFORCE_CONTROL</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_CENTRALIZATION</PrereqEOMPOLICY>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_ABSOLUTE_POWER</PolicyType>
-			<PrereqPolicy>POLICY_WORKFORCE_CONTROL</PrereqPolicy>
+			<PolicyType>EOMPOLICY_ABSOLUTE_POWER</PolicyType>
+			<PrereqEOMPOLICY>EOMPOLICY_WORKFORCE_CONTROL</PrereqEOMPOLICY>
 		</Row>
 	</Policy_PrereqPolicies>
 	<Policy_FreePromotions>
 		<Row> <!-- Civilization -->
-			<PolicyType>POLICY_TERRITORIAL_DEFENSE</PolicyType>
+			<PolicyType>EOMPOLICY_TERRITORIAL_DEFENSE</PolicyType>
 			<PromotionType>PROMOTION_TERRITORIAL_DEFENSE</PromotionType>
 		</Row>
 	</Policy_FreePromotions>
 	<Policy_FreePromotionUnitCombats>
 		<Row> <!-- Nature -->
-			<PolicyType>POLICY_NATURE</PolicyType>
+			<PolicyType>EOMPOLICY_NATURE</PolicyType>
 			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 			<PromotionType>PROMOTION_NATURE</PromotionType>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_HUNTING_TRADITION</PolicyType>
+			<PolicyType>EOMPOLICY_HUNTING_TRADITION</PolicyType>
 			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 			<PromotionType>PROMOTION_HUNTING_TRADITION</PromotionType>
 		</Row>
@@ -954,37 +953,165 @@
 	</Policy_FreePromotionUnitCombats>
 	<!-- <Policy_UnitCombatProductionModifiers>
 		<Row>
-			<PolicyType>POLICY_WARRIOR_CODE</PolicyType>
+			<PolicyType>EOMPOLICY_WARRIOR_CODE</PolicyType>
 			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
 			<ProductionModifier>15</ProductionModifier>
 		</Row>
 	</Policy_UnitCombatProductionModifiers> -->
 	<Policy_FreeUnitClasses>
 		<Row> <!-- Civilization -->
-			<PolicyType>POLICY_PUBLIC_WORKS_I</PolicyType>
+			<PolicyType>EOMPOLICY_PUBLIC_WORKS_I</PolicyType>
 			<UnitClassType>UNITCLASS_WORKER</UnitClassType>
 			<Count>2</Count>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_CIVILIZATION_FINISHER</PolicyType>
+			<PolicyType>EOMPOLICY_CIVILIZATION_FINISHER</PolicyType>
 			<UnitClassType>UNITCLASS_PIONEER</UnitClassType>
 			<Count>1</Count>
 		</Row>
 		<Row> <!-- Nature -->
-			<PolicyType>POLICY_NATURE</PolicyType>
+			<PolicyType>EOMPOLICY_NATURE</PolicyType>
 			<UnitClassType>UNITCLASS_WOLF</UnitClassType>
 			<Count>2</Count>
 		</Row>
 		<Row> <!-- Freedom -->
-			<PolicyType>POLICY_HEROISM</PolicyType>
+			<PolicyType>EOMPOLICY_HEROISM</PolicyType>
 			<UnitClassType>UNITCLASS_HERO</UnitClassType>
 			<Count>1</Count>
 		</Row>
 		<Row>
-			<PolicyType>POLICY_FREEDOM_FINISHER</PolicyType>
+			<PolicyType>EOMPOLICY_FREEDOM_FINISHER</PolicyType>
 			<UnitClassType>UNITCLASS_GREAT_BARD</UnitClassType>
 			<Count>1</Count>
 		</Row>
-	</Policy_FreeUnitClasses> 
-	
+	</Policy_FreeUnitClasses>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPOLICY_BRANCH_CIVILIZATION">
+			<Text>Civilization</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_CIVILIZATION_HELP">
+			<Text>[ICON_BULLET]Starting the Civilization Tree decreases the Culture cost of acquiring new tiles by 10%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_PUBLIC_WORKS_I">
+			<Text>Public Works I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_PUBLIC_WORKS_I_HELP">
+			<Text>[ICON_BULLET]Public Works I gives 2 free workers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_PUBLIC_WORKS_II">
+			<Text>Public Works II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_PUBLIC_WORKS_II_HELP">
+			<Text>[ICON_BULLET]Public Works II allows workers build improvements 20% faster</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_PUBLIC_ROADS">
+			<Text>Public Roads</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_PUBLIC_ROADS_HELP">
+			<Text>[ICON_BULLET]Public Roads gives +1 happiness per city connected to the capital and reduces the maintenance cost of roads by 25%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_CITY_MILITIAS">
+			<Text>City Militias</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_CITY_MILITIAS_HELP">
+			<Text>[ICON_BULLET]City Militias causes there to be no upkeep cost for garrisoned units. Also, cities with garrisons produce +1 Culture</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_LEVIES">
+			<Text>Levies</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_LEVIES_HELP">
+			<Text>[ICON_BULLET]Levies increases production of military units by 20% and causes units get 5extra experience.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_TERRITORIAL_DEFENSE">
+			<Text>Territorial Defense</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_TERRITORIAL_DEFENSE_HELP">
+			<Text>[ICON_BULLET]Territorial Defense gives units get +10% Strength in friendly territory and allows combat in friendly territory to generate Great Generals 50% faster.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_FOOD_DISTRIBUTION">
+			<Text>Food Distribution</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_FOOD_DISTRIBUTION_HELP">
+			<Text>[ICON_BULLET]Food Distribution increases food generation from every Granary, Smokehouse and Grocer by 1.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_TOWN_DEVELOPMENT">
+			<Text>Town Development</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_TOWN_DEVELOPMENT_HELP">
+			<Text>[ICON_BULLET]Town Development increases food, gold, production, and culture from the Town improvement by 1.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_CROP_ROTATION">
+			<Text>Crop Rotation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_CROP_ROTATION_HELP">
+			<Text>[ICON_BULLET]Crop Rotation increases food from the Farm improvement by 1.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_CIVILIZATION_FINISHER">
+			<Text>Taking all policies in the Civilization Tree will give 1 free Pioneer and allow new cities start with 2 population.</Text>
+		</Row>
+		<!-- <Row Tag="TXT_KEY_EOMPOLICY_BRANCH_FREEDOM">
+			<Text>Freedom</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_FREEDOM_HELP">
+			<Text>[ICON_BULLET]Starting the Freedom Tree increases Culture per city by 1.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_CREATIVITY">
+			<Text>Creativity</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_CREATIVITY_HELP">
+			<Text>[ICON_BULLET]Creativity causes extra Happiness to be converted to Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_CULTURAL_DEVELOPMENT">
+			<Text>Cultural Development</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_CULTURAL_DEVELOPMENT_HELP">
+			<Text>[ICON_BULLET]Cultural Development increases Culture from the Town improvement by 2 and Culture from Elder Council building by 1.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_TOLERANCE">
+			<Text>Tolerance</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_TOLERANCE_HELP">
+			<Text>[ICON_BULLET]Tolerance increases Happiness by 2 and decreases Production by 10% in cities with a Hall of Joining.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_JOY_OF_LIFE">
+			<Text>Joy of Life</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_JOY_OF_LIFE_HELP">
+			<Text>[ICON_BULLET]Joy of Life increases Happiness per 10 citizens by 1.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_FREE_ARTS">
+			<Text>Free Arts</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_FREE_ARTS_HELP">
+			<Text>[ICON_BULLET]Free Arts increases Culture per Specialist by 1.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_MIDDLE_CLASS">
+			<Text>Middle Class</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_MIDDLE_CLASS_HELP">
+			<Text>[ICON_BULLET]Middle Class causes Specialists to cause only half Unhappiness.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_QUESTING">
+			<Text>Questing</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_QUESTING_HELP">
+			<Text>[ICON_BULLET]Questing increases influence towards Minor Civs for completing quests by 50%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_HEROISM">
+			<Text>Heroism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_HEROISM_HELP">
+			<Text>[ICON_BULLET]Heroism increases Culture from every Tavern and Inn by 2 and gives 1 free Hero.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_AMBITION">
+			<Text>Ambition</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_AMBITION_HELP">
+			<Text>[ICON_BULLET]Ambition increases Great People generation in all cities by 25%.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPOLICY_FREEDOM_FINISHER">
+			<Text>Taking all policies in the Freedom Tree will give 1 Free Great Bard and increases Happiness per city by 1.</Text>
+		</Row> -->
+		
+	</Language_en_US>
 </GameData>
