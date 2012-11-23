@@ -30,7 +30,7 @@
 			<Text>[ICON_BULLET]+2 [ICON_FOOD] Food.[NEWLINE][ICON_BULLET]+2 [ICON_GOLD] Gold.[NEWLINE][ICON_BULLET]+2 [ICON_GREAT_PEOPLE] Merchant points.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMSPEC_FINANCIER">
-			<Text>Cook</Text>
+			<Text>Financier</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMSPEC_FINANCIER_SLOTS">
 			<Text>Financier slots:</Text>

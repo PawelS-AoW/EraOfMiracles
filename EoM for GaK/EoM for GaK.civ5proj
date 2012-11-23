@@ -408,12 +408,12 @@ Version: 0.0.2</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>09 Terrain/06 Builds.xml</FileName>
+        <FileName>09 Terrain/05a Impr Art Def.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>09 Terrain/TEMP RevealTechs.sql</FileName>
+        <FileName>09 Terrain/06 Builds.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -513,20 +513,13 @@ Version: 0.0.2</Description>
       </Association>
       <Association>
         <Type>Dlc</Type>
-        <Name>Sejong The Great's Korea</Name>
-        <Id>112C22B2-5308-42b6-B734-171CCAB3037B</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-      <Association>
-        <Type>Dlc</Type>
         <Name>Wonders of the Ancient World</Name>
         <Id>BBB0D085-A0B1-4475-B007-3E549CF3ADC3</Id>
         <MinVersion>0</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
     </ModDependencies>
-    <ReloadLandmarkSystem>false</ReloadLandmarkSystem>
+    <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
     <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
@@ -542,6 +535,7 @@ Version: 0.0.2</Description>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="00 Graphics\Battle Galley" />
+    <Folder Include="00 Graphics\Camp" />
     <Folder Include="00 Graphics\Wolf" />
     <Folder Include="00 Graphics\Nights Icons" />
     <Folder Include="00 Graphics\Old Trading Posts" />
@@ -624,6 +618,18 @@ Version: 0.0.2</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="00 Graphics\Camp\hb_eom_camp.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="00 Graphics\Camp\eom_camp.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="00 Graphics\Camp\pl_eom_camp.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="00 Graphics\Nights Icons\Unique_128.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -644,283 +650,279 @@ Version: 0.0.2</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\fx_triggers_pl_med_trading_post.ftsxml">
+    <Content Include="00 Graphics\Old Trading Posts\fx_triggers_pl_med_old_trading_post.ftsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\fx_triggers_pl_mod_trading_post.ftsxml">
+    <Content Include="00 Graphics\Old Trading Posts\fx_triggers_pl_mod_old_trading_post.ftsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_med_trading_post1.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\hb_med_old_trading_post1.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_med_trading_post1.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\hb_med_old_trading_post1.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_med_trading_post2.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\hb_med_old_trading_post2.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_med_trading_post2.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\hb_med_old_trading_post2.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_med_trading_post3.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\hb_med_old_trading_post3.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_med_trading_post3.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\hb_med_old_trading_post3.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_med_trading_post4.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\hb_med_old_trading_post4.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_med_trading_post4.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\hb_med_old_trading_post4.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_med_trading_post_decal_d.dds">
+    <Content Include="00 Graphics\Old Trading Posts\hb_med_old_trading_post_decal_d.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_med_trading_post_decal_h.dds">
+    <Content Include="00 Graphics\Old Trading Posts\hb_med_old_trading_post_decal_h.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_mod_trading_post1.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\hb_mod_old_trading_post1.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_mod_trading_post1.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\hb_mod_old_trading_post1.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_mod_trading_post2.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\hb_mod_old_trading_post2.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_mod_trading_post2.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\hb_mod_old_trading_post2.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_mod_trading_post3.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\hb_mod_old_trading_post3.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_mod_trading_post3.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\hb_mod_old_trading_post3.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_mod_trading_post4.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\hb_mod_old_trading_post4.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_mod_trading_post4.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\hb_mod_old_trading_post4.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_mod_trading_post_decal_d.dds">
+    <Content Include="00 Graphics\Old Trading Posts\hb_mod_old_trading_post_decal_d.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\hb_mod_trading_post_decal_h.dds">
+    <Content Include="00 Graphics\Old Trading Posts\hb_mod_old_trading_post_decal_h.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\med_trading_post1.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\med_old_trading_post1.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\med_trading_post1.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\med_old_trading_post1.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\med_trading_post2.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\med_old_trading_post2.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\med_trading_post2.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\med_old_trading_post2.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\med_trading_post3.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\med_old_trading_post3.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\med_trading_post3.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\med_old_trading_post3.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\med_trading_post4.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\med_old_trading_post4.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\med_trading_post4.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\med_old_trading_post4.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\med_trading_post_decal_diff.dds">
+    <Content Include="00 Graphics\Old Trading Posts\med_old_trading_post_decal_diff.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\med_trading_post_decal_h.dds">
+    <Content Include="00 Graphics\Old Trading Posts\med_old_trading_post_decal_h.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\med_trading_post_decal_s.dds">
+    <Content Include="00 Graphics\Old Trading Posts\med_old_trading_post_decal_s.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\med_trading_post_diff.dds">
+    <Content Include="00 Graphics\Old Trading Posts\med_old_trading_post_diff.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\med_trading_post_sref.dds">
+    <Content Include="00 Graphics\Old Trading Posts\med_old_trading_post_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\mod_trading_post1.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\mod_old_trading_post1.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\mod_trading_post1.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\mod_old_trading_post1.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\mod_trading_post2.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\mod_old_trading_post2.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\mod_trading_post2.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\mod_old_trading_post2.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\mod_trading_post3.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\mod_old_trading_post3.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\mod_trading_post3.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\mod_old_trading_post3.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\mod_trading_post4.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\mod_old_trading_post4.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\mod_trading_post4.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\mod_old_trading_post4.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\mod_trading_post_decal_d.dds">
+    <Content Include="00 Graphics\Old Trading Posts\mod_old_trading_post_decal_d.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\mod_trading_post_decal_h.dds">
+    <Content Include="00 Graphics\Old Trading Posts\mod_old_trading_post_decal_h.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\mod_trading_post_decal_s.dds">
+    <Content Include="00 Graphics\Old Trading Posts\mod_old_trading_post_decal_s.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\mod_trading_post_diff.dds">
+    <Content Include="00 Graphics\Old Trading Posts\mod_old_trading_post_diff.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\mod_trading_post_sref.dds">
+    <Content Include="00 Graphics\Old Trading Posts\mod_old_trading_post_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_med_trading_post.dds">
+    <Content Include="00 Graphics\Old Trading Posts\pl_med_old_trading_post.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_med_trading_post.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\pl_med_old_trading_post1.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_med_trading_post1.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\pl_med_old_trading_post1.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_med_trading_post1.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\pl_med_old_trading_post2.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_med_trading_post2.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\pl_med_old_trading_post2.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_med_trading_post2.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\pl_med_old_trading_post3.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_med_trading_post3.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\pl_med_old_trading_post3.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_med_trading_post3.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\pl_med_old_trading_post4.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_med_trading_post4.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\pl_med_old_trading_post4.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_med_trading_post4.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\pl_med_old_trading_post_decal_d.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_med_trading_post_decal_d.dds">
+    <Content Include="00 Graphics\Old Trading Posts\pl_med_old_trading_post_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_med_trading_post_sref.dds">
+    <Content Include="00 Graphics\Old Trading Posts\pl_mod_old_trading_post1.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_mod_trading_post1.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\pl_mod_old_trading_post1.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_mod_trading_post1.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\pl_mod_old_trading_post2.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_mod_trading_post2.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\pl_mod_old_trading_post2.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_mod_trading_post2.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\pl_mod_old_trading_post3.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_mod_trading_post3.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\pl_mod_old_trading_post3.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_mod_trading_post3.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\pl_mod_old_trading_post4.fxsxml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_mod_trading_post4.fxsxml">
+    <Content Include="00 Graphics\Old Trading Posts\pl_mod_old_trading_post4.gr2">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_mod_trading_post4.gr2">
+    <Content Include="00 Graphics\Old Trading Posts\pl_mod_old_trading_post_decal_d.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_mod_trading_post_decal_d.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="00 Graphics\Old Trading Posts\pl_mod_trading_post_diff.dds">
+    <Content Include="00 Graphics\Old Trading Posts\pl_mod_old_trading_post_diff.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -1452,7 +1454,7 @@ Version: 0.0.2</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="09 Terrain\TEMP RevealTechs.sql">
+    <Content Include="09 Terrain\05a Impr Art Def.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

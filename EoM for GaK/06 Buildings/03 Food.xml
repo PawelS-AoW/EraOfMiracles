@@ -69,6 +69,70 @@
 			<Flavor>10</Flavor>
 		</Row>
 	</Building_Flavors>
+	<!-- GRANARY -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_GRANARY</Type>
+			<DefaultBuilding>BUILDING_GRANARY</DefaultBuilding>
+			<Description>TXT_KEY_EOMBLDG_GRANARY</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_GRANARY</Type>
+			<BuildingClass>BUILDINGCLASS_GRANARY</BuildingClass>
+			<Cost>100</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<PrereqTech>TECH_FARMING</PrereqTech>
+			<Description>TXT_KEY_EOMBLDG_GRANARY</Description>
+			<Help>TXT_KEY_EOMBLDG_GRANARY_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_GRANARY</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>50</HurryCostModifier>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<ConquestProb>75</ConquestProb>
+			<FoodKept>20</FoodKept>
+		</Row>
+	</Buildings>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMBLDG_GRANARY">
+			<Text>Granary</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBLDG_GRANARY_HELP">
+			<Text>[ICON_BULLET]Stores 20% [ICON_FOOD] Food after city growth.[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food from [ICON_RES_WHEAT] Wheat.</Text>
+		</Row>
+	</Language_en_US>
+	<Building_ClassesNeededInCity>
+		<Row>
+			<BuildingType>BUILDING_GRANARY</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_GATHERER</BuildingClassType>
+		</Row>
+	</Building_ClassesNeededInCity>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_GRANARY</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_ResourceYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_GRANARY</BuildingType>
+			<ResourceType>RESOURCE_WHEAT</ResourceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_ResourceYieldChanges>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_GRANARY</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Building_Flavors>
 	<!-- SMOKEHOUSE -->
 	<BuildingClasses>
 		<Row>
@@ -165,70 +229,6 @@
 	<Building_Flavors>
 		<Row>
 			<BuildingType>BUILDING_SMOKEHOUSE</BuildingType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-	</Building_Flavors>
-	<!-- GRANARY -->
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_GRANARY</Type>
-			<DefaultBuilding>BUILDING_GRANARY</DefaultBuilding>
-			<Description>TXT_KEY_EOMBLDG_GRANARY</Description>
-		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_GRANARY</Type>
-			<BuildingClass>BUILDINGCLASS_GRANARY</BuildingClass>
-			<Cost>100</Cost>
-			<GoldMaintenance>1</GoldMaintenance>
-			<PrereqTech>TECH_POTTERY</PrereqTech>
-			<Description>TXT_KEY_EOMBLDG_GRANARY</Description>
-			<Help>TXT_KEY_EOMBLDG_GRANARY_HELP</Help>
-			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
-			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
-			<ArtDefineTag>ART_DEF_BUILDING_GRANARY</ArtDefineTag>
-			<MinAreaSize>-1</MinAreaSize>
-			<HurryCostModifier>50</HurryCostModifier>
-			<IconAtlas>BW_ATLAS_1</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
-			<ConquestProb>75</ConquestProb>
-			<FoodKept>20</FoodKept>
-		</Row>
-	</Buildings>
-	<Language_en_US>
-		<Row Tag="TXT_KEY_EOMBLDG_GRANARY">
-			<Text>Granary</Text>
-		</Row>
-		<Row Tag="TXT_KEY_EOMBLDG_GRANARY_HELP">
-			<Text>[ICON_BULLET]Stores 20% [ICON_FOOD] Food after city growth.[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food from [ICON_RES_WHEAT] Wheat.</Text>
-		</Row>
-	</Language_en_US>
-	<Building_ClassesNeededInCity>
-		<Row>
-			<BuildingType>BUILDING_GRANARY</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_GATHERER</BuildingClassType>
-		</Row>
-	</Building_ClassesNeededInCity>
-	<Building_YieldChanges>
-		<Row>
-			<BuildingType>BUILDING_GRANARY</BuildingType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-	</Building_YieldChanges>
-	<Building_ResourceYieldChanges>
-		<Row>
-			<BuildingType>BUILDING_GRANARY</BuildingType>
-			<ResourceType>RESOURCE_WHEAT</ResourceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-	</Building_ResourceYieldChanges>
-	<Building_Flavors>
-		<Row>
-			<BuildingType>BUILDING_GRANARY</BuildingType>
 			<FlavorType>FLAVOR_GROWTH</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>

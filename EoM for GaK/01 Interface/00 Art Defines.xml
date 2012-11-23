@@ -222,7 +222,7 @@
 	<!-- there is no icon for SV -->
 	<!-- <ArtDefine_StrategicView>
 		<Row>
-			<StrategicViewType>ART_DEF_UNIT_EOM_AXEMAN</StrategicViewType>
+			<StrategicViewType>ART_DEF_UNIT_EOM_WOLF</StrategicViewType>
 			<TileType>Unit</TileType>
 			<Asset>sv_muslimcavalry.dds</Asset>
 		</Row>
@@ -241,5 +241,6 @@
 			<TerrainContour>1</TerrainContour>
 		</Row>
 	</ArtDefine_Landmarks> -->
+	
 </GameData>
 	

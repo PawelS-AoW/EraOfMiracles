@@ -64,6 +64,10 @@
 			<UnitType>UNIT_SCOUT</UnitType>
 			<BuildType>BUILD_CAMP</BuildType>
 		</Row>
+		<Row>
+			<UnitType>UNIT_SCOUT</UnitType>
+			<BuildType>BUILD_CAMP_NORES</BuildType>
+		</Row>
 	</Unit_Builds>
 	<Unit_AITypes>
 		<Row>
@@ -168,6 +172,10 @@
 			<UnitType>UNIT_RANGER</UnitType>
 			<BuildType>BUILD_CAMP</BuildType>
 		</Row>
+		<Row>
+			<UnitType>UNIT_RANGER</UnitType>
+			<BuildType>BUILD_CAMP_NORES</BuildType>
+		</Row>
 	</Unit_Builds>
 	<Unit_AITypes>
 		<Row>
@@ -256,6 +264,10 @@
 		<Row>
 			<UnitType>UNIT_JAVELINEER</UnitType>
 			<BuildType>BUILD_CAMP</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_JAVELINEER</UnitType>
+			<BuildType>BUILD_CAMP_NORES</BuildType>
 		</Row>
 	</Unit_Builds>
 	<Unit_AITypes>
@@ -348,6 +360,10 @@
 		<Row>
 			<UnitType>UNIT_EXPLORER</UnitType>
 			<BuildType>BUILD_CAMP</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_EXPLORER</UnitType>
+			<BuildType>BUILD_CAMP_NORES</BuildType>
 		</Row>
 	</Unit_Builds>
 	<Unit_AITypes>

@@ -17,7 +17,6 @@ DELETE FROM Feature_RiverYieldChanges; -- unused
 DELETE FROM Natural_Wonder_Placement; -- unused
 
 -- Resources
-
 DELETE FROM Resources;
 DELETE FROM Resource_FeatureBooleans;
 DELETE FROM Resource_FeatureTerrainBooleans;
@@ -29,7 +28,6 @@ DELETE FROM Resource_YieldChanges;
 UPDATE ResourceClasses SET UniqueRange = 0;
 
 -- Improvements
-
 DELETE FROM Improvements;
 DELETE FROM Improvement_AdjacentCityYields;
 DELETE FROM Improvement_AdjacentMountainYieldChanges;
@@ -50,12 +48,10 @@ DELETE FROM Improvement_ValidTerrains;
 DELETE FROM Improvement_Yields;
 
 -- Routes (update only)
-
 UPDATE Route_TechMovementChanges
 SET TechType = 'TECH_IMPERIAL_ROADS';
 
 -- Builds
-
 DELETE FROM Builds;
 DELETE FROM BuildFeatures;
 

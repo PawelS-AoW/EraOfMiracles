@@ -901,24 +901,27 @@ CivilopediaCategory[CategoryPolicies].PopulateList = function()
 		
 		-- put in free policies that belong to this branch in here
 		local freePolicy = GameInfo.Policies[branch.FreePolicy];
-		local article = {};
-		local name = Locale.ConvertTextKey( freePolicy.Description )
-		article.entryName = name;
-		article.entryID = freePolicy.ID;
-		article.entryCategory = CategoryPolicies;
-		article.tooltipTextureOffset, article.tooltipTexture = IconLookup( freePolicy.PortraitIndex, buttonSize, freePolicy.IconAtlas );				
-		if not article.tooltipTextureOffset then
-			article.tooltipTexture = defaultErrorTextureSheet;
-			article.tooltipTextureOffset = nullOffset;
-		end				
+		if freePolicy then
+			local article = {};
+			local name = Locale.ConvertTextKey( freePolicy.Description )
+			article.entryName = name;
+			article.entryID = freePolicy.ID;
+			article.entryCategory = CategoryPolicies;
+			article.tooltipTextureOffset, article.tooltipTexture = IconLookup( freePolicy.PortraitIndex, buttonSize, freePolicy.IconAtlas );				
+			if not article.tooltipTextureOffset then
+				article.tooltipTexture = defaultErrorTextureSheet;
+				article.tooltipTextureOffset = nullOffset;
+			end
+						
 		
-		sortedList[CategoryPolicies][branchID][tableid] = article;
-		tableid = tableid + 1;
+			sortedList[CategoryPolicies][branchID][tableid] = article;
+			tableid = tableid + 1;
 		
-		-- index by various keys
-		searchableList[Locale.ToLower(name)] = article;
-		searchableTextKeyList[freePolicy.Description] = article;
-		categorizedList[(CategoryPolicies * absurdlyLargeNumTopicsInCategory) + freePolicy.ID] = article;
+			-- index by various keys
+			searchableList[Locale.ToLower(name)] = article;
+			searchableTextKeyList[freePolicy.Description] = article;
+			categorizedList[(CategoryPolicies * absurdlyLargeNumTopicsInCategory) + freePolicy.ID] = article;
+		end
 
 		-- sort this list alphabetically by localized name
 		table.sort(sortedList[CategoryPolicies][branchID], Alphabetically);

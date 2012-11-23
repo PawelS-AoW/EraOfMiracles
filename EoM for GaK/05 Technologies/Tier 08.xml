@@ -238,7 +238,7 @@
 	</Technology_Flavors>
 	<!-- MISC_08: MEDICINE -->
 	<!-- B: Infirmary -->
-	<!-- ??? -->
+	<!-- +1 food from Terrace Farm -->
 	<Technologies>
 		<Row>
 			<Type>TECH_MEDICINE</Type>

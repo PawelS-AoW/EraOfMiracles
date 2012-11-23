@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by ModBuddy on 7/6/2012 1:47:16 PM -->
 <GameData>
-	<Language_en_US>
-		<Row Tag="TXT_KEY_EOMIMPR_TOWN">
-			<Text>Town</Text>
-		</Row>
-		<Row Tag="TXT_KEY_EOMIMPR_FISHING_VILLAGE">
-			<Text>Fishing Village</Text>
-		</Row>
-		<Row Tag="TXT_KEY_EOMIMPR_FISHING_VILLAGE_HELP">
-			<Text>[ICON_BULLET]Can only be built on the coast.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_EOMIMPR_WORKSHOP">
-			<Text>Workshop</Text>
-		</Row>
-		<Row Tag="TXT_KEY_EOMIMPR_WORKSHOP_HELP">
-			<Text>[ICON_BULLET]+1 [ICON_GOLD] Gold when adjacent to a city.</Text>
-		</Row>
-	</Language_en_US>
+	<!-- size adjustments -->
+	<ArtDefine_Landmarks>
+		<Update>
+			<Where ImprovementType="ART_DEF_IMPROVEMENT_MANUFACTORY"/>
+			<Set Scale="0.9"/>
+		</Update>
+		<Update>
+			<Where ImprovementType="ART_DEF_IMPROVEMENT_CUSTOMS_HOUSE"/>
+			<Set Scale="0.9"/>
+		</Update>
+	</ArtDefine_Landmarks>
+	<!-- CITY RUINS -->
 	<Improvements>
 		<Row>
 			<Type>IMPROVEMENT_CITY_RUINS</Type>
@@ -26,8 +21,24 @@
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_CITY_RUINS</ArtDefineTag>
 			<PortraitIndex>39</PortraitIndex>
 			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+			<PillageGold>20</PillageGold>
 			<DefenseModifier>10</DefenseModifier>
 		</Row>
+	</Improvements>
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_CITY_RUINS</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_CITY_RUINS</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_Yields>
+	<!-- ENCAMPMENT -->
+	<Improvements>
 		<Row>
 			<Type>IMPROVEMENT_BARBARIAN_CAMP</Type>
 			<Description>TXT_KEY_IMPROVEMENT_ENCAMPMENT</Description>
@@ -38,6 +49,827 @@
 			<BarbarianCamp>true</BarbarianCamp>
 			<DefenseModifier>10</DefenseModifier>
 		</Row>
+	</Improvements>
+	<!-- FARM -->
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_FARM</Type>
+			<Description>TXT_KEY_EOMIMPR_FARM</Description>
+			<Civilopedia>TXT_KEY_EOMIMPR_FARM_HELP</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_EOMFARM</ArtDefineTag>
+			<PortraitIndex>22</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+			<PillageGold>10</PillageGold>
+			<RequiresFlatlands>true</RequiresFlatlands>
+		</Row>
+	</Improvements>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMIMPR_FARM">
+			<Text>Farm</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMIMPR_FARM_HELP">
+			<Text>[ICON_BULLET]Can be built on Flatlands.[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food with Irrigation technology, on tiles with access to fresh water.[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food with Civil Service technology.[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food with Crop Rotation policy (Civilization tree).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBUILD_FARM">
+			<Text>Construct a Farm</Text>
+		</Row>
+	</Language_en_US>
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Improvement_Yields>
+	<Improvement_TechFreshWaterYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<TechType>TECH_IRRIGATION</TechType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_TechFreshWaterYieldChanges>
+	<Improvement_TechYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<TechType>TECH_CIVIL_SERVICE</TechType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_TechYieldChanges>
+	<Improvement_ValidTerrains>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+		</Row>
+	</Improvement_ValidTerrains>
+	<Builds>
+		<Row>
+			<Type>BUILD_FARM</Type>
+			<PrereqTech>TECH_FARMING</PrereqTech>
+			<Time>800</Time>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<Description>TXT_KEY_EOMBUILD_FARM</Description>
+			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
+			<HotKey>KB_I</HotKey>
+			<OrderPriority>99</OrderPriority>
+			<IconIndex>21</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_FARM</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_WOOD_CUTTING</PrereqTech>
+			<Time>400</Time>
+			<Production>20</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_FARM</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
+			<Time>800</Time>
+			<Production>10</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_FARM</BuildType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<PrereqTech>TECH_IRRIGATION</PrereqTech>
+			<Time>600</Time>
+			<Remove>true</Remove>
+		</Row>
+	</BuildFeatures>
+	<Unit_Builds>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_FARM</BuildType>
+		</Row>
+	</Unit_Builds>
+	<!-- TERRACE FARM -->
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_TERRACE_FARM</Type>
+			<Description>TXT_KEY_EOMIMPR_TERRACE_FARM</Description>
+			<Civilopedia>TXT_KEY_EOMIMPR_TERRACE_FARM_HELP</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_TERRACE_FARM</ArtDefineTag>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>DLC02_TERRAIN_ATLAS</IconAtlas>
+			<PillageGold>15</PillageGold>
+			<HillsMakesValid>true</HillsMakesValid>
+		</Row>
+	</Improvements>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMIMPR_TERRACE_FARM">
+			<Text>Terrace Farm</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMIMPR_TERRACE_FARM_HELP">
+			<Text>[ICON_BULLET]Can be built on Hills.[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food with Bridge Building technology, on tiles with access to fresh water.[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food with Medicine technology.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBUILD_TERRACE_FARM">
+			<Text>Construct a Terrace Farm</Text>
+		</Row>
+	</Language_en_US>
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TERRACE_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TERRACE_FARM</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_Yields>
+	<Improvement_TechFreshWaterYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TERRACE_FARM</ImprovementType>
+			<TechType>TECH_BRIDGE_BUILDING</TechType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_TechFreshWaterYieldChanges>
+	<Improvement_TechYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TERRACE_FARM</ImprovementType>
+			<TechType>TECH_MEDICINE</TechType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_TechYieldChanges>
+	<Builds>
+		<Row>
+			<Type>BUILD_TERRACE_FARM</Type>
+			<PrereqTech>TECH_POTTERY</PrereqTech>
+			<Time>1600</Time>
+			<ImprovementType>IMPROVEMENT_TERRACE_FARM</ImprovementType>
+			<Description>TXT_KEY_EOMBUILD_TERRACE_FARM</Description>
+			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
+			<HotKey>KB_I</HotKey>
+			<OrderPriority>99</OrderPriority>
+			<IconIndex>0</IconIndex>
+			<IconAtlas>UNIT_ACTION_DLC02_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_TERRACE_FARM</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_WOOD_CUTTING</PrereqTech>
+			<Time>400</Time>
+			<Production>20</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_TERRACE_FARM</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
+			<Time>800</Time>
+			<Production>10</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_TERRACE_FARM</BuildType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<PrereqTech>TECH_IRRIGATION</PrereqTech>
+			<Time>600</Time>
+			<Remove>true</Remove>
+		</Row>
+	</BuildFeatures>
+	<Unit_Builds>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_TERRACE_FARM</BuildType>
+		</Row>
+	</Unit_Builds>
+	<!-- WORKSHOP -->
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_WORKSHOP</Type>
+			<Description>TXT_KEY_EOMIMPR_WORKSHOP</Description>
+			<Civilopedia>TXT_KEY_EOMIMPR_WORKSHOP_HELP</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_MANUFACTORY</ArtDefineTag>
+			<PortraitIndex>37</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+			<PillageGold>15</PillageGold>
+			<RequiresFlatlands>true</RequiresFlatlands>
+		</Row>
+	</Improvements>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMIMPR_WORKSHOP">
+			<Text>Workshop</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMIMPR_WORKSHOP_HELP">
+			<Text>[ICON_BULLET]Can be built on Flatlands.[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production when adjacent to a city.[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production with Metallurgy technology.[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production with Work Ethic policy (Craftsmanship tree).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBUILD_WORKSHOP">
+			<Text>Construct a Workshop</Text>
+		</Row>
+	</Language_en_US>
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_Yields>
+	<Improvement_AdjacentCityYields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_AdjacentCityYields>
+	<Improvement_TechYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
+			<TechType>TECH_METALLURGY</TechType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_TechYieldChanges>
+	<Improvement_ValidTerrains>
+		<Row>
+			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+		</Row>
+	</Improvement_ValidTerrains>
+	<Builds>
+		<Row>
+			<Type>BUILD_WORKSHOP</Type>
+			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+			<Time>1200</Time>
+			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
+			<Description>TXT_KEY_EOMBUILD_WORKSHOP</Description>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey>KB_N</HotKey>
+			<OrderPriority>98</OrderPriority>
+			<IconIndex>56</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_WORKSHOP</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_WOOD_CUTTING</PrereqTech>
+			<Time>400</Time>
+			<Production>20</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_WORKSHOP</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
+			<Time>800</Time>
+			<Production>10</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_WORKSHOP</BuildType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<PrereqTech>TECH_IRRIGATION</PrereqTech>
+			<Time>600</Time>
+			<Remove>true</Remove>
+		</Row>
+	</BuildFeatures>
+	<Unit_Builds>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_WORKSHOP</BuildType>
+		</Row>
+	</Unit_Builds>
+	<!-- MINE -->
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_MINE</Type>
+			<Description>TXT_KEY_EOMIMPR_MINE</Description>
+			<Civilopedia>TXT_KEY_EOMIMPR_MINE_HELP</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_MINE</ArtDefineTag>
+			<PortraitIndex>26</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+			<PillageGold>15</PillageGold>
+			<HillsMakesValid>true</HillsMakesValid>
+		</Row>
+	</Improvements>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMIMPR_MINE">
+			<Text>Mine</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMIMPR_MINE_HELP">
+			<Text>[ICON_BULLET]Can be built on Hills.[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production with Deep Mining technology.[NEWLINE][ICON_BULLET]+1 [ICON_GOLD] Gold with Mineralogy policy (Craftsmanship tree).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBUILD_MINE">
+			<Text>Construct a Mine</Text>
+		</Row>
+	</Language_en_US>
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Improvement_Yields>
+	<Improvement_AdjacentMountainYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_AdjacentMountainYieldChanges>
+	<Improvement_TechYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<TechType>TECH_DEEP_MINING</TechType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_TechYieldChanges>
+	<Builds>
+		<Row>
+			<Type>BUILD_MINE</Type>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<Time>1200</Time>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<Description>TXT_KEY_EOMBUILD_MINE</Description>
+			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
+			<HotKey>KB_N</HotKey>
+			<OrderPriority>98</OrderPriority>
+			<IconIndex>22</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_MINE</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_WOOD_CUTTING</PrereqTech>
+			<Time>400</Time>
+			<Production>20</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_MINE</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
+			<Time>800</Time>
+			<Production>10</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_MINE</BuildType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<PrereqTech>TECH_IRRIGATION</PrereqTech>
+			<Time>600</Time>
+			<Remove>true</Remove>
+		</Row>
+	</BuildFeatures>
+	<Unit_Builds>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_MINE</BuildType>
+		</Row>
+	</Unit_Builds>
+	<!-- CAMP (NO RES) (temporary, will be merged with Camp) -->
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_CAMP_NORES</Type>
+			<Description>TXT_KEY_EOMIMPR_CAMP_NORES</Description>
+			<Civilopedia>TXT_KEY_EOMIMPR_CAMP_NORES_HELP</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_CAMP</ArtDefineTag>
+			<PortraitIndex>19</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+			<PillageGold>10</PillageGold>
+			<RequiresFeature>true</RequiresFeature>
+		</Row>
+	</Improvements>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMIMPR_CAMP_NORES">
+			<Text>Camp</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMIMPR_CAMP_NORES_HELP">
+			<Text>[ICON_BULLET]Can be built in Forest or Jungle.[NEWLINE][ICON_BULLET]+1 [ICON_GOLD] Gold with Forestry technology.[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food with Hunting Tradition policy (Nature tree).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBUILD_CAMP_NORES">
+			<Text>Construct a Camp</Text>
+		</Row>
+	</Language_en_US>
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_CAMP_NORES</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_CAMP_NORES</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_Yields>
+	<Improvement_TechYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_CAMP_NORES</ImprovementType>
+			<TechType>TECH_FORESTRY</TechType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_TechYieldChanges>
+	<Improvement_ValidFeatures>
+		<Row>
+			<ImprovementType>IMPROVEMENT_CAMP_NORES</ImprovementType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_CAMP_NORES</ImprovementType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+		</Row>
+	</Improvement_ValidFeatures>
+	<Builds>
+		<Row>
+			<Type>BUILD_CAMP_NORES</Type>
+			<PrereqTech>TECH_TRAPPING</PrereqTech>
+			<Time>600</Time>
+			<ImprovementType>IMPROVEMENT_CAMP_NORES</ImprovementType>
+			<Description>TXT_KEY_EOMBUILD_CAMP_NORES</Description>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey>KB_H</HotKey>
+			<OrderPriority>96</OrderPriority>
+			<IconIndex>32</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_CAMP_NORES</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<Time>0</Time>
+		</Row>
+		<Row>
+			<BuildType>BUILD_CAMP_NORES</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<Time>200</Time>
+		</Row>
+	</BuildFeatures>
+	<Unit_Builds>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_CAMP_NORES</BuildType>
+		</Row>
+	</Unit_Builds>
+	<!-- LUMBERMILL -->
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_LUMBERMILL</Type>
+			<Description>TXT_KEY_EOMIMPR_LUMBERMILL</Description>
+			<Civilopedia>TXT_KEY_EOMIMPR_LUMBERMILL_HELP</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_LUMBERMILL</ArtDefineTag>
+			<PortraitIndex>25</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+			<PillageGold>10</PillageGold>
+			<RequiresFeature>true</RequiresFeature>
+		</Row>
+	</Improvements>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMIMPR_LUMBERMILL">
+			<Text>Lumbermill</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMIMPR_LUMBERMILL_HELP">
+			<Text>[ICON_BULLET]Can be built in Forest.[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production when next to a river.[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production with Machinery technology.[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production with Tree Growth policy (Nature tree).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBUILD_LUMBERMILL">
+			<Text>Construct a Lumbermill</Text>
+		</Row>
+	</Language_en_US>
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_Yields>
+	<Improvement_RiverSideYields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_RiverSideYields>
+	<Improvement_TechYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<TechType>TECH_MACHINERY</TechType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_TechYieldChanges>
+	<Improvement_ValidFeatures>
+		<Row>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+		</Row>
+	</Improvement_ValidFeatures>
+	<Builds>
+		<Row>
+			<Type>BUILD_LUMBERMILL</Type>
+			<PrereqTech>TECH_WOOD_CUTTING</PrereqTech>
+			<Time>1200</Time>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<Description>TXT_KEY_EOMBUILD_LUMBERMILL</Description>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey>KB_L</HotKey>
+			<OrderPriority>95</OrderPriority>
+			<IconIndex>28</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<Unit_Builds>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_LUMBERMILL</BuildType>
+		</Row>
+	</Unit_Builds>
+	<!-- TRADING POST -->
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_TRADING_POST</Type>
+			<Description>TXT_KEY_EOMIMPR_TRADING_POST</Description>
+			<Civilopedia>TXT_KEY_EOMIMPR_TRADING_POST_HELP</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_TRADING_POST</ArtDefineTag>
+			<PortraitIndex>32</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+			<PillageGold>20</PillageGold>
+		</Row>
+	</Improvements>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMIMPR_TRADING_POST">
+			<Text>Trading Post</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMIMPR_TRADING_POST_HELP">
+			<Text>[ICON_BULLET]Can be built on Flatlands or Hills.[NEWLINE][ICON_BULLET]+1 [ICON_GOLD] Gold when adjacent to a city.[NEWLINE][ICON_BULLET]+1 [ICON_GOLD] Gold with Banking technology.[NEWLINE][ICON_BULLET]+1 [ICON_GOLD] Gold with Trade Centers policy (Wealth tree).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBUILD_TRADING_POST">
+			<Text>Construct a Trading Post</Text>
+		</Row>
+	</Language_en_US>
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Improvement_Yields>
+	<Improvement_AdjacentCityYields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_AdjacentCityYields>
+	<Improvement_TechYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<TechType>TECH_BANKING</TechType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_TechYieldChanges>
+	<Improvement_ValidTerrains>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+		</Row>
+	</Improvement_ValidTerrains>
+	<Builds>
+		<Row>
+			<Type>BUILD_TRADING_POST</Type>
+			<PrereqTech>TECH_LOCAL_MARKETS</PrereqTech>
+			<Time>800</Time>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<Description>TXT_KEY_EOMBUILD_TRADING_POST</Description>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey>KB_T</HotKey>
+			<OrderPriority>97</OrderPriority>
+			<IconIndex>41</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_TRADING_POST</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_WOOD_CUTTING</PrereqTech>
+			<Time>400</Time>
+			<Production>20</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_TRADING_POST</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
+			<Time>800</Time>
+			<Production>10</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_TRADING_POST</BuildType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<PrereqTech>TECH_IRRIGATION</PrereqTech>
+			<Time>600</Time>
+			<Remove>true</Remove>
+		</Row>
+	</BuildFeatures>
+	<Unit_Builds>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_TRADING_POST</BuildType>
+		</Row>
+	</Unit_Builds>
+	<!-- FISHING VILLAGE -->
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_FISHING_VILLAGE</Type>
+			<Description>TXT_KEY_EOMIMPR_FISHING_VILLAGE</Description>
+			<Civilopedia>TXT_KEY_EOMIMPR_FISHING_VILLAGE_HELP</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_EOM_FISHING_VILLAGE</ArtDefineTag>
+			<PortraitIndex>23</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+			<PillageGold>15</PillageGold>
+			<Coastal>true</Coastal>
+		</Row>
+	</Improvements>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMIMPR_FISHING_VILLAGE">
+			<Text>Fishing Village</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMIMPR_FISHING_VILLAGE_HELP">
+			<Text>[ICON_BULLET]Can be built on the coast.[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food with Optics technology.[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production with Maritime Economy policy (Seamanship tree).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBUILD_FISHING_VILLAGE">
+			<Text>Construct a Fishing Village</Text>
+		</Row>
+	</Language_en_US>
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_Yields>
+	<Improvement_TechYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
+			<TechType>TECH_OPTICS</TechType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_TechYieldChanges>
+	<Improvement_ValidTerrains>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+		</Row>
+	</Improvement_ValidTerrains>
+	<Builds>
+		<Row>
+			<Type>BUILD_FISHING_VILLAGE</Type>
+			<PrereqTech>TECH_SAILING</PrereqTech>
+			<Time>1200</Time>
+			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
+			<Description>TXT_KEY_EOMBUILD_FISHING_VILLAGE</Description>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey>KB_Q</HotKey>
+			<OrderPriority>94</OrderPriority>
+			<IconIndex>35</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_FISHING_VILLAGE</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_WOOD_CUTTING</PrereqTech>
+			<Time>400</Time>
+			<Production>20</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_FISHING_VILLAGE</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
+			<Time>800</Time>
+			<Production>10</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_FISHING_VILLAGE</BuildType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<PrereqTech>TECH_IRRIGATION</PrereqTech>
+			<Time>600</Time>
+			<Remove>true</Remove>
+		</Row>
+	</BuildFeatures>
+	<Unit_Builds>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_FISHING_VILLAGE</BuildType>
+		</Row>
+	</Unit_Builds>
+	<!-- OLD STUFF -->
+	<!-- text -->
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMIMPR_TOWN">
+			<Text>Town</Text>
+		</Row>
+	</Language_en_US>
+	<!-- improvement data -->
+	<Improvements>
 		<Row>
 			<Type>IMPROVEMENT_ANCIENT_RUINS</Type>
 			<Description>TXT_KEY_IMPROVEMENT_GOODY_HUT</Description>
@@ -48,27 +880,6 @@
 			<DefenseModifier>10</DefenseModifier>
 		</Row>
 		<Row>
-			<Type>IMPROVEMENT_FARM</Type>
-			<Description>TXT_KEY_IMPROVEMENT_FARM</Description>
-			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_FARM_TEXT</Civilopedia>
-			<ArtDefineTag>ART_DEF_IMPROVEMENT_FARM</ArtDefineTag>
-			<PortraitIndex>22</PortraitIndex>
-			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
-			<PillageGold>10</PillageGold>
-			<FreshWaterMakesValid>true</FreshWaterMakesValid>
-			<RequiresFlatlandsOrFreshWater>true</RequiresFlatlandsOrFreshWater>
-		</Row>
-		<Row>
-			<Type>IMPROVEMENT_MINE</Type>
-			<Description>TXT_KEY_IMPROVEMENT_MINE</Description>
-			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_MINE_TEXT</Civilopedia>
-			<ArtDefineTag>ART_DEF_IMPROVEMENT_MINE</ArtDefineTag>
-			<PortraitIndex>26</PortraitIndex>
-			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
-			<PillageGold>10</PillageGold>
-			<HillsMakesValid>true</HillsMakesValid>
-		</Row>
-		<Row>
 			<Type>IMPROVEMENT_QUARRY</Type>
 			<Description>TXT_KEY_IMPROVEMENT_QUARRY</Description>
 			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_QUARRY_TEXT</Civilopedia>
@@ -76,36 +887,6 @@
 			<PortraitIndex>31</PortraitIndex>
 			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
 			<PillageGold>10</PillageGold>
-		</Row>
-		<Row>
-			<Type>IMPROVEMENT_TRADING_POST</Type>
-			<Description>TXT_KEY_IMPROVEMENT_TRADING_POST</Description>
-			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_TRADING_POST_TEXT</Civilopedia>
-			<ArtDefineTag>ART_DEF_IMPROVEMENT_TRADING_POST</ArtDefineTag>
-			<PortraitIndex>32</PortraitIndex>
-			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
-			<PillageGold>20</PillageGold>
-		</Row>
-		<Row>
-			<Type>IMPROVEMENT_FISHING_VILLAGE</Type>
-			<Description>TXT_KEY_EOMIMPR_FISHING_VILLAGE</Description>
-			<Civilopedia>TXT_KEY_EOMIMPR_FISHING_VILLAGE_HELP</Civilopedia>
-			<ArtDefineTag>ART_DEF_IMPROVEMENT_TRADING_POST</ArtDefineTag>
-			<PortraitIndex>32</PortraitIndex>
-			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
-			<PillageGold>15</PillageGold>
-			<Coastal>true</Coastal>
-			<!-- <DefenseModifier>10</DefenseModifier> -->
-		</Row>
-		<Row>
-			<Type>IMPROVEMENT_LUMBERMILL</Type>
-			<Description>TXT_KEY_IMPROVEMENT_LUMBERMILL</Description>
-			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_LUMBERMILL_TEXT</Civilopedia>
-			<ArtDefineTag>ART_DEF_IMPROVEMENT_LUMBERMILL</ArtDefineTag>
-			<PortraitIndex>25</PortraitIndex>
-			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
-			<PillageGold>10</PillageGold>
-			<RequiresFeature>true</RequiresFeature>
 		</Row>
 		<Row>
 			<Type>IMPROVEMENT_PASTURE</Type>
@@ -213,16 +994,6 @@
 			<!-- <DefenseModifier>25</DefenseModifier> removed because stupid AI wouldn't build it -->
 		</Row>
 		<Row>
-			<Type>IMPROVEMENT_WORKSHOP</Type>
-			<Description>TXT_KEY_EOMIMPR_WORKSHOP</Description>
-			<Civilopedia>TXT_KEY_EOMIMPR_WORKSHOP_HELP</Civilopedia>
-			<ArtDefineTag>ART_DEF_IMPROVEMENT_MANUFACTORY</ArtDefineTag>
-			<PortraitIndex>37</PortraitIndex>
-			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
-			<PillageGold>10</PillageGold>
-			<RequiresFlatlands>true</RequiresFlatlands>
-		</Row>
-		<Row>
 			<Type>IMPROVEMENT_CITADEL</Type>
 			<Description>TXT_KEY_IMPROVEMENT_CITADEL</Description>
 			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_CITADEL_TEXT</Civilopedia>
@@ -273,41 +1044,6 @@
 			<Yield>1</Yield>
 		</Row>
 		<Row>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
 			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>8</Yield>
@@ -338,38 +1074,7 @@
 			<Yield>6</Yield>
 		</Row>
 	</Improvement_Yields>
-	<Improvement_AdjacentCityYields>
-		<Row>
-			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-	</Improvement_AdjacentCityYields>
 	<Improvement_TechYieldChanges>
-		<Row>
-			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
-			<TechType>TECH_MACHINERY</TechType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<TechType>TECH_BANKING</TechType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
-			<TechType>TECH_SEA_LORE</TechType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
-			<TechType>TECH_DEEP_MINING</TechType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
 			<TechType>TECH_ADVANCED_MACHINES</TechType>
@@ -397,7 +1102,7 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
 			<TechType>TECH_FORESTRY</TechType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>1</Yield>
 		</Row>
 		<Row>
@@ -428,18 +1133,6 @@
 			<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
 			<TechType>TECH_EDUCATION</TechType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
-			<TechType>TECH_METALLURGY</TechType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<TechType>TECH_CIVIL_SERVICE</TechType>
-			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
 	</Improvement_TechYieldChanges>
@@ -477,54 +1170,6 @@
 			<TerrainType>TERRAIN_TUNDRA</TerrainType>
 		</Row>
 		<Row>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
-			<TerrainType>TERRAIN_TUNDRA</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
-			<TerrainType>TERRAIN_TUNDRA</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
-			<TerrainType>TERRAIN_SNOW</TerrainType>
-		</Row>
-		<Row>
 			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
 			<TerrainType>TERRAIN_GRASS</TerrainType>
 		</Row>
@@ -605,26 +1250,6 @@
 			<TerrainType>TERRAIN_SNOW</TerrainType>
 		</Row>
 		<Row>
-			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
-			<TerrainType>TERRAIN_TUNDRA</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
-			<TerrainType>TERRAIN_SNOW</TerrainType>
-		</Row>
-		<Row>
 			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
 			<TerrainType>TERRAIN_GRASS</TerrainType>
 		</Row>
@@ -643,34 +1268,8 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
 			<TerrainType>TERRAIN_SNOW</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
-			<TerrainType>TERRAIN_HILL</TerrainType>
 		</Row>
 	</Improvement_ValidTerrains>
-	<Improvement_ValidFeatures>
-		<Row>
-			<ImprovementType>IMPROVEMENT_BARBARIAN_CAMP</ImprovementType>
-			<FeatureType>FEATURE_JUNGLE</FeatureType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_BARBARIAN_CAMP</ImprovementType>
-			<FeatureType>FEATURE_FOREST</FeatureType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_GOODY_HUT</ImprovementType>
-			<FeatureType>FEATURE_JUNGLE</FeatureType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_GOODY_HUT</ImprovementType>
-			<FeatureType>FEATURE_FOREST</FeatureType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
-			<FeatureType>FEATURE_FOREST</FeatureType>
-		</Row>
-	</Improvement_ValidFeatures>
 	<Improvement_ResourceTypes>
 		<Row>
 			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
@@ -687,10 +1286,6 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
 			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
-			<ResourceType>RESOURCE_URANIUM</ResourceType>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
@@ -711,6 +1306,10 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
 			<ResourceType>RESOURCE_SALT</ResourceType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<ResourceType>RESOURCE_TIMBER</ResourceType>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
@@ -905,188 +1504,4 @@
 			<ResourceType>RESOURCE_URANIUM</ResourceType>
 		</Row>
 	</Improvement_ResourceTypes>
-	<Improvement_ResourceType_Yields>
-		<Row>
-			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
-			<ResourceType>RESOURCE_COAL</ResourceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
-			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
-			<ResourceType>RESOURCE_URANIUM</ResourceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
-			<ResourceType>RESOURCE_SALT</ResourceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
-			<ResourceType>RESOURCE_MARBLE</ResourceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
-			<ResourceType>RESOURCE_STONE</ResourceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
-			<ResourceType>RESOURCE_HORSE</ResourceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
-			<ResourceType>RESOURCE_COW</ResourceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
-			<ResourceType>RESOURCE_SHEEP</ResourceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
-			<ResourceType>RESOURCE_IVORY</ResourceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
-			<ResourceType>RESOURCE_FUR</ResourceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
-			<ResourceType>RESOURCE_TRUFFLES</ResourceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
-			<ResourceType>RESOURCE_DEER</ResourceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
-			<ResourceType>RESOURCE_FISH</ResourceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
-			<ResourceType>RESOURCE_WHALE</ResourceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
-			<ResourceType>RESOURCE_PEARLS</ResourceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
-			<ResourceType>RESOURCE_CRAB</ResourceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<ResourceType>RESOURCE_BANANA</ResourceType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<ResourceType>RESOURCE_BANANA</ResourceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>-1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<ResourceType>RESOURCE_DYE</ResourceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<ResourceType>RESOURCE_SILK</ResourceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<ResourceType>RESOURCE_SPICES</ResourceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<ResourceType>RESOURCE_SUGAR</ResourceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<ResourceType>RESOURCE_COTTON</ResourceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<ResourceType>RESOURCE_WINE</ResourceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<ResourceType>RESOURCE_INCENSE</ResourceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<ResourceType>RESOURCE_CITRUS</ResourceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_WELL</ImprovementType>
-			<ResourceType>RESOURCE_OIL</ResourceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>3</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_OFFSHORE_PLATFORM</ImprovementType>
-			<ResourceType>RESOURCE_OIL</ResourceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>3</Yield>
-		</Row>
-	</Improvement_ResourceType_Yields>
-	<Improvement_TechFreshWaterYieldChanges>
-		<Row>
-			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-			<TechType>TECH_IRRIGATION</TechType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-	</Improvement_TechFreshWaterYieldChanges>
 </GameData>

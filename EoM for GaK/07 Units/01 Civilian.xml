@@ -122,26 +122,32 @@
 		</Row>
 	</Units>
 	<Unit_Builds>
+		<!-- Improvement builds will be moved to Terrain\05 Improvements.xml -->
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_ROAD</BuildType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
-			<BuildType>BUILD_FARM</BuildType>
+			<BuildType>BUILD_REMOVE_FOREST</BuildType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
-			<BuildType>BUILD_MINE</BuildType>
+			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
-			<BuildType>BUILD_TRADING_POST</BuildType>
+			<BuildType>BUILD_REMOVE_MARSH</BuildType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
-			<BuildType>BUILD_LUMBERMILL</BuildType>
+			<BuildType>BUILD_REPAIR</BuildType>
 		</Row>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_REMOVE_ROUTE</BuildType>
+		</Row>
+
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_PASTURE</BuildType>
@@ -165,30 +171,6 @@
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_FORT</BuildType>
-		</Row>
-		<Row>
-			<UnitType>UNIT_WORKER</UnitType>
-			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
-		</Row>
-		<Row>
-			<UnitType>UNIT_WORKER</UnitType>
-			<BuildType>BUILD_REMOVE_MARSH</BuildType>
-		</Row>
-		<Row>
-			<UnitType>UNIT_WORKER</UnitType>
-			<BuildType>BUILD_REMOVE_FOREST</BuildType>
-		</Row>
-		<Row>
-			<UnitType>UNIT_WORKER</UnitType>
-			<BuildType>BUILD_REPAIR</BuildType>
-		</Row>
-		<Row>
-			<UnitType>UNIT_WORKER</UnitType>
-			<BuildType>BUILD_REMOVE_ROUTE</BuildType>
-		</Row>
-		<Row>
-			<UnitType>UNIT_WORKER</UnitType>
-			<BuildType>BUILD_POLDER</BuildType>
 		</Row>
 	</Unit_Builds>
 	<Unit_AITypes>

@@ -48,6 +48,11 @@ DELETE FROM Project_Prereqs;
 DELETE FROM Project_ResourceQuantityRequirements;
 DELETE FROM Project_VictoryThresholds WHERE ProjectType <> "PROJECT_UTOPIA_PROJECT";
 
+-- Processes
+
+UPDATE Processes SET TechPrereq = NULL WHERE Type = 'PROCESS_WEALTH';
+UPDATE Processes SET TechPrereq = 'TECH_SCHOLARSHIP' WHERE Type = 'PROCESS_RESEARCH';
+
 -- Table changes
 
 ALTER TABLE BuildingClasses ADD COLUMN EoM_MaxCityPercent integer DEFAULT 100; -- max percentage of cities that this building can be built in
