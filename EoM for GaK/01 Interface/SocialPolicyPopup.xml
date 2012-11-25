@@ -103,7 +103,7 @@
 							</HideOnMouseOver>
 						</Box>
 						<!-- Title -->
-						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_CIVILIZATION_CAP" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
+						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_CIVILIZATION" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
 						<!-- Era Label
                         <Label ID="EraLabel0" Anchor="C,T" Offset="0,40"  WrapWidth="185" LeadingOffset="-4" String="TXT_KEY_ERA_AVAILALBE" Font="TwCenMT18"  FontStyle="Stroke"  Color0="Beige.255" Color1="Black.128"  />
                         -->
@@ -141,7 +141,7 @@
 							</HideOnMouseOver>
 						</Box>
 						<!-- Title -->
-						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_CRAFTSMANSHIP_CAP" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
+						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_CRAFTSMANSHIP" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
 						<!-- Era Label 
 						<Label ID="EraLabel1" Anchor="C,T" Offset="0,40"  WrapWidth="185" LeadingOffset="-4" String="TXT_KEY_ERA_AVAILALBE" Font="TwCenMT16"  FontStyle="Shadow"  Color0="Beige.255" Color1="Black.128"  />
                         -->
@@ -179,7 +179,7 @@
 							</HideOnMouseOver>
 						</Box>
 						<!-- Title -->
-						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_WEALTH_CAP" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
+						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_WEALTH" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
 						<!-- Era Label 
                         <Label ID="EraLabel2" Anchor="C,T" Offset="0,40"  WrapWidth="185" LeadingOffset="-4" String="TXT_KEY_ERA_AVAILALBE" Font="TwCenMT16"  FontStyle="Shadow"  Color0="Beige.255" Color1="Black.128"  />
                         -->
@@ -217,7 +217,7 @@
 							</HideOnMouseOver>
 						</Box>
 						<!-- Title -->
-						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_FREEDOM_CAP" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
+						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_FREEDOM" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
 						<!-- Era Label 
                         <Label ID="EraLabel3" Anchor="C,T" Offset="0,40"  WrapWidth="185" LeadingOffset="-4" String="TXT_KEY_ERA_AVAILALBE" Font="TwCenMT16"  FontStyle="Shadow"  Color0="Beige.255" Color1="Black.128"  />
                         -->
@@ -255,7 +255,7 @@
 							</HideOnMouseOver>
 						</Box>
 						<!-- Title -->
-						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_ORDER_CAP" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
+						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_ORDER" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
 						<!-- Era Label 
                         <Label ID="EraLabel4" Anchor="C,T" Offset="0,40"  WrapWidth="185" LeadingOffset="-4" String="TXT_KEY_ERA_AVAILALBE" Font="TwCenMT16"  FontStyle="Shadow"  Color0="Beige.255" Color1="Black.128"  />
                         -->
@@ -296,7 +296,7 @@
 							</HideOnMouseOver>
 						</Box>
 						<!-- Title -->
-						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_NATURE_CAP" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
+						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_NATURE" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
 						<!-- Era Label 
 						<Label ID="EraLabel8" Anchor="C,T" Offset="0,40"  WrapWidth="185" LeadingOffset="-4" String="TXT_KEY_ERA_AVAILALBE" Font="TwCenMT16"  FontStyle="Shadow"  Color0="Beige.255" Color1="Black.128"  />
                         -->
@@ -334,7 +334,7 @@
 							</HideOnMouseOver>
 						</Box>
 						<!-- Title -->
-						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_SEAMANSHIP_CAP" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
+						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_SEAMANSHIP" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
 						<!-- Era Label 
 						<Label ID="EraLabel9" Anchor="C,T" Offset="0,40"  WrapWidth="185" LeadingOffset="-4" String="TXT_KEY_ERA_AVAILALBE" Font="TwCenMT16"  FontStyle="Shadow"  Color0="Beige.255" Color1="Black.128"  />
                         -->
@@ -372,7 +372,7 @@
 							</HideOnMouseOver>
 						</Box>
 						<!-- Title -->
-						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_WISDOM_CAP" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
+						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_WISDOM" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
 						<!-- Era Label 
                         <Label ID="EraLabel7" Anchor="C,T" Offset="0,40"  WrapWidth="185" LeadingOffset="-4" String="TXT_KEY_ERA_AVAILALBE" Font="TwCenMT16"  FontStyle="Shadow"  Color0="Beige.255" Color1="Black.128"  />
                         -->
@@ -410,7 +410,7 @@
 							</HideOnMouseOver>
 						</Box>
 						<!-- Title -->
-						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_DOMINATION_CAP" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
+						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_DOMINATION" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
 						<!-- Era Label 
 						<Label ID="EraLabel6" Anchor="C,T" Offset="0,40"  WrapWidth="185" LeadingOffset="-4" String="TXT_KEY_ERA_AVAILALBE" Font="TwCenMT16"  FontStyle="Shadow"  Color0="Beige.255" Color1="Black.128"  />
                         -->
@@ -448,7 +448,7 @@
 							</HideOnMouseOver>
 						</Box>
 						<!-- Title -->
-						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_CHAOS_CAP" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
+						<Label Anchor="C,T" Offset="0,8" String="TXT_KEY_EOMPOLICY_BRANCH_CHAOS" Font="TwCenMT20" FontStyle="Shadow" Color0="Beige.255" Color1="Black.255"/>
 						<!-- Era Label 
 						<Label ID="EraLabel5" Anchor="C,T" Offset="0,40"  WrapWidth="185" LeadingOffset="-4" String="TXT_KEY_ERA_AVAILALBE" Font="TwCenMT16"  FontStyle="Shadow"  Color0="Beige.255" Color1="Black.128"  />
                         -->

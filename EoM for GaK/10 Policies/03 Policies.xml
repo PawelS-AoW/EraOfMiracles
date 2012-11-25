@@ -4,7 +4,6 @@
 	<!-- Table data -->
 	<Policies>
 		<Row> <!-- 1. Civilization (Opener) -->
-			<ID>0</ID>
 			<Type>POLICY_CIVILIZATION</Type>
 			<Description>TXT_KEY_EOMPOLICY_BRANCH_CIVILIZATION</Description>
 			<Civilopedia>TXT_KEY_EOMPOLICY_CIVILIZATION_TEXT</Civilopedia>
@@ -311,7 +310,7 @@
 			<Description>TXT_KEY_EOMPOLICY_BRANCH_DOMINATION</Description>
 			<Civilopedia>TXT_KEY_EOMPOLICYDOMINATION_TEXT</Civilopedia>
 			<Help>TXT_KEY_EOMPOLICY_DOMINATION_HELP</Help>
-			<NumCitiesEOMPOLICYCostDiscount>-33</NumCitiesEOMPOLICYCostDiscount>
+			<NumCitiesPolicyCostDiscount>-33</NumCitiesPolicyCostDiscount>
 			<PortraitIndex>01</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
@@ -852,83 +851,83 @@
 		<!-- Civilization A Line -->
 		<Row>
 			<PolicyType>POLICY_PUBLIC_WORKS_II</PolicyType>
-			<PrereqEOMPOLICY>POLICY_PUBLIC_WORKS_I</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_PUBLIC_WORKS_I</PrereqPolicy>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_PUBLIC_ROADS</PolicyType>
-			<PrereqEOMPOLICY>POLICY_PUBLIC_WORKS_II</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_PUBLIC_WORKS_II</PrereqPolicy>
 		</Row>
 		<!-- Civilization B Line -->
 		<Row>
 			<PolicyType>POLICY_LEVIES</PolicyType>
-			<PrereqEOMPOLICY>POLICY_CITY_MILITIAS</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_CITY_MILITIAS</PrereqPolicy>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_TERRITORIAL_DEFENSE</PolicyType>
-			<PrereqEOMPOLICY>POLICY_LEVIES</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_LEVIES</PrereqPolicy>
 		</Row>
 		<!-- Civilization C Line -->
 		<Row>
 			<PolicyType>POLICY_TOWN_DEVELOPMENT</PolicyType>
-			<PrereqEOMPOLICY>POLICY_FOOD_DISTRIBUTION</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_FOOD_DISTRIBUTION</PrereqPolicy>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_CROP_ROTATION</PolicyType>
-			<PrereqEOMPOLICY>POLICY_TOWN_DEVELOPMENT</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_TOWN_DEVELOPMENT</PrereqPolicy>
 		</Row>
 		<!-- Freedom A Line -->
 		<Row>
 			<PolicyType>POLICY_CULTURAL_DEVELOPMENT</PolicyType>
-			<PrereqEOMPOLICY>POLICY_CREATIVITY</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_CREATIVITY</PrereqPolicy>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_TOLERANCE</PolicyType>
-			<PrereqEOMPOLICY>POLICY_CULTURAL_DEVELOPMENT</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_CULTURAL_DEVELOPMENT</PrereqPolicy>
 		</Row>
 		<!-- Freedom B Line -->
 		<Row>
 			<PolicyType>POLICY_FREE_ARTS</PolicyType>
-			<PrereqEOMPOLICY>POLICY_JOY_OF_LIFE</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_JOY_OF_LIFE</PrereqPolicy>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_MIDDLE_CLASS</PolicyType>
-			<PrereqEOMPOLICY>POLICY_FREE_ARTS</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_FREE_ARTS</PrereqPolicy>
 		</Row>
 		<!-- Freedom C Line -->
 		<Row>
 			<PolicyType>POLICY_HEROISM</PolicyType>
-			<PrereqEOMPOLICY>POLICY_QUESTING</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_QUESTING</PrereqPolicy>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_AMBITION</PolicyType>
-			<PrereqEOMPOLICY>POLICY_HEROISM</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_HEROISM</PrereqPolicy>
 		</Row>
 		<!-- Domination A Line -->
 		<Row>
 			<PolicyType>POLICY_ENTERTAINMENT_FOR_THE_MASSES</PolicyType>
-			<PrereqEOMPOLICY>POLICY_SOCIAL_MOOD_CONTROL</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_SOCIAL_MOOD_CONTROL</PrereqPolicy>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_SOCIAL_ENGINEERING</PolicyType>
-			<PrereqEOMPOLICY>POLICY_ENTERTAINMENT_FOR_THE_MASSES</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_ENTERTAINMENT_FOR_THE_MASSES</PrereqPolicy>
 		</Row>
 		<!-- Domination B Line -->
 		<Row>
 			<PolicyType>POLICY_SLAVERY</PolicyType>
-			<PrereqEOMPOLICY>POLICY_SACRIFICIAL_CAPTIVES</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_SACRIFICIAL_CAPTIVES</PrereqPolicy>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_IMPERIALISM</PolicyType>
-			<PrereqEOMPOLICY>POLICY_SLAVERY</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_SLAVERY</PrereqPolicy>
 		</Row>
 		<!-- Domination C Line -->
 		<Row>
 			<PolicyType>POLICY_WORKFORCE_CONTROL</PolicyType>
-			<PrereqEOMPOLICY>POLICY_CENTRALIZATION</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_CENTRALIZATION</PrereqPolicy>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_ABSOLUTE_POWER</PolicyType>
-			<PrereqEOMPOLICY>POLICY_WORKFORCE_CONTROL</PrereqEOMPOLICY>
+			<PrereqPolicy>POLICY_WORKFORCE_CONTROL</PrereqPolicy>
 		</Row>
 	</Policy_PrereqPolicies>
 	<Policy_FreePromotions>
@@ -986,9 +985,6 @@
 		</Row>
 	</Policy_FreeUnitClasses>
 	<Language_en_US>
-		<Row Tag="TXT_KEY_EOMPOLICY_BRANCH_CIVILIZATION">
-			<Text>Civilization</Text>
-		</Row>
 		<Row Tag="TXT_KEY_EOMPOLICY_CIVILIZATION_HELP">
 			<Text>[ICON_BULLET]Starting the Civilization Tree decreases the Culture cost of acquiring new tiles by 10%.</Text>
 		</Row>
@@ -1049,9 +1045,6 @@
 		<Row Tag="TXT_KEY_EOMPOLICY_CIVILIZATION_FINISHER">
 			<Text>Taking all policies in the Civilization Tree will give 1 free Pioneer and allow new cities start with 2 population.</Text>
 		</Row>
-		<!-- <Row Tag="TXT_KEY_EOMPOLICY_BRANCH_FREEDOM">
-			<Text>Freedom</Text>
-		</Row>
 		<Row Tag="TXT_KEY_EOMPOLICY_FREEDOM_HELP">
 			<Text>[ICON_BULLET]Starting the Freedom Tree increases Culture per city by 1.</Text>
 		</Row>
@@ -1111,7 +1104,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_EOMPOLICY_FREEDOM_FINISHER">
 			<Text>Taking all policies in the Freedom Tree will give 1 Free Great Bard and increases Happiness per city by 1.</Text>
-		</Row> -->
+		</Row>
 		
 	</Language_en_US>
 </GameData>
