@@ -398,6 +398,11 @@ Version: 0.0.2</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>09 Terrain/03a Feat Art Def.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>09 Terrain/04 Resources.xml</FileName>
       </Action>
       <Action>
@@ -536,6 +541,7 @@ Version: 0.0.2</Description>
   <ItemGroup>
     <Folder Include="00 Graphics\Battle Galley" />
     <Folder Include="00 Graphics\Camp" />
+    <Folder Include="00 Graphics\Crystal Plains" />
     <Folder Include="00 Graphics\Wolf" />
     <Folder Include="00 Graphics\Nights Icons" />
     <Folder Include="00 Graphics\Old Trading Posts" />
@@ -599,6 +605,30 @@ Version: 0.0.2</Description>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="00 Graphics\berries_resource_portrait_80.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="00 Graphics\Crystal Plains\crystals.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="00 Graphics\Crystal Plains\crystals.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="00 Graphics\Crystal Plains\crystal_ore_decal_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="00 Graphics\Crystal Plains\crystal_ore_decal_h.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="00 Graphics\Crystal Plains\crystal_ore_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="00 Graphics\Crystal Plains\crystal_ore_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -1455,6 +1485,10 @@ Version: 0.0.2</Description>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="09 Terrain\05a Impr Art Def.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="09 Terrain\03a Feat Art Def.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

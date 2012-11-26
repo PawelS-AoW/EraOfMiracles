@@ -854,11 +854,8 @@ function AssignStartingPlots:CustomOverride()
 
 	-- EoM - generate non-standard features and improvements (Reef, Kelp, Nodes, Ancient Runis, Ancient Temples etc.) and all resources
 
-	-- 1. Generate Nodes
-	-- later
+	-- 1. Generate Very Special Features
 
-	-- 2. Generate Special Features
-	
 	-- Mountain of Mithril - one per map, search for lonely mountains
 
 	PlotList = {}
@@ -916,9 +913,37 @@ function AssignStartingPlots:CustomOverride()
 		print ("MOUNTAIN OF MITHRIL placed at "..x..","..y)
 	end
 
+	-- 2. Generate Special Features
+
+	-- Crystal Plains (Tundra, Snow)
+
+	PlotList = {}
+
+	for y = 0, iH - 1 do
+		for x = 0, iW - 1 do
+			local Plot = Map.GetPlot (x,y)
+			if (Plot:GetPlotType () == PlotTypes.PLOT_LAND or Plot:GetPlotType () == PlotTypes.PLOT_HILLS) and 
+			   (Plot:GetTerrainType () == TerrainTypes.TERRAIN_SNOW or Plot:GetTerrainType () == TerrainTypes.TERRAIN_TUNDRA) and
+			   (Plot:GetFeatureType () == FeatureTypes.NO_FEATURE) then
+			   	-- add to list
+			   	table.insert (PlotList,{x,y})
+			end
+		end
+	end
+
+	ShuffledList = GetShuffledCopyOfTable (PlotList)
+	table_pos = 1
+	to_place = table.maxn (ShuffledList) / 4 -- place Crystal Plains on 1/4 of free Tundra/Snow plots
+
+	for placed = 1, math.floor (to_place + 0.5) do
+		local x = ShuffledList [table_pos][1]
+		local y = ShuffledList [table_pos][2]
+		local Plot = Map.GetPlot (x,y)
+		Plot:SetFeatureType (GameInfoTypes.FEATURE_CRYSTAL_PLAINS)
+		table_pos = table_pos + 1
+	end
 
 	-- 3. Generate Resources
-
 
 	-- debug
 	for thisResource in GameInfo.Resources () do

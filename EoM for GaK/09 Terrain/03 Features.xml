@@ -142,19 +142,13 @@
 			<IconAtlas>NW_ATLAS</IconAtlas>
 		</Row>
 		<Row>
-			<Type>FEATURE_EOM_VOLCANO</Type>
-			<Description>TXT_KEY_EOMFEAT_VOLCANO</Description>
+			<Type>FEATURE_CRYSTAL_PLAINS</Type>
+			<Description>TXT_KEY_EOMFEAT_CRYSTAL_PLAINS</Description>
 			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
-			<ArtDefineTag>ART_DEF_FEATURE_VOLCANO</ArtDefineTag>
-			<Movement>4</Movement>
-			<SeeThrough>2</SeeThrough>
-			<Impassable>true</Impassable>
-			<InfluenceCost>-1</InfluenceCost>
-			<Rough>true</Rough>
-			<YieldNotAdditive>true</YieldNotAdditive>
-			<NoCity>true</NoCity>
-			<PortraitIndex>5</PortraitIndex>
-			<IconAtlas>NW_ATLAS</IconAtlas>
+			<ArtDefineTag>ART_DEF_FEATURE_EOM_CRYSTAL_PLAINS</ArtDefineTag>
+			<Movement>3</Movement>
+			<PortraitIndex>8</PortraitIndex>
+			<IconAtlas>EXPANSION_BW_ATLAS_2</IconAtlas>
 		</Row>
 		<Row>
 			<Type>FEATURE_EOM_FOUNTAIN</Type>
@@ -256,6 +250,14 @@
 			<FeatureType>FEATURE_EOM_KELP</FeatureType>
 			<TerrainType>TERRAIN_OCEAN</TerrainType>
 		</Row>
+		<Row>
+			<FeatureType>FEATURE_CRYSTAL_PLAINS</FeatureType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+		</Row>
+		<Row>
+			<FeatureType>FEATURE_CRYSTAL_PLAINS</FeatureType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+		</Row>
 	</Feature_TerrainBooleans>
 	<Feature_YieldChanges>
 		<Row>
@@ -323,6 +325,11 @@
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		<Row>
+			<FeatureType>FEATURE_CRYSTAL_PLAINS</FeatureType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>
 	</Feature_YieldChanges>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMFEAT_REEF">
@@ -331,8 +338,8 @@
 		<Row Tag="TXT_KEY_EOMFEAT_KELP">
 			<Text>Kelp</Text>
 		</Row>
-		<Row Tag="TXT_KEY_EOMFEAT_VOLCANO">
-			<Text>Volcano</Text>
+		<Row Tag="TXT_KEY_EOMFEAT_CRYSTAL_PLAINS">
+			<Text>Crystal Plains</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMFEAT_FOUNTAIN">
 			<Text>Fountain</Text>
