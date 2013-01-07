@@ -93,11 +93,6 @@ Version: 0.0.2</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/01 Dreamers.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>04 Civilizations/02 Griffites.xml</FileName>
       </Action>
       <Action>
@@ -548,6 +543,19 @@ Version: 0.0.2</Description>
     <Folder Include="02 Rules" />
     <Folder Include="03 General" />
     <Folder Include="04 Civilizations" />
+    <Folder Include="04 Civilizations\01 Dreamers" />
+    <Folder Include="04 Civilizations\01 Dreamers\Art" />
+    <Folder Include="04 Civilizations\01 Dreamers\Art\Alphas" />
+    <Folder Include="04 Civilizations\01 Dreamers\Art\Atlases" />
+    <Folder Include="04 Civilizations\01 Dreamers\Art\Skins" />
+    <Folder Include="04 Civilizations\01 Dreamers\XML" />
+    <Folder Include="04 Civilizations\01 Dreamers\XML\Art" />
+    <Folder Include="04 Civilizations\01 Dreamers\XML\Buildings" />
+    <Folder Include="04 Civilizations\01 Dreamers\XML\Civilizations" />
+    <Folder Include="04 Civilizations\01 Dreamers\XML\Diplomacy" />
+    <Folder Include="04 Civilizations\01 Dreamers\XML\GameInfo" />
+    <Folder Include="04 Civilizations\01 Dreamers\XML\Units" />
+    <Folder Include="04 Civilizations\01 Dreamers\XML\Text" />
     <Folder Include="05 Technologies" />
     <Folder Include="06 Buildings" />
     <Folder Include="07 Units" />
@@ -1220,7 +1228,19 @@ Version: 0.0.2</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="04 Civilizations\01 Dreamers.xml">
+    <Content Include="04 Civilizations\01 Dreamers\XML\Civilizations\Dreamers_Civilizations.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\01 Dreamers\XML\Civilizations\Dreamers_Leaders.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\01 Dreamers\XML\Civilizations\Dreamers_Traits.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\01 Dreamers\XML\Text\Dreamers_Text.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

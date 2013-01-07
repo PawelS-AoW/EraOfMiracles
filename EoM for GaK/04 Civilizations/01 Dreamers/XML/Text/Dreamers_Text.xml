@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/7/2013 1:17:35 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMCIV_DREAMERS_LONG">
+			<Text>Republic of Dreams</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_DREAMERS_SHORT">
+			<Text>Dreamers</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_DREAMERS_ADJ">
+			<Text>Dreamer</Text>
+		</Row>
+		<!--Need DOM-->
+		<Row Tag="TXT_KEY_EOM_DREAMERS_DOM">
+			<Text>DOM</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMLEADER_NIMUE">
+			<Text>Nimue</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_DREAMERS">
+			<Text>Undreamt Shores</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_DREAMERS_DESC">
+			<Text>[ICON_BULLET]+1 [ICON_FOOD] from Fishing Boats and Fishing Villages. +1 [ICON_GOLD] from all Sea tiles. Farms produce 1 [ICON_FOOD] less.[NEWLINE][NEWLINE][ICON_BULLET]+1 [ICON_MOVES] and +10% [ICON_STRENGTH] for Naval Units.[NEWLINE][NEWLINE][ICON_BULLET]-25% [ICON_GOLD] Cost for buying tiles.</Text>
+		</Row>
+		<!--Romance-ish language-->
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_1">
+			<Text>Prossero</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_2">
+			<Text>Eressia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_3">
+			<Text>Saloni</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_4">
+			<Text>Jamalta</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_5">
+			<Text>Rialto</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_6">
+			<Text>Monsoora</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_7">
+			<Text>Briel</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_8">
+			<Text>Cabron</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_9">
+			<Text>Mera Grassa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_10">
+			<Text>Sasana</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_11">
+			<Text>Robermo</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_12">
+			<Text>Ra Bama</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_13">
+			<Text>Chichile</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_14">
+			<Text>Mera Stucci</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_15">
+			<Text>Cabanes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_16">
+			<Text>Lamera Varitte</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_17">
+			<Text>Res Meres Splendes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_18">
+			<Text>Troubala</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_19">
+			<Text>Lamera Res Clammes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_20">
+			<Text>Salturas</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_21">
+			<Text>Ro Broloto</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_22">
+			<Text>Sianta</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_23">
+			<Text>Lohanto</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_24">
+			<Text>Siasetta</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_25">
+			<Text>Lamerita</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_DREAMERS_0">
+			<Text>Ro Eho Risso</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_DREAMERS_1">
+			<Text>Nimuossi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_DREAMERS_2">
+			<Text>Prosso</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_DREAMERS_3">
+			<Text>Herro X</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_DREAMERS_4">
+			<Text>Herra Rissa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_DREAMERS_5">
+			<Text>Clabana</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_DREAMERS_6">
+			<Text>Santas</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_DREAMERS_7">
+			<Text>Raspastas</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_DREAMERS_8">
+			<Text>Frantas</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_DREAMERS_9">
+			<Text>Lacca</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

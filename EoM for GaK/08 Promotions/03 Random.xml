@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by ModBuddy on 9/23/2012 4:47:54 PM -->
+<!--Some of these values need tweaking thanks to G&K e.g. the one that gives +2 HP healed per turn.-->
 <GameData>
 	<!-- SKILLED -->
 	<UnitPromotions>

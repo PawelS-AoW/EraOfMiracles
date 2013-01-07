@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/7/2013 12:37:49 PM -->
+<!--Add +10% combat for melee via promotion AND add +1 gold per ocean tile via dummy building-->
+<GameData>
+	<Traits>
+		<Row>
+			<Type>TRAIT_DREAMERS</Type>
+			<ShortDescription>TXT_KEY_EOMTRAIT_DREAMERS</ShortDescription>
+			<Description>TXT_KEY_EOMTRAIT_DREAMERS_DESC</Description>
+			<PlotBuyCostModifier>-25</PlotBuyCostModifier>
+			<FreeBuilding>BUILDING_DUMMY_DREAMERS_UA</FreeBuilding>
+		</Row>
+	</Traits>
+	<Trait_FreePromotionUnitCombats>
+		<Row>
+			<TraitType>TRAIT_DREAMERS</TraitType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+			<PromotionType>PROMOTION_TRAIT_DREAMERS</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_DREAMERS</TraitType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+			<PromotionType>PROMOTION_TRAIT_DREAMERS</PromotionType>
+		</Row>
+	</Trait_FreePromotionUnitCombats>
+	<!--I hope -1 yield for farms works on this! Otherwise need .lua/dll change (minor change)-->
+	<Trait_ImprovementYieldChanges>
+		<Row>
+			<TraitType>TRAIT_DREAMERS</TraitType>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_DREAMERS</TraitType>
+			<ImprovementType>IMPROVEMENT_FISHING_VILLAGE</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_DREAMERS</TraitType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>-1</Yield>
+		</Row>
+	</Trait_ImprovementYieldChanges>
+	<Trait_MovesChangeUnitCombats>
+		<Row>
+			<TraitType>TRAIT_DREAMERS</TraitType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+			<MovesChange>1</MovesChange>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_DREAMERS</TraitType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+			<MovesChange>1</MovesChange>
+		</Row>
+	</Trait_MovesChangeUnitCombats>
+</GameData>

@@ -1,3 +1,6 @@
+--THIS FILE MAKES <Civilization_FreeUnits>, <Civilization_FreeBuildingClasses>
+--<Civilization_DisableTechs> UNNECESSARY IN Civ-Specific XMLs
+
 -- Free Units (Settler, Warrior, Scout)
 
 INSERT INTO Civilization_FreeUnits (CivilizationType, UnitClassType, UnitAIType, Count)
