@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by ModBuddy on 6/18/2012 6:35:40 PM -->
 <GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMFEAT_REEF">
+			<Text>Reef</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMFEAT_KELP">
+			<Text>Kelp</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMFEAT_CRYSTAL_PLAINS">
+			<Text>Crystal Plains</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMFEAT_CRYSTAL_PLAINS_PEDIA">
+			<Text>[ICON_BULLET]Can't build improvements on this feature.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMFEAT_FOUNTAIN">
+			<Text>Fountain</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMFEAT_MOUNTAIN_OF_MITHRIL">
+			<Text>Mountain of Mithril</Text>
+		</Row>
+	</Language_en_US>
 	<Features>
 		<Row>
 			<Type>FEATURE_ICE</Type>
@@ -122,7 +142,6 @@
 			<SeeThrough>1</SeeThrough>
 			<Defense>15</Defense>
 			<InfluenceCost>0</InfluenceCost>
-			<NaturalWonder>false</NaturalWonder>
 			<NoImprovement>true</NoImprovement>
 			<PortraitIndex>1</PortraitIndex>
 			<IconAtlas>NW_ATLAS</IconAtlas>
@@ -131,12 +150,11 @@
 			<Type>FEATURE_EOM_KELP</Type>
 			<Description>TXT_KEY_EOMFEAT_KELP</Description>
 			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
-			<ArtDefineTag>ART_DEF_RESOURCE_DYE</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_FEATURE_EOM_KELP</ArtDefineTag>
 			<Movement>3</Movement>
 			<SeeThrough>1</SeeThrough>
 			<Defense>15</Defense>
 			<InfluenceCost>0</InfluenceCost>
-			<NaturalWonder>false</NaturalWonder>
 			<NoImprovement>true</NoImprovement>
 			<PortraitIndex>1</PortraitIndex>
 			<IconAtlas>NW_ATLAS</IconAtlas>
@@ -144,9 +162,10 @@
 		<Row>
 			<Type>FEATURE_CRYSTAL_PLAINS</Type>
 			<Description>TXT_KEY_EOMFEAT_CRYSTAL_PLAINS</Description>
-			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Civilopedia>TXT_KEY_EOMFEAT_CRYSTAL_PLAINS_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_FEATURE_EOM_CRYSTAL_PLAINS</ArtDefineTag>
-			<Movement>3</Movement>
+			<Movement>2</Movement>
+			<NoImprovement>true</NoImprovement>
 			<PortraitIndex>8</PortraitIndex>
 			<IconAtlas>EXPANSION_BW_ATLAS_2</IconAtlas>
 		</Row>
@@ -327,37 +346,26 @@
 		</Row>
 		<Row>
 			<FeatureType>FEATURE_CRYSTAL_PLAINS</FeatureType>
-			<YieldType>YIELD_FAITH</YieldType>
+			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		<Row>
+			<FeatureType>FEATURE_CRYSTAL_PLAINS</FeatureType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<FeatureType>FEATURE_CRYSTAL_PLAINS</FeatureType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>2</Yield>
+		</Row>
 	</Feature_YieldChanges>
-	<Language_en_US>
-		<Row Tag="TXT_KEY_EOMFEAT_REEF">
-			<Text>Reef</Text>
-		</Row>
-		<Row Tag="TXT_KEY_EOMFEAT_KELP">
-			<Text>Kelp</Text>
-		</Row>
-		<Row Tag="TXT_KEY_EOMFEAT_CRYSTAL_PLAINS">
-			<Text>Crystal Plains</Text>
-		</Row>
-		<Row Tag="TXT_KEY_EOMFEAT_FOUNTAIN">
-			<Text>Fountain</Text>
-		</Row>
-		<Row Tag="TXT_KEY_EOMFEAT_MOUNTAIN_OF_MITHRIL">
-			<Text>Mountain of Mithril</Text>
-		</Row>
-	</Language_en_US>
 	<ArtDefine_StrategicView>
+		<!-- strategic view icon for Reef, which uses the Stone resource graphics -->
 		<Row>
 			<StrategicViewType>ART_DEF_RESOURCE_STONE</StrategicViewType>
 			<TileType>Feature</TileType>
 			<Asset>SV_Gibraltar.dds</Asset>
-		</Row>
-		<Row>
-			<StrategicViewType>ART_DEF_RESOURCE_DYE</StrategicViewType>
-			<TileType>Feature</TileType>
-			<Asset>SV_CoralReef.dds</Asset>
 		</Row>
 	</ArtDefine_StrategicView>
 </GameData>

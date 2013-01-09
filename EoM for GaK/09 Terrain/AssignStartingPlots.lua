@@ -851,25 +851,26 @@ function AssignStartingPlots:CustomOverride()
 
 	local PlotList
 	local to_place
+	local adj_mount
+	local min_mount = 7
+	local feat,adj_feat
+	local Plot,adjPlot,x,y
 
-	-- EoM - generate non-standard features and improvements (Reef, Kelp, Nodes, Ancient Runis, Ancient Temples etc.) and all resources
+	-- EoM - generate non-standard features and improvements (Reef, Kelp, Ancient Runis, Ancient Temples etc.) and all resources
 
 	-- 1. Generate Very Special Features
 
-	-- Mountain of Mithril - one per map, search for lonely mountains
+	-- MOUNTAIN OF MITHRIL - one per map, search for lonely mountains
 
 	PlotList = {}
-	
-	local adj_mount
-	local min_mount = 7
 
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if Plot:GetPlotType () == PlotTypes.PLOT_MOUNTAIN and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE then
 				adj_mount = 0
 				for loop, direction in ipairs(self.direction_types) do
-					local adjPlot = Map.PlotDirection (x,y,direction)
+					adjPlot = Map.PlotDirection (x,y,direction)
 					if adjPlot then
 						if adjPlot:GetPlotType () == PlotTypes.PLOT_MOUNTAIN then
 							adj_mount = adj_mount + 1
@@ -880,15 +881,15 @@ function AssignStartingPlots:CustomOverride()
 			end
 		end
 	end
-	
+
 	if (min_mount < 7) then
 		for y = 0, iH - 1 do
 			for x = 0, iW - 1 do
-				local Plot = Map.GetPlot (x,y)
+				Plot = Map.GetPlot (x,y)
 				if Plot:GetPlotType () == PlotTypes.PLOT_MOUNTAIN and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE then
 					adj_mount = 0
 					for loop, direction in ipairs (self.direction_types) do
-						local adjPlot = Map.PlotDirection (x,y,direction)
+						adjPlot = Map.PlotDirection (x,y,direction)
 						if adjPlot then
 							if adjPlot:GetPlotType () == PlotTypes.PLOT_MOUNTAIN then
 								adj_mount = adj_mount + 1
@@ -903,9 +904,9 @@ function AssignStartingPlots:CustomOverride()
 			end
 		end
 		ShuffledList = GetShuffledCopyOfTable (PlotList)
-		local x = ShuffledList [1][1]
-		local y = ShuffledList [1][2]
-		local Plot = Map.GetPlot (x,y)
+		x = ShuffledList [1][1]
+		y = ShuffledList [1][2]
+		Plot = Map.GetPlot (x,y)
 		-- Plot:SetPlotType (PlotTypes.PLOT_LAND)
 		Plot:SetFeatureType (GameInfoTypes.FEATURE_MOUNTAIN_OF_MITHRIL)
 		Plot:SetResourceType (GameInfoTypes.RESOURCE_MITHRIL,3)
@@ -915,13 +916,65 @@ function AssignStartingPlots:CustomOverride()
 
 	-- 2. Generate Special Features
 
+	-- KELP
+
+	-- "seeds" (random placement)
+
+	PlotList = {}
+
+	for y = 0, iH - 1 do
+		for x = 0, iW - 1 do
+			Plot = Map.GetPlot (x,y)
+			if Plot:GetTerrainType () == TerrainTypes.TERRAIN_COAST and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE then
+			   	-- add to list
+			   	table.insert (PlotList,{x,y})
+			end
+		end
+	end
+
+	ShuffledList = GetShuffledCopyOfTable (PlotList)
+	table_pos = 1
+	to_place = table.maxn (ShuffledList) * 0.05 -- place Kelp "seeds" on 5% of eligible plots (coast, no feature)
+
+	for placed = 1, math.floor (to_place + 0.5) do
+		x = ShuffledList [table_pos][1]
+		y = ShuffledList [table_pos][2]
+		Plot = Map.GetPlot (x,y)
+		Plot:SetFeatureType (GameInfoTypes.FEATURE_EOM_KELP)
+		table_pos = table_pos + 1
+	end
+	
+	-- "growing" the Kelp (places Kelp adjacent to existing Kelp)
+
+	to_place = math.floor (to_place * 3 + 0.5) -- total 20%
+	
+	while to_place > 0 and table_pos <= table.maxn (ShuffledList) do
+		x = ShuffledList [table_pos][1]
+		y = ShuffledList [table_pos][2]
+		adj_feat = 0
+		for loop, direction in ipairs (self.direction_types) do
+			adjPlot = Map.PlotDirection (x,y,direction)
+			if adjPlot then
+				if adjPlot:GetFeatureType () == GameInfoTypes.FEATURE_EOM_KELP then
+					adj_feat = adj_feat + 1
+				end
+			end
+		end
+		if adj_feat > 0 then
+			Plot = Map.GetPlot (x,y)
+			Plot:SetFeatureType (GameInfoTypes.FEATURE_EOM_KELP)
+			to_place = to_place - 1
+		end
+		table_pos = table_pos + 1
+	end
+	
 	-- Crystal Plains (Tundra, Snow)
 
 	PlotList = {}
 
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if (Plot:GetPlotType () == PlotTypes.PLOT_LAND or Plot:GetPlotType () == PlotTypes.PLOT_HILLS) and 
 			   (Plot:GetTerrainType () == TerrainTypes.TERRAIN_SNOW or Plot:GetTerrainType () == TerrainTypes.TERRAIN_TUNDRA) and
 			   (Plot:GetFeatureType () == FeatureTypes.NO_FEATURE) then
@@ -936,9 +989,9 @@ function AssignStartingPlots:CustomOverride()
 	to_place = table.maxn (ShuffledList) / 4 -- place Crystal Plains on 1/4 of free Tundra/Snow plots
 
 	for placed = 1, math.floor (to_place + 0.5) do
-		local x = ShuffledList [table_pos][1]
-		local y = ShuffledList [table_pos][2]
-		local Plot = Map.GetPlot (x,y)
+		x = ShuffledList [table_pos][1]
+		y = ShuffledList [table_pos][2]
+		Plot = Map.GetPlot (x,y)
 		Plot:SetFeatureType (GameInfoTypes.FEATURE_CRYSTAL_PLAINS)
 		table_pos = table_pos + 1
 	end
@@ -958,7 +1011,7 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if Plot:GetTerrainType () == TerrainTypes.TERRAIN_OCEAN
 			and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE
 			and Plot:CalculateYield (2,true) > 0
@@ -985,7 +1038,7 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if Plot:GetTerrainType () == TerrainTypes.TERRAIN_COAST
 			and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE
 			and (not Plot:IsLake ())  then
@@ -1010,8 +1063,8 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
-			local feat = Plot:GetFeatureType ()
+			Plot = Map.GetPlot (x,y)
+			feat = Plot:GetFeatureType ()
 			if Plot:GetPlotType () == PlotTypes.PLOT_LAND
 			and (feat == FeatureTypes.NO_FEATURE
 			or feat == FeatureTypes.FEATURE_FOREST
@@ -1039,8 +1092,8 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
-			local feat = Plot:GetFeatureType ()
+			Plot = Map.GetPlot (x,y)
+			feat = Plot:GetFeatureType ()
 			if Plot:GetPlotType () == PlotTypes.PLOT_HILLS
 			and (feat == FeatureTypes.NO_FEATURE
 			or feat == FeatureTypes.FEATURE_FOREST
@@ -1066,7 +1119,7 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if Plot:GetPlotType () == PlotTypes.PLOT_LAND
 			and Plot:GetTerrainType () == TerrainTypes.TERRAIN_GRASS
 			and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE
@@ -1092,7 +1145,7 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if Plot:GetPlotType () == PlotTypes.PLOT_LAND
 			and Plot:GetTerrainType () == TerrainTypes.TERRAIN_PLAINS
 			and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE
@@ -1118,7 +1171,7 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if Plot:GetPlotType () == PlotTypes.PLOT_LAND
 			and Plot:GetTerrainType () == TerrainTypes.TERRAIN_DESERT
 			and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE
@@ -1144,7 +1197,7 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if Plot:GetPlotType () == PlotTypes.PLOT_LAND
 			and Plot:GetTerrainType () == TerrainTypes.TERRAIN_TUNDRA
 			and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE
@@ -1170,7 +1223,7 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if Plot:GetPlotType () == PlotTypes.PLOT_LAND
 			and Plot:GetTerrainType () == TerrainTypes.TERRAIN_SNOW
 			and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE
@@ -1196,7 +1249,7 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if Plot:GetPlotType () == PlotTypes.PLOT_HILLS
 			and Plot:GetTerrainType () == TerrainTypes.TERRAIN_GRASS
 			and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE
@@ -1222,7 +1275,7 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if Plot:GetPlotType () == PlotTypes.PLOT_HILLS
 			and Plot:GetTerrainType () == TerrainTypes.TERRAIN_PLAINS
 			and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE
@@ -1248,7 +1301,7 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if Plot:GetPlotType () == PlotTypes.PLOT_HILLS
 			and Plot:GetTerrainType () == TerrainTypes.TERRAIN_DESERT
 			and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE
@@ -1274,7 +1327,7 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if Plot:GetPlotType () == PlotTypes.PLOT_HILLS
 			and Plot:GetTerrainType () == TerrainTypes.TERRAIN_TUNDRA
 			and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE
@@ -1300,7 +1353,7 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if Plot:GetPlotType () == PlotTypes.PLOT_HILLS
 			and Plot:GetTerrainType () == TerrainTypes.TERRAIN_SNOW
 			and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE
@@ -1326,7 +1379,7 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if (Plot:GetTerrainType () == TerrainTypes.TERRAIN_GRASS or Plot:GetTerrainType () == TerrainTypes.TERRAIN_PLAINS)
 			and Plot:GetFeatureType () == FeatureTypes.FEATURE_FOREST
 			and Plot:GetResourceType () == -1 then
@@ -1351,7 +1404,7 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if Plot:GetTerrainType () == TerrainTypes.TERRAIN_TUNDRA
 			and Plot:GetFeatureType () == FeatureTypes.FEATURE_FOREST
 			and Plot:GetResourceType () == -1 then
@@ -1376,7 +1429,7 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if Plot:GetFeatureType () == FeatureTypes.FEATURE_JUNGLE
 			and Plot:GetResourceType () == -1 then
 			   	-- add to list
@@ -1400,7 +1453,7 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if Plot:GetFeatureType () == FeatureTypes.FEATURE_MARSH
 			and Plot:GetResourceType () == -1 then
 			   	-- add to list
@@ -1424,7 +1477,7 @@ function AssignStartingPlots:CustomOverride()
 	PlotList = {}
 	for y = 0, iH - 1 do
 		for x = 0, iW - 1 do
-			local Plot = Map.GetPlot (x,y)
+			Plot = Map.GetPlot (x,y)
 			if Plot:GetFeatureType () == FeatureTypes.FEATURE_FLOOD_PLAINS
 			and Plot:GetResourceType () == -1 then
 			   	-- add to list

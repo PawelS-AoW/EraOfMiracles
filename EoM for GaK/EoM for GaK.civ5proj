@@ -3,17 +3,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <ProjectGuid>{cb1eb62a-8257-44cd-820d-278a521fcf8a}</ProjectGuid>
-    <Name>Era of Miracles</Name>
+    <Name>Chronicles of Adea</Name>
     <Guid>a836a01a-512f-4ccd-b8e0-eb6f95b04130</Guid>
     <ModVersion>1</ModVersion>
     <Stability>Experimental</Stability>
     <Teaser>A fantasy mod.</Teaser>
     <Description>A fantasy mod. Under construction.
 
-Version: 0.0.2</Description>
+Version: pre-alpha, not playable</Description>
     <Authors>PawelS, rocklikeafool, orlanth, trystero49, magzhi</Authors>
-    <SpecialThanks>
-    </SpecialThanks>
+    <SpecialThanks>Horem, whoward69</SpecialThanks>
     <Categories>$Categories$</Categories>
     <AffectsSavedGames>true</AffectsSavedGames>
     <MinCompatibleSaveVersion>1</MinCompatibleSaveVersion>
@@ -537,6 +536,7 @@ Version: 0.0.2</Description>
     <Folder Include="00 Graphics\Battle Galley" />
     <Folder Include="00 Graphics\Camp" />
     <Folder Include="00 Graphics\Crystal Plains" />
+    <Folder Include="00 Graphics\Kelp" />
     <Folder Include="00 Graphics\Wolf" />
     <Folder Include="00 Graphics\Nights Icons" />
     <Folder Include="00 Graphics\Old Trading Posts" />
@@ -665,6 +665,22 @@ Version: 0.0.2</Description>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="00 Graphics\Camp\pl_eom_camp.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="00 Graphics\Kelp\resource_kelp.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="00 Graphics\Kelp\resource_kelp.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="00 Graphics\Kelp\resource_kelp_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="00 Graphics\Kelp\resource_kelp_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
