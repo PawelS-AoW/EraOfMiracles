@@ -134,10 +134,14 @@
 			<PolicyBranchDisable>POLICY_BRANCH_ORDER</PolicyBranchDisable>
 		</Row>
 	</PolicyBranch_Disables>
+<<<<<<< HEAD
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOM_TITLE">
 			<Text>{1_PlayerName:textkey} of {2_CivName:textkey}</Text>
 		</Row>
+=======
+	<!-- <Language_en_US>
+>>>>>>> Should've have committed these awhile back.
 		<Row Tag="TXT_KEY_EOMPOLICY_BRANCH_CIVILIZATION">
 			<Text>Civilization</Text>
 		</Row>
@@ -147,7 +151,11 @@
 		<Row Tag="TXT_KEY_EOMPOLICY_BRANCH_NATURE">
 			<Text>Nature</Text>
 		</Row>
+<<<<<<< HEAD
 		<Row Tag="TXT_KEY_EOMPOLICY_BRANCH_NATURE_HELP">
+=======
+		<Row Tag="TXT_KEY_EOMPOLICY_NATURE_HELP">
+>>>>>>> Should've have committed these awhile back.
 			<Text>[ICON_BULLET]Nature is good for young civilizations. It excludes Civilization.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMPOLICY_BRANCH_CRAFTSMANSHIP">
@@ -174,5 +182,5 @@
 		<Row Tag="TXT_KEY_EOMPOLICY_BRANCH_CHAOS">
 			<Text>Chaos</Text>
 		</Row>
-	</Language_en_US>
+	</Language_en_US> -->
 </GameData>
