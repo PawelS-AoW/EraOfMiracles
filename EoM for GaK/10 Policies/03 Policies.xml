@@ -143,7 +143,7 @@
 			<IncludesOneShotFreeUnits>true</IncludesOneShotFreeUnits>
 			<CulturePerCity>1</CulturePerCity>
 		</Row>
-		<Row> <!-- 2. Nature (Opener) -->
+		<!-- <Row> 2. Nature (Opener) 
 			<Type>POLICY_NATURE</Type>
 			<Description>TXT_KEY_EOMPOLICY_BRANCH_NATURE</Description>
 			<Civilopedia>TXT_KEY_EOMPOLICYNATURE_TEXT</Civilopedia>
@@ -153,130 +153,19 @@
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
-		<Row> <!-- Hunting Tradition (Nature A1) -->
-			<Type>POLICY_HUNTING_TRADITION</Type>
-			<Description>TXT_KEY_EOMPOLICY_HUNTING_TRADITION</Description>
-			<Civilopedia>TXT_KEY_EOMPOLICYHUNTING_TRADITION_TEXT</Civilopedia>
-			<Help>TXT_KEY_EOMPOLICY_HUNTING_TRADITION_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_NATURE</PolicyBranchType>
+		<Row> Hunting Tradition (Nature A1)
+			<Type>POLICY_CROP_ROTATION</Type>
+			<Description>TXT_KEY_EOMPOLICY_CROP_ROTATION</Description>
+			<Civilopedia>TXT_KEY_EOMPOLICYCROP_ROTATION_TEXT</Civilopedia>
+			<Help>TXT_KEY_EOMPOLICY_CROP_ROTATION_HELP</Help>
+			<PolicyBranchType>POLICY_BRANCH_CIVILIZATION</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			<GridX></GridX>
 			<GridY></GridY>
 			<PortraitIndex>32</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
-		</Row>
-		<Row> <!-- Animal Taming (Nature A2) -->
-			<Type>POLICY_ANIMAL_TAMING</Type>
-			<Description>TXT_KEY_EOMPOLICY_ANIMAL_TAMING</Description>
-			<Civilopedia>TXT_KEY_EOMPOLICYANIMAL_TAMING_TEXT</Civilopedia>
-			<Help>TXT_KEY_EOMPOLICY_ANIMAL_TAMING_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_NATURE</PolicyBranchType>
-			<CultureCost>10</CultureCost>
-			<GridX></GridX>
-			<GridY></GridY>
-			<PortraitIndex>33</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
-		</Row>
-		<Row> <!-- Animal Mastery (Nature A3) -->
-			<Type>POLICY_ANIMAL_TAMING</Type>
-			<Description>TXT_KEY_EOMPOLICY_ANIMAL_TAMING</Description>
-			<Civilopedia>TXT_KEY_EOMPOLICYANIMAL_TAMING_TEXT</Civilopedia>
-			<Help>TXT_KEY_EOMPOLICY_ANIMAL_TAMING_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_NATURE</PolicyBranchType>
-			<CultureCost>10</CultureCost>
-			<GridX></GridX>
-			<GridY></GridY>
-			<PortraitIndex>34</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
-		</Row>
-		<Row> <!-- Fertility (Nature B1) -->
-			<Type>POLICY_FERTILITY</Type>
-			<Description>TXT_KEY_EOMPOLICY_FERTILITY</Description>
-			<Civilopedia>TXT_KEY_EOMPOLICYFERTILITY_TEXT</Civilopedia>
-			<Help>TXT_KEY_EOMPOLICY_FERTILITY_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_NATURE</PolicyBranchType>
-			<CultureCost>10</CultureCost>
-			<GridX></GridX>
-			<GridY></GridY>
-			<CityGrowthMod>50</CityGrowthMod>
-			<PortraitIndex>35</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
-		</Row>
-		<Row> <!-- Naturopathy (Nature B2) -->
-			<Type>POLICY_NATUROPATHY</Type>
-			<Description>TXT_KEY_EOMPOLICY_NATUROPATHY</Description>
-			<Civilopedia>TXT_KEY_EOMPOLICYNATUROPATHY_TEXT</Civilopedia>
-			<Help>TXT_KEY_EOMPOLICY_NATUROPATHY_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_NATURE</PolicyBranchType>
-			<CultureCost>10</CultureCost>
-			<GridX></GridX>
-			<GridY></GridY>
-			<PortraitIndex>36</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
-		</Row>
-		<Row> <!-- Spiritual Nourishment (Nature B3) -->
-			<Type>POLICY_SPIRITUAL_NOURISHMENT</Type>
-			<Description>TXT_KEY_EOMPOLICY_SPIRITUAL_NOURISHMENT</Description>
-			<Civilopedia>TXT_KEY_EOMPOLICYSPIRITUAL_NOURISHMENT_TEXT</Civilopedia>
-			<Help>TXT_KEY_EOMPOLICY_SPIRITUAL_NOURISHMENT_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_NATURE</PolicyBranchType>
-			<CultureCost>10</CultureCost>
-			<HalfSpecialistUnhappiness>true</HalfSpecialistUnhappiness>
-			<GridX></GridX>
-			<GridY></GridY>
-			<PortraitIndex>37</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
-		</Row>
-		<Row> <!-- Ambush (Nature C1) -->
-			<Type>POLICY_AMBUSH</Type>
-			<Description>TXT_KEY_EOMPOLICY_AMBUSH</Description>
-			<Civilopedia>TXT_KEY_EOMPOLICYAMBUSH_TEXT</Civilopedia>
-			<Help>TXT_KEY_EOMPOLICY_AMBUSH_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_NATURE</PolicyBranchType>
-			<CultureCost>10</CultureCost>
-			<GridX></GridX>
-			<GridY></GridY>
-			<PortraitIndex>38</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
-		</Row>
-		<Row> <!-- Tree Growth (Nature C2) -->
-			<Type>POLICY_TREE_GROWTH</Type>
-			<Description>TXT_KEY_EOMPOLICY_TREE_GROWTH</Description>
-			<Civilopedia>TXT_KEY_EOMPOLICYTREE_GROWTH_TEXT</Civilopedia>
-			<Help>TXT_KEY_EOMPOLICY_TREE_GROWTH_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_NATURE</PolicyBranchType>
-			<CultureCost>10</CultureCost>
-			<GridX></GridX>
-			<GridY></GridY>
-			<PortraitIndex>39</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
-		</Row>
-		<Row> <!-- Domain of Life (Nature C3) -->
-			<Type>POLICY_DOMAIN_OF_LIFE</Type>
-			<Description>TXT_KEY_EOMPOLICY_DOMAIN_OF_LIFE</Description>
-			<Civilopedia>TXT_KEY_EOMPOLICYDOMAIN_OF_LIFE_TEXT</Civilopedia>
-			<Help>TXT_KEY_EOMPOLICY_DOMAIN_OF_LIFE_HELP</Help>
-			<PolicyBranchType>POLICY_BRANCH_NATURE</PolicyBranchType>
-			<CultureCost>10</CultureCost>
-			<GridX></GridX>
-			<GridY></GridY>
-			<PortraitIndex>40</PortraitIndex>
-			<IconAtlas>POLICY_ATLAS</IconAtlas>
-			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
-		</Row>
-		<Row> <!-- Nature (Finisher) -->
-			<Type>POLICY_NATURE_FINISHER</Type>
-			<Description>TXT_KEY_EOMPOLICY_BRANCH_NATURE</Description>
-			<IncludesOneShotFreeUnits>true</IncludesOneShotFreeUnits>
-		</Row>
+		</Row> -->
 		
 		<Row> <!-- 7. Freedom (Opener) -->
 			<Type>POLICY_FREEDOM</Type>
@@ -562,13 +451,13 @@
 		
 
 	</Policies>
-	<Policy_CityYieldChanges>
-		<Row> <!-- Nature -->
-			<PolicyType>POLICY_DOMAIN_OF_LIFE</PolicyType>
-			<YieldType>YIELD_FOOD</YieldType>
+	<!-- <Policy_CityYieldChanges>
+		<Row>
+			<PolicyType>POLICY_REPUBLIC</PolicyType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>		
-	</Policy_CityYieldChanges>
+	</Policy_CityYieldChanges> -->
 	<!-- <Policy_CoastalCityYieldChanges>
 		<Row>
 			<PolicyType>POLICY_MERCHANT_NAVY</PolicyType>
@@ -680,17 +569,7 @@
 		</Row>
 	</Policy_BuildingClassCultureChanges>
 	<Policy_BuildingClassHappiness>
-		<Row> <!-- Nature -->
-			<PolicyType>POLICY_NATUROPATHY</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_HERBALIST</BuildingClassType>
-			<Happiness>1</Happiness>
-		</Row>
 		<Row>
-			<PolicyType>POLICY_NATUROPATHY</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_GARDEN</BuildingClassType>
-			<Happiness>1</Happiness>
-		</Row>
-		<Row> <!-- Domination -->
 			<PolicyType>POLICY_ENTERTAINMENT_FOR_THE_MASSES</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CIRCUS</BuildingClassType>
 			<Happiness>1</Happiness>
@@ -702,7 +581,19 @@
 		</Row>
 	</Policy_BuildingClassHappiness>
 	<Policy_ImprovementYieldChanges>
-		<Row> <!-- Civilization -->
+		<Row>
+			<PolicyType>POLICY_SLAVERY</PolicyType>
+			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SLAVERY</PolicyType>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
 			<PolicyType>POLICY_TOWN_DEVELOPMENT</PolicyType>
 			<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
@@ -724,42 +615,6 @@
 			<PolicyType>POLICY_CROP_ROTATION</PolicyType>
 			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row> <!-- Nature -->
-			<PolicyType>POLICY_HUNTING_TRADITION</PolicyType>
-			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_ANIMAL_TAMING</PolicyType>
-			<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_NATUROPATHY</PolicyType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_TREE_GROWTH</PolicyType>
-			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row> <!-- Domination -->
-			<PolicyType>POLICY_SLAVERY</PolicyType>
-			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_SLAVERY</PolicyType>
-			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>1</Yield>
 		</Row>
 	</Policy_ImprovementYieldChanges>
@@ -1020,33 +875,6 @@
 			<PolicyType>POLICY_CROP_ROTATION</PolicyType>
 			<PrereqPolicy>POLICY_TOWN_DEVELOPMENT</PrereqPolicy>
 		</Row>
-		<!-- Nature A Line -->
-		<Row>
-			<PolicyType>POLICY_ANIMAL_TAMING</PolicyType>
-			<PrereqEOMPOLICY>POLICY_HUNTING_TRADITION</PrereqEOMPOLICY>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_ANIMAL_MASTERY</PolicyType>
-			<PrereqEOMPOLICY>POLICY_ANIMAL_TAMING</PrereqEOMPOLICY>
-		</Row>
-		<!-- Nature B Line -->
-		<Row>
-			<PolicyType>POLICY_NATUROPATHY</PolicyType>
-			<PrereqEOMPOLICY>POLICY_FERTILITY</PrereqEOMPOLICY>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_SPIRITUAL_NOURISHMENT</PolicyType>
-			<PrereqEOMPOLICY>POLICY_NATUROPATHY</PrereqEOMPOLICY>
-		</Row>
-		<!-- Nature C Line -->
-		<Row>
-			<PolicyType>POLICY_TREE_GROWTH</PolicyType>
-			<PrereqEOMPOLICY>POLICY_AMBUSH</PrereqEOMPOLICY>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_DOMAIN_OF_LIFE</PolicyType>
-			<PrereqEOMPOLICY>POLICY_TREE_GROWTH</PrereqEOMPOLICY>
-		</Row>
 		<!-- Freedom A Line -->
 		<Row>
 			<PolicyType>POLICY_CULTURAL_DEVELOPMENT</PolicyType>
@@ -1107,10 +935,6 @@
 			<PolicyType>POLICY_TERRITORIAL_DEFENSE</PolicyType>
 			<PromotionType>PROMOTION_TERRITORIAL_DEFENSE</PromotionType>
 		</Row>
-		<Row> <!-- Nature -->
-			<PolicyType>POLICY_AMBUSH</PolicyType>
-			<PromotionType>PROMOTION_AMBUSH</PromotionType>
-		</Row>
 	</Policy_FreePromotions>
 	<Policy_FreePromotionUnitCombats>
 		<Row> <!-- Nature -->
@@ -1123,52 +947,6 @@
 			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 			<PromotionType>PROMOTION_HUNTING_TRADITION</PromotionType>
 		</Row>
-		<Row>
-			<PolicyType>POLICY_ANIMAL_TAMING</PolicyType>
-			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-			<PromotionType>PROMOTION_ANIMAL_TAMING</PromotionType>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_ANIMAL_MASTERY</PolicyType>
-			<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
-			<PromotionType>PROMOTION_ANIMAL_MASTERY</PromotionType>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_ANIMAL_MASTERY</PolicyType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-			<PromotionType>PROMOTION_ANIMAL_MASTERY_MOUNTED</PromotionType>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_DOMAIN_OF_LIFE</PolicyType>
-			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-			<PromotionType>PROMOTION_DOMAIN_OF_LIFE</PromotionType>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_DOMAIN_OF_LIFE</PolicyType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-			<PromotionType>PROMOTION_DOMAIN_OF_LIFE</PromotionType>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_DOMAIN_OF_LIFE</PolicyType>
-			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
-			<PromotionType>PROMOTION_DOMAIN_OF_LIFE</PromotionType>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_DOMAIN_OF_LIFE</PolicyType>
-			<UnitCombatType>UNITCOMBAT_PRIEST</UnitCombatType>
-			<PromotionType>PROMOTION_DOMAIN_OF_LIFE</PromotionType>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_DOMAIN_OF_LIFE</PolicyType>
-			<UnitCombatType>UNITCOMBAT_MAGE</UnitCombatType>
-			<PromotionType>PROMOTION_DOMAIN_OF_LIFE</PromotionType>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_DOMAIN_OF_LIFE</PolicyType>
-			<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
-			<PromotionType>PROMOTION_DOMAIN_OF_LIFE</PromotionType>
-		</Row>
-		
 		
 		
 	</Policy_FreePromotionUnitCombats>
@@ -1195,11 +973,6 @@
 			<UnitClassType>UNITCLASS_WOLF</UnitClassType>
 			<Count>2</Count>
 		</Row>
-		<!-- <Row> !!PLACEHODER UNTIL WE MONSTER UNITS!!
-			<PolicyType>POLICY_NATURE_FINISHER</PolicyType>
-			<UnitClassType>UNITCLASS_MONSTER</UnitClassType>
-			<Count>2</Count>
-		</Row> -->
 		<Row> <!-- Freedom -->
 			<PolicyType>POLICY_HEROISM</PolicyType>
 			<UnitClassType>UNITCLASS_HERO</UnitClassType>
@@ -1211,16 +984,11 @@
 			<Count>1</Count>
 		</Row>
 	</Policy_FreeUnitClasses>
-<<<<<<< HEAD
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPOLICY_CIVILIZATION_HELP">
 			<Text>[ICON_BULLET]Starting the Civilization Tree decreases the Culture cost of acquiring new tiles by 10%.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMPOLICY_PUBLIC_WORKS_I">
-=======
-	<!-- <Language_en_US>
-		<Row Tag="TXT_KEY_EOMPOLICY_PUBLIC_WORKS_I"> Civilization
->>>>>>> Should've have committed these awhile back.
 			<Text>Public Works I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMPOLICY_PUBLIC_WORKS_I_HELP">
@@ -1274,16 +1042,12 @@
 		<Row Tag="TXT_KEY_EOMPOLICY_CROP_ROTATION_HELP">
 			<Text>[ICON_BULLET]Crop Rotation increases food from the Farm improvement by 1.</Text>
 		</Row>
-<<<<<<< HEAD
 		<Row Tag="TXT_KEY_EOMPOLICY_CIVILIZATION_FINISHER">
 			<Text>Taking all policies in the Civilization Tree will give 1 free Pioneer and allow new cities start with 2 population.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMPOLICY_FREEDOM_HELP">
 			<Text>[ICON_BULLET]Starting the Freedom Tree increases Culture per city by 1.</Text>
 		</Row>
-=======
-		Freedom
->>>>>>> Should've have committed these awhile back.
 		<Row Tag="TXT_KEY_EOMPOLICY_CREATIVITY">
 			<Text>Creativity</Text>
 		</Row>
@@ -1337,14 +1101,10 @@
 		</Row>
 		<Row Tag="TXT_KEY_EOMPOLICY_AMBITION_HELP">
 			<Text>[ICON_BULLET]Ambition increases Great People generation in all cities by 25%.</Text>
-<<<<<<< HEAD
 		</Row>
 		<Row Tag="TXT_KEY_EOMPOLICY_FREEDOM_FINISHER">
 			<Text>Taking all policies in the Freedom Tree will give 1 Free Great Bard and increases Happiness per city by 1.</Text>
 		</Row>
-=======
-		</Row> 
->>>>>>> Should've have committed these awhile back.
 		
-	</Language_en_US> -->
+	</Language_en_US>
 </GameData>
