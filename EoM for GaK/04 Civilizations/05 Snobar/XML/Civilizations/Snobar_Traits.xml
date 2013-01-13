@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:41:34 PM -->
+<GameData>
+	<Traits>
+		<Row>
+			<Type>TRAIT_SNOBAR</Type>
+			<ShortDescription>TXT_KEY_EOMTRAIT_SNOBAR</ShortDescription>
+			<Description>TXT_KEY_EOMTRAIT_SNOBAR_DESC</Description>
+		</Row>
+	</Traits>
+</GameData>

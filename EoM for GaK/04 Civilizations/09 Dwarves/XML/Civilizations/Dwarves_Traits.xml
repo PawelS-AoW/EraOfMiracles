@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:56:25 PM -->
+<GameData>
+	<Traits>
+		<Row>
+			<Type>TRAIT_DWARVES</Type>
+			<ShortDescription>TXT_KEY_EOMTRAIT_DWARVES</ShortDescription>
+			<Description>TXT_KEY_EOMTRAIT_DWARVES_DESC</Description>
+		</Row>
+	</Traits>
+</GameData>

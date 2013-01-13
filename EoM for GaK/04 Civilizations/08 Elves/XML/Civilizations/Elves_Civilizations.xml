@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:48:14 PM -->
+<GameData>
+	<Civilizations>
+		<Row>
+			<Type>CIVILIZATION_ELVES</Type>
+			<Description>TXT_KEY_EOMCIV_ELVES_LONG</Description>
+			<ShortDescription>TXT_KEY_EOMCIV_ELVES_SHORT</ShortDescription>
+			<Adjective>TXT_KEY_EOMCIV_ELVES_ADJ</Adjective>
+			<CivilopediaTag>TXT_KEY_EOMCIV_ELVES_SHORT</CivilopediaTag>
+			<DefaultPlayerColor>PLAYERCOLOR_CELTS</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_ROME</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleSuffix>_EURO</ArtStyleSuffix>
+			<ArtStylePrefix>EUROPEAN </ArtStylePrefix>
+			<PortraitIndex>3</PortraitIndex>
+			<IconAtlas>EXPANSION_CIV_COLOR_ATLAS</IconAtlas>
+			<AlphaIconAtlas>EXPANSION_CIV_ALPHA_ATLAS</AlphaIconAtlas>
+			<MapImage>boudicca.dds</MapImage>
+			<DawnOfManQuote>TXT_KEY_EOM_EMPTY</DawnOfManQuote>
+			<DawnOfManImage>boudicca.dds</DawnOfManImage>
+		</Row>
+	</Civilizations>
+	<Civilization_Start_Region_Priority>
+		<Row>
+			<CivilizationType>CIVILIZATION_ELVES</CivilizationType>
+			<RegionType>REGION_FOREST</RegionType>
+		</Row>
+	</Civilization_Start_Region_Priority>
+	<Civilization_Leaders>
+		<Row>
+			<CivilizationType>CIVILIZATION_ELVES</CivilizationType>
+			<LeaderheadType>LEADER_JULIA</LeaderheadType>
+		</Row>
+	</Civilization_Leaders>
+	<Civilization_FreeTechs>
+		<Row>
+			<CivilizationType>CIVILIZATION_ELVES</CivilizationType>
+			<TechType>TECH_WOOD_WORKING</TechType>
+		</Row>
+	</Civilization_FreeTechs>
+</GameData>

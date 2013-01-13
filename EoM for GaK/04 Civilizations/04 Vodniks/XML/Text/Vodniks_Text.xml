@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:37:33 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMCIV_VODNIKS_LONG">
+			<Text>Vodnik Kingdom</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_VODNIKS_SHORT">
+			<Text>Vodniks</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_VODNIKS_ADJ">
+			<Text>Vodnik</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMLEADER_SHUVAREQ">
+			<Text>Shuvareq</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_VODNIKS">
+			<Text>Fresh Water Spirits</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_VODNIKS_DESC">
+			<Text>Description</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

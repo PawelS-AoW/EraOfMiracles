@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:49:42 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMCIV_ELVES_LONG">
+			<Text>Elven Kingdom</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_ELVES_SHORT">
+			<Text>Elves</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_ELVES_ADJ">
+			<Text>Elven</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMLEADER_JULIA">
+			<Text>Julia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_ELVES">
+			<Text>Woodland Dwellers</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_ELVES_DESC">
+			<Text>Description</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

@@ -8,7 +8,7 @@
 			<ShortDescription>TXT_KEY_EOMTRAIT_DREAMERS</ShortDescription>
 			<Description>TXT_KEY_EOMTRAIT_DREAMERS_DESC</Description>
 			<PlotBuyCostModifier>-25</PlotBuyCostModifier>
-			<FreeBuilding>BUILDING_DUMMY_DREAMERS_UA</FreeBuilding>
+			<!--<FreeBuilding>BUILDING_DUMMY_DREAMERS_UA</FreeBuilding>-->
 		</Row>
 	</Traits>
 	<Trait_FreePromotionUnitCombats>

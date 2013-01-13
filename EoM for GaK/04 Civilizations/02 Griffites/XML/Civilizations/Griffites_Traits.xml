@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:30:42 PM -->
+<GameData>
+	<Traits>
+		<Row>
+			<Type>TRAIT_GRIFFITES</Type>
+			<ShortDescription>TXT_KEY_EOMTRAIT_GRIFFITES</ShortDescription>
+			<Description>TXT_KEY_EOMTRAIT_GRIFFITES_DESC</Description>
+		</Row>
+	</Traits>
+</GameData>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:36:55 PM -->
+<GameData>
+	<Civilizations>
+		<Row>
+			<Type>CIVILIZATION_VODNIKS</Type>
+			<Description>TXT_KEY_EOMCIV_VODNIKS_LONG</Description>
+			<ShortDescription>TXT_KEY_EOMCIV_VODNIKS_SHORT</ShortDescription>
+			<Adjective>TXT_KEY_EOMCIV_VODNIKS_ADJ</Adjective>
+			<CivilopediaTag>TXT_KEY_EOMCIV_VODNIKS_SHORT</CivilopediaTag>
+			<DefaultPlayerColor>PLAYERCOLOR_FRANCE</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_FRANCE</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_POLYNESIAN</ArtStyleType>
+			<ArtStyleSuffix>_MED</ArtStyleSuffix>
+			<ArtStylePrefix>ASIAN </ArtStylePrefix>
+			<PortraitIndex>7</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS</IconAtlas>
+			<AlphaIconAtlas>CIV_ALPHA_ATLAS</AlphaIconAtlas>
+			<MapImage>kamehameha.dds</MapImage>
+			<DawnOfManQuote>TXT_KEY_EOM_EMPTY</DawnOfManQuote>
+			<DawnOfManImage>kamehameha.dds</DawnOfManImage>
+		</Row>
+	</Civilizations>
+	<Civilization_Start_Along_River>
+		<Row>
+			<CivilizationType>CIVILIZATION_VODNIKS</CivilizationType>
+			<StartAlongRiver>true</StartAlongRiver>
+		</Row>
+	</Civilization_Start_Along_River>
+	<Civilization_Leaders>
+		<Row>
+			<CivilizationType>CIVILIZATION_VODNIKS</CivilizationType>
+			<LeaderheadType>LEADER_SHUVAREQ</LeaderheadType>
+		</Row>
+	</Civilization_Leaders>
+	<Civilization_FreeTechs>
+		<Row>
+			<CivilizationType>CIVILIZATION_VODNIKS</CivilizationType>
+			<TechType>TECH_FISHING</TechType>
+		</Row>
+	</Civilization_FreeTechs>
+</GameData>

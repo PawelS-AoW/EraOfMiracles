@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:37:22 PM -->
+<GameData>
+	<Traits>
+		<Row>
+			<Type>TRAIT_VODNIKS</Type>
+			<ShortDescription>TXT_KEY_EOMTRAIT_VODNIKS</ShortDescription>
+			<Description>TXT_KEY_EOMTRAIT_VODNIKS_DESC</Description>
+		</Row>
+	</Traits>
+</GameData>

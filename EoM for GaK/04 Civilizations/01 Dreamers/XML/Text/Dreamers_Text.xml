@@ -22,7 +22,7 @@
 			<Text>Undreamt Shores</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMTRAIT_DREAMERS_DESC">
-			<Text>[ICON_BULLET]+1 [ICON_FOOD] from Fishing Boats and Fishing Villages. +1 [ICON_GOLD] from all Sea tiles. Farms produce 1 [ICON_FOOD] less.[NEWLINE][NEWLINE][ICON_BULLET]+1 [ICON_MOVES] and +10% [ICON_STRENGTH] for Naval Units.[NEWLINE][NEWLINE][ICON_BULLET]-25% [ICON_GOLD] Cost for buying tiles.</Text>
+			<Text>[ICON_BULLET]+1 [ICON_FOOD] from Fishing Boats and Fishing Villages. +1 [ICON_GOLD] from all Sea tiles. Farms produce 1 [ICON_FOOD] less.[NEWLINE][ICON_BULLET]+1 [ICON_MOVES] and +10% [ICON_STRENGTH] for Naval Units.[NEWLINE][ICON_BULLET]-25% [ICON_GOLD] Cost for buying tiles.</Text>
 		</Row>
 		<!--Romance-ish language-->
 		<Row Tag="TXT_KEY_CITY_NAME_DREAMERS_1">

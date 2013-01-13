@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 8:04:30 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMCIV_ORCS_LONG">
+			<Text>Red Horde</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_ORCS_SHORT">
+			<Text>Orcs</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_ORCS_ADJ">
+			<Text>Orcish</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMLEADER_SKULKAN">
+			<Text>Skulkan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_ORCS">
+			<Text>Conquerors</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_ORCS_DESC">
+			<Text>Description</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

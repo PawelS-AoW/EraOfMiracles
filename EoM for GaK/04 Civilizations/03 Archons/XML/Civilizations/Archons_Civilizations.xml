@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:33:29 PM -->
+<GameData>
+	<Civilizations>
+		<Row>
+			<Type>CIVILIZATION_ARCHONS</Type>
+			<Description>TXT_KEY_EOMCIV_ARCHONS_LONG</Description>
+			<ShortDescription>TXT_KEY_EOMCIV_ARCHONS_SHORT</ShortDescription>
+			<Adjective>TXT_KEY_EOMCIV_ARCHONS_ADJ</Adjective>
+			<CivilopediaTag>TXT_KEY_EOMCIV_ARCHONS_SHORT</CivilopediaTag>
+			<DefaultPlayerColor>PLAYERCOLOR_SPAIN</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_ROME</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_GRECO_ROMAN</ArtStyleType>
+			<ArtStyleSuffix>_MED</ArtStyleSuffix>
+			<ArtStylePrefix>MEDITERRANEAN </ArtStylePrefix>
+			<PortraitIndex>1</PortraitIndex>
+			<IconAtlas>ISABELLA_CIV_COLOR_ATLAS</IconAtlas>
+			<AlphaIconAtlas>ISABELLA_CIV_ALPHA_ATLAS</AlphaIconAtlas>
+			<MapImage>augustus.dds</MapImage>
+			<DawnOfManQuote>TXT_KEY_EOM_EMPTY</DawnOfManQuote>
+			<DawnOfManImage>augustus.dds</DawnOfManImage>
+		</Row>
+	</Civilizations>
+	<Civilization_Start_Region_Avoid>
+		<Row>
+			<CivilizationType>CIVILIZATION_ARCHONS</CivilizationType>
+			<RegionType>REGION_TUNDRA</RegionType>
+		</Row>
+	</Civilization_Start_Region_Avoid>
+	<Civilization_Leaders>
+		<Row>
+			<CivilizationType>CIVILIZATION_ARCHONS</CivilizationType>
+			<LeaderheadType>LEADER_GABRIEL</LeaderheadType>
+		</Row>
+	</Civilization_Leaders>
+	<Civilization_FreeTechs>
+		<Row>
+			<CivilizationType>CIVILIZATION_ARCHONS</CivilizationType>
+			<TechType>TECH_RITUALISM</TechType>
+		</Row>
+	</Civilization_FreeTechs>
+</GameData>

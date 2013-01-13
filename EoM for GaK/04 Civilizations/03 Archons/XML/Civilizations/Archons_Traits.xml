@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:33:49 PM -->
+<GameData>
+	<Traits>
+		<Row>
+			<Type>TRAIT_ARCHONS</Type>
+			<ShortDescription>TXT_KEY_EOMTRAIT_ARCHONS</ShortDescription>
+			<Description>TXT_KEY_EOMTRAIT_ARCHONS_DESC</Description>
+			<BonusReligiousBelief>true</BonusReligiousBelief>
+		</Row>
+	</Traits>  
+</GameData>

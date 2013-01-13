@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:57:53 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMCIV_DWARVES_LONG">
+			<Text>Dwarven Kingdom</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_DWARVES_SHORT">
+			<Text>Dwarves</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_DWARVES_ADJ">
+			<Text>Dwarven</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMLEADER_FANGIR">
+			<Text>Fangir</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_DWARVES">
+			<Text>Expert Miners</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_DWARVES_DESC">
+			<Text>Description</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

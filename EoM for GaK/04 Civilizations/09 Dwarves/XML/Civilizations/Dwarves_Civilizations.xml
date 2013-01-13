@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:55:47 PM -->
+<GameData>
+	<Civilizations>
+		<Row>
+			<Type>CIVILIZATION_DWARVES</Type>
+			<Description>TXT_KEY_EOMCIV_DWARVES_LONG</Description>
+			<ShortDescription>TXT_KEY_EOMCIV_DWARVES_SHORT</ShortDescription>
+			<Adjective>TXT_KEY_EOMCIV_DWARVES_ADJ</Adjective>
+			<CivilopediaTag>TXT_KEY_EOMCIV_DWARVES_SHORT</CivilopediaTag>
+			<DefaultPlayerColor>PLAYERCOLOR_MAYA</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_IROQOIS</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleSuffix>_EURO</ArtStyleSuffix>
+			<ArtStylePrefix>EUROPEAN </ArtStylePrefix>
+			<PortraitIndex>12</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS</IconAtlas>
+			<AlphaIconAtlas>CIV_ALPHA_ATLAS</AlphaIconAtlas>
+			<MapImage>gustavus adolphus.dds</MapImage>
+			<DawnOfManQuote>TXT_KEY_EOM_EMPTY</DawnOfManQuote>
+			<DawnOfManImage>gustavus adolphus.dds</DawnOfManImage>
+		</Row>
+	</Civilizations>
+	<Civilization_Start_Region_Priority>
+		<Row>
+			<CivilizationType>CIVILIZATION_DWARVES</CivilizationType>
+			<RegionType>REGION_HILLS</RegionType>
+		</Row>
+	</Civilization_Start_Region_Priority>
+	<Civilization_Leaders>
+		<Row>
+			<CivilizationType>CIVILIZATION_DWARVES</CivilizationType>
+			<LeaderheadType>LEADER_FANGIR</LeaderheadType>
+		</Row>
+	</Civilization_Leaders>
+	<Civilization_FreeTechs>
+		<Row>
+			<CivilizationType>CIVILIZATION_DWARVES</CivilizationType>
+			<TechType>TECH_STONE_WORKING</TechType>
+		</Row>
+	</Civilization_FreeTechs>
+</GameData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:47:02 PM -->
+<GameData>
+	<Traits>
+		<Row>
+			<Type>TRAIT_LEMURIA</Type>
+			<ShortDescription>TXT_KEY_EOMTRAIT_LEMURIA</ShortDescription>
+			<Description>TXT_KEY_EOMTRAIT_LEMURIA_DESC</Description>
+		</Row>
+	</Traits>
+</GameData>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:31:07 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMCIV_GRIFFITES_LONG">
+			<Text>Griffite Kingdom</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_GRIFFITES_SHORT">
+			<Text>Griffites</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_GRIFFITES_ADJ">
+			<Text>Griffite</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMLEADER_VORSAR">
+			<Text>Vorsar</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_GRIFFITES">
+			<Text>Born in the Saddle</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_GRIFFITES_DESC">
+			<Text>Description</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:41:58 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMCIV_SNOBAR_LONG">
+			<Text>Snobar Clans</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_SNOBAR_SHORT">
+			<Text>Snobar</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_SNOBAR_ADJ">
+			<Text>Snobar</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMLEADER_ARTIC">
+			<Text>Artic</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_SNOBAR">
+			<Text>Invaders from the Sea</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_SNOBAR_DESC">
+			<Text>Description</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:34:00 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMCIV_ARCHONS_LONG">
+			<Text>Holy Archon Empire</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_ARCHONS_SHORT">
+			<Text>Archons</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_ARCHONS_ADJ">
+			<Text>Archon</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMLEADER_GABRIEL">
+			<Text>Gabriel</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_ARCHONS">
+			<Text>Mandate of Heaven</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_ARCHONS_DESC">
+			<Text>[ICON_BULLET]Choose one extra belief when founding a religion.[NEWLINE][ICON_BULLET]+2 [ICON_RESEARCH] Science, +2 [ICON_CULTURE] Culture, and +2 [ICON_PEACE] Mana from Ancient Temples.[NEWLINE][ICON_BULLET]Priest units get extra healing power.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

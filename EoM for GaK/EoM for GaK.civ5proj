@@ -89,50 +89,205 @@ Version: pre-alpha, not playable</Description>
         <Type>UpdateDatabase</Type>
         <FileName>04 Civilizations/00a Minor+Barb.xml</FileName>
       </Action>
-      <Action>
+	  <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/02 Griffites.xml</FileName>
+        <FileName>04 Civilizations/01 Dreamers/XML/Civilizations/Dreamers_Civilizations.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/03 Archons.xml</FileName>
+        <FileName>04 Civilizations/01 Dreamers/XML/Civilizations/Dreamers_Leaders.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/04 Vodniks.xml</FileName>
+        <FileName>04 Civilizations/01 Dreamers/XML/Civilizations/Dreamers_Traits.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/05 Snobar.xml</FileName>
+        <FileName>04 Civilizations/01 Dreamers/XML/Text/Dreamers_Text.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/06 Azracs.xml</FileName>
+        <FileName>04 Civilizations/02 Griffites/XML/Civilizations/Griffites_Civilizations.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/07 Lemuria.xml</FileName>
+        <FileName>04 Civilizations/02 Griffites/XML/Civilizations/Griffites_Leaders.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/08 Elves.xml</FileName>
+        <FileName>04 Civilizations/02 Griffites/XML/Civilizations/Griffites_Traits.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/09 Dwarves.xml</FileName>
+        <FileName>04 Civilizations/02 Griffites/XML/Text/Griffites_Text.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>04 Civilizations/10 Orcs.xml</FileName>
+        <FileName>04 Civilizations/03 Archons/XML/Civilizations/Archons_Civilizations.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/03 Archons/XML/Civilizations/Archons_Leaders.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/03 Archons/XML/Civilizations/Archons_Traits.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/03 Archons/XML/Text/Archons_Text.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/04 Vodniks/XML/Civilizations/Vodniks_Civilizations.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/04 Vodniks/XML/Civilizations/Vodniks_Leaders.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/04 Vodniks/XML/Civilizations/Vodniks_Traits.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/04 Vodniks/XML/Text/Vodniks_Text.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/05 Snobar/XML/Civilizations/Snobar_Civilizations.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/05 Snobar/XML/Civilizations/Snobar_Leaders.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/05 Snobar/XML/Civilizations/Snobar_Traits.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/05 Snobar/XML/Text/Snobar_Text.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/06 Azracs/XML/Civilizations/Azracs_Civilizations.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/06 Azracs/XML/Civilizations/Azracs_Leaders.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/06 Azracs/XML/Civilizations/Azracs_Traits.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/06 Azracs/XML/Text/Azracs_Text.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/07 Lemuria/XML/Civilizations/Lemuria_Civilizations.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/07 Lemuria/XML/Civilizations/Lemuria_Leaders.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/07 Lemuria/XML/Civilizations/Lemuria_Traits.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/07 Lemuria/XML/Text/Lemuria_Text.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/08 Elves/XML/Civilizations/Elves_Civilizations.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/08 Elves/XML/Civilizations/Elves_Leaders.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/08 Elves/XML/Civilizations/Elves_Traits.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/08 Elves/XML/Text/Elves_Text.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/09 Dwarves/XML/Civilizations/Dwarves_Civilizations.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/09 Dwarves/XML/Civilizations/Dwarves_Leaders.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/09 Dwarves/XML/Civilizations/Dwarves_Traits.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/09 Dwarves/XML/Text/Dwarves_Text.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/10 Orcs/XML/Civilizations/Orcs_Civilizations.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/10 Orcs/XML/Civilizations/Orcs_Leaders.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/10 Orcs/XML/Civilizations/Orcs_Traits.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>04 Civilizations/10 Orcs/XML/Text/Orcs_Text.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -544,18 +699,45 @@ Version: pre-alpha, not playable</Description>
     <Folder Include="03 General" />
     <Folder Include="04 Civilizations" />
     <Folder Include="04 Civilizations\01 Dreamers" />
-    <Folder Include="04 Civilizations\01 Dreamers\Art" />
-    <Folder Include="04 Civilizations\01 Dreamers\Art\Alphas" />
-    <Folder Include="04 Civilizations\01 Dreamers\Art\Atlases" />
-    <Folder Include="04 Civilizations\01 Dreamers\Art\Skins" />
     <Folder Include="04 Civilizations\01 Dreamers\XML" />
-    <Folder Include="04 Civilizations\01 Dreamers\XML\Art" />
-    <Folder Include="04 Civilizations\01 Dreamers\XML\Buildings" />
     <Folder Include="04 Civilizations\01 Dreamers\XML\Civilizations" />
-    <Folder Include="04 Civilizations\01 Dreamers\XML\Diplomacy" />
-    <Folder Include="04 Civilizations\01 Dreamers\XML\GameInfo" />
-    <Folder Include="04 Civilizations\01 Dreamers\XML\Units" />
     <Folder Include="04 Civilizations\01 Dreamers\XML\Text" />
+    <Folder Include="04 Civilizations\02 Griffites" />
+    <Folder Include="04 Civilizations\02 Griffites\XML" />
+    <Folder Include="04 Civilizations\02 Griffites\XML\Civilizations" />
+    <Folder Include="04 Civilizations\02 Griffites\XML\Text" />
+    <Folder Include="04 Civilizations\03 Archons" />
+    <Folder Include="04 Civilizations\03 Archons\XML" />
+    <Folder Include="04 Civilizations\03 Archons\XML\Civilizations" />
+    <Folder Include="04 Civilizations\03 Archons\XML\Text" />
+    <Folder Include="04 Civilizations\04 Vodniks" />
+    <Folder Include="04 Civilizations\04 Vodniks\XML" />
+    <Folder Include="04 Civilizations\04 Vodniks\XML\Civilizations" />
+    <Folder Include="04 Civilizations\04 Vodniks\XML\Text" />
+    <Folder Include="04 Civilizations\05 Snobar" />
+    <Folder Include="04 Civilizations\05 Snobar\XML" />
+    <Folder Include="04 Civilizations\05 Snobar\XML\Civilizations" />
+    <Folder Include="04 Civilizations\05 Snobar\XML\Text" />
+    <Folder Include="04 Civilizations\06 Azracs" />
+    <Folder Include="04 Civilizations\06 Azracs\XML" />
+    <Folder Include="04 Civilizations\06 Azracs\XML\Civilizations" />
+    <Folder Include="04 Civilizations\06 Azracs\XML\Text" />
+    <Folder Include="04 Civilizations\07 Lemuria" />
+    <Folder Include="04 Civilizations\07 Lemuria\XML" />
+    <Folder Include="04 Civilizations\07 Lemuria\XML\Civilizations" />
+    <Folder Include="04 Civilizations\07 Lemuria\XML\Text" />
+    <Folder Include="04 Civilizations\08 Elves" />
+    <Folder Include="04 Civilizations\08 Elves\XML" />
+    <Folder Include="04 Civilizations\08 Elves\XML\Civilizations" />
+    <Folder Include="04 Civilizations\08 Elves\XML\Text" />
+    <Folder Include="04 Civilizations\09 Dwarves" />
+    <Folder Include="04 Civilizations\09 Dwarves\XML" />
+    <Folder Include="04 Civilizations\09 Dwarves\XML\Civilizations" />
+    <Folder Include="04 Civilizations\09 Dwarves\XML\Text" />
+    <Folder Include="04 Civilizations\10 Orcs" />
+    <Folder Include="04 Civilizations\10 Orcs\XML" />
+    <Folder Include="04 Civilizations\10 Orcs\XML\Civilizations" />
+    <Folder Include="04 Civilizations\10 Orcs\XML\Text" />
     <Folder Include="05 Technologies" />
     <Folder Include="06 Buildings" />
     <Folder Include="07 Units" />
@@ -1260,39 +1442,147 @@ Version: pre-alpha, not playable</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="04 Civilizations\02 Griffites.xml">
+    <Content Include="04 Civilizations\02 Griffites\XML\Civilizations\Griffites_Traits.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="04 Civilizations\03 Archons.xml">
+    <Content Include="04 Civilizations\02 Griffites\XML\Civilizations\Griffites_Leaders.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="04 Civilizations\04 Vodniks.xml">
+    <Content Include="04 Civilizations\02 Griffites\XML\Civilizations\Griffites_Civilizations.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="04 Civilizations\05 Snobar.xml">
+    <Content Include="04 Civilizations\02 Griffites\XML\Text\Griffites_Text.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="04 Civilizations\06 Azracs.xml">
+    <Content Include="04 Civilizations\03 Archons\XML\Civilizations\Archons_Civilizations.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="04 Civilizations\07 Lemuria.xml">
+    <Content Include="04 Civilizations\03 Archons\XML\Civilizations\Archons_Leaders.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="04 Civilizations\08 Elves.xml">
+    <Content Include="04 Civilizations\03 Archons\XML\Civilizations\Archons_Traits.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="04 Civilizations\09 Dwarves.xml">
+    <Content Include="04 Civilizations\03 Archons\XML\Text\Archons_Text.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="04 Civilizations\10 Orcs.xml">
+    <Content Include="04 Civilizations\04 Vodniks\XML\Civilizations\Vodniks_Traits.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\04 Vodniks\XML\Civilizations\Vodniks_Leaders.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\04 Vodniks\XML\Civilizations\Vodniks_Civilizations.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\04 Vodniks\XML\Text\Vodniks_Text.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\05 Snobar\XML\Civilizations\Snobar_Traits.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\05 Snobar\XML\Civilizations\Snobar_Leaders.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\05 Snobar\XML\Civilizations\Snobar_Civilizations.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\05 Snobar\XML\Text\Snobar_Text.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\06 Azracs\XML\Civilizations\Azracs_Civilizations.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\06 Azracs\XML\Civilizations\Azracs_Leaders.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\06 Azracs\XML\Civilizations\Azracs_Traits.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\06 Azracs\XML\Text\Azracs_Text.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\07 Lemuria\XML\Civilizations\Lemuria_Traits.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\07 Lemuria\XML\Civilizations\Lemuria_Leaders.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\07 Lemuria\XML\Civilizations\Lemuria_Civilizations.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\07 Lemuria\XML\Text\Lemuria_Text.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\08 Elves\XML\Civilizations\Elves_Civilizations.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\08 Elves\XML\Civilizations\Elves_Leaders.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\08 Elves\XML\Civilizations\Elves_Traits.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\08 Elves\XML\Text\Elves_Text.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\09 Dwarves\XML\Civilizations\Dwarves_Civilizations.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\09 Dwarves\XML\Civilizations\Dwarves_Leaders.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\09 Dwarves\XML\Civilizations\Dwarves_Traits.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\09 Dwarves\XML\Text\Dwarves_Text.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\10 Orcs\XML\Civilizations\Orcs_Traits.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\10 Orcs\XML\Civilizations\Orcs_Leaders.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\10 Orcs\XML\Civilizations\Orcs_Civilizations.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="04 Civilizations\10 Orcs\XML\Text\Orcs_Text.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

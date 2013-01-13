@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:47:22 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMCIV_LEMURIA_LONG">
+			<Text>Tribes of Lemuria</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_LEMURIA_SHORT">
+			<Text>Lemuria</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_LEMURIA_ADJ">
+			<Text>Lemurian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMLEADER_MABB">
+			<Text>Mabb</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_LEMURIA">
+			<Text>Jungle Tribes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_LEMURIA_DESC">
+			<Text>Description</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

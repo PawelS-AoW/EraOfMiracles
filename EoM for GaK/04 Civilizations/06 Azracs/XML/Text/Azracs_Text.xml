@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/12/2013 7:44:43 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMCIV_AZRACS_LONG">
+			<Text>Azrac Empire</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_AZRACS_SHORT">
+			<Text>Azracs</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMCIV_AZRACS_ADJ">
+			<Text>Azrac</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMLEADER_YAKA">
+			<Text>Yaka</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_AZRACS">
+			<Text>Desert Wanderers</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMTRAIT_AZRACS_DESC">
+			<Text>Description</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
