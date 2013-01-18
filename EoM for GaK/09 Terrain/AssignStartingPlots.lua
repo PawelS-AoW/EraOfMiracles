@@ -1009,7 +1009,57 @@ function AssignStartingPlots:CustomOverride()
 		table_pos = table_pos + 1
 	end
 	
-	-- Crystal Plains (Tundra, Snow)
+	-- SHRUBS (Plains, Desert)
+
+	PlotList = {}
+
+	for y = 0, iH - 1 do
+		for x = 0, iW - 1 do
+			Plot = Map.GetPlot (x,y)
+			if (Plot:GetPlotType () == PlotTypes.PLOT_LAND or Plot:GetPlotType () == PlotTypes.PLOT_HILLS) and 
+			   (Plot:GetTerrainType () == TerrainTypes.TERRAIN_PLAINS or Plot:GetTerrainType () == TerrainTypes.TERRAIN_DESERT) and
+			   (Plot:GetFeatureType () == FeatureTypes.NO_FEATURE) then
+			   	-- add to list
+			   	table.insert (PlotList,{x,y})
+			end
+		end
+	end
+
+	ShuffledList = GetShuffledCopyOfTable (PlotList)
+	table_pos = 1
+	to_place = table.maxn (ShuffledList) / 10 -- place Shrubs on 1/10 of free Plains/Desert plots
+
+	for placed = 1, math.floor (to_place + 0.5) do
+		x = ShuffledList [table_pos][1]
+		y = ShuffledList [table_pos][2]
+		Plot = Map.GetPlot (x,y)
+		Plot:SetFeatureType (GameInfoTypes.FEATURE_EOM_SHRUBS)
+		table_pos = table_pos + 1
+	end
+	
+	-- growth (another 1/10)
+	
+	while to_place > 0 and table_pos <= table.maxn (ShuffledList) do
+		x = ShuffledList [table_pos][1]
+		y = ShuffledList [table_pos][2]
+		adj_feat = 0
+		for loop, direction in ipairs (self.direction_types) do
+			adjPlot = Map.PlotDirection (x,y,direction)
+			if adjPlot then
+				if adjPlot:GetFeatureType () == GameInfoTypes.FEATURE_EOM_SHRUBS then
+					adj_feat = adj_feat + 1
+				end
+			end
+		end
+		if adj_feat > 0 then
+			Plot = Map.GetPlot (x,y)
+			Plot:SetFeatureType (GameInfoTypes.FEATURE_EOM_SHRUBS)
+			to_place = to_place - 1
+		end
+		table_pos = table_pos + 1
+	end	
+
+	-- CRYSTAL PLAINS (Tundra, Snow)
 
 	PlotList = {}
 
@@ -1111,7 +1161,8 @@ function AssignStartingPlots:CustomOverride()
 			or feat == FeatureTypes.FEATURE_FOREST
 			or feat == FeatureTypes.FEATURE_JUNGLE
 			or feat == FeatureTypes.FEATURE_MARSH
-			or feat == FeatureTypes.FEATURE_FLOOD_PLAINS) then
+			or feat == FeatureTypes.FEATURE_FLOOD_PLAINS
+			or feat == GameInfoTypes.FEATURE_EOM_SHRUBS) then
 			   	-- add to list
 				table.insert (PlotList,{x,y})
 			end
@@ -1138,7 +1189,8 @@ function AssignStartingPlots:CustomOverride()
 			if Plot:GetPlotType () == PlotTypes.PLOT_HILLS
 			and (feat == FeatureTypes.NO_FEATURE
 			or feat == FeatureTypes.FEATURE_FOREST
-			or feat == FeatureTypes.FEATURE_JUNGLE) then
+			or feat == FeatureTypes.FEATURE_JUNGLE
+			or feat == GameInfoTypes.FEATURE_EOM_SHRUBS) then
 			   	-- add to list
 				table.insert (PlotList,{x,y})
 			end
@@ -1189,7 +1241,7 @@ function AssignStartingPlots:CustomOverride()
 			Plot = Map.GetPlot (x,y)
 			if Plot:GetPlotType () == PlotTypes.PLOT_LAND
 			and Plot:GetTerrainType () == TerrainTypes.TERRAIN_PLAINS
-			and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE
+			and (Plot:GetFeatureType () == FeatureTypes.NO_FEATURE or Plot:GetFeatureType () == GameInfoTypes.FEATURE_EOM_SHRUBS)
 			and Plot:GetResourceType () == -1 then
 			   	-- add to list
 				table.insert (PlotList,{x,y})
@@ -1215,7 +1267,7 @@ function AssignStartingPlots:CustomOverride()
 			Plot = Map.GetPlot (x,y)
 			if Plot:GetPlotType () == PlotTypes.PLOT_LAND
 			and Plot:GetTerrainType () == TerrainTypes.TERRAIN_DESERT
-			and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE
+			and (Plot:GetFeatureType () == FeatureTypes.NO_FEATURE or Plot:GetFeatureType () == GameInfoTypes.FEATURE_EOM_SHRUBS)
 			and Plot:GetResourceType () == -1 then
 			   	-- add to list
 				table.insert (PlotList,{x,y})
@@ -1319,7 +1371,7 @@ function AssignStartingPlots:CustomOverride()
 			Plot = Map.GetPlot (x,y)
 			if Plot:GetPlotType () == PlotTypes.PLOT_HILLS
 			and Plot:GetTerrainType () == TerrainTypes.TERRAIN_PLAINS
-			and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE
+			and (Plot:GetFeatureType () == FeatureTypes.NO_FEATURE or Plot:GetFeatureType () == GameInfoTypes.FEATURE_EOM_SHRUBS)
 			and Plot:GetResourceType () == -1 then
 			   	-- add to list
 				table.insert (PlotList,{x,y})
@@ -1345,7 +1397,7 @@ function AssignStartingPlots:CustomOverride()
 			Plot = Map.GetPlot (x,y)
 			if Plot:GetPlotType () == PlotTypes.PLOT_HILLS
 			and Plot:GetTerrainType () == TerrainTypes.TERRAIN_DESERT
-			and Plot:GetFeatureType () == FeatureTypes.NO_FEATURE
+			and (Plot:GetFeatureType () == FeatureTypes.NO_FEATURE or Plot:GetFeatureType () == GameInfoTypes.FEATURE_EOM_SHRUBS)
 			and Plot:GetResourceType () == -1 then
 			   	-- add to list
 				table.insert (PlotList,{x,y})

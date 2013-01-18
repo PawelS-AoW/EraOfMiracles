@@ -157,6 +157,14 @@
 			<Time>600</Time>
 			<Remove>true</Remove>
 		</Row>
+		<Row>
+			<BuildType>BUILD_FARM</BuildType>
+			<FeatureType>FEATURE_EOM_SHRUBS</FeatureType>
+			<PrereqTech>TECH_WOOD_WORKING</PrereqTech>
+			<Time>200</Time>
+			<Production>5</Production>
+			<Remove>true</Remove>
+		</Row>
 	</BuildFeatures>
 	<Unit_Builds>
 		<Row>
@@ -252,6 +260,14 @@
 			<FeatureType>FEATURE_MARSH</FeatureType>
 			<PrereqTech>TECH_IRRIGATION</PrereqTech>
 			<Time>600</Time>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_TERRACE_FARM</BuildType>
+			<FeatureType>FEATURE_EOM_SHRUBS</FeatureType>
+			<PrereqTech>TECH_WOOD_WORKING</PrereqTech>
+			<Time>200</Time>
+			<Production>5</Production>
 			<Remove>true</Remove>
 		</Row>
 	</BuildFeatures>
@@ -372,6 +388,14 @@
 			<Time>600</Time>
 			<Remove>true</Remove>
 		</Row>
+		<Row>
+			<BuildType>BUILD_WORKSHOP</BuildType>
+			<FeatureType>FEATURE_EOM_SHRUBS</FeatureType>
+			<PrereqTech>TECH_WOOD_WORKING</PrereqTech>
+			<Time>200</Time>
+			<Production>5</Production>
+			<Remove>true</Remove>
+		</Row>
 	</BuildFeatures>
 	<Unit_Builds>
 		<Row>
@@ -461,6 +485,14 @@
 			<FeatureType>FEATURE_MARSH</FeatureType>
 			<PrereqTech>TECH_IRRIGATION</PrereqTech>
 			<Time>600</Time>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_MINE</BuildType>
+			<FeatureType>FEATURE_EOM_SHRUBS</FeatureType>
+			<PrereqTech>TECH_WOOD_WORKING</PrereqTech>
+			<Time>200</Time>
+			<Production>5</Production>
 			<Remove>true</Remove>
 		</Row>
 	</BuildFeatures>
@@ -738,6 +770,14 @@
 			<Time>600</Time>
 			<Remove>true</Remove>
 		</Row>
+		<Row>
+			<BuildType>BUILD_TRADING_POST</BuildType>
+			<FeatureType>FEATURE_EOM_SHRUBS</FeatureType>
+			<PrereqTech>TECH_WOOD_WORKING</PrereqTech>
+			<Time>200</Time>
+			<Production>5</Production>
+			<Remove>true</Remove>
+		</Row>
 	</BuildFeatures>
 	<Unit_Builds>
 		<Row>
@@ -852,6 +892,14 @@
 			<FeatureType>FEATURE_MARSH</FeatureType>
 			<PrereqTech>TECH_IRRIGATION</PrereqTech>
 			<Time>600</Time>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_FISHING_VILLAGE</BuildType>
+			<FeatureType>FEATURE_EOM_SHRUBS</FeatureType>
+			<PrereqTech>TECH_WOOD_WORKING</PrereqTech>
+			<Time>200</Time>
+			<Production>5</Production>
 			<Remove>true</Remove>
 		</Row>
 	</BuildFeatures>

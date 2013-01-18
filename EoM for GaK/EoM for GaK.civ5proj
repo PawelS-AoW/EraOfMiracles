@@ -89,7 +89,7 @@ Version: pre-alpha, not playable</Description>
         <Type>UpdateDatabase</Type>
         <FileName>04 Civilizations/00a Minor+Barb.xml</FileName>
       </Action>
-	  <Action>
+      <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>04 Civilizations/01 Dreamers/XML/Civilizations/Dreamers_Civilizations.xml</FileName>
@@ -692,6 +692,7 @@ Version: pre-alpha, not playable</Description>
     <Folder Include="00 Graphics\Camp" />
     <Folder Include="00 Graphics\Crystal Plains" />
     <Folder Include="00 Graphics\Kelp" />
+    <Folder Include="00 Graphics\Shrubs" />
     <Folder Include="00 Graphics\Wolf" />
     <Folder Include="00 Graphics\Nights Icons" />
     <Folder Include="00 Graphics\Old Trading Posts" />
@@ -1159,6 +1160,22 @@ Version: pre-alpha, not playable</Description>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="00 Graphics\Old Trading Posts\pl_mod_old_trading_post_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="00 Graphics\Shrubs\resource_tobacco.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="00 Graphics\Shrubs\resource_tobacco.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="00 Graphics\Shrubs\tobacco_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="00 Graphics\Shrubs\tobacco_sref.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
