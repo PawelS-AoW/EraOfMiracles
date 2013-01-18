@@ -33,7 +33,7 @@
           <Image Anchor="C,C" Size="64,64" Texture="WonderAtlas512.dds" ID="B2"  />
         </Image> -->
 
-        <Image Anchor="C,C"  Offset="0,0" Texture="IconFrame64.dds" Size="64.64" Hidden="0"  >
+        <Image Anchor="C,C"  Offset="0,0" Texture="IconFrame64.dds" Size="64,64" Hidden="0"  >
           <Image Size="64,64" Anchor="C,C"  Texture="Assets/UI/Art/Icons/Units/CivSymbolsColor512.dds" ID="CivIcon" Hidden="0" />
         </Image>
 

@@ -850,7 +850,7 @@ function AssignStartingPlots:CustomOverride()
 	local iW, iH = Map.GetGridSize();
 
 	local PlotList
-	local to_place
+	local num_plots,to_place
 	local adj_mount
 	local min_mount = 7
 	local feat,adj_feat
@@ -915,11 +915,9 @@ function AssignStartingPlots:CustomOverride()
 	end
 
 	-- 2. Generate Special Features
-
-	-- KELP
-
-	-- "seeds" (random placement)
-
+	
+	-- generate a list of eligible plots for REEF and KELP
+	
 	PlotList = {}
 
 	for y = 0, iH - 1 do
@@ -934,9 +932,52 @@ function AssignStartingPlots:CustomOverride()
 
 	ShuffledList = GetShuffledCopyOfTable (PlotList)
 	table_pos = 1
-	to_place = table.maxn (ShuffledList) * 0.05 -- place Kelp "seeds" on 5% of eligible plots (coast, no feature)
+	num_plots = table.maxn (ShuffledList)
 
-	for placed = 1, math.floor (to_place + 0.5) do
+	-- REEF
+	-- "seeds" (random placement on 10% eligible plots)
+
+	for placed = 1, math.floor (num_plots * 0.10 + 0.5) do
+		x = ShuffledList [1][1]
+		y = ShuffledList [1][2]
+		Plot = Map.GetPlot (x,y)
+		Plot:SetFeatureType (GameInfoTypes.FEATURE_EOM_REEF)
+		table.remove (ShuffledList,1)
+	end
+	
+	-- "growing" the Reef (places Reef adjacent to existing Reef, 10% plots)
+
+	to_place = math.floor (num_plots * 0.10 + 0.5)
+	
+	while to_place > 0 and table_pos <= table.maxn (ShuffledList) do
+		x = ShuffledList [table_pos][1]
+		y = ShuffledList [table_pos][2]
+		adj_feat = 0
+		for loop, direction in ipairs (self.direction_types) do
+			adjPlot = Map.PlotDirection (x,y,direction)
+			if adjPlot then
+				if adjPlot:GetFeatureType () == GameInfoTypes.FEATURE_EOM_REEF then
+					adj_feat = adj_feat + 1
+				end
+			end
+		end
+		if adj_feat > 0 then
+			Plot = Map.GetPlot (x,y)
+			Plot:SetFeatureType (GameInfoTypes.FEATURE_EOM_REEF)
+			table.remove (ShuffledList,table_pos)
+			to_place = to_place - 1
+		else
+			table_pos = table_pos + 1
+		end
+	end
+
+	-- KELP
+
+	-- "seeds" (random placement on 5% eligible plots)
+	
+	table_pos = 1
+
+	for placed = 1, math.floor (num_plots * 0.05 + 0.5) do
 		x = ShuffledList [table_pos][1]
 		y = ShuffledList [table_pos][2]
 		Plot = Map.GetPlot (x,y)
@@ -944,9 +985,9 @@ function AssignStartingPlots:CustomOverride()
 		table_pos = table_pos + 1
 	end
 	
-	-- "growing" the Kelp (places Kelp adjacent to existing Kelp)
+	-- "growing" the Kelp (places Kelp adjacent to existing Kelp, 15% plots)
 
-	to_place = math.floor (to_place * 3 + 0.5) -- total 20%
+	to_place = math.floor (num_plots * 0.15 + 0.5)
 	
 	while to_place > 0 and table_pos <= table.maxn (ShuffledList) do
 		x = ShuffledList [table_pos][1]
