@@ -171,26 +171,26 @@
 			<Yield>1</Yield>
 		</Row>
 	</Terrain_Yields>
-	<Terrain_HillsYieldChanges> <!-- normally hills get +2 production and -2 food, these values modify that -->
+	<Terrain_HillsYieldChanges> <!-- normally hills get +1 production and -1 food (defined in Yields), these values modify that -->
 		<Row>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-			<YieldType>YIELD_GOLD</YieldType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>-1</Yield>
 		</Row>
 		<Row>
-			<TerrainType>TERRAIN_TUNDRA</TerrainType>
-			<YieldType>YIELD_FOOD</YieldType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
 		<Row>
-			<TerrainType>TERRAIN_TUNDRA</TerrainType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>-1</Yield>
 		</Row>
 		<Row>
-			<TerrainType>TERRAIN_SNOW</TerrainType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>-1</Yield>
+			<Yield>1</Yield>
 		</Row>
 	</Terrain_HillsYieldChanges>
 </GameData>

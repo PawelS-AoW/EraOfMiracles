@@ -137,6 +137,10 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_REMOVE_SHRUBS</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_REMOVE_MARSH</BuildType>
 		</Row>
 		<Row>

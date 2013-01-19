@@ -7,7 +7,7 @@
 			<Type>YIELD_FOOD</Type>
 			<Description>TXT_KEY_YIELD_FOOD</Description>
 			<IconString>[ICON_FOOD]</IconString>
-			<HillsChange>-2</HillsChange>
+			<HillsChange>-1</HillsChange>
 			<LakeChange>2</LakeChange>
 			<MinCity>0</MinCity>
 			<AIWeightPercent>110</AIWeightPercent>
@@ -17,7 +17,7 @@
 			<Type>YIELD_PRODUCTION</Type>
 			<Description>TXT_KEY_YIELD_PRODUCTION</Description>
 			<IconString>[ICON_PRODUCTION]</IconString>
-			<HillsChange>2</HillsChange>
+			<HillsChange>1</HillsChange>
 			<MinCity>0</MinCity>
 			<GoldenAgeYield>1</GoldenAgeYield>
 			<GoldenAgeYieldThreshold>1</GoldenAgeYieldThreshold>

@@ -6,6 +6,9 @@
 		<Row Tag="TXT_KEY_EOMBUILD_TOWN">
 			<Text>Found a Town</Text>
 		</Row>
+		<Row Tag="TXT_KEY_EOMBUILD_REMOVE_SHRUBS">
+			<Text>Remove Shrubs</Text>
+		</Row>
 	</Language_en_US>
 	<Builds>
 		<Row>
@@ -167,6 +170,19 @@
 			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
 		</Row>
 		<Row>
+			<Type>BUILD_REMOVE_SHRUBS</Type>
+			<PrereqTech>TECH_WOOD_WORKING</PrereqTech>
+			<Description>TXT_KEY_EOMBUILD_REMOVE_SHRUBS</Description>
+			<Help>TXT_KEY_BUILD_REMOVE_FEATURE_HELP</Help>
+			<Recommendation>TXT_KEY_BUILD_REMOVE_FEATURE_HELP</Recommendation>
+			<EntityEvent>ENTITY_EVENT_CHOP</EntityEvent>
+			<HotKey>KB_C</HotKey>
+			<OrderPriority>90</OrderPriority>
+			<AltDown>1</AltDown>
+			<IconIndex>31</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+		<Row>
 			<Type>BUILD_REPAIR</Type>
 			<Time>300</Time>
 			<Description>TXT_KEY_REPAIR_IMPROVEMENT</Description>
@@ -311,14 +327,14 @@
 		<Row>
 			<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
 			<FeatureType>FEATURE_JUNGLE</FeatureType>
-			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
 			<Time>700</Time>
 			<Remove>true</Remove>
 		</Row>
 		<Row>
 			<BuildType>BUILD_REMOVE_FOREST</BuildType>
 			<FeatureType>FEATURE_FOREST</FeatureType>
-			<PrereqTech>TECH_MINING</PrereqTech>
+			<PrereqTech>TECH_WOOD_CUTTING</PrereqTech>
 			<Time>400</Time>
 			<Production>20</Production>
 			<Remove>true</Remove>
@@ -326,8 +342,16 @@
 		<Row>
 			<BuildType>BUILD_REMOVE_MARSH</BuildType>
 			<FeatureType>FEATURE_MARSH</FeatureType>
-			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<PrereqTech>TECH_IRRIGATION</PrereqTech>
 			<Time>600</Time>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_REMOVE_SHRUBS</BuildType>
+			<FeatureType>FEATURE_EOM_SHRUBS</FeatureType>
+			<PrereqTech>TECH_WOOD_WORKING</PrereqTech>
+			<Time>200</Time>
+			<Production>5</Production>
 			<Remove>true</Remove>
 		</Row>
 		<Row>
