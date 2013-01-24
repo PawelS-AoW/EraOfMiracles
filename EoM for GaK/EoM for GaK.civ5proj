@@ -620,6 +620,12 @@ Version: pre-alpha, not playable</Description>
         <Description />
         <FileName>10 Policies/04 ConstructBuilding-PrereqPolicy.lua</FileName>
       </Content>
+      <Content>
+        <Type>MapScript</Type>
+        <Name>Perfect Flat World</Name>
+        <Description />
+        <FileName>Perfect Flat World.lua</FileName>
+      </Content>
     </ModContent>
     <ModReferences />
     <ModDependencies>
@@ -1858,6 +1864,10 @@ Version: pre-alpha, not playable</Description>
     <Content Include="12 Final\Fix IDs.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Perfect Flat World.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
