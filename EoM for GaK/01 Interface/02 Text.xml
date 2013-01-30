@@ -12,7 +12,7 @@
 		<!-- Civilopedia Promotions Sections-->
 		<Update>
 			<Where Tag="TXT_KEY_PROMOTIONS_SECTION_5"/> <!-- Scouting -->
-			<Set Text="Terrain Promotions"/>
+			<Set Text="Terrain/Movement Promotions"/>
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PROMOTIONS_SECTION_6"/> <!-- Air -->
@@ -54,6 +54,31 @@
 		<Update>
 			<Where Tag="TXT_KEY_GAMESPEED_QUICK_HELP"/>
 			<Set Text="If you like getting a new technology every other turn, this game pace is for you. 250 turns."/>
+		</Update>
+		<!-- World Sizes -->
+		<Update>
+			<Where Tag="TXT_KEY_WORLD_DUEL_HELP"/>
+			<Set Text="The smallest map size, for 2 players and 1 minor civilization."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_WORLD_TINY_HELP"/>
+			<Set Text="Very small map size, for 4 players and 2 minor civilizations."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_WORLD_SMALL_HELP"/>
+			<Set Text="Small map size, for 6 players and 3 minor civilizations."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_WORLD_STANDARD_HELP"/>
+			<Set Text="Medium map size, for 8 players and 4 minor civilizations."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_WORLD_LARGE_HELP"/>
+			<Set Text="Big map size, for 10 players and 5 minor civilizations."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_WORLD_HUGE_HELP"/>
+			<Set Text="The biggest map size, for 12 players and 6 minor civilizations."/>
 		</Update>
 	</Language_en_US>
 </GameData>

@@ -1040,7 +1040,7 @@
 			<OrderPriority>2</OrderPriority>
 			<PortraitIndex>9</PortraitIndex>
 			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
-			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaType>PEDIA_SCOUTING</PediaType>
 			<PediaEntry>TXT_KEY_EOMPROM_CONQUEROR_1</PediaEntry>
 			<OutsideFriendlyLandsModifier>10</OutsideFriendlyLandsModifier>
 			<PromotionPrereqOr1>PROMOTION_ATTACK_2</PromotionPrereqOr1>
@@ -1074,7 +1074,7 @@
 			<OrderPriority>2</OrderPriority>
 			<PortraitIndex>26</PortraitIndex>
 			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
-			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaType>PEDIA_SCOUTING</PediaType>
 			<PediaEntry>TXT_KEY_EOMPROM_CONQUEROR_2</PediaEntry>
 			<OutsideFriendlyLandsModifier>15</OutsideFriendlyLandsModifier>
 			<PromotionPrereqOr1>PROMOTION_CONQUEROR_1</PromotionPrereqOr1>
@@ -1096,6 +1096,546 @@
 		</Row>
 		<Row Tag="TXT_KEY_EOMPROM_CONQUEROR_2_HELP">
 			<Text>[ICON_BULLET]+15% [ICON_STRENGTH] Strength outside friendly territory.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- DEFENSE I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_DEFENSE_1</Type>
+			<Description>TXT_KEY_EOMPROM_DEFENSE_1</Description>
+			<Help>TXT_KEY_EOMPROM_DEFENSE_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>14</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_DEFENSE_1</PediaEntry>
+			<DefenseMod>10</DefenseMod>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_1">
+			<Text>Defense I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_1_HELP">
+			<Text>[ICON_BULLET]+10% Defense Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- DEFENSE II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_DEFENSE_2</Type>
+			<Description>TXT_KEY_EOMPROM_DEFENSE_2</Description>
+			<Help>TXT_KEY_EOMPROM_DEFENSE_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>49</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_DEFENSE_2</PediaEntry>
+			<DefenseMod>10</DefenseMod>
+			<PromotionPrereqOr1>PROMOTION_DEFENSE_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_2">
+			<Text>Defense II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_2_HELP">
+			<Text>[ICON_BULLET]+10% Defense Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- DEFENSE III -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_DEFENSE_3</Type>
+			<Description>TXT_KEY_EOMPROM_DEFENSE_3</Description>
+			<Help>TXT_KEY_EOMPROM_DEFENSE_3_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>50</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_DEFENSE_3</PediaEntry>
+			<DefenseMod>15</DefenseMod>
+			<PromotionPrereqOr1>PROMOTION_DEFENSE_2</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSE_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_3">
+			<Text>Defense III</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_3_HELP">
+			<Text>[ICON_BULLET]+15% Defense Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- DEFENSE IV -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_DEFENSE_4</Type>
+			<Description>TXT_KEY_EOMPROM_DEFENSE_4</Description>
+			<Help>TXT_KEY_EOMPROM_DEFENSE_4_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>51</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_DEFENSE_4</PediaEntry>
+			<DefenseMod>15</DefenseMod>
+			<PromotionPrereqOr1>PROMOTION_DEFENSE_3</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSE_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_4">
+			<Text>Defense IV</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_4_HELP">
+			<Text>[ICON_BULLET]+15% Defense Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- DEFENSIVE TACTICS -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_DEFENSIVE_TACTICS</Type>
+			<Description>TXT_KEY_EOMPROM_DEFENSIVE_TACTICS</Description>
+			<Help>TXT_KEY_EOMPROM_DEFENSIVE_TACTICS_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>23</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_DEFENSIVE_TACTICS</PediaEntry>
+			<AttackMod>-10</AttackMod>
+			<DefenseMod>25</DefenseMod>
+			<PromotionPrereqOr1>PROMOTION_DEFENSE_4</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSIVE_TACTICS</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_DEFENSIVE_TACTICS">
+			<Text>Defensive Tactics</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_DEFENSIVE_TACTICS_HELP">
+			<Text>[ICON_BULLET]+25% Defense Strength.[NEWLINE][ICON_BULLET]-10% Attack Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- COVER I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_COVER_1</Type>
+			<Description>TXT_KEY_EOMPROM_COVER_1</Description>
+			<Help>TXT_KEY_EOMPROM_COVER_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>15</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_RANGED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_COVER_1</PediaEntry>
+			<RangedDefenseMod>20</RangedDefenseMod>
+			<PromotionPrereqOr1>PROMOTION_DEFENSE_2</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_DEFENSE_R</PromotionPrereqOr2>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_COVER_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COVER_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COVER_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_COVER_1">
+			<Text>Cover I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_COVER_1_HELP">
+			<Text>[ICON_BULLET]+20% Ranged Defense.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- COVER II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_COVER_2</Type>
+			<Description>TXT_KEY_EOMPROM_COVER_2</Description>
+			<Help>TXT_KEY_EOMPROM_COVER_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>15</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_RANGED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_COVER_2</PediaEntry>
+			<RangedDefenseMod>30</RangedDefenseMod>
+			<PromotionPrereqOr1>PROMOTION_COVER_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_COVER_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COVER_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COVER_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_COVER_2">
+			<Text>Cover II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_COVER_2_HELP">
+			<Text>[ICON_BULLET]+30% Ranged Defense.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- HOMELAND I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_HOMELAND_1</Type>
+			<Description>TXT_KEY_EOMPROM_HOMELAND_1</Description>
+			<Help>TXT_KEY_EOMPROM_HOMELAND_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>55</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_HOMELAND_1</PediaEntry>
+			<FriendlyLandsModifier>10</FriendlyLandsModifier>
+			<FriendlyHealChange>2</FriendlyHealChange>
+			<PromotionPrereqOr1>PROMOTION_DEFENSE_2</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_DEFENSE_R</PromotionPrereqOr2>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_HOMELAND_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_HOMELAND_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_HOMELAND_1">
+			<Text>Homeland I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_HOMELAND_1_HELP">
+			<Text>[ICON_BULLET]+10% [ICON_STRENGTH] Strength and +2 healing in friendly territory.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- HOMELAND II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_HOMELAND_2</Type>
+			<Description>TXT_KEY_EOMPROM_HOMELAND_2</Description>
+			<Help>TXT_KEY_EOMPROM_HOMELAND_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>55</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_HOMELAND_2</PediaEntry>
+			<FriendlyLandsModifier>15</FriendlyLandsModifier>
+			<FriendlyHealChange>3</FriendlyHealChange>
+			<PromotionPrereqOr1>PROMOTION_HOMELAND_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_HOMELAND_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_HOMELAND_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_HOMELAND_2">
+			<Text>Homeland II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_HOMELAND_2_HELP">
+			<Text>[ICON_BULLET]+15% [ICON_STRENGTH] Strength and +3 healing in friendly territory.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- FENCING I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_FENCING_1</Type>
+			<Description>TXT_KEY_EOMPROM_FENCING_1</Description>
+			<Help>TXT_KEY_EOMPROM_FENCING_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>13</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_FENCING_1</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_ATTACK_1</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_DEFENSE_1</PromotionPrereqOr2>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_FENCING_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+			<Modifier>10</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_FENCING_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FENCING_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_FENCING_1">
+			<Text>Fencing I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_FENCING_1_HELP">
+			<Text>[ICON_BULLET]+10% [ICON_STRENGTH] Strength vs Melee Units.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- FENCING II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_FENCING_2</Type>
+			<Description>TXT_KEY_EOMPROM_FENCING_2</Description>
+			<Help>TXT_KEY_EOMPROM_FENCING_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>13</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_FENCING_2</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_FENCING_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_FENCING_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+			<Modifier>10</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_FENCING_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FENCING_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_FENCING_2">
+			<Text>Fencing II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_FENCING_2_HELP">
+			<Text>[ICON_BULLET]+10% [ICON_STRENGTH] Strength vs Melee Units.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- FENCING III -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_FENCING_3</Type>
+			<Description>TXT_KEY_EOMPROM_FENCING_3</Description>
+			<Help>TXT_KEY_EOMPROM_FENCING_3_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>13</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_FENCING_3</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_FENCING_2</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_FENCING_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+			<Modifier>15</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_FENCING_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FENCING_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_FENCING_3">
+			<Text>Fencing III</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_FENCING_3_HELP">
+			<Text>[ICON_BULLET]+15% [ICON_STRENGTH] Strength vs Melee Units.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- FENCING IV -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_FENCING_4</Type>
+			<Description>TXT_KEY_EOMPROM_FENCING_4</Description>
+			<Help>TXT_KEY_EOMPROM_FENCING_4_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>13</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_FENCING_4</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_FENCING_3</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_FENCING_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+			<Modifier>15</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_FENCING_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FENCING_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_FENCING_4">
+			<Text>Fencing IV</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_FENCING_4_HELP">
+			<Text>[ICON_BULLET]+15% [ICON_STRENGTH] Strength vs Melee Units.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- FORMATION I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_FORMATION_1</Type>
+			<Description>TXT_KEY_EOMPROM_FORMATION_1</Description>
+			<Help>TXT_KEY_EOMPROM_FORMATION_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_FORMATION_1</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_ATTACK_1</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_DEFENSE_1</PromotionPrereqOr2>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_FORMATION_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+			<Modifier>20</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_FORMATION_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FORMATION_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_FORMATION_1">
+			<Text>Formation I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_FORMATION_1_HELP">
+			<Text>[ICON_BULLET]+20% [ICON_STRENGTH] Strength vs Mounted Units.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- FORMATION II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_FORMATION_2</Type>
+			<Description>TXT_KEY_EOMPROM_FORMATION_2</Description>
+			<Help>TXT_KEY_EOMPROM_FORMATION_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>25</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_FORMATION_2</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_FORMATION_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_FORMATION_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+			<Modifier>30</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_FORMATION_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FORMATION_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_FORMATION_2">
+			<Text>Formation II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_FORMATION_2_HELP">
+			<Text>[ICON_BULLET]+30% [ICON_STRENGTH] Strength vs Mounted Units.</Text>
 		</Row>
 	</Language_en_US>
 </GameData>
