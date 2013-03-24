@@ -183,7 +183,7 @@
 			<Text>Forge</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMBLDG_FORGE_HELP">
-			<Text>[ICON_BULLET]+20 XP for Melee units.[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production from [ICON_RES_COPPER] Copper.[NEWLINE][ICON_BULLET]+2 [ICON_PRODUCTION] Production from [ICON_RES_IRON] Iron.[NEWLINE][ICON_BULLET]+3 [ICON_PRODUCTION] Production from [ICON_RES_ALUMINUM] Mithril.[NEWLINE][ICON_BULLET]Requires an improved source of at least one of these resources in the city radius.</Text>
+			<Text>[ICON_BULLET]+20 XP for Melee Units.[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production from [ICON_RES_COPPER] Copper.[NEWLINE][ICON_BULLET]+2 [ICON_PRODUCTION] Production from [ICON_RES_IRON] Iron.[NEWLINE][ICON_BULLET]+3 [ICON_PRODUCTION] Production from [ICON_RES_ALUMINUM] Mithril.[NEWLINE][ICON_BULLET]Requires an improved source of at least one of these resources in the city radius.</Text>
 		</Row>
 	</Language_en_US>
 	<Building_ClassesNeededInCity>
@@ -282,7 +282,7 @@
 			<Text>Carpenter</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMBLDG_CARPENTER_HELP">
-			<Text>[ICON_BULLET]+10 XP for Archery units.[NEWLINE][ICON_BULLET]+10% [ICON_PRODUCTION] Production when constructing buildings.[NEWLINE][ICON_BULLET]+2 [ICON_PRODUCTION] Production from [ICON_RES_SPICES] Timber.[NEWLINE][ICON_BULLET]Requires an improved source of Timber in the city radius.</Text>
+			<Text>[ICON_BULLET]+10 XP for Archery Units.[NEWLINE][ICON_BULLET]+10% [ICON_PRODUCTION] Production when constructing buildings.[NEWLINE][ICON_BULLET]+2 [ICON_PRODUCTION] Production from [ICON_RES_SPICES] Timber.[NEWLINE][ICON_BULLET]Requires an improved source of Timber in the city radius.</Text>
 		</Row>
 	</Language_en_US>
 	<Building_ClassesNeededInCity>
@@ -357,7 +357,7 @@
 			<Text>Stable</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMBLDG_STABLE_HELP">
-			<Text>[ICON_BULLET]+20 XP for Mounted units.[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold from [ICON_RES_HORSE] Horses.[NEWLINE][ICON_BULLET]Requires an improved source of Horses in the city radius.</Text>
+			<Text>[ICON_BULLET]+20 XP for Mounted Units.[NEWLINE][ICON_BULLET]+10 XP for Mounted Archery Units.[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold from [ICON_RES_HORSE] Horses.[NEWLINE][ICON_BULLET]Requires an improved source of Horses in the city radius.</Text>
 		</Row>
 	</Language_en_US>
 	<Building_UnitCombatFreeExperiences>
@@ -365,6 +365,11 @@
 			<BuildingType>BUILDING_STABLE</BuildingType>
 			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
 			<Experience>20</Experience>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_STABLE</BuildingType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+			<Experience>10</Experience>
 		</Row>
 	</Building_UnitCombatFreeExperiences>
 	<Building_YieldChanges>
@@ -450,7 +455,7 @@
 			<Text>Siege Workshop</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMBLDG_SIEGE_WORKSHOP_HELP">
-			<Text>[ICON_BULLET]+10 XP for Siege units.</Text>
+			<Text>[ICON_BULLET]+10 XP for Siege Units.</Text>
 		</Row>
 	</Language_en_US>
 	<Building_ClassesNeededInCity>

@@ -34,7 +34,7 @@
 			<Text>Archery Range</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMBLDG_ARCHERY_RANGE_HELP">
-			<Text>[ICON_BULLET]+10 XP for Archery units.[NEWLINE][ICON_BULLET]Can't be built in more than 50% of your cities.</Text>
+			<Text>[ICON_BULLET]+10 XP for Archery Units.[NEWLINE][ICON_BULLET]+5 XP for Mounted Archery Units.[NEWLINE][ICON_BULLET]Can't be built in more than 50% of your cities.</Text>
 		</Row>
 	</Language_en_US>
 	<Building_UnitCombatFreeExperiences>
@@ -42,6 +42,11 @@
 			<BuildingType>BUILDING_ARCHERY_RANGE</BuildingType>
 			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 			<Experience>10</Experience>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_ARCHERY_RANGE</BuildingType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+			<Experience>5</Experience>
 		</Row>
 	</Building_UnitCombatFreeExperiences>
 	<Building_Flavors>

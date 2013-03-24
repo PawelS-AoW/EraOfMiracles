@@ -8,3 +8,8 @@ DELETE FROM UnitPromotions_Terrains;
 DELETE FROM UnitPromotions_UnitClasses;
 DELETE FROM UnitPromotions_UnitCombatMods;
 DELETE FROM UnitPromotions_UnitCombats;
+
+-- Table changes
+
+ALTER TABLE UnitPromotions_UnitCombatMods ADD COLUMN Attack integer;
+ALTER TABLE UnitPromotions_UnitCombatMods ADD COLUMN Defense integer;

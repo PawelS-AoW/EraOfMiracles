@@ -27,6 +27,10 @@
 			<PromotionType>PROMOTION_DRILL_1</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DRILL_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_DRILL_1">
@@ -62,6 +66,10 @@
 			<PromotionType>PROMOTION_DRILL_2</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DRILL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_DRILL_2">
@@ -84,6 +92,7 @@
 			<PediaType>PEDIA_SCOUTING</PediaType>
 			<PediaEntry>TXT_KEY_EOMPROM_WOODSMAN</PediaEntry>
 			<PromotionPrereqOr1>PROMOTION_DRILL_2</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_BARRAGE_2</PromotionPrereqOr2>
 		</Row>
 	</UnitPromotions>
 	<UnitPromotions_Features>
@@ -108,6 +117,10 @@
 		<Row>
 			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
@@ -295,6 +308,7 @@
 			<HillsAttack>25</HillsAttack>
 			<HillsDefense>25</HillsDefense>
 			<PromotionPrereqOr1>PROMOTION_DRILL_2</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_BARRAGE_2</PromotionPrereqOr2>
 		</Row>
 	</UnitPromotions>
 	<UnitPromotions_UnitCombats>
@@ -305,6 +319,10 @@
 		<Row>
 			<PromotionType>PROMOTION_HILL_COMBAT</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_HILL_COMBAT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
@@ -384,6 +402,10 @@
 			<PromotionType>PROMOTION_SHOCK_1</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SHOCK_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_SHOCK_1">
@@ -423,6 +445,10 @@
 			<PromotionType>PROMOTION_SHOCK_2</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SHOCK_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_SHOCK_2">
@@ -447,7 +473,6 @@
 			<OpenAttack>20</OpenAttack>
 			<PromotionPrereqOr1>PROMOTION_SHOCK_2</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_ATTACK_2</PromotionPrereqOr2>
-			<PromotionPrereqOr3>PROMOTION_MOBILITY_2</PromotionPrereqOr3>
 		</Row>
 	</UnitPromotions>
 	<UnitPromotions_UnitCombats>
@@ -506,7 +531,8 @@
 			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_SCOUTING</PediaType>
 			<PediaEntry>TXT_KEY_EOMPROM_DESERT_COMBAT</PediaEntry>
-			<PromotionPrereqOr1>PROMOTION_SHOCK_2</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_SHOCK_1</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_ACCURACY_1</PromotionPrereqOr2>
 		</Row>
 	</UnitPromotions>
 	<UnitPromotions_Terrains>
@@ -529,6 +555,14 @@
 		<Row>
 			<PromotionType>PROMOTION_DESERT_COMBAT</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DESERT_COMBAT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DESERT_COMBAT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
 		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
@@ -572,11 +606,15 @@
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_DESERT_MOBILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DESERT_MOBILITY</PromotionType>
 			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_DESERT_MOBILITY</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
 		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
@@ -599,7 +637,8 @@
 			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_SCOUTING</PediaType>
 			<PediaEntry>TXT_KEY_EOMPROM_ARCTIC_COMBAT</PediaEntry>
-			<PromotionPrereqOr1>PROMOTION_SHOCK_2</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_SHOCK_1</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_ACCURACY_1</PromotionPrereqOr2>
 		</Row>
 	</UnitPromotions>
 	<UnitPromotions_Terrains>
@@ -628,6 +667,14 @@
 		<Row>
 			<PromotionType>PROMOTION_ARCTIC_COMBAT</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ARCTIC_COMBAT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ARCTIC_COMBAT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
 		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
@@ -676,11 +723,15 @@
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_ARCTIC_MOBILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ARCTIC_MOBILITY</PromotionType>
 			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_ARCTIC_MOBILITY</PromotionType>
-			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
 		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
@@ -807,6 +858,18 @@
 			<PromotionType>PROMOTION_ATTACK_1</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_ATTACK_1">
@@ -840,6 +903,18 @@
 		<Row>
 			<PromotionType>PROMOTION_ATTACK_2</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
 		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
@@ -875,6 +950,18 @@
 			<PromotionType>PROMOTION_ATTACK_3</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_ATTACK_3">
@@ -908,6 +995,18 @@
 		<Row>
 			<PromotionType>PROMOTION_ATTACK_4</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ATTACK_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
 		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
@@ -944,6 +1043,14 @@
 			<PromotionType>PROMOTION_OFFENSIVE_TACTICS</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_OFFENSIVE_TACTICS</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_OFFENSIVE_TACTICS</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_OFFENSIVE_TACTICS">
@@ -968,6 +1075,7 @@
 			<CityAttack>20</CityAttack>
 			<PromotionPrereqOr1>PROMOTION_ATTACK_2</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_MARKSMANSHIP_2</PromotionPrereqOr2>
+			<PromotionPrereqOr3>PROMOTION_BOMBARDMENT_2</PromotionPrereqOr3>
 		</Row>
 	</UnitPromotions>
 	<UnitPromotions_UnitCombats>
@@ -982,6 +1090,18 @@
 		<Row>
 			<PromotionType>PROMOTION_SIEGE_1</PromotionType>
 			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SIEGE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SIEGE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SIEGE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
 		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
@@ -1021,6 +1141,18 @@
 			<PromotionType>PROMOTION_SIEGE_2</PromotionType>
 			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SIEGE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SIEGE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SIEGE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_SIEGE_2">
@@ -1044,6 +1176,7 @@
 			<PediaEntry>TXT_KEY_EOMPROM_CONQUEROR_1</PediaEntry>
 			<OutsideFriendlyLandsModifier>10</OutsideFriendlyLandsModifier>
 			<PromotionPrereqOr1>PROMOTION_ATTACK_2</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_MARKSMANSHIP_2</PromotionPrereqOr2>
 		</Row>
 	</UnitPromotions>
 	<UnitPromotions_UnitCombats>
@@ -1054,6 +1187,18 @@
 		<Row>
 			<PromotionType>PROMOTION_CONQUEROR_1</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CONQUEROR_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CONQUEROR_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CONQUEROR_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
 		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
@@ -1089,6 +1234,18 @@
 			<PromotionType>PROMOTION_CONQUEROR_2</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CONQUEROR_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CONQUEROR_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CONQUEROR_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_CONQUEROR_2">
@@ -1111,6 +1268,7 @@
 			<PediaType>PEDIA_MELEE</PediaType>
 			<PediaEntry>TXT_KEY_EOMPROM_DEFENSE_1</PediaEntry>
 			<DefenseMod>10</DefenseMod>
+			<RangedDefenseMod>-10</RangedDefenseMod>
 		</Row>
 	</UnitPromotions>
 	<UnitPromotions_UnitCombats>
@@ -1118,13 +1276,25 @@
 			<PromotionType>PROMOTION_DEFENSE_1</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_1">
 			<Text>Defense I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_1_HELP">
-			<Text>[ICON_BULLET]+10% Defense Strength.</Text>
+			<Text>[ICON_BULLET]+10% Melee Defense.</Text>
 		</Row>
 	</Language_en_US>
 	<!-- DEFENSE II -->
@@ -1140,6 +1310,7 @@
 			<PediaType>PEDIA_MELEE</PediaType>
 			<PediaEntry>TXT_KEY_EOMPROM_DEFENSE_2</PediaEntry>
 			<DefenseMod>10</DefenseMod>
+			<RangedDefenseMod>-10</RangedDefenseMod>
 			<PromotionPrereqOr1>PROMOTION_DEFENSE_1</PromotionPrereqOr1>
 		</Row>
 	</UnitPromotions>
@@ -1148,13 +1319,25 @@
 			<PromotionType>PROMOTION_DEFENSE_2</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_2">
 			<Text>Defense II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_2_HELP">
-			<Text>[ICON_BULLET]+10% Defense Strength.</Text>
+			<Text>[ICON_BULLET]+10% Melee Defense.</Text>
 		</Row>
 	</Language_en_US>
 	<!-- DEFENSE III -->
@@ -1170,6 +1353,7 @@
 			<PediaType>PEDIA_MELEE</PediaType>
 			<PediaEntry>TXT_KEY_EOMPROM_DEFENSE_3</PediaEntry>
 			<DefenseMod>15</DefenseMod>
+			<RangedDefenseMod>-15</RangedDefenseMod>
 			<PromotionPrereqOr1>PROMOTION_DEFENSE_2</PromotionPrereqOr1>
 		</Row>
 	</UnitPromotions>
@@ -1178,13 +1362,25 @@
 			<PromotionType>PROMOTION_DEFENSE_3</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSE_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSE_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSE_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_3">
 			<Text>Defense III</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_3_HELP">
-			<Text>[ICON_BULLET]+15% Defense Strength.</Text>
+			<Text>[ICON_BULLET]+15% Melee Defense.</Text>
 		</Row>
 	</Language_en_US>
 	<!-- DEFENSE IV -->
@@ -1200,6 +1396,7 @@
 			<PediaType>PEDIA_MELEE</PediaType>
 			<PediaEntry>TXT_KEY_EOMPROM_DEFENSE_4</PediaEntry>
 			<DefenseMod>15</DefenseMod>
+			<RangedDefenseMod>-15</RangedDefenseMod>
 			<PromotionPrereqOr1>PROMOTION_DEFENSE_3</PromotionPrereqOr1>
 		</Row>
 	</UnitPromotions>
@@ -1208,13 +1405,25 @@
 			<PromotionType>PROMOTION_DEFENSE_4</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSE_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSE_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSE_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_4">
 			<Text>Defense IV</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMPROM_DEFENSE_4_HELP">
-			<Text>[ICON_BULLET]+15% Defense Strength.</Text>
+			<Text>[ICON_BULLET]+15% Melee Defense.</Text>
 		</Row>
 	</Language_en_US>
 	<!-- DEFENSIVE TACTICS -->
@@ -1239,6 +1448,14 @@
 			<PromotionType>PROMOTION_DEFENSIVE_TACTICS</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSIVE_TACTICS</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSIVE_TACTICS</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_DEFENSIVE_TACTICS">
@@ -1262,7 +1479,7 @@
 			<PediaEntry>TXT_KEY_EOMPROM_COVER_1</PediaEntry>
 			<RangedDefenseMod>20</RangedDefenseMod>
 			<PromotionPrereqOr1>PROMOTION_DEFENSE_2</PromotionPrereqOr1>
-			<PromotionPrereqOr2>PROMOTION_DEFENSE_R</PromotionPrereqOr2>
+			<PromotionPrereqOr2>PROMOTION_CLOSE_DEFENSE_1</PromotionPrereqOr2>
 		</Row>
 	</UnitPromotions>
 	<UnitPromotions_UnitCombats>
@@ -1277,6 +1494,18 @@
 		<Row>
 			<PromotionType>PROMOTION_COVER_1</PromotionType>
 			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COVER_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COVER_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COVER_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
 		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
@@ -1316,6 +1545,18 @@
 			<PromotionType>PROMOTION_COVER_2</PromotionType>
 			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COVER_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COVER_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COVER_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
 	</UnitPromotions_UnitCombats>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_COVER_2">
@@ -1340,7 +1581,7 @@
 			<FriendlyLandsModifier>10</FriendlyLandsModifier>
 			<FriendlyHealChange>2</FriendlyHealChange>
 			<PromotionPrereqOr1>PROMOTION_DEFENSE_2</PromotionPrereqOr1>
-			<PromotionPrereqOr2>PROMOTION_DEFENSE_R</PromotionPrereqOr2>
+			<PromotionPrereqOr2>PROMOTION_CLOSE_DEFENSE_1</PromotionPrereqOr2>
 		</Row>
 	</UnitPromotions>
 	<UnitPromotions_UnitCombats>
@@ -1403,7 +1644,7 @@
 			<Description>TXT_KEY_EOMPROM_FENCING_1</Description>
 			<Help>TXT_KEY_EOMPROM_FENCING_1_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<OrderPriority>1</OrderPriority>
+			<OrderPriority>2</OrderPriority>
 			<PortraitIndex>13</PortraitIndex>
 			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_MELEE</PediaType>
@@ -1444,7 +1685,7 @@
 			<Description>TXT_KEY_EOMPROM_FENCING_2</Description>
 			<Help>TXT_KEY_EOMPROM_FENCING_2_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<OrderPriority>1</OrderPriority>
+			<OrderPriority>2</OrderPriority>
 			<PortraitIndex>13</PortraitIndex>
 			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_MELEE</PediaType>
@@ -1484,7 +1725,7 @@
 			<Description>TXT_KEY_EOMPROM_FENCING_3</Description>
 			<Help>TXT_KEY_EOMPROM_FENCING_3_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<OrderPriority>1</OrderPriority>
+			<OrderPriority>2</OrderPriority>
 			<PortraitIndex>13</PortraitIndex>
 			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_MELEE</PediaType>
@@ -1524,7 +1765,7 @@
 			<Description>TXT_KEY_EOMPROM_FENCING_4</Description>
 			<Help>TXT_KEY_EOMPROM_FENCING_4_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<OrderPriority>1</OrderPriority>
+			<OrderPriority>2</OrderPriority>
 			<PortraitIndex>13</PortraitIndex>
 			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_MELEE</PediaType>
@@ -1564,7 +1805,7 @@
 			<Description>TXT_KEY_EOMPROM_FORMATION_1</Description>
 			<Help>TXT_KEY_EOMPROM_FORMATION_1_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<OrderPriority>1</OrderPriority>
+			<OrderPriority>2</OrderPriority>
 			<PortraitIndex>24</PortraitIndex>
 			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_MELEE</PediaType>
@@ -1578,6 +1819,11 @@
 			<PromotionType>PROMOTION_FORMATION_1</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
 			<Modifier>20</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FORMATION_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+			<Attack>20</Attack>
 		</Row>
 	</UnitPromotions_UnitCombatMods>
 	<UnitPromotions_UnitCombats>
@@ -1595,7 +1841,7 @@
 			<Text>Formation I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMPROM_FORMATION_1_HELP">
-			<Text>[ICON_BULLET]+20% [ICON_STRENGTH] Strength vs Mounted Units.</Text>
+			<Text>[ICON_BULLET]+20% [ICON_STRENGTH] Strength vs Mounted Units.[NEWLINE][ICON_BULLET]+20% Attack Strength vs Mounted Archery Units.</Text>
 		</Row>
 	</Language_en_US>
 	<!-- FORMATION II -->
@@ -1605,7 +1851,7 @@
 			<Description>TXT_KEY_EOMPROM_FORMATION_2</Description>
 			<Help>TXT_KEY_EOMPROM_FORMATION_2_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<OrderPriority>1</OrderPriority>
+			<OrderPriority>2</OrderPriority>
 			<PortraitIndex>25</PortraitIndex>
 			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_MELEE</PediaType>
@@ -1618,6 +1864,11 @@
 			<PromotionType>PROMOTION_FORMATION_2</PromotionType>
 			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
 			<Modifier>30</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FORMATION_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+			<Attack>30</Attack>
 		</Row>
 	</UnitPromotions_UnitCombatMods>
 	<UnitPromotions_UnitCombats>
@@ -1635,7 +1886,962 @@
 			<Text>Formation II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMPROM_FORMATION_2_HELP">
-			<Text>[ICON_BULLET]+30% [ICON_STRENGTH] Strength vs Mounted Units.</Text>
+			<Text>[ICON_BULLET]+30% [ICON_STRENGTH] Strength vs Mounted Units.[NEWLINE][ICON_BULLET]+30% Attack Strength vs Mounted Archery Units.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- HUNTING I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_HUNTING_1</Type>
+			<Description>TXT_KEY_EOMPROM_HUNTING_1</Description>
+			<Help>TXT_KEY_EOMPROM_HUNTING_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>35</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_HUNTING_1</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_SURVIVALISM_1</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_MARKSMANSHIP_1</PromotionPrereqOr2>
+			<PromotionPrereqOr3>PROMOTION_WOODSMAN</PromotionPrereqOr3>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_HUNTING_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<Modifier>20</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_HUNTING_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_HUNTING_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_HUNTING_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_HUNTING_1">
+			<Text>Hunting I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_HUNTING_1_HELP">
+			<Text>[ICON_BULLET]+20% [ICON_STRENGTH] Strength vs Beast Units.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- HUNTING II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_HUNTING_2</Type>
+			<Description>TXT_KEY_EOMPROM_HUNTING_2</Description>
+			<Help>TXT_KEY_EOMPROM_HUNTING_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>35</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_HUNTING_2</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_HUNTING_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_HUNTING_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<Modifier>30</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_HUNTING_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_HUNTING_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_HUNTING_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_HUNTING_2">
+			<Text>Hunting II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_HUNTING_2_HELP">
+			<Text>[ICON_BULLET]+30% [ICON_STRENGTH] Strength vs Beast Units.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- SURVIVALISM I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_SURVIVALISM_1</Type>
+			<Description>TXT_KEY_EOMPROM_SURVIVALISM_1</Description>
+			<Help>TXT_KEY_EOMPROM_SURVIVALISM_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>56</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_SURVIVALISM_1</PediaEntry>
+			<NeutralHealChange>2</NeutralHealChange>
+			<DefenseMod>5</DefenseMod>
+			<PromotionPrereqOr1>PROMOTION_SHOCK_1</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_DRILL_1</PromotionPrereqOr2>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_SURVIVALISM_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SURVIVALISM_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_SURVIVALISM_1">
+			<Text>Survivalism I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_SURVIVALISM_1_HELP">
+			<Text>[ICON_BULLET]+2 healing in neutral territory.[NEWLINE][ICON_BULLET]+5% Defense Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- SURVIVALISM II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_SURVIVALISM_2</Type>
+			<Description>TXT_KEY_EOMPROM_SURVIVALISM_2</Description>
+			<Help>TXT_KEY_EOMPROM_SURVIVALISM_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>56</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_SURVIVALISM_2</PediaEntry>
+			<NeutralHealChange>3</NeutralHealChange>
+			<DefenseMod>5</DefenseMod>
+			<PromotionPrereqOr1>PROMOTION_SURVIVALISM_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_SURVIVALISM_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SURVIVALISM_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_SURVIVALISM_2">
+			<Text>Survivalism II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_SURVIVALISM_2_HELP">
+			<Text>[ICON_BULLET]+3 healing in neutral territory.[NEWLINE][ICON_BULLET]+5% Defense Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- MOBILITY I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_MOBILITY_1</Type>
+			<Description>TXT_KEY_EOMPROM_MOBILITY_1</Description>
+			<Help>TXT_KEY_EOMPROM_MOBILITY_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>33</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_MOBILITY_1</PediaEntry>
+			<MovesChange>1</MovesChange>
+			<CombatPercent>-10</CombatPercent>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_PRIEST</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MAGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_MOBILITY_1">
+			<Text>Mobility I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_MOBILITY_1_HELP">
+			<Text>[ICON_BULLET]+1 [ICON_MOVES] Movement.[NEWLINE][ICON_BULLET]-10% [ICON_STRENGTH] Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- MOBILITY II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_MOBILITY_2</Type>
+			<Description>TXT_KEY_EOMPROM_MOBILITY_2</Description>
+			<Help>TXT_KEY_EOMPROM_MOBILITY_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>33</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_MOBILITY_2</PediaEntry>
+			<MovesChange>1</MovesChange>
+			<PromotionPrereqOr1>PROMOTION_MOBILITY_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_MOBILITY_2">
+			<Text>Mobility II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_MOBILITY_2_HELP">
+			<Text>[ICON_BULLET]+1 [ICON_MOVES] Movement.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- SENTRY -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_SENTRY</Type>
+			<Description>TXT_KEY_EOMPROM_SENTRY</Description>
+			<Help>TXT_KEY_EOMPROM_SENTRY_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>37</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SCOUTING</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_SENTRY</PediaEntry>
+			<VisibilityChange>1</VisibilityChange>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_SENTRY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SENTRY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SENTRY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SENTRY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SENTRY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SENTRY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SENTRY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_SENTRY">
+			<Text>Sentry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_SENTRY_HELP">
+			<Text>[ICON_BULLET]+1 Sight Range.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- BLITZ -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_BLITZ</Type>
+			<Description>TXT_KEY_EOMPROM_BLITZ</Description>
+			<Help>TXT_KEY_EOMPROM_BLITZ_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>30</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_BLITZ</PediaEntry>
+			<CanMoveAfterAttacking>true</CanMoveAfterAttacking>
+			<ExtraAttacks>1</ExtraAttacks>
+			<PromotionPrereqOr1>PROMOTION_MOBILITY_2</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_BLITZ</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_BLITZ">
+			<Text>Blitz</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_BLITZ_HELP">
+			<Text>[ICON_BULLET]Can attack twice per turn.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- MARKSMANSHIP I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_MARKSMANSHIP_1</Type>
+			<Description>TXT_KEY_EOMPROM_MARKSMANSHIP_1</Description>
+			<Help>TXT_KEY_EOMPROM_MARKSMANSHIP_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>10</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_RANGED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_MARKSMANSHIP_1</PediaEntry>
+			<RangedAttackModifier>10</RangedAttackModifier>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_PRIEST</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MAGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_MARKSMANSHIP_1">
+			<Text>Marksmanship I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_MARKSMANSHIP_1_HELP">
+			<Text>[ICON_BULLET]+10% [ICON_RANGE_STRENGTH] Ranged Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- MARKSMANSHIP II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_MARKSMANSHIP_2</Type>
+			<Description>TXT_KEY_EOMPROM_MARKSMANSHIP_2</Description>
+			<Help>TXT_KEY_EOMPROM_MARKSMANSHIP_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>10</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_RANGED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_MARKSMANSHIP_2</PediaEntry>
+			<RangedAttackModifier>10</RangedAttackModifier>
+			<PromotionPrereqOr1>PROMOTION_MARKSMANSHIP_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_PRIEST</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MAGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_MARKSMANSHIP_2">
+			<Text>Marksmanship II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_MARKSMANSHIP_2_HELP">
+			<Text>[ICON_BULLET]+10% [ICON_RANGE_STRENGTH] Ranged Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- MARKSMANSHIP III -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_MARKSMANSHIP_3</Type>
+			<Description>TXT_KEY_EOMPROM_MARKSMANSHIP_3</Description>
+			<Help>TXT_KEY_EOMPROM_MARKSMANSHIP_3_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>11</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_RANGED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_MARKSMANSHIP_3</PediaEntry>
+			<RangedAttackModifier>15</RangedAttackModifier>
+			<PromotionPrereqOr1>PROMOTION_MARKSMANSHIP_2</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_PRIEST</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MAGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_MARKSMANSHIP_3">
+			<Text>Marksmanship III</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_MARKSMANSHIP_3_HELP">
+			<Text>[ICON_BULLET]+15% [ICON_RANGE_STRENGTH] Ranged Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- MARKSMANSHIP IV -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_MARKSMANSHIP_4</Type>
+			<Description>TXT_KEY_EOMPROM_MARKSMANSHIP_4</Description>
+			<Help>TXT_KEY_EOMPROM_MARKSMANSHIP_4_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>11</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_RANGED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_MARKSMANSHIP_4</PediaEntry>
+			<RangedAttackModifier>15</RangedAttackModifier>
+			<PromotionPrereqOr1>PROMOTION_MARKSMANSHIP_3</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_PRIEST</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARKSMANSHIP_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MAGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_MARKSMANSHIP_4">
+			<Text>Marksmanship IV</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_MARKSMANSHIP_4_HELP">
+			<Text>[ICON_BULLET]+15% [ICON_RANGE_STRENGTH] Ranged Strength.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- PRECISION -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_PRECISION</Type>
+			<Description>TXT_KEY_EOMPROM_PRECISION</Description>
+			<Help>TXT_KEY_EOMPROM_PRECISION_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>12</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_RANGED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_PRECISION</PediaEntry>
+			<RangedAttackModifier>25</RangedAttackModifier>
+			<RangedDefenseMod>-10</RangedDefenseMod>
+			<PromotionPrereqOr1>PROMOTION_MARKSMANSHIP_4</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_TARGETING_4</PromotionPrereqOr2>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_PRECISION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PRECISION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PRECISION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PRECISION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_PRECISION">
+			<Text>Precision</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_PRECISION_HELP">
+			<Text>[ICON_BULLET]+25% [ICON_RANGE_STRENGTH] Ranged Strength.[NEWLINE][ICON_BULLET]-10% Ranged Defense.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- RANGE -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_RANGE</Type>
+			<Description>TXT_KEY_EOMPROM_RANGE</Description>
+			<Help>TXT_KEY_EOMPROM_RANGE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>34</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_RANGED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_RANGE</PediaEntry>
+			<RangeChange>1</RangeChange>
+			<PromotionPrereqOr1>PROMOTION_MARKSMANSHIP_4</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_RANGE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MAGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_RANGE">
+			<Text>Range</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_RANGE_HELP">
+			<Text>[ICON_BULLET]+1 Range.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- SHIP TARGETING -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_SHIP_TARGETING</Type>
+			<Description>TXT_KEY_EOMPROM_SHIP_TARGETING</Description>
+			<Help>TXT_KEY_EOMPROM_SHIP_TARGETING_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>52</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_RANGED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_SHIP_TARGETING</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_MARKSMANSHIP_2</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_SHIP_TARGETING</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+			<Attack>50</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SHIP_TARGETING</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+			<Attack>50</Attack>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_SHIP_TARGETING</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SHIP_TARGETING</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_SHIP_TARGETING">
+			<Text>Ship Targeting</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_SHIP_TARGETING_HELP">
+			<Text>[ICON_BULLET]+50% [ICON_RANGE_STRENGTH] Ranged Strength against Naval Units.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- AIR TARGETING -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_AIR_TARGETING</Type>
+			<Description>TXT_KEY_EOMPROM_AIR_TARGETING</Description>
+			<Help>TXT_KEY_EOMPROM_AIR_TARGETING_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>2</OrderPriority>
+			<PortraitIndex>34</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_RANGED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_AIR_TARGETING</PediaEntry>
+			<PromotionPrereqOr1>PROMOTION_MARKSMANSHIP_3</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_TARGETING_3</PromotionPrereqOr2>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_AIR_TARGETING</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+			<Attack>50</Attack>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_AIR_TARGETING</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AIR_TARGETING</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AIR_TARGETING</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MAGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AIR_TARGETING</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_AIR_TARGETING">
+			<Text>Air Targeting</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_AIR_TARGETING_HELP">
+			<Text>[ICON_BULLET]+50% [ICON_RANGE_STRENGTH] Ranged Strength against Flying Units.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- CLOSE DEFENSE I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_CLOSE_DEFENSE_1</Type>
+			<Description>TXT_KEY_EOMPROM_CLOSE_DEFENSE_1</Description>
+			<Help>TXT_KEY_EOMPROM_CLOSE_DEFENSE_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>14</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_CLOSE_DEFENSE_1</PediaEntry>
+			<DefenseMod>20</DefenseMod>
+			<RangedDefenseMod>-20</RangedDefenseMod>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_CLOSE_DEFENSE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CLOSE_DEFENSE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CLOSE_DEFENSE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_PRIEST</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CLOSE_DEFENSE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MAGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CLOSE_DEFENSE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_CLOSE_DEFENSE_1">
+			<Text>Close Defense I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_CLOSE_DEFENSE_1_HELP">
+			<Text>[ICON_BULLET]+20% Melee Defense.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- CLOSE DEFENSE II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_CLOSE_DEFENSE_2</Type>
+			<Description>TXT_KEY_EOMPROM_CLOSE_DEFENSE_2</Description>
+			<Help>TXT_KEY_EOMPROM_CLOSE_DEFENSE_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>49</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_CLOSE_DEFENSE_2</PediaEntry>
+			<DefenseMod>30</DefenseMod>
+			<RangedDefenseMod>-30</RangedDefenseMod>
+			<PromotionPrereqOr1>PROMOTION_CLOSE_DEFENSE_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_CLOSE_DEFENSE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CLOSE_DEFENSE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CLOSE_DEFENSE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_PRIEST</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CLOSE_DEFENSE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MAGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CLOSE_DEFENSE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_CLOSE_DEFENSE_2">
+			<Text>Close Defense II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_CLOSE_DEFENSE_2_HELP">
+			<Text>[ICON_BULLET]+30% Melee Defense.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- ACCURACY I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ACCURACY_1</Type>
+			<Description>TXT_KEY_EOMPROM_ACCURACY_1</Description>
+			<Help>TXT_KEY_EOMPROM_ACCURACY_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_RANGED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_ACCURACY_1</PediaEntry>
+			<OpenRangedAttackMod>20</OpenRangedAttackMod>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_ACCURACY_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ACCURACY_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ACCURACY_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_ACCURACY_1">
+			<Text>Accuracy I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_ACCURACY_1_HELP">
+			<Text>[ICON_BULLET]+20% [ICON_RANGE_STRENGTH] Ranged Strength vs targets in open terrain.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- ACCURACY II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ACCURACY_2</Type>
+			<Description>TXT_KEY_EOMPROM_ACCURACY_2</Description>
+			<Help>TXT_KEY_EOMPROM_ACCURACY_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>1</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_RANGED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_ACCURACY_2</PediaEntry>
+			<OpenRangedAttackMod>30</OpenRangedAttackMod>
+			<PromotionPrereqOr1>PROMOTION_ACCURACY_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_ACCURACY_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ACCURACY_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ACCURACY_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_ACCURACY_2">
+			<Text>Accuracy II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_ACCURACY_2_HELP">
+			<Text>[ICON_BULLET]+30% [ICON_RANGE_STRENGTH] Ranged Strength vs targets in open terrain.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- BARRAGE I -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_BARRAGE_1</Type>
+			<Description>TXT_KEY_EOMPROM_BARRAGE_1</Description>
+			<Help>TXT_KEY_EOMPROM_BARRAGE_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>6</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_RANGED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_BARRAGE_1</PediaEntry>
+			<RoughRangedAttackMod>20</RoughRangedAttackMod>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_BARRAGE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_BARRAGE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_BARRAGE_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_BARRAGE_1">
+			<Text>Barrage I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_BARRAGE_1_HELP">
+			<Text>[ICON_BULLET]+20% [ICON_RANGE_STRENGTH] Ranged Strength vs targets in rough terrain.</Text>
+		</Row>
+	</Language_en_US>
+	<!-- BARRAGE II -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_BARRAGE_2</Type>
+			<Description>TXT_KEY_EOMPROM_BARRAGE_2</Description>
+			<Help>TXT_KEY_EOMPROM_BARRAGE_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>7</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_RANGED</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_BARRAGE_2</PediaEntry>
+			<RoughRangedAttackMod>30</RoughRangedAttackMod>
+			<PromotionPrereqOr1>PROMOTION_BARRAGE_1</PromotionPrereqOr1>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_BARRAGE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_BARRAGE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_BARRAGE_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_BARRAGE_2">
+			<Text>Barrage II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_BARRAGE_2_HELP">
+			<Text>[ICON_BULLET]+30% [ICON_RANGE_STRENGTH] Ranged Strength vs targets in rough terrain.</Text>
 		</Row>
 	</Language_en_US>
 </GameData>

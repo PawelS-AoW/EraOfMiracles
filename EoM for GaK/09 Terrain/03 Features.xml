@@ -141,7 +141,7 @@
 			<Description>TXT_KEY_EOMFEAT_REEF</Description>
 			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
 			<ArtDefineTag>ART_DEF_RESOURCE_STONE</ArtDefineTag>
-			<Movement>4</Movement>
+			<Movement>2</Movement>
 			<SeeThrough>1</SeeThrough>
 			<Defense>15</Defense>
 			<InfluenceCost>0</InfluenceCost>
@@ -154,7 +154,7 @@
 			<Description>TXT_KEY_EOMFEAT_KELP</Description>
 			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
 			<ArtDefineTag>ART_DEF_FEATURE_EOM_KELP</ArtDefineTag>
-			<Movement>3</Movement>
+			<Movement>2</Movement>
 			<SeeThrough>1</SeeThrough>
 			<Defense>15</Defense>
 			<InfluenceCost>0</InfluenceCost>

@@ -384,35 +384,18 @@
 			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
 			<Modifier>25</Modifier>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_POLE_ARM_I</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+			<Attack>25</Attack>
+		</Row>
 	</UnitPromotions_UnitCombatMods>
-	<UnitPromotions_UnitClasses>
-		<Row>
-			<PromotionType>PROMOTION_POLE_ARM_I</PromotionType>
-			<UnitClassType>UNITCLASS_CHARIOT_ARCHER</UnitClassType>
-			<Attack>25</Attack>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_POLE_ARM_I</PromotionType>
-			<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
-			<Attack>25</Attack>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_POLE_ARM_I</PromotionType>
-			<UnitClassType>UNITCLASS_HEAVY_HORSE_ARCHER</UnitClassType>
-			<Attack>25</Attack>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_POLE_ARM_I</PromotionType>
-			<UnitClassType>UNITCLASS_ELEPHANT_ARCHER</UnitClassType>
-			<Attack>25</Attack>
-		</Row>
-	</UnitPromotions_UnitClasses>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_POLE_ARM_I">
 			<Text>Pole Arm I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMPROM_POLE_ARM_I_HELP">
-			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Strength vs Mounted Units.[NEWLINE][ICON_BULLET]+25% Attack Strength vs mounted Archery Units.</Text>
+			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Strength vs Mounted Units.[NEWLINE][ICON_BULLET]+25% Attack Strength vs Mounted Archery Units.</Text>
 		</Row>
 	</Language_en_US>
 	<!-- POLE ARM II -->
@@ -435,35 +418,18 @@
 			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
 			<Modifier>50</Modifier>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_POLE_ARM_II</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+			<Attack>50</Attack>
+		</Row>
 	</UnitPromotions_UnitCombatMods>
-	<UnitPromotions_UnitClasses>
-		<Row>
-			<PromotionType>PROMOTION_POLE_ARM_II</PromotionType>
-			<UnitClassType>UNITCLASS_CHARIOT_ARCHER</UnitClassType>
-			<Attack>50</Attack>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_POLE_ARM_II</PromotionType>
-			<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
-			<Attack>50</Attack>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_POLE_ARM_II</PromotionType>
-			<UnitClassType>UNITCLASS_HEAVY_HORSE_ARCHER</UnitClassType>
-			<Attack>50</Attack>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_POLE_ARM_II</PromotionType>
-			<UnitClassType>UNITCLASS_ELEPHANT_ARCHER</UnitClassType>
-			<Attack>50</Attack>
-		</Row>
-	</UnitPromotions_UnitClasses>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_POLE_ARM_II">
 			<Text>Pole Arm II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMPROM_POLE_ARM_II_HELP">
-			<Text>[ICON_BULLET]+50% [ICON_STRENGTH] Strength vs Mounted Units.[NEWLINE][ICON_BULLET]+50% Attack Strength vs mounted Archery Units.</Text>
+			<Text>[ICON_BULLET]+50% [ICON_STRENGTH] Strength vs Mounted Units.[NEWLINE][ICON_BULLET]+50% Attack Strength vs Mounted Archery Units.</Text>
 		</Row>
 	</Language_en_US>
 	<!-- ATTACK BONUS (25%) -->
@@ -807,59 +773,24 @@
 			<LostWithUpgrade>true</LostWithUpgrade>
 		</Row>
 	</UnitPromotions>
-	<UnitPromotions_UnitClasses>
+	<UnitPromotions_UnitCombatMods>
 		<Row>
 			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
-			<UnitClassType>UNITCLASS_GALLEY</UnitClassType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
 			<Attack>50</Attack>
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
-			<UnitClassType>UNITCLASS_GALLEASS</UnitClassType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
 			<Attack>50</Attack>
 		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
-			<UnitClassType>UNITCLASS_FRIGATE</UnitClassType>
-			<Attack>50</Attack>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
-			<UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
-			<Attack>50</Attack>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
-			<UnitClassType>UNITCLASS_CANOE</UnitClassType>
-			<Attack>50</Attack>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
-			<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
-			<Attack>50</Attack>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
-			<UnitClassType>UNITCLASS_GALLEON</UnitClassType>
-			<Attack>50</Attack>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
-			<UnitClassType>UNITCLASS_CARAVEL</UnitClassType>
-			<Attack>50</Attack>
-		</Row>
-		<Row>
-			<PromotionType>PROMOTION_FIRE_BOMBS</PromotionType>
-			<UnitClassType>UNITCLASS_PRIVATEER</UnitClassType>
-			<Attack>50</Attack>
-		</Row>
-	</UnitPromotions_UnitClasses>
+	</UnitPromotions_UnitCombatMods>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_FIRE_BOMBS">
 			<Text>Fire Bombs</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMPROM_FIRE_BOMBS_HELP">
-			<Text>+50% [ICON_RANGE_STRENGTH] Ranged Strength against Naval units.</Text>
+			<Text>+50% [ICON_RANGE_STRENGTH] Ranged Strength against Naval Units.</Text>
 		</Row>
 	</Language_en_US>
 	<!-- BOARDING -->

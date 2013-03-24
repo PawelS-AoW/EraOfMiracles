@@ -2872,10 +2872,27 @@ CivilopediaCategory[CategoryPromotions].SelectArticle = function( promotionID, s
 		UpdateButtonFrame( buttonAdded, Controls.RequiredPromotionsInnerFrame, Controls.RequiredPromotionsFrame );
 
 		-- update the game info
+
+		-- EoM here
+
+		local count = 0
+		local help = ""
 		if thisPromotion.Help then
-			UpdateTextBlock( Locale.ConvertTextKey( thisPromotion.Help ), Controls.GameInfoLabel, Controls.GameInfoInnerFrame, Controls.GameInfoFrame );
+			help = Locale.ConvertTextKey (thisPromotion.Help)
 		end
-				
+		for row in GameInfo.UnitPromotions_UnitCombats () do
+			if row.PromotionType == thisPromotion.Type then
+				count = count + 1
+				if count == 1 then
+					help = help.."[NEWLINE][NEWLINE]Allowed for Combat Types:"
+				end
+				help = help.."[NEWLINE][ICON_BULLET]"..Locale.ConvertTextKey (GameInfo.UnitCombatInfos [row.UnitCombatType].Description)
+			end
+		end
+
+		UpdateTextBlock (help,Controls.GameInfoLabel,Controls.GameInfoInnerFrame,Controls.GameInfoFrame);
+		
+		-- EoM end
 	end	
 
 	ResizeEtc();

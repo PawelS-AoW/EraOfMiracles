@@ -527,6 +527,11 @@ Version: pre-alpha, not playable</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>08 Promotions/05 Serial Data.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>09 Terrain/00 Delete Terrain.sql</FileName>
       </Action>
       <Action>
@@ -1798,6 +1803,10 @@ Version: pre-alpha, not playable</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="08 Promotions\04 Effects.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="08 Promotions\05 Serial Data.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

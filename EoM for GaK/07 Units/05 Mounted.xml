@@ -816,7 +816,7 @@
 			<RangedCombat>3</RangedCombat>
 			<Range>2</Range>
 			<Moves>4</Moves>
-			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+			<CombatClass>UNITCOMBAT_GUN</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
 			<Description>TXT_KEY_EOMUNIT_CHARIOT_ARCHER</Description>
@@ -838,7 +838,7 @@
 			<Text>Chariot Archer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMUNIT_CHARIOT_ARCHER_HELP">
-			<Text>[ICON_BULLET]Archery Unit.[NEWLINE][ICON_BULLET]Entering rough terrain consumes all movement.[NEWLINE][ICON_BULLET]-25% [ICON_RANGE_STRENGTH] Ranged Strength when attacking cities.</Text>
+			<Text>[ICON_BULLET]Mounted Archery Unit.[NEWLINE][ICON_BULLET]Entering rough terrain consumes all movement.[NEWLINE][ICON_BULLET]-25% [ICON_RANGE_STRENGTH] Ranged Strength when attacking cities.</Text>
 		</Row>
 	</Language_en_US>
 	<Unit_ResourceQuantityRequirements>
@@ -909,7 +909,7 @@
 			<RangedCombat>4</RangedCombat>
 			<Range>2</Range>
 			<Moves>4</Moves>
-			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+			<CombatClass>UNITCOMBAT_GUN</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
 			<Description>TXT_KEY_EOMUNIT_HORSE_ARCHER</Description>
@@ -932,7 +932,7 @@
 			<Text>Horse Archer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMUNIT_HORSE_ARCHER_HELP">
-			<Text>[ICON_BULLET]Archery Unit.[NEWLINE][ICON_BULLET]-25% [ICON_RANGE_STRENGTH] Ranged Strength when attacking cities.</Text>
+			<Text>[ICON_BULLET]Mounted Archery Unit.[NEWLINE][ICON_BULLET]-25% [ICON_RANGE_STRENGTH] Ranged Strength when attacking cities.</Text>
 		</Row>
 	</Language_en_US>
 	<Unit_ResourceQuantityRequirements>
@@ -1018,7 +1018,7 @@
 			<RangedCombat>4</RangedCombat>
 			<Range>2</Range>
 			<Moves>4</Moves>
-			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+			<CombatClass>UNITCOMBAT_GUN</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
 			<Description>TXT_KEY_EOMUNIT_WAR_CHARIOT</Description>
@@ -1040,7 +1040,7 @@
 			<Text>War Chariot</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMUNIT_WAR_CHARIOT_HELP">
-			<Text>[ICON_BULLET]Archery Unit (melee attack possible).[NEWLINE][ICON_BULLET]Entering rough terrain consumes all movement.[NEWLINE][ICON_BULLET]-25% [ICON_RANGE_STRENGTH] Ranged Strength when attacking cities.</Text>
+			<Text>[ICON_BULLET]Mounted Archery Unit (melee attack possible).[NEWLINE][ICON_BULLET]Entering rough terrain consumes all movement.[NEWLINE][ICON_BULLET]-25% [ICON_RANGE_STRENGTH] Ranged Strength when attacking cities.</Text>
 		</Row>
 		<!-- [NEWLINE][ICON_BULLET]Archon unique unit, stronger than Horse Archer it replaces and can attack in melee, but it's slowed by rough terrain. -->
 	</Language_en_US>
@@ -1116,7 +1116,7 @@
 			<RangedCombat>5</RangedCombat>
 			<Range>2</Range>
 			<Moves>4</Moves>
-			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+			<CombatClass>UNITCOMBAT_GUN</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
 			<Description>TXT_KEY_EOMUNIT_HEAVY_HORSE_ARCHER</Description>
@@ -1138,7 +1138,7 @@
 			<Text>Heavy Horse Archer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMUNIT_HEAVY_HORSE_ARCHER_HELP">
-			<Text>[ICON_BULLET]Archery Unit.[NEWLINE][ICON_BULLET]-25% [ICON_RANGE_STRENGTH] Ranged Strength when attacking cities.</Text>
+			<Text>[ICON_BULLET]Mounted Archery Unit.[NEWLINE][ICON_BULLET]-25% [ICON_RANGE_STRENGTH] Ranged Strength when attacking cities.</Text>
 		</Row>
 	</Language_en_US>
 	<Unit_ResourceQuantityRequirements>
@@ -1223,7 +1223,7 @@
 			<RangedCombat>5</RangedCombat>
 			<Range>2</Range>
 			<Moves>3</Moves>
-			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+			<CombatClass>UNITCOMBAT_GUN</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
 			<Description>TXT_KEY_EOMUNIT_CAMEL_ARCHER</Description>
@@ -1245,7 +1245,7 @@
 			<Text>Camel Archer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMUNIT_CAMEL_ARCHER_HELP">
-			<Text>[ICON_BULLET]Archery Unit.[NEWLINE][ICON_BULLET]-25% [ICON_RANGE_STRENGTH] Ranged Strength when attacking cities.</Text>
+			<Text>[ICON_BULLET]Mounted Archery Unit.[NEWLINE][ICON_BULLET]-25% [ICON_RANGE_STRENGTH] Ranged Strength when attacking cities.</Text>
 		</Row>
 		<!-- [NEWLINE][ICON_BULLET]Azrac unique unit, slower than Heavy Horse Archer it replaces, but doesn't require Horses to be built. -->
 	</Language_en_US>
@@ -1325,7 +1325,7 @@
 			<RangedCombat>8</RangedCombat>
 			<Range>1</Range>
 			<Moves>4</Moves>
-			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+			<CombatClass>UNITCOMBAT_GUN</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
 			<Description>TXT_KEY_EOMUNIT_DRAGOON</Description>
@@ -1348,7 +1348,7 @@
 			<Text>Dragoon</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMUNIT_DRAGOON_HELP">
-			<Text>[ICON_BULLET]Archery Unit.[NEWLINE][ICON_BULLET]-25% [ICON_RANGE_STRENGTH] Ranged Strength when attacking cities.</Text>
+			<Text>[ICON_BULLET]Mounted Archery Unit.[NEWLINE][ICON_BULLET]-25% [ICON_RANGE_STRENGTH] Ranged Strength when attacking cities.</Text>
 		</Row>
 	</Language_en_US>
 	<Unit_ResourceQuantityRequirements>
@@ -1428,7 +1428,7 @@
 			<RangedCombat>4</RangedCombat>
 			<Range>2</Range>
 			<Moves>3</Moves>
-			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+			<CombatClass>UNITCOMBAT_GUN</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
 			<Description>TXT_KEY_EOMUNIT_ELEPHANT_ARCHER</Description>
@@ -1450,7 +1450,7 @@
 			<Text>Elephant Archer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMUNIT_ELEPHANT_ARCHER_HELP">
-			<Text>[ICON_BULLET]Archery Unit.</Text>
+			<Text>[ICON_BULLET]Mounted Archery Unit.</Text>
 		</Row>
 	</Language_en_US>
 	<Unit_ResourceQuantityRequirements>

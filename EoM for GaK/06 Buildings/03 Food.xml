@@ -309,7 +309,7 @@
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>24</PortraitIndex>
 			<ConquestProb>75</ConquestProb>
-			<FreshWater>true</FreshWater>
+			<NearbyTerrainRequired>TERRAIN_GRASS</NearbyTerrainRequired>
 			<Happiness>1</Happiness>
 			<GreatPeopleRateModifier>25</GreatPeopleRateModifier>
 		</Row>
@@ -319,7 +319,7 @@
 			<Text>Garden</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMBLDG_GARDEN_HELP">
-			<Text>[ICON_BULLET]+25% [ICON_GREAT_PEOPLE] Great People generation in this city.[NEWLINE][ICON_BULLET]City must have access to fresh water.</Text>
+			<Text>[ICON_BULLET]+25% [ICON_GREAT_PEOPLE] Great People generation in this city.[NEWLINE][ICON_BULLET]City must be built on or next to Grassland.</Text>
 		</Row>
 	</Language_en_US>
 	<Building_ClassesNeededInCity>

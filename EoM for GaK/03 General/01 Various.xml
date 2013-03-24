@@ -38,12 +38,16 @@
 			<Text>Mage Units</Text>
 		</Row>
 		<Update>
-			<Where Tag="TXT_KEY_UNITCOMBAT_HELICOPTER"/>
-			<Set Text="Flying Units"/>
+			<Where Tag="TXT_KEY_UNITCOMBAT_GUN"/>
+			<Set Text="Mounted Archery Units"/>
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_UNITCOMBAT_ARMOR"/>
-			<Set Text="Animals"/>
+			<Set Text="Beast Units"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNITCOMBAT_HELICOPTER"/>
+			<Set Text="Flying Units"/>
 		</Update>
 	</Language_en_US>
 

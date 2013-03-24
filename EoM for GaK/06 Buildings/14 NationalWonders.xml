@@ -336,7 +336,7 @@
 		<Row>
 			<Type>BUILDINGCLASS_ROYAL_STABLES</Type>
 			<DefaultBuilding>NONE</DefaultBuilding>
-			<Description>TXT_KEY_BUILDING_ROYAL_STABLES</Description>
+			<Description>TXT_KEY_EOMBLDG_ROYAL_STABLES</Description>
 			<MaxPlayerInstances>1</MaxPlayerInstances>
 		</Row>
 	</BuildingClasses>
@@ -379,6 +379,57 @@
 		<Row>
 			<BuildingType>BUILDING_ROYAL_STABLES</BuildingType>
 			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Building_Flavors>
+	<!-- MATTER CONVERTER -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_MATTER_CONVERTER</Type>
+			<DefaultBuilding>BUILDING_MATTER_CONVERTER</DefaultBuilding>
+			<Description>TXT_KEY_EOMBLDG_MATTER_CONVERTER</Description>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_MATTER_CONVERTER</Type>
+			<BuildingClass>BUILDINGCLASS_MATTER_CONVERTER</BuildingClass>
+			<Cost>1000</Cost>
+			<GoldMaintenance>20</GoldMaintenance>
+			<PrereqTech>TECH_ALCHEMY</PrereqTech>
+			<Description>TXT_KEY_EOMBLDG_MATTER_CONVERTER</Description>
+			<Help>TXT_KEY_EOMBLDG_MATTER_CONVERTER_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_HYDRO_PLANT</ArtDefineTag>
+			<IconAtlas>EXPANSION_BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>1</PortraitIndex>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<ConquestProb>0</ConquestProb>
+			<NeverCapture>true</NeverCapture>
+		</Row>
+	</Buildings>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMBLDG_MATTER_CONVERTER">
+			<Text>Matter Converter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBLDG_MATTER_CONVERTER_HELP">
+			<Text>[ICON_BULLET]National Wonder.</Text>
+		</Row>
+	</Language_en_US>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_MATTER_CONVERTER</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>20</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_MATTER_CONVERTER</BuildingType>
+			<FlavorType>FLAVOR_MAGIC</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
 	</Building_Flavors>
