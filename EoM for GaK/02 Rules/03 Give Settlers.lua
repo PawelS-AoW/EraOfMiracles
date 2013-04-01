@@ -35,16 +35,20 @@ function UnPuppet ()
 end
 
 function GiveSettlers ()
-    -- this function creates Settlers for major civs if they have happiness of 15 or above and don't have a Settler
+    -- this function creates Settlers for major civs if they have enough happiness and don't have a Settler
 	-- minor civs can't use settlers, so it creates cities for them (max. 4)
 	for lnum = 0, GameDefines.MAX_CIV_PLAYERS-1, 1 do
 		local player = Players [lnum];
 		if player:IsAlive () then
-			if player:GetExcessHappiness () >= 15 and player:GetUnitClassCountPlusMaking (GameInfo.UnitClasses.UNITCLASS_SETTLER.ID) == 0 and player:GetNumCities () > 0 then
+			local cities = player:GetNumCities ()
+			local limit = -1
+			if cities > 0 and cities < 4 then limit = 10
+			elseif cities >= 4 then limit = 15 end
+			if limit > 0 and player:GetExcessHappiness () >= limit and player:GetUnitClassCountPlusMaking (GameInfo.UnitClasses.UNITCLASS_SETTLER.ID) == 0 then
 				if player:IsMinorCiv () then
 					-- minor civ - create a city
 					-- these cities can appear quite far from their capitals
-					if player:GetNumCities () < 4 and Teams [player:GetTeam ()]:GetAtWarCount (true) == 0 then
+					if cities < 4 and Teams [player:GetTeam ()]:GetAtWarCount (true) == 0 then
 					    -- Minor Civs can't have more than 4 cities (unless they conquer them)
 						-- the cities won't appear when the minor civ is at war
 						local iW, iH = Map.GetGridSize ();
@@ -79,8 +83,6 @@ function GiveSettlers ()
 					local cap = player:GetCapitalCity ();
 					local settler_id = GameInfo.Units.UNIT_SETTLER.ID;
 					player:InitUnit (settler_id,cap:GetX (),cap:GetY (),UNITAI_SETTLE);
-					-- racial promotions should apply to the settler
-					-- if it has a combat type ("civilian units")
 				end
 			end
 		end

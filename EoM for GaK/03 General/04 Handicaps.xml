@@ -8,7 +8,7 @@
 			<Description>TXT_KEY_HANDICAP_SETTLER</Description>
 			<Help>TXT_KEY_HANDICAP_SETTLER_HELP</Help>
 			<StartingLocPercent>50</StartingLocPercent>
-			<HappinessDefault>50</HappinessDefault>
+			<HappinessDefault>20</HappinessDefault>
 			<NumCitiesUnhappinessMod>100</NumCitiesUnhappinessMod>
 			<PopulationUnhappinessMod>50</PopulationUnhappinessMod>
 			<Gold>0</Gold>
@@ -19,8 +19,8 @@
 			<RouteCostPercent>50</RouteCostPercent>
 			<UnitCostPercent>50</UnitCostPercent>
 			<BuildingCostPercent>100</BuildingCostPercent>
-			<ResearchPercent>70</ResearchPercent>
-			<PolicyPercent>70</PolicyPercent>
+			<ResearchPercent>80</ResearchPercent>
+			<PolicyPercent>80</PolicyPercent>
 			<ImprovementCostPercent>100</ImprovementCostPercent>
 			<CityProductionNumOptionsConsidered>5</CityProductionNumOptionsConsidered>
 			<TechNumOptionsConsidered>5</TechNumOptionsConsidered>
@@ -31,9 +31,9 @@
 			<BarbarianBonus>0</BarbarianBonus>
 			<AIBarbarianBonus>50</AIBarbarianBonus>
 			<EarliestBarbarianReleaseTurn>0</EarliestBarbarianReleaseTurn>
-			<BarbarianLandTargetRange>20</BarbarianLandTargetRange>
-			<BarbarianSeaTargetRange>40</BarbarianSeaTargetRange>
-			<AIDeclareWarProb>50</AIDeclareWarProb>
+			<BarbarianLandTargetRange>32</BarbarianLandTargetRange>
+			<BarbarianSeaTargetRange>64</BarbarianSeaTargetRange>
+			<AIDeclareWarProb>100</AIDeclareWarProb>
 			<AIUnhappinessPercent>100</AIUnhappinessPercent>
 			<AIGrowthPercent>100</AIGrowthPercent>
 			<AITrainPercent>100</AITrainPercent>
@@ -55,7 +55,7 @@
 			<Description>TXT_KEY_HANDICAP_CHIEFTAIN</Description>
 			<Help>TXT_KEY_HANDICAP_CHIEFTAIN_HELP</Help>
 			<StartingLocPercent>50</StartingLocPercent>
-			<HappinessDefault>40</HappinessDefault>
+			<HappinessDefault>20</HappinessDefault>
 			<NumCitiesUnhappinessMod>100</NumCitiesUnhappinessMod>
 			<PopulationUnhappinessMod>50</PopulationUnhappinessMod>
 			<Gold>0</Gold>
@@ -66,8 +66,8 @@
 			<RouteCostPercent>50</RouteCostPercent>
 			<UnitCostPercent>50</UnitCostPercent>
 			<BuildingCostPercent>100</BuildingCostPercent>
-			<ResearchPercent>80</ResearchPercent>
-			<PolicyPercent>80</PolicyPercent>
+			<ResearchPercent>90</ResearchPercent>
+			<PolicyPercent>90</PolicyPercent>
 			<ImprovementCostPercent>100</ImprovementCostPercent>
 			<CityProductionNumOptionsConsidered>4</CityProductionNumOptionsConsidered>
 			<TechNumOptionsConsidered>4</TechNumOptionsConsidered>
@@ -78,9 +78,9 @@
 			<BarbarianBonus>0</BarbarianBonus>
 			<AIBarbarianBonus>50</AIBarbarianBonus>
 			<EarliestBarbarianReleaseTurn>0</EarliestBarbarianReleaseTurn>
-			<BarbarianLandTargetRange>20</BarbarianLandTargetRange>
-			<BarbarianSeaTargetRange>40</BarbarianSeaTargetRange>
-			<AIDeclareWarProb>75</AIDeclareWarProb>
+			<BarbarianLandTargetRange>32</BarbarianLandTargetRange>
+			<BarbarianSeaTargetRange>64</BarbarianSeaTargetRange>
+			<AIDeclareWarProb>100</AIDeclareWarProb>
 			<AIUnhappinessPercent>100</AIUnhappinessPercent>
 			<AIGrowthPercent>100</AIGrowthPercent>
 			<AITrainPercent>100</AITrainPercent>
@@ -102,7 +102,7 @@
 			<Description>TXT_KEY_HANDICAP_WARLORD</Description>
 			<Help>TXT_KEY_HANDICAP_WARLORD_HELP</Help>
 			<StartingLocPercent>50</StartingLocPercent>
-			<HappinessDefault>35</HappinessDefault>
+			<HappinessDefault>19</HappinessDefault>
 			<NumCitiesUnhappinessMod>100</NumCitiesUnhappinessMod>
 			<PopulationUnhappinessMod>50</PopulationUnhappinessMod>
 			<Gold>0</Gold>
@@ -113,8 +113,8 @@
 			<RouteCostPercent>50</RouteCostPercent>
 			<UnitCostPercent>50</UnitCostPercent>
 			<BuildingCostPercent>100</BuildingCostPercent>
-			<ResearchPercent>90</ResearchPercent>
-			<PolicyPercent>90</PolicyPercent>
+			<ResearchPercent>95</ResearchPercent>
+			<PolicyPercent>95</PolicyPercent>
 			<ImprovementCostPercent>100</ImprovementCostPercent>
 			<CityProductionNumOptionsConsidered>3</CityProductionNumOptionsConsidered>
 			<TechNumOptionsConsidered>3</TechNumOptionsConsidered>
@@ -124,21 +124,23 @@
 			<BarbarianBonus>0</BarbarianBonus>
 			<AIBarbarianBonus>50</AIBarbarianBonus>
 			<EarliestBarbarianReleaseTurn>0</EarliestBarbarianReleaseTurn>
-			<BarbarianLandTargetRange>20</BarbarianLandTargetRange>
-			<BarbarianSeaTargetRange>40</BarbarianSeaTargetRange>
-			<AIDeclareWarProb>85</AIDeclareWarProb>
-			<AIUnhappinessPercent>100</AIUnhappinessPercent>
-			<AIGrowthPercent>100</AIGrowthPercent>
-			<AITrainPercent>100</AITrainPercent>
-			<AIWorldTrainPercent>100</AIWorldTrainPercent>
-			<AIConstructPercent>100</AIConstructPercent>
-			<AIWorldConstructPercent>100</AIWorldConstructPercent>
-			<AICreatePercent>100</AICreatePercent>
-			<AIWorldCreatePercent>100</AIWorldCreatePercent>
-			<AIBuildingCostPercent>100</AIBuildingCostPercent>
+			<BarbarianLandTargetRange>32</BarbarianLandTargetRange>
+			<BarbarianSeaTargetRange>64</BarbarianSeaTargetRange>
+			<AIDeclareWarProb>100</AIDeclareWarProb>
+			<AIWorkRateModifier>5</AIWorkRateModifier>
+			<AIUnhappinessPercent>99</AIUnhappinessPercent>
+			<AIGrowthPercent>95</AIGrowthPercent>
+			<AITrainPercent>95</AITrainPercent>
+			<AIWorldTrainPercent>95</AIWorldTrainPercent>
+			<AIConstructPercent>95</AIConstructPercent>
+			<AIWorldConstructPercent>95</AIWorldConstructPercent>
+			<AICreatePercent>95</AICreatePercent>
+			<AIWorldCreatePercent>95</AIWorldCreatePercent>
+			<AIBuildingCostPercent>95</AIBuildingCostPercent>
 			<AIUnitCostPercent>50</AIUnitCostPercent>
 			<AIUnitSupplyPercent>50</AIUnitSupplyPercent>
 			<AIUnitUpgradePercent>50</AIUnitUpgradePercent>
+			<AIPerEraModifier>0</AIPerEraModifier>
 			<IconAtlas>DIFFICULTY_ATLAS</IconAtlas>
 			<PortraitIndex>2</PortraitIndex>
 		</Row>
@@ -148,7 +150,7 @@
 			<Description>TXT_KEY_HANDICAP_PRINCE</Description>
 			<Help>TXT_KEY_HANDICAP_PRINCE_HELP</Help>
 			<StartingLocPercent>50</StartingLocPercent>
-			<HappinessDefault>30</HappinessDefault>
+			<HappinessDefault>19</HappinessDefault>
 			<NumCitiesUnhappinessMod>100</NumCitiesUnhappinessMod>
 			<PopulationUnhappinessMod>50</PopulationUnhappinessMod>
 			<Gold>0</Gold>
@@ -171,21 +173,23 @@
 			<BarbarianBonus>0</BarbarianBonus>
 			<AIBarbarianBonus>50</AIBarbarianBonus>
 			<EarliestBarbarianReleaseTurn>0</EarliestBarbarianReleaseTurn>
-			<BarbarianLandTargetRange>20</BarbarianLandTargetRange>
-			<BarbarianSeaTargetRange>40</BarbarianSeaTargetRange>
+			<BarbarianLandTargetRange>32</BarbarianLandTargetRange>
+			<BarbarianSeaTargetRange>64</BarbarianSeaTargetRange>
 			<AIDeclareWarProb>100</AIDeclareWarProb>
-			<AIUnhappinessPercent>100</AIUnhappinessPercent>
-			<AIGrowthPercent>100</AIGrowthPercent>
-			<AITrainPercent>100</AITrainPercent>
-			<AIWorldTrainPercent>100</AIWorldTrainPercent>
-			<AIConstructPercent>100</AIConstructPercent>
-			<AIWorldConstructPercent>100</AIWorldConstructPercent>
-			<AICreatePercent>100</AICreatePercent>
-			<AIWorldCreatePercent>100</AIWorldCreatePercent>
-			<AIBuildingCostPercent>100</AIBuildingCostPercent>
+			<AIWorkRateModifier>10</AIWorkRateModifier>
+			<AIUnhappinessPercent>98</AIUnhappinessPercent>
+			<AIGrowthPercent>90</AIGrowthPercent>
+			<AITrainPercent>90</AITrainPercent>
+			<AIWorldTrainPercent>90</AIWorldTrainPercent>
+			<AIConstructPercent>90</AIConstructPercent>
+			<AIWorldConstructPercent>90</AIWorldConstructPercent>
+			<AICreatePercent>90</AICreatePercent>
+			<AIWorldCreatePercent>90</AIWorldCreatePercent>
+			<AIBuildingCostPercent>90</AIBuildingCostPercent>
 			<AIUnitCostPercent>50</AIUnitCostPercent>
 			<AIUnitSupplyPercent>50</AIUnitSupplyPercent>
 			<AIUnitUpgradePercent>50</AIUnitUpgradePercent>
+			<AIPerEraModifier>-1</AIPerEraModifier>
 			<IconAtlas>DIFFICULTY_ATLAS</IconAtlas>
 			<PortraitIndex>3</PortraitIndex>
 		</Row>
@@ -195,7 +199,7 @@
 			<Description>TXT_KEY_HANDICAP_KING</Description>
 			<Help>TXT_KEY_HANDICAP_KING_HELP</Help>
 			<StartingLocPercent>50</StartingLocPercent>
-			<HappinessDefault>30</HappinessDefault>
+			<HappinessDefault>18</HappinessDefault>
 			<NumCitiesUnhappinessMod>100</NumCitiesUnhappinessMod>
 			<PopulationUnhappinessMod>50</PopulationUnhappinessMod>
 			<Gold>0</Gold>
@@ -218,19 +222,19 @@
 			<BarbarianBonus>0</BarbarianBonus>
 			<AIBarbarianBonus>50</AIBarbarianBonus>
 			<EarliestBarbarianReleaseTurn>0</EarliestBarbarianReleaseTurn>
-			<BarbarianLandTargetRange>20</BarbarianLandTargetRange>
-			<BarbarianSeaTargetRange>40</BarbarianSeaTargetRange>
+			<BarbarianLandTargetRange>32</BarbarianLandTargetRange>
+			<BarbarianSeaTargetRange>64</BarbarianSeaTargetRange>
 			<AIDeclareWarProb>100</AIDeclareWarProb>
-			<AIWorkRateModifier>10</AIWorkRateModifier>
-			<AIUnhappinessPercent>95</AIUnhappinessPercent>
-			<AIGrowthPercent>90</AIGrowthPercent>
-			<AITrainPercent>90</AITrainPercent>
-			<AIWorldTrainPercent>90</AIWorldTrainPercent>
-			<AIConstructPercent>90</AIConstructPercent>
-			<AIWorldConstructPercent>90</AIWorldConstructPercent>
-			<AICreatePercent>90</AICreatePercent>
-			<AIWorldCreatePercent>90</AIWorldCreatePercent>
-			<AIBuildingCostPercent>90</AIBuildingCostPercent>
+			<AIWorkRateModifier>20</AIWorkRateModifier>
+			<AIUnhappinessPercent>96</AIUnhappinessPercent>
+			<AIGrowthPercent>85</AIGrowthPercent>
+			<AITrainPercent>85</AITrainPercent>
+			<AIWorldTrainPercent>85</AIWorldTrainPercent>
+			<AIConstructPercent>85</AIConstructPercent>
+			<AIWorldConstructPercent>85</AIWorldConstructPercent>
+			<AICreatePercent>85</AICreatePercent>
+			<AIWorldCreatePercent>85</AIWorldCreatePercent>
+			<AIBuildingCostPercent>85</AIBuildingCostPercent>
 			<AIUnitCostPercent>50</AIUnitCostPercent>
 			<AIUnitSupplyPercent>50</AIUnitSupplyPercent>
 			<AIUnitUpgradePercent>50</AIUnitUpgradePercent>
@@ -244,7 +248,7 @@
 			<Description>TXT_KEY_HANDICAP_EMPEROR</Description>
 			<Help>TXT_KEY_HANDICAP_EMPEROR_HELP</Help>
 			<StartingLocPercent>50</StartingLocPercent>
-			<HappinessDefault>30</HappinessDefault>
+			<HappinessDefault>18</HappinessDefault>
 			<NumCitiesUnhappinessMod>100</NumCitiesUnhappinessMod>
 			<PopulationUnhappinessMod>50</PopulationUnhappinessMod>
 			<Gold>0</Gold>
@@ -267,11 +271,11 @@
 			<BarbarianBonus>0</BarbarianBonus>
 			<AIBarbarianBonus>50</AIBarbarianBonus>
 			<EarliestBarbarianReleaseTurn>0</EarliestBarbarianReleaseTurn>
-			<BarbarianLandTargetRange>20</BarbarianLandTargetRange>
-			<BarbarianSeaTargetRange>40</BarbarianSeaTargetRange>
+			<BarbarianLandTargetRange>32</BarbarianLandTargetRange>
+			<BarbarianSeaTargetRange>64</BarbarianSeaTargetRange>
 			<AIDeclareWarProb>100</AIDeclareWarProb>
-			<AIWorkRateModifier>20</AIWorkRateModifier>
-			<AIUnhappinessPercent>90</AIUnhappinessPercent>
+			<AIWorkRateModifier>30</AIWorkRateModifier>
+			<AIUnhappinessPercent>94</AIUnhappinessPercent>
 			<AIGrowthPercent>80</AIGrowthPercent>
 			<AITrainPercent>80</AITrainPercent>
 			<AIWorldTrainPercent>80</AIWorldTrainPercent>
@@ -293,7 +297,7 @@
 			<Description>TXT_KEY_HANDICAP_IMMORTAL</Description>
 			<Help>TXT_KEY_HANDICAP_IMMORTAL_HELP</Help>
 			<StartingLocPercent>50</StartingLocPercent>
-			<HappinessDefault>30</HappinessDefault>
+			<HappinessDefault>17</HappinessDefault>
 			<NumCitiesUnhappinessMod>100</NumCitiesUnhappinessMod>
 			<PopulationUnhappinessMod>50</PopulationUnhappinessMod>
 			<Gold>0</Gold>
@@ -316,11 +320,11 @@
 			<BarbarianBonus>0</BarbarianBonus>
 			<AIBarbarianBonus>50</AIBarbarianBonus>
 			<EarliestBarbarianReleaseTurn>0</EarliestBarbarianReleaseTurn>
-			<BarbarianLandTargetRange>20</BarbarianLandTargetRange>
-			<BarbarianSeaTargetRange>40</BarbarianSeaTargetRange>
+			<BarbarianLandTargetRange>32</BarbarianLandTargetRange>
+			<BarbarianSeaTargetRange>64</BarbarianSeaTargetRange>
 			<AIDeclareWarProb>100</AIDeclareWarProb>
-			<AIWorkRateModifier>30</AIWorkRateModifier>
-			<AIUnhappinessPercent>85</AIUnhappinessPercent>
+			<AIWorkRateModifier>40</AIWorkRateModifier>
+			<AIUnhappinessPercent>92</AIUnhappinessPercent>
 			<AIGrowthPercent>70</AIGrowthPercent>
 			<AITrainPercent>70</AITrainPercent>
 			<AIWorldTrainPercent>70</AIWorldTrainPercent>
@@ -342,7 +346,7 @@
 			<Description>TXT_KEY_HANDICAP_DEITY</Description>
 			<Help>TXT_KEY_HANDICAP_DEITY_HELP</Help>
 			<StartingLocPercent>50</StartingLocPercent>
-			<HappinessDefault>30</HappinessDefault>
+			<HappinessDefault>17</HappinessDefault>
 			<NumCitiesUnhappinessMod>100</NumCitiesUnhappinessMod>
 			<PopulationUnhappinessMod>50</PopulationUnhappinessMod>
 			<Gold>0</Gold>
@@ -365,11 +369,11 @@
 			<BarbarianBonus>0</BarbarianBonus>
 			<AIBarbarianBonus>50</AIBarbarianBonus>
 			<EarliestBarbarianReleaseTurn>0</EarliestBarbarianReleaseTurn>
-			<BarbarianLandTargetRange>20</BarbarianLandTargetRange>
-			<BarbarianSeaTargetRange>40</BarbarianSeaTargetRange>
+			<BarbarianLandTargetRange>32</BarbarianLandTargetRange>
+			<BarbarianSeaTargetRange>64</BarbarianSeaTargetRange>
 			<AIDeclareWarProb>100</AIDeclareWarProb>
 			<AIWorkRateModifier>50</AIWorkRateModifier>
-			<AIUnhappinessPercent>80</AIUnhappinessPercent>
+			<AIUnhappinessPercent>90</AIUnhappinessPercent>
 			<AIGrowthPercent>60</AIGrowthPercent>
 			<AITrainPercent>60</AITrainPercent>
 			<AIWorldTrainPercent>60</AIWorldTrainPercent>

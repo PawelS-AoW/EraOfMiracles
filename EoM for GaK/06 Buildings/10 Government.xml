@@ -1,7 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by ModBuddy on 6/5/2012 3:27:46 PM -->
 <GameData>
+	
+	<!-- SPECIAL BUILDINGS -->
+	
+	<!-- PALACE -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_PALACE</Type>
+			<DefaultBuilding>BUILDING_PALACE</DefaultBuilding>
+			<Description>TXT_KEY_EOMBLDG_PALACE</Description>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+			<NoLimit>1</NoLimit>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_PALACE</Type>
+			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+			<Cost>0</Cost>
+			<Description>TXT_KEY_EOMBLDG_PALACE</Description>
+			<Help>TXT_KEY_EOMBLDG_PALACE_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MinAreaSize>-1</MinAreaSize>
+			<NeverCapture>true</NeverCapture>
+			<ArtDefineTag>PALACE</ArtDefineTag>
+			<ArtInfoCulturalVariation>true</ArtInfoCulturalVariation>
+			<DisplayPosition>32</DisplayPosition>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>19</PortraitIndex>
+			<Capital>true</Capital>
+			<Defense>100</Defense>
+			<SpecialistType>SPECIALIST_NOBLE</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>
+			<HappinessPerXPolicies>1</HappinessPerXPolicies>
+		</Row>
+	</Buildings>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMBLDG_PALACE">
+			<Text>Palace</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBLDG_PALACE_HELP">
+			<Text>[ICON_BULLET]Makes this city the [ICON_CAPITAL] Capital.[NEWLINE][ICON_BULLET]+1 [ICON_HAPPINESS_1] Global Happiness for every Social Policy adopted.</Text>
+		</Row>
+	</Language_en_US>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_PALACE</BuildingType>
+			<FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Building_Flavors>
+	<!-- FOUNDERS STATUE -->
+	<!-- used to reduce the "happiness cost" of the first 4 cities -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_FOUNDERS_STATUE</Type>
+			<DefaultBuilding>BUILDING_FOUNDERS_STATUE</DefaultBuilding>
+			<Description>TXT_KEY_EOMBLDG_FOUNDERS_STATUE</Description>
+			<MaxPlayerInstances>4</MaxPlayerInstances>
+			<NoLimit>1</NoLimit>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_FOUNDERS_STATUE</Type>
+			<BuildingClass>BUILDINGCLASS_FOUNDERS_STATUE</BuildingClass>
+			<Cost>0</Cost>
+			<Description>TXT_KEY_EOMBLDG_FOUNDERS_STATUE</Description>
+			<Help>TXT_KEY_EOMBLDG_FOUNDERS_STATUE_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<ArtDefineTag>MONUMENT</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<NeverCapture>true</NeverCapture>
+			<IconAtlas>WONDERS_DLC_ATLAS</IconAtlas>
+			<PortraitIndex>2</PortraitIndex>
+			<FreeStartEra>ERA_ANCIENT</FreeStartEra>
+			<UnmoddedHappiness>5</UnmoddedHappiness>
+		</Row>
+	</Buildings>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMBLDG_FOUNDERS_STATUE">
+			<Text>Founders Statue</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBLDG_FOUNDERS_STATUE_HELP">
+			<Text>[ICON_BULLET]Granted for free in your first 4 cities.</Text>
+		</Row>
+	</Language_en_US>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_FOUNDERS_STATUE</BuildingType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Building_Flavors>
 	<!-- CITY SQUARE -->
+	<!-- Standard building in every city, provides basic bonuses. Some civs get unique versions with racial bonuses.-->
 	<BuildingClasses>
 		<Row>
 			<Type>BUILDINGCLASS_CITY_SQUARE</Type>
@@ -63,6 +176,7 @@
 		</Row>
 	</Building_YieldChanges>
 	<!-- HALL OF JOINING -->
+	<!-- works like Courthouse in normal game -->
 	<BuildingClasses>
 		<Row>
 			<Type>BUILDINGCLASS_HALL_OF_JOINING</Type>
@@ -106,6 +220,9 @@
 			<Flavor>10</Flavor>
 		</Row>
 	</Building_Flavors>
+
+	<!-- NORMAL BUILDINGS -->
+
 	<!-- CHIEF'S HUT -->
 	<BuildingClasses>
 		<Row>
@@ -173,6 +290,8 @@
 			<PortraitIndex>63</PortraitIndex>
 			<ConquestProb>75</ConquestProb>
 			<Happiness>1</Happiness>
+			<SpecialistType>SPECIALIST_OFFICIAL</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>
 		</Row>
 	</Buildings>
 	<Language_en_US>
@@ -241,6 +360,8 @@
 			<PortraitIndex>61</PortraitIndex>
 			<ConquestProb>75</ConquestProb>
 			<CultureRateModifier>25</CultureRateModifier>
+			<SpecialistType>SPECIALIST_OFFICIAL</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>
 		</Row>
 	</Buildings>
 	<Language_en_US>

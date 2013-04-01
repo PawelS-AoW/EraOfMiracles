@@ -1,63 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by ModBuddy on 5/30/2012 1:33:53 AM -->
 <GameData>
-	<!-- PALACE -->
-	<BuildingClasses>
-		<Row>
-			<Type>BUILDINGCLASS_PALACE</Type>
-			<DefaultBuilding>BUILDING_PALACE</DefaultBuilding>
-			<Description>TXT_KEY_BUILDING_PALACE</Description>
-			<MaxPlayerInstances>1</MaxPlayerInstances>
-			<NoLimit>1</NoLimit>
-		</Row>
-	</BuildingClasses>
-	<Buildings>
-		<Row>
-			<Type>BUILDING_PALACE</Type>
-			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
-			<Cost>0</Cost>
-			<Help>TXT_KEY_BUILDING_PALACE_HELP</Help>
-			<Description>TXT_KEY_BUILDING_PALACE</Description>
-			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_PALACE_TEXT</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_PALACE_STRATEGY</Strategy>
-			<ArtDefineTag>PALACE</ArtDefineTag>
-			<NukeImmune>true</NukeImmune>
-			<MinAreaSize>-1</MinAreaSize>
-			<Defense>100</Defense>
-			<ArtInfoCulturalVariation>true</ArtInfoCulturalVariation>
-			<DisplayPosition>32</DisplayPosition>
-			<NeverCapture>true</NeverCapture>
-			<IconAtlas>BW_ATLAS_1</IconAtlas>
-			<PortraitIndex>19</PortraitIndex>
-			<Capital>true</Capital>
-			<SpecialistType>SPECIALIST_NOBLE</SpecialistType>
-			<SpecialistCount>1</SpecialistCount>
-		</Row>
-	</Buildings>
-	<Building_YieldChanges>
-		<Row>
-			<BuildingType>BUILDING_PALACE</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_PALACE</BuildingType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_PALACE</BuildingType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1</Yield>
-		</Row>
-	</Building_YieldChanges>
-	<Building_Flavors>
-		<Row>
-			<BuildingType>BUILDING_PALACE</BuildingType>
-			<FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-	</Building_Flavors>
 	<!-- STANDING STONES -->
 	<BuildingClasses>
 		<Row>

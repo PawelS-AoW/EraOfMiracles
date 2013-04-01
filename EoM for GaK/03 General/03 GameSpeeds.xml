@@ -9,7 +9,7 @@
 			<Help>TXT_KEY_GAMESPEED_MARATHON_HELP</Help>
 			<DealDuration>50</DealDuration>
 			<GrowthPercent>400</GrowthPercent>
-			<TrainPercent>320</TrainPercent>
+			<TrainPercent>360</TrainPercent>
 			<ConstructPercent>400</ConstructPercent>
 			<CreatePercent>400</CreatePercent>
 			<ResearchPercent>400</ResearchPercent>
@@ -20,7 +20,7 @@
 			<GreatPeoplePercent>400</GreatPeoplePercent>
 			<CulturePercent>400</CulturePercent>
 			<FaithPercent>400</FaithPercent>
-			<BarbPercent>300</BarbPercent>
+			<BarbPercent>360</BarbPercent>
 			<FeatureProductionPercent>400</FeatureProductionPercent>
 			<UnitDiscoverPercent>400</UnitDiscoverPercent>
 			<UnitHurryPercent>400</UnitHurryPercent>
@@ -34,6 +34,8 @@
 			<MinorCivElectionFreqMod>400</MinorCivElectionFreqMod>
 			<OpinionDurationPercent>400</OpinionDurationPercent>
 			<SpyRatePercent>100</SpyRatePercent>
+			<PeaceDealDuration>25</PeaceDealDuration>
+			<RelationshipDuration>100</RelationshipDuration>
 			<IconAtlas>GAMESPEED_ATLAS</IconAtlas>
 			<PortraitIndex>0</PortraitIndex>
 			<EoM_SettlerInterval>40</EoM_SettlerInterval>
@@ -56,7 +58,7 @@
 			<GreatPeoplePercent>200</GreatPeoplePercent>
 			<CulturePercent>200</CulturePercent>
 			<FaithPercent>200</FaithPercent>
-			<BarbPercent>175</BarbPercent>
+			<BarbPercent>200</BarbPercent>
 			<FeatureProductionPercent>200</FeatureProductionPercent>
 			<UnitDiscoverPercent>200</UnitDiscoverPercent>
 			<UnitHurryPercent>200</UnitHurryPercent>
@@ -70,6 +72,8 @@
 			<MinorCivElectionFreqMod>200</MinorCivElectionFreqMod>
 			<OpinionDurationPercent>200</OpinionDurationPercent>
 			<SpyRatePercent>100</SpyRatePercent>
+			<PeaceDealDuration>20</PeaceDealDuration>
+			<RelationshipDuration>80</RelationshipDuration>
 			<IconAtlas>GAMESPEED_ATLAS</IconAtlas>
 			<PortraitIndex>1</PortraitIndex>
 			<EoM_SettlerInterval>20</EoM_SettlerInterval>
@@ -81,7 +85,7 @@
 			<Help>TXT_KEY_GAMESPEED_STANDARD_HELP</Help>
 			<DealDuration>30</DealDuration>
 			<GrowthPercent>100</GrowthPercent>
-			<TrainPercent>120</TrainPercent>
+			<TrainPercent>110</TrainPercent>
 			<ConstructPercent>100</ConstructPercent>
 			<CreatePercent>100</CreatePercent>
 			<ResearchPercent>100</ResearchPercent>
@@ -92,7 +96,7 @@
 			<GreatPeoplePercent>100</GreatPeoplePercent>
 			<CulturePercent>100</CulturePercent>
 			<FaithPercent>100</FaithPercent>
-			<BarbPercent>100</BarbPercent>
+			<BarbPercent>110</BarbPercent>
 			<FeatureProductionPercent>100</FeatureProductionPercent>
 			<UnitDiscoverPercent>100</UnitDiscoverPercent>
 			<UnitHurryPercent>100</UnitHurryPercent>
@@ -106,6 +110,8 @@
 			<MinorCivElectionFreqMod>100</MinorCivElectionFreqMod>
 			<OpinionDurationPercent>100</OpinionDurationPercent>
 			<SpyRatePercent>100</SpyRatePercent>
+			<PeaceDealDuration>15</PeaceDealDuration>
+			<RelationshipDuration>60</RelationshipDuration>
 			<IconAtlas>GAMESPEED_ATLAS</IconAtlas>
 			<PortraitIndex>2</PortraitIndex>
 			<EoM_SettlerInterval>10</EoM_SettlerInterval>
@@ -117,7 +123,7 @@
 			<Help>TXT_KEY_GAMESPEED_QUICK_HELP</Help>
 			<DealDuration>20</DealDuration>
 			<GrowthPercent>50</GrowthPercent>
-			<TrainPercent>70</TrainPercent>
+			<TrainPercent>60</TrainPercent>
 			<ConstructPercent>50</ConstructPercent>
 			<CreatePercent>50</CreatePercent>
 			<ResearchPercent>50</ResearchPercent>
@@ -142,6 +148,8 @@
 			<MinorCivElectionFreqMod>50</MinorCivElectionFreqMod>
 			<OpinionDurationPercent>50</OpinionDurationPercent>
 			<SpyRatePercent>100</SpyRatePercent>
+			<PeaceDealDuration>10</PeaceDealDuration>
+			<RelationshipDuration>40</RelationshipDuration>
 			<IconAtlas>GAMESPEED_ATLAS</IconAtlas>
 			<PortraitIndex>3</PortraitIndex>
 			<EoM_SettlerInterval>5</EoM_SettlerInterval>
