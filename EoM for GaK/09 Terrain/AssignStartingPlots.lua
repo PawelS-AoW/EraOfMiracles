@@ -935,9 +935,9 @@ function AssignStartingPlots:CustomOverride()
 	num_plots = table.maxn (ShuffledList)
 
 	-- REEF
-	-- "seeds" (random placement on 10% eligible plots)
+	-- "seeds" (random placement on 8% eligible plots)
 
-	for placed = 1, math.floor (num_plots * 0.10 + 0.5) do
+	for placed = 1, math.floor (num_plots * 0.08 + 0.5) do
 		x = ShuffledList [1][1]
 		y = ShuffledList [1][2]
 		Plot = Map.GetPlot (x,y)
@@ -945,9 +945,9 @@ function AssignStartingPlots:CustomOverride()
 		table.remove (ShuffledList,1)
 	end
 	
-	-- "growing" the Reef (places Reef adjacent to existing Reef, 10% plots)
+	-- "growing" the Reef (places Reef adjacent to existing Reef, 2% plots)
 
-	to_place = math.floor (num_plots * 0.10 + 0.5)
+	to_place = math.floor (num_plots * 0.02 + 0.5)
 	
 	while to_place > 0 and table_pos <= table.maxn (ShuffledList) do
 		x = ShuffledList [table_pos][1]
@@ -973,11 +973,11 @@ function AssignStartingPlots:CustomOverride()
 
 	-- KELP
 
-	-- "seeds" (random placement on 5% eligible plots)
+	-- "seeds" (random placement on 6% eligible plots)
 	
 	table_pos = 1
 
-	for placed = 1, math.floor (num_plots * 0.05 + 0.5) do
+	for placed = 1, math.floor (num_plots * 0.06 + 0.5) do
 		x = ShuffledList [table_pos][1]
 		y = ShuffledList [table_pos][2]
 		Plot = Map.GetPlot (x,y)
@@ -985,9 +985,9 @@ function AssignStartingPlots:CustomOverride()
 		table_pos = table_pos + 1
 	end
 	
-	-- "growing" the Kelp (places Kelp adjacent to existing Kelp, 15% plots)
+	-- "growing" the Kelp (places Kelp adjacent to existing Kelp, 4% plots)
 
-	to_place = math.floor (num_plots * 0.15 + 0.5)
+	to_place = math.floor (num_plots * 0.04 + 0.5)
 	
 	while to_place > 0 and table_pos <= table.maxn (ShuffledList) do
 		x = ShuffledList [table_pos][1]

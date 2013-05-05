@@ -145,6 +145,41 @@
 			<IconsPerRow>1</IconsPerRow>
 			<IconsPerColumn>1</IconsPerColumn>
 		</Row>
+		<Row>
+			<Atlas>DENMARK_WONDER_ATLAS</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>NationalWonders256_Denmark.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>DENMARK_WONDER_ATLAS</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>NationalWonders128_Denmark.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>DENMARK_WONDER_ATLAS</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>NationalWonders80_Denmark.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>DENMARK_WONDER_ATLAS</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>NationalWonders64_Denmark.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>DENMARK_WONDER_ATLAS</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>NationalWonders45_Denmark.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
 		<!-- Polynesia Scenario -->
 		<Row>
 			<Atlas>TECH_ATLAS_DLC_03</Atlas>

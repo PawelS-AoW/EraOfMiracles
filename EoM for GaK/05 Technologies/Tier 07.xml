@@ -335,7 +335,7 @@
 		</Row>
 	</Technology_Flavors>
 	<!-- PROD_07: MACHINERY -->
-	<!-- U: Crossbowman -->
+	<!-- U: Longbowman / Crossbowman -->
 	<!-- B: Windmill, Watermill -->
 	<!-- +1 Production from Lumber Mill -->
 	<Technologies>

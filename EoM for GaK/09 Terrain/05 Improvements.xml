@@ -1357,7 +1357,7 @@
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>

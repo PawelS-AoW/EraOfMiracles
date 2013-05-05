@@ -192,7 +192,7 @@
 			<Text>Forester's Lodge</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMBLDG_FORESTERS_LODGE_HELP">
-			<Text>[ICON_BULLET]+20 XP for Recon Units.[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food from [ICON_RES_DEER] Deer.[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production from [ICON_RES_SPICES] Timber.[NEWLINE][ICON_BULLET]+1 [ICON_GOLD] Gold from [ICON_RES_FUR] Furs.[NEWLINE][ICON_BULLET]Requires an improved source of at least one of these resources in the city radius.</Text>
+			<Text>[ICON_BULLET]+20 XP for Recon Units.[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food from [ICON_RES_DEER] Deer.[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production from [ICON_RES_SPICES] Hardwood.[NEWLINE][ICON_BULLET]+1 [ICON_GOLD] Gold from [ICON_RES_FUR] Furs.[NEWLINE][ICON_BULLET]Requires an improved source of at least one of these resources in the city radius.</Text>
 		</Row>
 	</Language_en_US>
 	<Building_ClassesNeededInCity>
@@ -234,7 +234,7 @@
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FORESTERS_LODGE</BuildingType>
-			<ResourceType>RESOURCE_SPICES</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
@@ -252,7 +252,7 @@
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FORESTERS_LODGE</BuildingType>
-			<ResourceType>RESOURCE_SPICES</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FORESTERS_LODGE</BuildingType>

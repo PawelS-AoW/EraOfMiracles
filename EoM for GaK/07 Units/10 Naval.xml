@@ -146,7 +146,7 @@
 	<Unit_ResourceQuantityRequirements>
 		<Row>
 			<UnitType>UNIT_TRIREME</UnitType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
 		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
@@ -243,7 +243,7 @@
 	<Unit_ResourceQuantityRequirements>
 		<Row>
 			<UnitType>UNIT_DRAKKAR</UnitType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
 		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
@@ -359,7 +359,7 @@
 	<Unit_ResourceQuantityRequirements>
 		<Row>
 			<UnitType>UNIT_QUINQUEREME</UnitType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
 		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
@@ -453,7 +453,7 @@
 	<Unit_ResourceQuantityRequirements>
 		<Row>
 			<UnitType>UNIT_GALLEON</UnitType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
 			<Cost>2</Cost>
 		</Row>
 	</Unit_ResourceQuantityRequirements>
@@ -641,7 +641,7 @@
 	<Unit_ResourceQuantityRequirements>
 		<Row>
 			<UnitType>UNIT_CARAVEL</UnitType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
 		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
@@ -705,7 +705,7 @@
 		<Row>
 			<Class>UNITCLASS_PRIVATEER</Class>
 			<Type>UNIT_PRIVATEER</Type>
-			<PrereqTech>TECH_NAVIGATION</PrereqTech>
+			<PrereqTech>TECH_PIRACY</PrereqTech>
 			<Cost>200</Cost>
 			<ExtraMaintenanceCost>4</ExtraMaintenanceCost>
 			<Combat>7</Combat>
@@ -741,7 +741,7 @@
 	<Unit_ResourceQuantityRequirements>
 		<Row>
 			<UnitType>UNIT_PRIVATEER</UnitType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
 		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_FreePromotions>
@@ -927,7 +927,7 @@
 	<Unit_ResourceQuantityRequirements>
 		<Row>
 			<UnitType>UNIT_GALLEASS</UnitType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
 		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
@@ -1029,7 +1029,7 @@
 	<Unit_ResourceQuantityRequirements>
 		<Row>
 			<UnitType>UNIT_DROMON</UnitType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
 		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
@@ -1134,7 +1134,7 @@
 	<Unit_ResourceQuantityRequirements>
 		<Row>
 			<UnitType>UNIT_FRIGATE</UnitType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FRIGATE</UnitType>
@@ -1179,6 +1179,96 @@
 		<Update>
 			<Set Scale="0.16"/>
 			<Where Type="ART_DEF_UNIT_MEMBER_FRIGATE"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<!-- SHIP_OF_THE_LINE -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_SHIP_OF_THE_LINE</Type>
+			<Description>TXT_KEY_EOMUNIT_SHIP_OF_THE_LINE</Description>
+			<DefaultUnit>UNIT_SHIP_OF_THE_LINE</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_SHIP_OF_THE_LINE</Class>
+			<Type>UNIT_SHIP_OF_THE_LINE</Type>
+			<PrereqTech>TECH_NAVAL_DREAMS</PrereqTech>
+			<Cost>300</Cost>
+			<ExtraMaintenanceCost>5</ExtraMaintenanceCost>
+			<Combat>7</Combat>
+			<RangedCombat>7</RangedCombat>
+			<Range>3</Range>
+			<Moves>5</Moves>
+			<CombatClass>UNITCOMBAT_NAVALRANGED</CombatClass>
+			<Domain>DOMAIN_SEA</Domain>
+			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_SHIP_OF_THE_LINE</Description>
+			<Help>TXT_KEY_EOMUNIT_SHIP_OF_THE_LINE_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<Mechanized>true</Mechanized>
+			<MinAreaSize>10</MinAreaSize>
+			<UnitArtInfo>ART_DEF_UNIT_U_ENGLISH_SHIPOFTHELINE</UnitArtInfo>
+			<UnitFlagIconOffset>52</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_2</IconAtlas>
+			<PortraitIndex>9</PortraitIndex>
+			<MoveRate>WOODEN_BOAT</MoveRate>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_SHIP_OF_THE_LINE">
+			<Text>Ship of the Line</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_SHIP_OF_THE_LINE_HELP">
+			<Text>[ICON_BULLET]Ranged Naval Unit.</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
+			<PromotionType>PROMOTION_NO_MELEE</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
+			<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
+			<UnitAIType>UNITAI_RESERVE_SEA</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
+			<UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.16"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_U_ENGLISH_SHIPOFTHELINE"/>
 		</Update>
 	</ArtDefine_UnitMemberInfos>
 </GameData>

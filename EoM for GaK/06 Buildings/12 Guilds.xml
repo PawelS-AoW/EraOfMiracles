@@ -109,6 +109,10 @@
 			<BuildingType>BUILDING_MILITARY_ACADEMY</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_WARRIORS_GUILD</BuildingClassType>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_MILITARY_ACADEMY</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_ARMORY</BuildingClassType>
+		</Row>
 	</Building_ClassesNeededInCity>
 	<Building_YieldChanges>
 		<Row>
@@ -177,6 +181,10 @@
 		<Row>
 			<BuildingType>BUILDING_NAVAL_ACADEMY</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_WARRIORS_GUILD</BuildingClassType>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_NAVAL_ACADEMY</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_SHIPYARD</BuildingClassType>
 		</Row>
 	</Building_ClassesNeededInCity>
 	<Building_YieldChanges>
@@ -254,6 +262,10 @@
 		<Row>
 			<BuildingType>BUILDING_FORTRESS</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_WARRIORS_GUILD</BuildingClassType>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_FORTRESS</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
 		</Row>
 	</Building_ClassesNeededInCity>
 	<Building_Flavors>
@@ -443,6 +455,10 @@
 			<BuildingType>BUILDING_BANK</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_MERCHANTS_GUILD</BuildingClassType>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_BANK</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_TAX_COLLECTOR</BuildingClassType>
+		</Row>
 	</Building_ClassesNeededInCity>
 	<Building_Flavors>
 		<Row>
@@ -500,6 +516,10 @@
 		<Row>
 			<BuildingType>BUILDING_FOOD_DEPOT</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_MERCHANTS_GUILD</BuildingClassType>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_FOOD_DEPOT</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
 		</Row>
 	</Building_ClassesNeededInCity>
 	<Building_Flavors>
@@ -570,6 +590,10 @@
 			<BuildingType>BUILDING_DOCKS</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_MERCHANTS_GUILD</BuildingClassType>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_DOCKS</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
+		</Row>
 	</Building_ClassesNeededInCity>
 	<Building_Flavors>
 		<Row>
@@ -581,6 +605,223 @@
 			<BuildingType>BUILDING_DOCKS</BuildingType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>
 			<Flavor>2</Flavor>
+		</Row>
+	</Building_Flavors>
+	<!-- SAGES GUILD -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_SAGES_GUILD</Type>
+			<DefaultBuilding>BUILDING_SAGES_GUILD</DefaultBuilding>
+			<Description>TXT_KEY_EOMBLDG_SAGES_GUILD</Description>
+			<EoM_MaxCityPercent>45</EoM_MaxCityPercent>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_SAGES_GUILD</Type>
+			<BuildingClass>BUILDINGCLASS_SAGES_GUILD</BuildingClass>
+			<Cost>300</Cost>
+			<PrereqTech>TECH_MAGICAL_STUDIES</PrereqTech>
+			<Description>TXT_KEY_EOMBLDG_SAGES_GUILD</Description>
+			<Help>TXT_KEY_EOMBLDG_SAGES_GUILD_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_LIBRARY</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>DENMARK_WONDER_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<NeverCapture>true</NeverCapture>
+			<MutuallyExclusiveGroup>1</MutuallyExclusiveGroup>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>
+		</Row>
+	</Buildings>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMBLDG_SAGES_GUILD">
+			<Text>Sages Guild</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBLDG_SAGES_GUILD_HELP">
+			<Text>[ICON_BULLET]Can't be built in more than 45% of your cities.[NEWLINE][ICON_BULLET]Can't be built in cities that contain another Guild.</Text>
+		</Row>
+	</Language_en_US>
+	<Building_ClassesNeededInCity>
+		<Row>
+			<BuildingType>BUILDING_SAGES_GUILD</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
+		</Row>
+	</Building_ClassesNeededInCity>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_SAGES_GUILD</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>4</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_SAGES_GUILD</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_SAGES_GUILD</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_YieldModifiers>
+		<Row>
+			<BuildingType>BUILDING_SAGES_GUILD</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>10</Yield>
+		</Row>
+	</Building_YieldModifiers>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_SAGES_GUILD</BuildingType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_SAGES_GUILD</BuildingType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_SAGES_GUILD</BuildingType>
+			<FlavorType>FLAVOR_MAGIC</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_SAGES_GUILD</BuildingType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</Building_Flavors>
+	<!-- UNIVERSITY -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_UNIVERSITY</Type>
+			<DefaultBuilding>BUILDING_UNIVERSITY</DefaultBuilding>
+			<Description>TXT_KEY_EOMBLDG_UNIVERSITY</Description>
+			<EoM_MaxCityPercent>20</EoM_MaxCityPercent>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_UNIVERSITY</Type>
+			<BuildingClass>BUILDINGCLASS_UNIVERSITY</BuildingClass>
+			<Cost>500</Cost>
+			<PrereqTech>TECH_EDUCATION</PrereqTech>
+			<Description>TXT_KEY_EOMBLDG_UNIVERSITY</Description>
+			<Help>TXT_KEY_EOMBLDG_UNIVERSITY_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_UNIVERSITY</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>13</PortraitIndex>
+			<NeverCapture>true</NeverCapture>
+			<MutuallyExclusiveGroup>2</MutuallyExclusiveGroup>
+		</Row>
+	</Buildings>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMBLDG_UNIVERSITY">
+			<Text>University</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBLDG_UNIVERSITY_HELP">
+			<Text>[ICON_BULLET]Can't be built in more than 20% of your cities.[NEWLINE][ICON_BULLET]Can't be built in cities that contain a Bards Promenade, Cathedral or Wizard's Tower.</Text>
+		</Row>
+	</Language_en_US>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_UNIVERSITY</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>8</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_YieldModifiers>
+		<Row>
+			<BuildingType>BUILDING_UNIVERSITY</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>15</Yield>
+		</Row>
+	</Building_YieldModifiers>
+	<Building_ClassesNeededInCity>
+		<Row>
+			<BuildingType>BUILDING_UNIVERSITY</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_SAGES_GUILD</BuildingClassType>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_UNIVERSITY</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_ACADEMY</BuildingClassType>
+		</Row>
+	</Building_ClassesNeededInCity>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_UNIVERSITY</BuildingType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Building_Flavors>
+	<!-- CATHEDRAL -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_CATHEDRAL</Type>
+			<DefaultBuilding>BUILDING_CATHEDRAL</DefaultBuilding>
+			<Description>TXT_KEY_EOMBLDG_CATHEDRAL</Description>
+			<EoM_MaxCityPercent>20</EoM_MaxCityPercent>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_CATHEDRAL</Type>
+			<BuildingClass>BUILDINGCLASS_CATHEDRAL</BuildingClass>
+			<Cost>500</Cost>
+			<PrereqTech>TECH_THEOLOGY</PrereqTech>
+			<Description>TXT_KEY_EOMBLDG_CATHEDRAL</Description>
+			<Help>TXT_KEY_EOMBLDG_CATHEDRAL_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<ArtDefineTag>TEMPLE</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>EXPANSION_BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>2</PortraitIndex>
+			<NeverCapture>true</NeverCapture>
+			<MutuallyExclusiveGroup>2</MutuallyExclusiveGroup>
+		</Row>
+	</Buildings>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMBLDG_CATHEDRAL">
+			<Text>Cathedral</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBLDG_CATHEDRAL_HELP">
+			<Text>[ICON_BULLET]Can't be built in more than 20% of your cities.[NEWLINE][ICON_BULLET]Can't be built in cities that contain a University, Bards Promenade or Wizard's Tower.</Text>
+		</Row>
+	</Language_en_US>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_CATHEDRAL</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>8</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_ClassesNeededInCity>
+		<Row>
+			<BuildingType>BUILDING_CATHEDRAL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_SAGES_GUILD</BuildingClassType>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CATHEDRAL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_MONASTERY</BuildingClassType>
+		</Row>
+	</Building_ClassesNeededInCity>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_CATHEDRAL</BuildingType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>10</Flavor>
 		</Row>
 	</Building_Flavors>
 </GameData>

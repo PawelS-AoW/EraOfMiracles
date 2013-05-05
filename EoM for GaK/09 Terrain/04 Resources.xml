@@ -11,8 +11,8 @@
 		<Row Tag="TXT_KEY_EOMRES_ELEPHANT">
 			<Text>Elephants</Text>
 		</Row>
-		<Row Tag="TXT_KEY_EOMRES_TIMBER">
-			<Text>Timber</Text>
+		<Row Tag="TXT_KEY_EOMRES_HARDWOOD">
+			<Text>Hardwood</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMRES_MITHRIL">
 			<Text>Mithril</Text>
@@ -136,10 +136,10 @@
 			<EoM_FloodPlains>4</EoM_FloodPlains>
 		</Row>
 		<Row>
-			<Type>RESOURCE_TIMBER</Type>
+			<Type>RESOURCE_HARDWOOD</Type>
 			<TechReveal>TECH_WOOD_WORKING</TechReveal>
 			<TechCityTrade>TECH_WOOD_CUTTING</TechCityTrade>
-			<Description>TXT_KEY_EOMRES_TIMBER</Description>
+			<Description>TXT_KEY_EOMRES_HARDWOOD</Description>
 			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
 			<Help>TXT_KEY_EOM_EMPTY</Help>
 			<ResourceClassType>RESOURCECLASS_RUSH</ResourceClassType>

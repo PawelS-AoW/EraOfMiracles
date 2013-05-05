@@ -150,10 +150,16 @@
 			<Text>[ICON_BULLET]Archery Unit.</Text>
 		</Row>
 	</Language_en_US>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_COMPOSITE_BOWMAN</UnitType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
 		<Row>
 			<UnitType>UNIT_COMPOSITE_BOWMAN</UnitType>
-			<UnitClassType>UNITCLASS_CROSSBOWMAN</UnitClassType>
+			<UnitClassType>UNITCLASS_LONGBOWMAN</UnitClassType>
 		</Row>
 	</Unit_ClassUpgrades>
 	<Unit_FreePromotions>
@@ -194,111 +200,24 @@
 			<Where Type="ART_DEF_UNIT_COMPOSITE_BOWMAN"/>
 		</Update>
 	</ArtDefine_UnitInfos>
-	<!-- CROSSBOWMAN -->
+	<!-- LONGBOWMAN -->
 	<UnitClasses>
 		<Row>
-			<Type>UNITCLASS_CROSSBOWMAN</Type>
-			<Description>TXT_KEY_EOMUNIT_CROSSBOWMAN</Description>
-			<DefaultUnit>UNIT_CROSSBOWMAN</DefaultUnit>
+			<Type>UNITCLASS_LONGBOWMAN</Type>
+			<Description>TXT_KEY_EOMUNIT_LONGBOWMAN</Description>
+			<DefaultUnit>UNIT_LONGBOWMAN</DefaultUnit>
 		</Row>
 	</UnitClasses>
 	<Units>
 		<Row>
-			<Class>UNITCLASS_CROSSBOWMAN</Class>
-			<Type>UNIT_CROSSBOWMAN</Type>
-			<PrereqTech>TECH_MACHINERY</PrereqTech>
-			<Cost>200</Cost>
-			<ExtraMaintenanceCost>4</ExtraMaintenanceCost>
-			<Combat>5</Combat>
-			<RangedCombat>5</RangedCombat>
-			<Range>2</Range>
-			<Moves>2</Moves>
-			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
-			<Description>TXT_KEY_EOMUNIT_CROSSBOWMAN</Description>
-			<Help>TXT_KEY_EOMUNIT_CROSSBOWMAN_HELP</Help>
-			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
-			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
-			<MilitarySupport>true</MilitarySupport>
-			<MilitaryProduction>true</MilitaryProduction>
-			<Pillage>true</Pillage>
-			<UnitArtInfo>ART_DEF_UNIT_CROSSBOWMAN</UnitArtInfo>
-			<UnitFlagIconOffset>29</UnitFlagIconOffset>
-			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
-			<PortraitIndex>30</PortraitIndex>
-		</Row>
-	</Units>
-	<Language_en_US>
-		<Row Tag="TXT_KEY_EOMUNIT_CROSSBOWMAN">
-			<Text>Crossbowman</Text>
-		</Row>
-		<Row Tag="TXT_KEY_EOMUNIT_CROSSBOWMAN_HELP">
-			<Text>[ICON_BULLET]Archery Unit.</Text>
-		</Row>
-	</Language_en_US>
-	<Unit_ClassUpgrades>
-		<Row>
-			<UnitType>UNIT_CROSSBOWMAN</UnitType>
-			<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
-		</Row>
-	</Unit_ClassUpgrades>
-	<Unit_FreePromotions>
-		<Row>
-			<UnitType>UNIT_CROSSBOWMAN</UnitType>
-			<PromotionType>PROMOTION_NO_MELEE</PromotionType>
-		</Row>
-	</Unit_FreePromotions>
-	<Unit_AITypes>
-		<Row>
-			<UnitType>UNIT_CROSSBOWMAN</UnitType>
-			<UnitAIType>UNITAI_RANGED</UnitAIType>
-		</Row>
-	</Unit_AITypes>
-	<Unit_Flavors>
-		<Row>
-			<UnitType>UNIT_CROSSBOWMAN</UnitType>
-			<FlavorType>FLAVOR_RANGED</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-	</Unit_Flavors>
-	<!-- gfx -->
-	<ArtDefine_UnitMemberInfos>
-		<Update>
-			<Set Scale="0.20"/>
-			<Where Type="ART_DEF_UNIT_MEMBER_CROSSBOWMAN"/>
-		</Update>
-	</ArtDefine_UnitMemberInfos>
-	<ArtDefine_UnitInfoMemberInfos>
-		<Update>
-			<Set NumMembers="4"/>
-			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_CROSSBOWMAN"/>
-		</Update>
-	</ArtDefine_UnitInfoMemberInfos>
-	<ArtDefine_UnitInfos>
-		<Update>
-			<Set Formation="EoM_2x2"/>
-			<Where Type="ART_DEF_UNIT_CROSSBOWMAN"/>
-		</Update>
-	</ArtDefine_UnitInfos>
-	<!-- LONGBOWMAN (Elves) -->
-	<Civilization_UnitClassOverrides>
-		<Row>
-			<CivilizationType>CIVILIZATION_ELVES</CivilizationType>
-			<UnitClassType>UNITCLASS_CROSSBOWMAN</UnitClassType>
-			<UnitType>UNIT_LONGBOWMAN</UnitType>
-		</Row>
-	</Civilization_UnitClassOverrides>
-	<Units>
-		<Row>
-			<Class>UNITCLASS_CROSSBOWMAN</Class>
+			<Class>UNITCLASS_LONGBOWMAN</Class>
 			<Type>UNIT_LONGBOWMAN</Type>
 			<PrereqTech>TECH_MACHINERY</PrereqTech>
 			<Cost>200</Cost>
 			<ExtraMaintenanceCost>4</ExtraMaintenanceCost>
-			<Combat>4</Combat>
-			<RangedCombat>5</RangedCombat>
-			<Range>3</Range>
+			<Combat>5</Combat>
+			<RangedCombat>4</RangedCombat>
+			<Range>2</Range>
 			<Moves>2</Moves>
 			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
@@ -323,12 +242,17 @@
 		<Row Tag="TXT_KEY_EOMUNIT_LONGBOWMAN_HELP">
 			<Text>[ICON_BULLET]Archery Unit.</Text>
 		</Row>
-		<!-- Elven unique unit, weaker in defense than Crossbowman it replaces, but has a higher range. -->
 	</Language_en_US>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_LONGBOWMAN</UnitType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
 		<Row>
 			<UnitType>UNIT_LONGBOWMAN</UnitType>
-			<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
+			<UnitClassType>UNITCLASS_SHARPSHOOTER</UnitClassType>
 		</Row>
 	</Unit_ClassUpgrades>
 	<Unit_FreePromotions>
@@ -367,6 +291,113 @@
 		<Update>
 			<Set Formation="EoM_2x2"/>
 			<Where Type="ART_DEF_UNIT_U_ENGLISH_LONGBOWMAN"/>
+		</Update>
+	</ArtDefine_UnitInfos>
+	<!-- CROSSBOWMAN -->
+	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_DREAMERS</CivilizationType>
+			<UnitClassType>UNITCLASS_LONGBOWMAN</UnitClassType>
+			<UnitType>UNIT_CROSSBOWMAN</UnitType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_DWARVES</CivilizationType>
+			<UnitClassType>UNITCLASS_LONGBOWMAN</UnitClassType>
+			<UnitType>UNIT_CROSSBOWMAN</UnitType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_ORCS</CivilizationType>
+			<UnitClassType>UNITCLASS_LONGBOWMAN</UnitClassType>
+			<UnitType>UNIT_CROSSBOWMAN</UnitType>
+		</Row>
+	</Civilization_UnitClassOverrides>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_LONGBOWMAN</Class>
+			<Type>UNIT_CROSSBOWMAN</Type>
+			<PrereqTech>TECH_MACHINERY</PrereqTech>
+			<Cost>200</Cost>
+			<ExtraMaintenanceCost>4</ExtraMaintenanceCost>
+			<Combat>5</Combat>
+			<RangedCombat>5</RangedCombat>
+			<Range>2</Range>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_CROSSBOWMAN</Description>
+			<Help>TXT_KEY_EOMUNIT_CROSSBOWMAN_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<UnitArtInfo>ART_DEF_UNIT_CROSSBOWMAN</UnitArtInfo>
+			<UnitFlagIconOffset>29</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>30</PortraitIndex>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_CROSSBOWMAN">
+			<Text>Crossbowman</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_CROSSBOWMAN_HELP">
+			<Text>[ICON_BULLET]Archery Unit.</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_CROSSBOWMAN</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_CROSSBOWMAN</UnitType>
+			<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_CROSSBOWMAN</UnitType>
+			<PromotionType>PROMOTION_NO_MELEE</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CROSSBOWMAN</UnitType>
+			<PromotionType>PROMOTION_AXES_II</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_CROSSBOWMAN</UnitType>
+			<UnitAIType>UNITAI_RANGED</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_CROSSBOWMAN</UnitType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_CROSSBOWMAN"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Set NumMembers="4"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_CROSSBOWMAN"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitInfos>
+		<Update>
+			<Set Formation="EoM_2x2"/>
+			<Where Type="ART_DEF_UNIT_CROSSBOWMAN"/>
 		</Update>
 	</ArtDefine_UnitInfos>
 	<!-- MUSKETEER -->
@@ -453,6 +484,102 @@
 		<Update>
 			<Set Formation="EoM_2x2"/>
 			<Where Type="ART_DEF_UNIT_MUSKETMAN"/>
+		</Update>
+	</ArtDefine_UnitInfos>
+	<!-- SHARPSHOOTER -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_SHARPSHOOTER</Type>
+			<Description>TXT_KEY_EOMUNIT_SHARPSHOOTER</Description>
+			<DefaultUnit>UNIT_SHARPSHOOTER</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_SHARPSHOOTER</Class>
+			<Type>UNIT_SHARPSHOOTER</Type>
+			<PrereqTech>TECH_ELITE_TROOPS</PrereqTech>
+			<Cost>400</Cost>
+			<ExtraMaintenanceCost>5</ExtraMaintenanceCost>
+			<Combat>6</Combat>
+			<RangedCombat>7</RangedCombat>
+			<Range>2</Range>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_SHARPSHOOTER</Description>
+			<Help>TXT_KEY_EOMUNIT_SHARPSHOOTER_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<UnitArtInfo>ART_DEF_UNIT_U_BABYLONIAN_BOWMAN</UnitArtInfo>
+			<IconAtlas>NEB_UNIT_ATLAS</IconAtlas>
+			<UnitFlagAtlas>NEB_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>0</UnitFlagIconOffset>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_SHARPSHOOTER">
+			<Text>Sharpshooter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_SHARPSHOOTER_HELP">
+			<Text>[ICON_BULLET]Archery Unit.</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_SHARPSHOOTER</UnitType>
+			<ResourceType>RESOURCE_MITHRIL</ResourceType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SHARPSHOOTER</UnitType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_SHARPSHOOTER</UnitType>
+			<PromotionType>PROMOTION_NO_MELEE</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SHARPSHOOTER</UnitType>
+			<PromotionType>PROMOTION_ELITE</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_SHARPSHOOTER</UnitType>
+			<UnitAIType>UNITAI_RANGED</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_SHARPSHOOTER</UnitType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>12</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_U_BABYLONIAN_BOWMAN"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Set NumMembers="4"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_U_BABYLONIAN_BOWMAN"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitInfos>
+		<Update>
+			<Set Formation="EoM_2x2"/>
+			<Where Type="ART_DEF_UNIT_U_BABYLONIAN_BOWMAN"/>
 		</Update>
 	</ArtDefine_UnitInfos>
 </GameData>

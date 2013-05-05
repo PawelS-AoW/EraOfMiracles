@@ -77,4 +77,45 @@
 			<Flavor>10</Flavor>
 		</Row>
 	</Technology_Flavors>
+	<!-- FOOD?_11: EXPLOSIVES -->
+	<!-- U: Cannon, Field Gun -->
+	<Technologies>
+		<Row>
+			<Type>TECH_EXPLOSIVES</Type>
+			<Cost>1100</Cost>
+			<Description>TXT_KEY_EOMTECH_EXPLOSIVES</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_RENAISSANCE</Era>
+			<Trade>true</Trade>
+			<GridX>11</GridX>
+			<GridY>3</GridY>
+			<PortraitIndex>36</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_EXPLOSIVES">
+			<Text>Explosives</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_EXPLOSIVES</TechType>
+			<PrereqTech>TECH_GUNPOWDER</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+		<Row>
+			<TechType>TECH_EXPLOSIVES</TechType>
+			<PrereqTech>TECH_DEEP_MINING</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_EXPLOSIVES</TechType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Technology_Flavors>
 </GameData>

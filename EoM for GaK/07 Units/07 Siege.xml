@@ -46,7 +46,7 @@
 	<Unit_ResourceQuantityRequirements>
 		<Row>
 			<UnitType>UNIT_BATTERING_RAM</UnitType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
 		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
@@ -140,7 +140,8 @@
 	<Unit_ResourceQuantityRequirements>
 		<Row>
 			<UnitType>UNIT_CATAPULT</UnitType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
+			<Cost>2</Cost>
 		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
@@ -262,7 +263,8 @@
 	<Unit_ResourceQuantityRequirements>
 		<Row>
 			<UnitType>UNIT_TREBUCHET</UnitType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
+			<Cost>2</Cost>
 		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
@@ -338,6 +340,119 @@
 			<Where Type="ART_DEF_UNIT_TREBUCHET"/>
 		</Update>
 	</ArtDefine_UnitInfos>
+	<!-- CANNON -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_CANNON</Type>
+			<Description>TXT_KEY_EOMUNIT_CANNON</Description>
+			<DefaultUnit>UNIT_CANNON</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_CANNON</Class>
+			<Type>UNIT_CANNON</Type>
+			<PrereqTech>TECH_EXPLOSIVES</PrereqTech>
+			<Cost>400</Cost>
+			<ExtraMaintenanceCost>5</ExtraMaintenanceCost>
+			<Combat>6</Combat>
+			<RangedCombat>8</RangedCombat>
+			<Range>3</Range>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_SIEGE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_CITY_BOMBARD</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_CANNON</Description>
+			<Help>TXT_KEY_EOMUNIT_CANNON_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<UnitArtInfo>ART_DEF_UNIT_CANNON</UnitArtInfo>
+			<UnitFlagIconOffset>43</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_2</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<MoveRate>ARTILLERY</MoveRate>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_CANNON">
+			<Text>Cannon</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_CANNON_HELP">
+			<Text>[ICON_BULLET]Siege Unit (must set up before attacking).[NEWLINE][ICON_BULLET]+50% [ICON_RANGE_STRENGTH] Ranged Strength when attacking cities.[NEWLINE][ICON_BULLET]-1 Sight Range.</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_CANNON</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<Cost>2</Cost>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_CANNON</UnitType>
+			<PromotionType>PROMOTION_NO_MELEE</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CANNON</UnitType>
+			<PromotionType>PROMOTION_NO_DTB</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CANNON</UnitType>
+			<PromotionType>PROMOTION_SLOW_SETUP</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CANNON</UnitType>
+			<PromotionType>PROMOTION_REDUCED_VISION</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CANNON</UnitType>
+			<PromotionType>PROMOTION_CITY_PLUS_50</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_CANNON</UnitType>
+			<UnitAIType>UNITAI_CITY_BOMBARD</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CANNON</UnitType>
+			<UnitAIType>UNITAI_RANGED</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_CANNON</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_CANNON</UnitType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.17"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_CANNON"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Set NumMembers="1"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_CANNON"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitInfos>
+		<Update>
+			<Set Formation=""/>
+			<Where Type="ART_DEF_UNIT_CANNON"/>
+		</Update>
+	</ArtDefine_UnitInfos>
 	<!-- BALLISTA -->
 	<UnitClasses>
 		<Row>
@@ -385,7 +500,8 @@
 	<Unit_ResourceQuantityRequirements>
 		<Row>
 			<UnitType>UNIT_BALLISTA</UnitType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
+			<Cost>2</Cost>
 		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>	
@@ -495,13 +611,14 @@
 	<Unit_ResourceQuantityRequirements>
 		<Row>
 			<UnitType>UNIT_REPEATER_BALLISTA</UnitType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
+			<Cost>2</Cost>
 		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
 		<Row>
 			<UnitType>UNIT_REPEATER_BALLISTA</UnitType>
-			<UnitClassType>UNITCLASS_CANNON</UnitClassType>
+			<UnitClassType>UNITCLASS_FIELD_GUN</UnitClassType>
 		</Row>
 	</Unit_ClassUpgrades>
 	<Unit_FreePromotions>
@@ -543,4 +660,110 @@
 			<Flavor>10</Flavor>
 		</Row>
 	</Unit_Flavors>
+	<!-- FIELD GUN -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_FIELD_GUN</Type>
+			<Description>TXT_KEY_EOMUNIT_FIELD_GUN</Description>
+			<DefaultUnit>UNIT_FIELD_GUN</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_FIELD_GUN</Class>
+			<Type>UNIT_FIELD_GUN</Type>
+			<PrereqTech>TECH_EXPLOSIVES</PrereqTech>
+			<Cost>400</Cost>
+			<ExtraMaintenanceCost>5</ExtraMaintenanceCost>
+			<Combat>6</Combat>
+			<RangedCombat>9</RangedCombat>
+			<Range>2</Range>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_SIEGE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_FIELD_GUN</Description>
+			<Help>TXT_KEY_EOMUNIT_FIELD_GUN_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<UnitArtInfo>ART_DEF_UNIT_GATLINGGUN</UnitArtInfo>
+			<UnitFlagAtlas>EXPANSION_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>26</UnitFlagIconOffset>
+			<IconAtlas>EXPANSION_UNIT_ATLAS_1</IconAtlas>
+			<PortraitIndex>27</PortraitIndex>
+			<MoveRate>ARTILLERY</MoveRate>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_FIELD_GUN">
+			<Text>Field Gun</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_FIELD_GUN_HELP">
+			<Text>[ICON_BULLET]Siege Unit.[NEWLINE][ICON_BULLET]Doesn't have to set up before attacking.[NEWLINE][ICON_BULLET]-25% [ICON_RANGE_STRENGTH] Ranged Strength when attacking cities.[NEWLINE][ICON_BULLET]-1 Sight Range.</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_FIELD_GUN</UnitType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
+			<Cost>1</Cost>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FIELD_GUN</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<Cost>1</Cost>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_FIELD_GUN</UnitType>
+			<PromotionType>PROMOTION_NO_MELEE</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FIELD_GUN</UnitType>
+			<PromotionType>PROMOTION_NO_DTB</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FIELD_GUN</UnitType>
+			<PromotionType>PROMOTION_REDUCED_VISION</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FIELD_GUN</UnitType>
+			<PromotionType>PROMOTION_CITY_MINUS_25</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_FIELD_GUN</UnitType>
+			<UnitAIType>UNITAI_RANGED</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_REPEATER_BALLISTA</UnitType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>12</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<!-- gfx -->
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Set Scale="0.20"/>
+			<Where Type="ART_DEF_UNIT_MEMBER_GATLINGGUN"/>
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Set NumMembers="1"/>
+			<Where UnitMemberInfoType="ART_DEF_UNIT_MEMBER_GATLINGGUN"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitInfos>
+		<Update>
+			<Set Formation=""/>
+			<Where Type="ART_DEF_UNIT_GATLINGGUN"/>
+		</Update>
+	</ArtDefine_UnitInfos>
 </GameData>

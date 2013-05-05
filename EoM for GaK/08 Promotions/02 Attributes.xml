@@ -329,7 +329,7 @@
 	</UnitPromotions_UnitCombatMods>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_AXES_I">
-			<Text>Axes I</Text>
+			<Text>Melee Bonus I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMPROM_AXES_I_HELP">
 			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Strength vs Melee Units.</Text>
@@ -358,7 +358,7 @@
 	</UnitPromotions_UnitCombatMods>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_EOMPROM_AXES_II">
-			<Text>Axes II</Text>
+			<Text>Melee Bonus II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMPROM_AXES_II_HELP">
 			<Text>[ICON_BULLET]+50% [ICON_STRENGTH] Strength vs Melee Units.</Text>

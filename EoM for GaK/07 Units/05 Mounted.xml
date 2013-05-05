@@ -387,6 +387,10 @@
 			<UnitType>UNIT_HEAVY_CHARIOT</UnitType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
 		</Row>
+		<Row>
+			<UnitType>UNIT_HEAVY_CHARIOT</UnitType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
+		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
 		<Row>
@@ -846,6 +850,10 @@
 			<UnitType>UNIT_CHARIOT_ARCHER</UnitType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
 		</Row>
+		<Row>
+			<UnitType>UNIT_CHARIOT_ARCHER</UnitType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
+		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
 		<Row>
@@ -939,6 +947,10 @@
 		<Row>
 			<UnitType>UNIT_HORSE_ARCHER</UnitType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HORSE_ARCHER</UnitType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
 		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
@@ -1049,6 +1061,10 @@
 			<UnitType>UNIT_WAR_CHARIOT</UnitType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
 		</Row>
+		<Row>
+			<UnitType>UNIT_WAR_CHARIOT</UnitType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
+		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
 		<Row>
@@ -1145,6 +1161,10 @@
 		<Row>
 			<UnitType>UNIT_HEAVY_HORSE_ARCHER</UnitType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_HEAVY_HORSE_ARCHER</UnitType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
 		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
@@ -1249,6 +1269,12 @@
 		</Row>
 		<!-- [NEWLINE][ICON_BULLET]Azrac unique unit, slower than Heavy Horse Archer it replaces, but doesn't require Horses to be built. -->
 	</Language_en_US>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_CAMEL_ARCHER</UnitType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>
 		<Row>
 			<UnitType>UNIT_CAMEL_ARCHER</UnitType>
@@ -1458,6 +1484,10 @@
 			<UnitType>UNIT_ELEPHANT_ARCHER</UnitType>
 			<ResourceType>RESOURCE_ELEPHANT</ResourceType>
 		</Row>
+		<Row>
+			<UnitType>UNIT_ELEPHANT_ARCHER</UnitType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
+		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<!--<Unit_ClassUpgrades>
 		<Row>
@@ -1634,7 +1664,7 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_ELEPHANT_FORTRESS</UnitType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
 		</Row>
 	</Unit_ResourceQuantityRequirements>
 	<Unit_ClassUpgrades>

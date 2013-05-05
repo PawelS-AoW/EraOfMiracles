@@ -282,7 +282,7 @@
 			<Text>Carpenter</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMBLDG_CARPENTER_HELP">
-			<Text>[ICON_BULLET]+10 XP for Archery Units.[NEWLINE][ICON_BULLET]+10% [ICON_PRODUCTION] Production when constructing buildings.[NEWLINE][ICON_BULLET]+2 [ICON_PRODUCTION] Production from [ICON_RES_SPICES] Timber.[NEWLINE][ICON_BULLET]Requires an improved source of Timber in the city radius.</Text>
+			<Text>[ICON_BULLET]+10 XP for Archery Units.[NEWLINE][ICON_BULLET]+10% [ICON_PRODUCTION] Production when constructing buildings.[NEWLINE][ICON_BULLET]+2 [ICON_PRODUCTION] Production from [ICON_RES_SPICES] Hardwood.[NEWLINE][ICON_BULLET]Requires an improved source of Hardwood in the city radius.</Text>
 		</Row>
 	</Language_en_US>
 	<Building_ClassesNeededInCity>
@@ -308,7 +308,7 @@
 	<Building_ResourceYieldChanges>
 		<Row>
 			<BuildingType>BUILDING_CARPENTER</BuildingType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>2</Yield>
 		</Row>
@@ -316,7 +316,7 @@
 	<Building_LocalResourceAnds>
 		<Row>
 			<BuildingType>BUILDING_CARPENTER</BuildingType>
-			<ResourceType>RESOURCE_TIMBER</ResourceType>
+			<ResourceType>RESOURCE_HARDWOOD</ResourceType>
 		</Row>
 	</Building_LocalResourceAnds>
 	<Building_Flavors>
