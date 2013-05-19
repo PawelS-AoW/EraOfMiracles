@@ -724,7 +724,7 @@
 			<Text>Elite Cavalry</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMUNIT_ELITE_CAVALRY_HELP">
-			<Text>[ICON_BULLET]Mounted Unit.[NEWLINE][ICON_BULLET]Can move after attacking.[NEWLINE][ICON_BULLET]Adjacent enemy units get -10% [ICON_STRENGTH] Strength.[NEWLINE][ICON_BULLET]Gains 50% more XP from combat.[NEWLINE][ICON_BULLET]-25% [ICON_STRENGTH] Strength when attacking cities.</Text>
+			<Text>[ICON_BULLET]Mounted Unit.[NEWLINE][ICON_BULLET]Can move after attacking.[NEWLINE][ICON_BULLET]-25% [ICON_STRENGTH] Strength when attacking cities.[NEWLINE][ICON_BULLET]Gains 50% more XP from combat.[NEWLINE][ICON_BULLET]Adjacent enemy units get -10% [ICON_STRENGTH] Strength.</Text>
 		</Row>
 	</Language_en_US>
 	<Unit_ResourceQuantityRequirements>

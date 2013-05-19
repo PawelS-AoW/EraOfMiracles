@@ -185,7 +185,8 @@
 		</Row>
 	</Technology_Flavors>
 	<!-- ANIM_08: MILITARY SCIENCE -->
-	<!-- B: Military Academy, Fortress -->
+	<!-- Defensive Pacts -->
+	<!-- B: Military Academy -->
 	<!-- I: Citadel -->
 	<Technologies>
 		<Row>
@@ -201,6 +202,7 @@
 			<GridY>4</GridY>
 			<PortraitIndex>36</PortraitIndex>
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<DefensivePactTradingAllowed>1</DefensivePactTradingAllowed>
 		</Row>
 	</Technologies>
 	<Language_en_US>

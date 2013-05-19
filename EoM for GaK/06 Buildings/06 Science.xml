@@ -25,6 +25,8 @@
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>57</PortraitIndex>
 			<ConquestProb>75</ConquestProb>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<GreatPeopleRateChange>1</GreatPeopleRateChange>
 		</Row>
 	</Buildings>
 	<Language_en_US>

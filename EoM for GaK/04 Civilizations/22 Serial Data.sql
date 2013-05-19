@@ -41,7 +41,7 @@ WHERE Type <> 'CIVILIZATION_AZRACS';
 
 INSERT INTO Civilization_DisableTechs(CivilizationType, TechType)
 SELECT Type, 'TECH_IMPERIAL_ROADS' FROM Civilizations
-WHERE Type NOT IN ('CIVILIZATION_ARCHONS');
+WHERE Type <> 'CIVILIZATION_ARCHONS';
 
 INSERT INTO Civilization_DisableTechs(CivilizationType, TechType)
 SELECT Type, 'TECH_PIRACY' FROM Civilizations
@@ -66,3 +66,12 @@ WHERE Type NOT IN ('CIVILIZATION_DREAMERS', 'CIVILIZATION_DWARVES', 'CIVILIZATIO
 INSERT INTO Civilization_DisableTechs(CivilizationType, TechType)
 SELECT Type, 'TECH_EXPLOSIVES' FROM Civilizations
 WHERE Type NOT IN ('CIVILIZATION_DREAMERS', 'CIVILIZATION_DWARVES', 'CIVILIZATION_ORCS');
+
+INSERT INTO Civilization_DisableTechs(CivilizationType, TechType)
+SELECT Type, 'TECH_DEADLY_MACHINES' FROM Civilizations
+WHERE Type <> 'CIVILIZATION_DWARVES';
+
+-- disable Sharpshooter for Gunpowder civs
+INSERT INTO Civilization_UnitClassOverrides(CivilizationType, UnitClassType, UnitType)
+SELECT Type, 'UNITCLASS_SHARPSHOOTER', null FROM Civilizations
+WHERE Type IN ('CIVILIZATION_DREAMERS', 'CIVILIZATION_DWARVES', 'CIVILIZATION_ORCS');

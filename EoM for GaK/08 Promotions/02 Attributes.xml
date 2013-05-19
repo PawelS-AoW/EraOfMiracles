@@ -759,6 +759,29 @@
 			<Text>[ICON_BULLET]The unit can only attack cities, and gets +300% [ICON_STRENGTH] Strength when doing so.</Text>
 		</Row>
 	</Language_en_US>
+	<!-- ASSAULT -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_ASSAULT</Type>
+			<Description>TXT_KEY_EOMPROM_ASSAULT</Description>
+			<Help>TXT_KEY_EOMPROM_ASSAULT_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_EOMPROM_ASSAULT</PediaEntry>
+			<AttackFortifiedMod>25</AttackFortifiedMod>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMPROM_ASSAULT">
+			<Text>Assault</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMPROM_ASSAULT_HELP">
+			<Text>[ICON_BULLET]+25% Attack Strength vs fortified units.</Text>
+		</Row>
+	</Language_en_US>
 	<!-- FIRE BOMBS -->
 	<UnitPromotions>
 		<Row>

@@ -1399,7 +1399,7 @@
 			<Text>Elite Guard</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMUNIT_ELITE_GUARD_HELP">
-			<Text>[ICON_BULLET]Melee Unit.[NEWLINE][ICON_BULLET][ICON_STRENGTH] Strength bonus: +40% - 2% per tile of distance to the [ICON_CAPITAL] capital.[NEWLINE][ICON_BULLET]Gains 50% more XP from combat.</Text>
+			<Text>[ICON_BULLET]Melee Unit.[NEWLINE][ICON_BULLET]Gains 50% more XP from combat.[NEWLINE][ICON_BULLET][ICON_STRENGTH] Strength bonus: +40% - 2% per tile of distance to the [ICON_CAPITAL] capital.</Text>
 		</Row>
 	</Language_en_US>
 	<Unit_ResourceQuantityRequirements>
@@ -1411,11 +1411,11 @@
 	<Unit_FreePromotions>
 		<Row>
 			<UnitType>UNIT_ELITE_GUARD</UnitType>
-			<PromotionType>PROMOTION_PALACE_GUARD</PromotionType>
+			<PromotionType>PROMOTION_ELITE</PromotionType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_ELITE_GUARD</UnitType>
-			<PromotionType>PROMOTION_ELITE</PromotionType>
+			<PromotionType>PROMOTION_PALACE_GUARD</PromotionType>
 		</Row>
 	</Unit_FreePromotions>
 	<Unit_AITypes>

@@ -367,6 +367,11 @@ Version: pre-alpha, not playable</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>05 Technologies/Tier 12.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>06 Buildings/00 Delete Buildings.sql</FileName>
       </Action>
       <Action>
@@ -1627,6 +1632,10 @@ Version: pre-alpha, not playable</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="05 Technologies\00 DeleteTechs.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="05 Technologies\Tier 12.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

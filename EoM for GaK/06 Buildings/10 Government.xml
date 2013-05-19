@@ -362,6 +362,7 @@
 			<CultureRateModifier>25</CultureRateModifier>
 			<SpecialistType>SPECIALIST_OFFICIAL</SpecialistType>
 			<SpecialistCount>1</SpecialistCount>
+			<GreatPeopleRateChange>1</GreatPeopleRateChange>
 		</Row>
 	</Buildings>
 	<Language_en_US>

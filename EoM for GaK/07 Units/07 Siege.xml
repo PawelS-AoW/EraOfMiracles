@@ -742,7 +742,7 @@
 	</Unit_AITypes>
 	<Unit_Flavors>
 		<Row>
-			<UnitType>UNIT_REPEATER_BALLISTA</UnitType>
+			<UnitType>UNIT_FIELD_GUN</UnitType>
 			<FlavorType>FLAVOR_RANGED</FlavorType>
 			<Flavor>12</Flavor>
 		</Row>
@@ -766,4 +766,93 @@
 			<Where Type="ART_DEF_UNIT_GATLINGGUN"/>
 		</Update>
 	</ArtDefine_UnitInfos>
+	<!-- STEAM TANK (Dwarves) -->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_STEAM_TANK</Type>
+			<Description>TXT_KEY_EOMUNIT_STEAM_TANK</Description>
+			<DefaultUnit>UNIT_STEAM_TANK</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_STEAM_TANK</Class>
+			<Type>UNIT_STEAM_TANK</Type>
+			<PrereqTech>TECH_DEADLY_MACHINES</PrereqTech>
+			<Cost>800</Cost>
+			<ExtraMaintenanceCost>6</ExtraMaintenanceCost>
+			<Combat>12</Combat>
+			<RangedCombat>8</RangedCombat>
+			<Range>1</Range>
+			<Moves>3</Moves>
+			<CombatClass>UNITCOMBAT_SIEGE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+			<Description>TXT_KEY_EOMUNIT_STEAM_TANK</Description>
+			<Help>TXT_KEY_EOMUNIT_STEAM_TANK_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<UnitArtInfo>ART_DEF_UNIT_SMOKEY_LANDSHIP_LEVEL_3</UnitArtInfo>
+			<UnitFlagIconOffset>5</UnitFlagIconOffset>
+			<UnitFlagAtlas>EXPANSION_SCEN_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<PortraitIndex>5</PortraitIndex>
+			<IconAtlas>EXPANSION_SCEN_UNIT_ATLAS</IconAtlas>
+			<MoveRate>WHEELED</MoveRate>
+		</Row>
+	</Units>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMUNIT_STEAM_TANK">
+			<Text>Steam Tank</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMUNIT_STEAM_TANK_HELP">
+			<Text>[ICON_BULLET]Siege Unit.[NEWLINE][ICON_BULLET]Doesn't have to set up before attacking.</Text>
+		</Row>
+	</Language_en_US>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_STEAM_TANK</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<Cost>2</Cost>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_STEAM_TANK</UnitType>
+			<PromotionType>PROMOTION_NO_MELEE</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_STEAM_TANK</UnitType>
+			<PromotionType>PROMOTION_NO_DTB</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_STEAM_TANK</UnitType>
+			<UnitAIType>UNITAI_RANGED</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_STEAM_TANK</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_STEAM_TANK</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_STEAM_TANK</UnitType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_STEAM_TANK</UnitType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+	</Unit_Flavors>
 </GameData>

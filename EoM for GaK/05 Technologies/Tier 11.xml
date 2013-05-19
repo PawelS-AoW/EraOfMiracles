@@ -13,7 +13,7 @@
 			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
 			<Quote>TXT_KEY_EOM_EMPTY</Quote>
 			<Era>ERA_RENAISSANCE</Era>
-			<Trade>true</Trade>
+			<Trade>false</Trade>
 			<GridX>11</GridX>
 			<GridY>-1</GridY>
 			<PortraitIndex>2</PortraitIndex>
@@ -51,7 +51,7 @@
 			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
 			<Quote>TXT_KEY_EOM_EMPTY</Quote>
 			<Era>ERA_RENAISSANCE</Era>
-			<Trade>true</Trade>
+			<Trade>false</Trade>
 			<GridX>11</GridX>
 			<GridY>0</GridY>
 			<PortraitIndex>6</PortraitIndex>
@@ -88,7 +88,7 @@
 			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
 			<Quote>TXT_KEY_EOM_EMPTY</Quote>
 			<Era>ERA_RENAISSANCE</Era>
-			<Trade>true</Trade>
+			<Trade>false</Trade>
 			<GridX>11</GridX>
 			<GridY>3</GridY>
 			<PortraitIndex>36</PortraitIndex>

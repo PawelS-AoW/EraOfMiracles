@@ -372,6 +372,8 @@
 			<NeverCapture>true</NeverCapture>
 			<MutuallyExclusiveGroup>2</MutuallyExclusiveGroup>
 			<Happiness>4</Happiness>
+			<SpecialistType>SPECIALIST_NOBLE</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>
 		</Row>
 	</Buildings>
 	<Language_en_US>
@@ -621,6 +623,7 @@
 			<Type>BUILDING_SAGES_GUILD</Type>
 			<BuildingClass>BUILDINGCLASS_SAGES_GUILD</BuildingClass>
 			<Cost>300</Cost>
+			<GoldMaintenance>2</GoldMaintenance>
 			<PrereqTech>TECH_MAGICAL_STUDIES</PrereqTech>
 			<Description>TXT_KEY_EOMBLDG_SAGES_GUILD</Description>
 			<Help>TXT_KEY_EOMBLDG_SAGES_GUILD_HELP</Help>
@@ -711,6 +714,7 @@
 			<Type>BUILDING_UNIVERSITY</Type>
 			<BuildingClass>BUILDINGCLASS_UNIVERSITY</BuildingClass>
 			<Cost>500</Cost>
+			<GoldMaintenance>4</GoldMaintenance>
 			<PrereqTech>TECH_EDUCATION</PrereqTech>
 			<Description>TXT_KEY_EOMBLDG_UNIVERSITY</Description>
 			<Help>TXT_KEY_EOMBLDG_UNIVERSITY_HELP</Help>
@@ -723,6 +727,8 @@
 			<PortraitIndex>13</PortraitIndex>
 			<NeverCapture>true</NeverCapture>
 			<MutuallyExclusiveGroup>2</MutuallyExclusiveGroup>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<SpecialistCount>2</SpecialistCount>
 		</Row>
 	</Buildings>
 	<Language_en_US>
@@ -737,7 +743,7 @@
 		<Row>
 			<BuildingType>BUILDING_UNIVERSITY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>8</Yield>
+			<Yield>10</Yield>
 		</Row>
 	</Building_YieldChanges>
 	<Building_YieldModifiers>
@@ -764,6 +770,76 @@
 			<Flavor>10</Flavor>
 		</Row>
 	</Building_Flavors>
+	<!-- BARDS PROMENADE -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_BARDS_PROMENADE</Type>
+			<DefaultBuilding>BUILDING_BARDS_PROMENADE</DefaultBuilding>
+			<Description>TXT_KEY_EOMBLDG_BARDS_PROMENADE</Description>
+			<EoM_MaxCityPercent>20</EoM_MaxCityPercent>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_BARDS_PROMENADE</Type>
+			<BuildingClass>BUILDINGCLASS_BARDS_PROMENADE</BuildingClass>
+			<Cost>500</Cost>
+			<GoldMaintenance>3</GoldMaintenance>
+			<PrereqTech>TECH_PATRONAGE</PrereqTech>
+			<Description>TXT_KEY_EOMBLDG_BARDS_PROMENADE</Description>
+			<Help>TXT_KEY_EOMBLDG_BARDS_PROMENADE_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<ArtDefineTag>THEATRE</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
+			<PortraitIndex>4</PortraitIndex>
+			<NeverCapture>true</NeverCapture>
+			<MutuallyExclusiveGroup>2</MutuallyExclusiveGroup>
+			<Happiness>2</Happiness>
+			<CultureRateModifier>15</CultureRateModifier>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<SpecialistCount>2</SpecialistCount>
+		</Row>
+	</Buildings>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMBLDG_BARDS_PROMENADE">
+			<Text>Bards Promenade</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBLDG_BARDS_PROMENADE_HELP">
+			<Text>[ICON_BULLET]+15% [ICON_CULTURE] Culture in this city.[NEWLINE][ICON_BULLET]Can't be built in more than 20% of your cities.[NEWLINE][ICON_BULLET]Can't be built in cities that contain a University, Cathedral or Wizard's Tower.</Text>
+		</Row>
+	</Language_en_US>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_BARDS_PROMENADE</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>6</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_ClassesNeededInCity>
+		<Row>
+			<BuildingType>BUILDING_BARDS_PROMENADE</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_SAGES_GUILD</BuildingClassType>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BARDS_PROMENADE</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_AMPHITHEATER</BuildingClassType>
+		</Row>
+	</Building_ClassesNeededInCity>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_BARDS_PROMENADE</BuildingType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BARDS_PROMENADE</BuildingType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+	</Building_Flavors>
 	<!-- CATHEDRAL -->
 	<BuildingClasses>
 		<Row>
@@ -778,6 +854,7 @@
 			<Type>BUILDING_CATHEDRAL</Type>
 			<BuildingClass>BUILDINGCLASS_CATHEDRAL</BuildingClass>
 			<Cost>500</Cost>
+			<GoldMaintenance>4</GoldMaintenance>
 			<PrereqTech>TECH_THEOLOGY</PrereqTech>
 			<Description>TXT_KEY_EOMBLDG_CATHEDRAL</Description>
 			<Help>TXT_KEY_EOMBLDG_CATHEDRAL_HELP</Help>
@@ -790,6 +867,7 @@
 			<PortraitIndex>2</PortraitIndex>
 			<NeverCapture>true</NeverCapture>
 			<MutuallyExclusiveGroup>2</MutuallyExclusiveGroup>
+			<Happiness>1</Happiness>
 		</Row>
 	</Buildings>
 	<Language_en_US>
@@ -804,7 +882,12 @@
 		<Row>
 			<BuildingType>BUILDING_CATHEDRAL</BuildingType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>8</Yield>
+			<Yield>6</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CATHEDRAL</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
 		</Row>
 	</Building_YieldChanges>
 	<Building_ClassesNeededInCity>
@@ -821,6 +904,67 @@
 		<Row>
 			<BuildingType>BUILDING_CATHEDRAL</BuildingType>
 			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Building_Flavors>
+	<!-- WIZARD'S TOWER -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_WIZARDS_TOWER</Type>
+			<DefaultBuilding>BUILDING_WIZARDS_TOWER</DefaultBuilding>
+			<Description>TXT_KEY_EOMBLDG_WIZARDS_TOWER</Description>
+			<EoM_MaxCityPercent>20</EoM_MaxCityPercent>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_WIZARDS_TOWER</Type>
+			<BuildingClass>BUILDINGCLASS_WIZARDS_TOWER</BuildingClass>
+			<Cost>500</Cost>
+			<GoldMaintenance>3</GoldMaintenance>
+			<PrereqTech>TECH_ARCANE_LORE</PrereqTech>
+			<Description>TXT_KEY_EOMBLDG_WIZARDS_TOWER</Description>
+			<Help>TXT_KEY_EOMBLDG_WIZARDS_TOWER_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<ArtDefineTag>TEMPLE</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>EXPANSION_BW_ATLAS_2</IconAtlas>
+			<PortraitIndex>1</PortraitIndex>
+			<NeverCapture>true</NeverCapture>
+			<MutuallyExclusiveGroup>2</MutuallyExclusiveGroup>
+		</Row>
+	</Buildings>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMBLDG_WIZARDS_TOWER">
+			<Text>Wizard's Tower</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBLDG_WIZARDS_TOWER_HELP">
+			<Text>[ICON_BULLET]Can't be built in more than 20% of your cities.[NEWLINE][ICON_BULLET]Can't be built in cities that contain a University, Bards Promenade or Cathedral.</Text>
+		</Row>
+	</Language_en_US>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_WIZARDS_TOWER</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>8</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_ClassesNeededInCity>
+		<Row>
+			<BuildingType>BUILDING_WIZARDS_TOWER</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_SAGES_GUILD</BuildingClassType>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_WIZARDS_TOWER</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_MAGIC_SCHOOL</BuildingClassType>
+		</Row>
+	</Building_ClassesNeededInCity>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_WIZARDS_TOWER</BuildingType>
+			<FlavorType>FLAVOR_MAGIC</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
 	</Building_Flavors>

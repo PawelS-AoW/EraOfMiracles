@@ -441,4 +441,80 @@
 			<Flavor>5</Flavor>
 		</Row>
 	</Building_Flavors>
+	<!-- RESIDENCE -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_RESIDENCE</Type>
+			<DefaultBuilding>BUILDING_RESIDENCE</DefaultBuilding>
+			<Description>TXT_KEY_EOMBLDG_RESIDENCE</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_RESIDENCE</Type>
+			<BuildingClass>BUILDINGCLASS_RESIDENCE</BuildingClass>
+			<Cost>400</Cost>
+			<GoldMaintenance>3</GoldMaintenance>
+			<PrereqTech>TECH_UPPER_CLASS</PrereqTech>
+			<Description>TXT_KEY_EOMBLDG_RESIDENCE</Description>
+			<Help>TXT_KEY_EOMBLDG_RESIDENCE_HELP</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Strategy>TXT_KEY_EOM_EMPTY</Strategy>
+			<ArtDefineTag>CASTLE</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>50</HurryCostModifier>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>52</PortraitIndex>
+			<ConquestProb>75</ConquestProb>
+			<Happiness>1</Happiness>
+			<CultureRateModifier>10</CultureRateModifier>
+			<SpecialistType>SPECIALIST_NOBLE</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>
+		</Row>
+	</Buildings>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMBLDG_RESIDENCE">
+			<Text>Residence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EOMBLDG_RESIDENCE_HELP">
+			<Text>[ICON_BULLET]+10% [ICON_CULTURE] Culture in this city.</Text>
+		</Row>
+	</Language_en_US>
+	<Building_ClassesNeededInCity>
+		<Row>
+			<BuildingType>BUILDING_RESIDENCE</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_MANSION</BuildingClassType>
+		</Row>
+	</Building_ClassesNeededInCity>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_RESIDENCE</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_YieldModifiers>
+		<Row>
+			<BuildingType>BUILDING_RESIDENCE</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>10</Yield>
+		</Row>
+	</Building_YieldModifiers>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_RESIDENCE</BuildingType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RESIDENCE</BuildingType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>3</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RESIDENCE</BuildingType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+	</Building_Flavors>
 </GameData>

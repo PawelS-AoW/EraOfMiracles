@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 5/18/2013 8:56:56 PM -->
+<GameData>
+	<!-- FOOD?_12: DEADLY MACHINES -->
+	<!-- U: Steam Tank (DWARVES), ...  -->
+	<Technologies>
+		<Row>
+			<Type>TECH_DEADLY_MACHINES</Type>
+			<Cost>1200</Cost>
+			<Description>TXT_KEY_EOMTECH_DEADLY_MACHINES</Description>
+			<Help>TXT_KEY_EOM_EMPTY</Help>
+			<Civilopedia>TXT_KEY_EOM_EMPTY</Civilopedia>
+			<Quote>TXT_KEY_EOM_EMPTY</Quote>
+			<Era>ERA_RENAISSANCE</Era>
+			<Trade>false</Trade>
+			<GridX>12</GridX>
+			<GridY>3</GridY>
+			<PortraitIndex>49</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+		</Row>
+	</Technologies>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EOMTECH_DEADLY_MACHINES">
+			<Text>Deadly Machines</Text>
+		</Row>
+	</Language_en_US>
+	<Technology_PrereqTechs>
+		<Row>
+			<TechType>TECH_DEADLY_MACHINES</TechType>
+			<PrereqTech>TECH_EXPLOSIVES</PrereqTech>
+			<EoM_ShowLine>1</EoM_ShowLine>
+		</Row>
+	</Technology_PrereqTechs>
+	<Technology_Flavors>
+		<Row>
+			<TechType>TECH_DEADLY_MACHINES</TechType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_DEADLY_MACHINES</TechType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_DEADLY_MACHINES</TechType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<TechType>TECH_DEADLY_MACHINES</TechType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+	</Technology_Flavors>
+</GameData>

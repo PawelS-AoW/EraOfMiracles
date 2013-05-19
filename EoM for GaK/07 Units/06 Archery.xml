@@ -527,7 +527,7 @@
 			<Text>Sharpshooter</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EOMUNIT_SHARPSHOOTER_HELP">
-			<Text>[ICON_BULLET]Archery Unit.</Text>
+			<Text>[ICON_BULLET]Archery Unit.[NEWLINE][ICON_BULLET]Gains 50% more XP from combat.[NEWLINE][ICON_BULLET]+25% Attack Strength vs fortified units.</Text>
 		</Row>
 	</Language_en_US>
 	<Unit_ResourceQuantityRequirements>
@@ -548,6 +548,10 @@
 		<Row>
 			<UnitType>UNIT_SHARPSHOOTER</UnitType>
 			<PromotionType>PROMOTION_ELITE</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SHARPSHOOTER</UnitType>
+			<PromotionType>PROMOTION_ASSAULT</PromotionType>
 		</Row>
 	</Unit_FreePromotions>
 	<Unit_AITypes>
